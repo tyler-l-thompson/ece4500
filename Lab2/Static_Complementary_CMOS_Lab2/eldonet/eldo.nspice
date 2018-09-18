@@ -1,0 +1,19 @@
+* ELDO netlist generated with ICnet by 'ece_lab' on Tue Sep 18 2018 at 13:40:42
+
+*
+* Globals.
+*
+.global vss vdd
+
+*
+* MAIN CELL: Component pathname : /home/ece_lab/mentor/ECE4500/Lab2/Static_Complementary_CMOS_Lab2
+*
+        v1 vdd vss DC 2.5V
+        m6 n$9 a vss vss NMOS L=1.2u W=2.0u M=1
+        m5 n$9 b vss vss NMOS L=1.2u W=2.0u M=1
+        m4 f cnot n$9 vss NMOS L=1.2u W=3.0u M=1
+        m3 f b n$16 n$16 PMOS L=1.2u W=7.5u M=1
+        m2 n$16 a vdd vdd PMOS L=1.2u W=7.5u M=1
+        m1 f cnot vdd vdd PMOS L=1.2u W=3.5u M=1
+*
+.end

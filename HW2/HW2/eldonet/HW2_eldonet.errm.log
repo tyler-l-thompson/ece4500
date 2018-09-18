@@ -1,0 +1,4 @@
+START report: Tue Sep 18 14:51:22 2018 
+** Warning: (eldo - 1615)  In file "./HW2/eldonet/HW2_eldonet.cir" line 12:
++   COMMAND ".TRAN": Tstep can not be <= 0.0.
++   It is set to Tmax/20.0 = 2.000e-08 s.
