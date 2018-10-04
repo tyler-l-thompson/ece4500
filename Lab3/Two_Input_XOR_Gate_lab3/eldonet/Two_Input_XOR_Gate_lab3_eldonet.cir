@@ -1,0 +1,24 @@
+* Component: /home/ece_lab/mentor/ECE4500/Lab3/Two_Input_XOR_Gate_lab3  Viewpoint: eldonet
+.INCLUDE /home/ece_lab/mentor/ECE4500/Lab3/Two_Input_XOR_Gate_lab3/eldonet/Two_Input_XOR_Gate_lab3_eldonet.spi
+.INCLUDE /home/ece_lab/mentor/mgc/mit_0.25.lib
+.OPTION NOASCII
+.OPTION MODWL
+.OPTION ENGNOT
+.OPTION AEX
+
+* --- Singles
+
+* - Analysis Setup - DC
+.DC V2 0 2.5 0.00001
+
+* --- Waveform Outputs
+.PROBE DC V(A_18) V(B_18) V(Z_18)
+
+* --- Params
+.TEMP 27
+
+* --- Forces
+VFORCE__B_2 B_18 VSS dc 0
+
+* --- Libsetup
+

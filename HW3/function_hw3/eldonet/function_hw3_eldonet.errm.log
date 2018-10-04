@@ -1,0 +1,8 @@
+START report: Thu Sep 27 13:19:44 2018 
+** Warning: (eldo - 252)  In file "./mgc/mit_0.25.lib" line 60:
++   OBJECT "X1.C2": Self-connected object not created.
+** Warning: (eldo - 252)  In file "./mgc/mit_0.25.lib" line 61:
++   OBJECT "X1.C3": Self-connected object not created.
+** Warning: (eldo - 1615)  In file "./ECE4500/HW3/function_hw3/eldonet/function_hw3_eldonet.cir" line 12:
++   COMMAND ".TRAN": Tstep can not be <= 0.0.
++   It is set to Tmax/20.0 = 4.000e-08 s.

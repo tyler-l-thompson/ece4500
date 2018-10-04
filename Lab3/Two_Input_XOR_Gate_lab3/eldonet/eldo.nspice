@@ -1,0 +1,18 @@
+* ELDO netlist generated with ICnet by 'ece_lab' on Tue Sep 25 2018 at 19:22:57
+
+*
+* Globals.
+*
+.global vdd vss
+
+*
+* MAIN CELL: Component pathname : /home/ece_lab/mentor/ECE4500/Lab3/Two_Input_XOR_Gate_lab3
+*
+        m4 z_18 b_18 a_18 vdd PMOS L=1.2u W=2.0u M=1
+        m6 z_18 n$38 b_18 vss NMOS L=1.2u W=2.0u M=1
+        m5 z_18 b_18 n$38 vss NMOS L=1.2u W=2.0u M=1
+        m3 z_18 a_18 b_18 vdd PMOS L=1.2u W=6.0u M=1
+        m2 n$38 a_18 vss vss NMOS L=1.2u W=2.0u M=1
+        m1 n$38 a_18 vdd vdd PMOS L=1.2u W=6.0u M=1
+*
+.end

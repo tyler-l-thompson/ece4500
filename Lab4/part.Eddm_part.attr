@@ -1,0 +1,6 @@
+A 5 u Eddm_part 5bb2400c0086.03.7f.00.00.02.00.36.79 1 2 1 0
+V v 1 1 5bb2400c0086.03.7f.00.00.02.01.36.79
+F f 1 "part.part_1"
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "/home/ece_lab/mentor/ECE4500/Lab4/schematic" 1 mgc_schematic 5bb23c86adc6.03.7f.00.00.02.01.36.79 5bb23c86adc6.03.7f.00.00.02.00.36.79

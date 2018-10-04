@@ -1,0 +1,6 @@
+A 5 u Eddm_part 5ba8fc32810b.03.7f.00.00.02.00.53.78 1 2 1 0
+V v 1 1 5ba8fc32810b.03.7f.00.00.02.01.53.78
+F f 1 "part.part_1"
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "/home/ece_lab/mentor/ECE4500/Lab3/Two_Input_XOR_Gate_lab3/schematic" 1 mgc_schematic 5ba8fa094eee.03.7f.00.00.02.01.53.78 5ba8fa094eee.03.7f.00.00.02.00.53.78

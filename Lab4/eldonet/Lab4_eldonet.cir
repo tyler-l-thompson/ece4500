@@ -1,0 +1,29 @@
+* Component: /home/ece_lab/mentor/ECE4500/Lab4  Viewpoint: eldonet
+.INCLUDE /home/ece_lab/mentor/ECE4500/Lab4/eldonet/Lab4_eldonet.spi
+.INCLUDE /home/ece_lab/mentor/mgc/mit_0.25.lib
+.OPTION NOASCII
+.OPTION MODWL
+.OPTION ENGNOT
+.OPTION AEX
+
+* --- Singles
+
+* - Analysis Setup - Trans
+.TRAN 0 800N 0N 100N
+
+* --- Waveform Outputs
+.PROBE TRAN V(A_18) V(B_18) V(BNOT_18) V(CIN_18) V(CINNOT_18) V(COUT_18)
++ V(SUM_18)
+
+* --- Params
+.TEMP 27
+
+* --- Forces
+VFORCE__A A_18 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 00001111 R
+VFORCE__B B_18 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 00110011 R
+VFORCE__BNOT BNOT_18 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 11001100 R
+VFORCE__CIN CIN_18 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 01010101 R
+VFORCE__CINNOT CINNOT_18 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 10101010 R
+
+* --- Libsetup
+

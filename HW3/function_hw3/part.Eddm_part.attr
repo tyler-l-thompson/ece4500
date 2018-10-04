@@ -1,0 +1,7 @@
+A 5 u Eddm_part 5baa8e30d0a1.03.7f.00.00.02.00.72.35 1 2 1 0
+V v 1 1 5baa8e30d0a2.03.7f.00.00.02.00.72.35
+F f 1 "part.part_1"
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "/home/ece_lab/mentor/ECE4500/HW3/function_hw3/schematic" 1 mgc_schematic 5baa8b9e9a28.03.7f.00.00.02.01.72.35 5baa8b9e9a28.03.7f.00.00.02.00.72.35
+P "eddm__refer_state" "eddm__refer_floating"

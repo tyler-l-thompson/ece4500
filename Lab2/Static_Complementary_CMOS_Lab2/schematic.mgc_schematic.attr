@@ -1,13 +1,13 @@
-A 5 u mgc_schematic 5b9fd6560b1e.03.7f.00.00.02.00.16.da 7 2 1 0
-V v 5 1 5b9fdc8d4f3c.03.7f.00.00.02.00.16.da
+A 5 u mgc_schematic 5b9fd6560b1e.03.7f.00.00.02.00.16.da 19 2 1 0
+V v 17 1 5ba18fce4912.03.7f.00.00.02.00.45.77
 F o 0 ""
-V v 6 1 5b9fdcdb32cf.03.7f.00.00.02.00.16.da
+V v 18 1 5baa9493dd32.03.7f.00.00.02.00.7a.2e
 F o 0 ""
-V v 7 1 5b9fdcf2dfc0.03.7f.00.00.02.00.16.da
+V v 19 1 5baaae7d3c84.03.7f.00.00.02.00.07.c7
 F o 0 ""
-O 7
-R cspuv 0 "/home/ece_lab/mentor/ECE4500/Lab2/Static_Complementary_CMOS_Lab2/schematic/sheet1" 6 mgc_sheet 5b9fdcf2df9a.03.7f.00.00.02.00.16.da 5b9fd6560bd9.03.7f.00.00.02.00.16.da
-O 6
-R cspuv 0 "/home/ece_lab/mentor/ECE4500/Lab2/Static_Complementary_CMOS_Lab2/schematic/sheet1" 5 mgc_sheet 5b9fdcdb32b1.03.7f.00.00.02.00.16.da 5b9fd6560bd9.03.7f.00.00.02.00.16.da
-O 5
-R cspuv 0 "/home/ece_lab/mentor/ECE4500/Lab2/Static_Complementary_CMOS_Lab2/schematic/sheet1" 4 mgc_sheet 5b9fdc8d4f2f.03.7f.00.00.02.00.16.da 5b9fd6560bd9.03.7f.00.00.02.00.16.da
+O 19
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Lab2/Static_Complementary_CMOS_Lab2/schematic/sheet1" 18 mgc_sheet 5baaae7d3c6f.03.7f.00.00.02.00.07.c7 5b9fd6560bd9.03.7f.00.00.02.00.16.da
+O 18
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Lab2/Static_Complementary_CMOS_Lab2/schematic/sheet1" 17 mgc_sheet 5baa9493dd0d.03.7f.00.00.02.00.7a.2e 5b9fd6560bd9.03.7f.00.00.02.00.16.da
+O 17
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Lab2/Static_Complementary_CMOS_Lab2/schematic/sheet1" 16 mgc_sheet 5ba18fce4902.03.7f.00.00.02.00.45.77 5b9fd6560bd9.03.7f.00.00.02.00.16.da

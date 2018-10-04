@@ -1,0 +1,13 @@
+A 5 u mgc_schematic 5bb23c86adc6.03.7f.00.00.02.00.36.79 27 2 1 0
+V v 25 1 5bb269c0d4d6.03.7f.00.00.02.00.36.79
+F o 0 ""
+V v 26 1 5bb26a6534a4.03.7f.00.00.02.00.36.79
+F o 0 ""
+V v 27 1 5bb501c97039.03.7f.00.00.02.00.36.79
+F o 0 ""
+O 27
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Lab4/schematic/sheet1" 26 mgc_sheet 5bb501c97012.03.7f.00.00.02.00.36.79 5bb23c86ae10.03.7f.00.00.02.00.36.79
+O 26
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Lab4/schematic/sheet1" 25 mgc_sheet 5bb26a653487.03.7f.00.00.02.00.36.79 5bb23c86ae10.03.7f.00.00.02.00.36.79
+O 25
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Lab4/schematic/sheet1" 24 mgc_sheet 5bb269c0d4b5.03.7f.00.00.02.00.36.79 5bb23c86ae10.03.7f.00.00.02.00.36.79

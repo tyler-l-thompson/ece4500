@@ -1,0 +1,26 @@
+* Component: /home/ece_lab/mentor/ECE4500/Lab2/Static_Complementary_CMOS_Lab2  Viewpoint: eldonet
+.INCLUDE /home/ece_lab/mentor/ECE4500/Lab2/Static_Complementary_CMOS_Lab2/eldonet/Static_Complementary_CMOS_Lab2_eldonet.spi
+.INCLUDE /home/ece_lab/mentor/mgc/mit_0.25.lib
+.OPTION NOASCII
+.OPTION MODWL
+.OPTION ENGNOT
+.OPTION AEX
+
+* --- Singles
+
+* - Analysis Setup - Trans
+.TRAN 0 800N 0N 100N
+
+* --- Waveform Outputs
+.PROBE TRAN V(A_18) V(B_18) V(C_NOT_18) V(F_18)
+
+* --- Params
+.TEMP 27
+
+* --- Forces
+VFORCE__A_3 C_NOT_18 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 11110000 R
+VFORCE__A B_18 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 00110011 R
+VFORCE__A_1 A_18 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 01010101 R
+
+* --- Libsetup
+

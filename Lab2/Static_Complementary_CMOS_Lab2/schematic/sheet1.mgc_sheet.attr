@@ -1,17 +1,17 @@
-A 5 u mgc_sheet 5b9fd6560bd9.03.7f.00.00.02.00.16.da 6 2 15 0
-V v 4 3 5b9fdc8d4f2f.03.7f.00.00.02.00.16.da
-F f 4 "sheet1.ssht_4"
-F f 4 "sheet1.sgfx_4"
-F o 0 
-V v 5 3 5b9fdcdb32b1.03.7f.00.00.02.00.16.da
-F f 5 "sheet1.ssht_5"
-F f 5 "sheet1.sgfx_5"
-F o 0 
-V v 6 3 5b9fdcf2df9a.03.7f.00.00.02.00.16.da
-F f 6 "sheet1.ssht_6"
-F f 6 "sheet1.sgfx_6"
-F o 0 
-O 6
+A 5 u mgc_sheet 5b9fd6560bd9.03.7f.00.00.02.00.16.da 18 2 17 0
+V v 16 3 5ba18fce4902.03.7f.00.00.02.00.45.77
+F f 16 "sheet1.ssht_16"
+F f 16 "sheet1.sgfx_16"
+F o 0 ""
+V v 17 3 5baa9493dd0d.03.7f.00.00.02.00.7a.2e
+F f 17 "sheet1.ssht_17"
+F f 17 "sheet1.sgfx_17"
+F o 0 ""
+V v 18 3 5baaae7d3c6f.03.7f.00.00.02.00.07.c7
+F f 18 "sheet1.ssht_18"
+F f 18 "sheet1.sgfx_18"
+F o 0 ""
+O 18
 P "eddm__stream_to_use" "eddm__propl_dstream"
 R csduv 0 "/home/ece_lab/mentor/ECE4500/Lab2/Static_Complementary_CMOS_Lab2/schematic" 1 mgc_schematic 5b9fd6560b1e.03.7f.00.00.02.01.16.da 5b9fd6560b1e.03.7f.00.00.02.00.16.da
 R csduv 1 "$MGC_DESIGN_KIT/symbols/pmos/part" 6 Eddm_part 39dcb70a738a.03.93.22.22.3e.00.2e.08 399d7e54bb91.03.93.22.22.3e.00.4c.5c
@@ -26,9 +26,7 @@ R csduv 9 "$MGC_DESIGN_KIT/symbols/vss/part" 1 Eddm_part 3597fafab24d.03.86.56.3
 R csduv 10 "$MGC_DESIGN_KIT/symbols/vss/vss" 1 mgc_symbol 359806396644.03.86.56.31.87.00.1b.10 399d7a63280e.03.93.22.22.3e.00.28.aa
 R csduv 11 "$MGC_DESIGN_KIT/symbols/vdd/part" 1 Eddm_part 3597fa6cdda4.03.86.56.31.87.00.1a.94 399d7a63280d.03.93.22.22.3e.03.28.aa
 R csduv 12 "$MGC_DESIGN_KIT/symbols/vdd/vdd" 1 mgc_symbol 3598062d64ad.03.86.56.31.87.00.1b.10 399d7a63280d.03.93.22.22.3e.02.28.aa
-R csduv 13 "$MGC_DESIGN_KIT/symbols/dc_v_source/part" 1 Eddm_part 3890a89d50f5.03.86.56.31.70.00.34.2e 399db67c7221.03.93.22.22.3e.04.28.aa
-R csduv 14 "$MGC_DESIGN_KIT/symbols/dc_v_source/dc_v_source" 1 mgc_symbol 3890a89d50ce.03.86.56.31.70.00.34.2e 399db67c7221.03.93.22.22.3e.05.28.aa
-O 5
+O 17
 P "eddm__stream_to_use" "eddm__propl_dstream"
 R csduv 0 "/home/ece_lab/mentor/ECE4500/Lab2/Static_Complementary_CMOS_Lab2/schematic" 1 mgc_schematic 5b9fd6560b1e.03.7f.00.00.02.01.16.da 5b9fd6560b1e.03.7f.00.00.02.00.16.da
 R csduv 1 "$MGC_DESIGN_KIT/symbols/pmos/part" 6 Eddm_part 39dcb70a738a.03.93.22.22.3e.00.2e.08 399d7e54bb91.03.93.22.22.3e.00.4c.5c
@@ -43,9 +41,9 @@ R csduv 9 "$MGC_DESIGN_KIT/symbols/vss/part" 1 Eddm_part 3597fafab24d.03.86.56.3
 R csduv 10 "$MGC_DESIGN_KIT/symbols/vss/vss" 1 mgc_symbol 359806396644.03.86.56.31.87.00.1b.10 399d7a63280e.03.93.22.22.3e.00.28.aa
 R csduv 11 "$MGC_DESIGN_KIT/symbols/vdd/part" 1 Eddm_part 3597fa6cdda4.03.86.56.31.87.00.1a.94 399d7a63280d.03.93.22.22.3e.03.28.aa
 R csduv 12 "$MGC_DESIGN_KIT/symbols/vdd/vdd" 1 mgc_symbol 3598062d64ad.03.86.56.31.87.00.1b.10 399d7a63280d.03.93.22.22.3e.02.28.aa
-R csduv 13 "$MGC_DESIGN_KIT/symbols/dc_v_source/part" 1 Eddm_part 3890a89d50f5.03.86.56.31.70.00.34.2e 399db67c7221.03.93.22.22.3e.04.28.aa
-R csduv 14 "$MGC_DESIGN_KIT/symbols/dc_v_source/dc_v_source" 1 mgc_symbol 3890a89d50ce.03.86.56.31.70.00.34.2e 399db67c7221.03.93.22.22.3e.05.28.aa
-O 4
+R csduv 15 "$MGC_DESIGN_KIT/symbols/dc_v_source/part" 1 Eddm_part 3890a89d50f5.03.86.56.31.70.00.34.2e 399db67c7221.03.93.22.22.3e.04.28.aa
+R csduv 16 "$MGC_DESIGN_KIT/symbols/dc_v_source/dc_v_source" 1 mgc_symbol 3890a89d50ce.03.86.56.31.70.00.34.2e 399db67c7221.03.93.22.22.3e.05.28.aa
+O 16
 P "eddm__stream_to_use" "eddm__propl_dstream"
 R csduv 0 "/home/ece_lab/mentor/ECE4500/Lab2/Static_Complementary_CMOS_Lab2/schematic" 1 mgc_schematic 5b9fd6560b1e.03.7f.00.00.02.01.16.da 5b9fd6560b1e.03.7f.00.00.02.00.16.da
 R csduv 1 "$MGC_DESIGN_KIT/symbols/pmos/part" 6 Eddm_part 39dcb70a738a.03.93.22.22.3e.00.2e.08 399d7e54bb91.03.93.22.22.3e.00.4c.5c
