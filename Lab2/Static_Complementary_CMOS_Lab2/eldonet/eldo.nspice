@@ -1,13 +1,22 @@
+<<<<<<< HEAD
 * ELDO netlist generated with ICnet by 'ece_lab' on Tue Sep 25 2018 at 16:04:09
+=======
+* ELDO netlist generated with ICnet by 'ece_lab' on Tue Sep 18 2018 at 13:40:42
+>>>>>>> 559099fafff1d2d3bda55f28cce54ae15be693ac
 
 *
 * Globals.
 *
+<<<<<<< HEAD
 .global VSS VDD
+=======
+.global vss vdd
+>>>>>>> 559099fafff1d2d3bda55f28cce54ae15be693ac
 
 *
 * MAIN CELL: Component pathname : /home/ece_lab/mentor/ECE4500/Lab2/Static_Complementary_CMOS_Lab2
 *
+<<<<<<< HEAD
         V1 VDD VSS DC 2.5V
         M6 N$9 A_18 VSS VSS NMOS L=1.2u W=2.0u M=1
         M5 N$9 B_18 VSS VSS NMOS L=1.2u W=2.0u M=1
@@ -15,5 +24,14 @@
         M3 F_18 B_18 N$33 VDD PMOS L=1.2u W=7.5u M=1
         M2 N$33 A_18 VDD VDD PMOS L=1.2u W=7.5u M=1
         M1 F_18 C_NOT_18 VDD VDD PMOS L=1.2u W=3.5u M=1
+=======
+        v1 vdd vss DC 2.5V
+        m6 n$9 a vss vss NMOS L=1.2u W=2.0u M=1
+        m5 n$9 b vss vss NMOS L=1.2u W=2.0u M=1
+        m4 f cnot n$9 vss NMOS L=1.2u W=3.0u M=1
+        m3 f b n$16 n$16 PMOS L=1.2u W=7.5u M=1
+        m2 n$16 a vdd vdd PMOS L=1.2u W=7.5u M=1
+        m1 f cnot vdd vdd PMOS L=1.2u W=3.5u M=1
+>>>>>>> 559099fafff1d2d3bda55f28cce54ae15be693ac
 *
 .end

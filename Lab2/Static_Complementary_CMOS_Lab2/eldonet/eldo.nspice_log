@@ -12,7 +12,11 @@
 //
 
 
+<<<<<<< HEAD
 //  Invocation args:  -eldo -o /home/ece_lab/mentor/ECE4500/Lab2/Static_Complementary_CMOS_Lab2/eldonet/Static_Complementary_CMOS_Lab2_eldonet.spi -check -upper -dmsfile /home/ece_lab/mentor/ECE4500/Lab2/Static_Complementary_CMOS_Lab2/eldonet/design.dms /home/ece_lab/mentor/ECE4500/Lab2/Static_Complementary_CMOS_Lab2/eldonet
+=======
+//  Invocation args:  -force /home/ece_lab/mentor/ECE4500/Lab2/Static_Complementary_CMOS_Lab2/eldonet
+>>>>>>> 559099fafff1d2d3bda55f28cce54ae15be693ac
 
 // **** Reading </home/ece_lab/mentor/ECE4500/Lab2/Static_Complementary_CMOS_Lab2/eldonet> for ELDO netlist ****
 
