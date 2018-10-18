@@ -1,13 +1,40 @@
+<<<<<<< HEAD
 A 5 u mgc_schematic 5ba1395548a5.03.7f.00.00.02.00.1c.e9 6 2 1 0
+=======
+<<<<<<< HEAD
+A 5 u mgc_schematic 5ba1395548a5.03.7f.00.00.02.00.1c.e9 6 2 1 0
+=======
+A 5 u mgc_schematic 5ba1395548a5.03.7f.00.00.02.00.1c.e9 5 2 1 0
+V v 3 1 5ba13aa0ce61.03.7f.00.00.02.00.1c.e9
+F o 0 ""
+>>>>>>> 559099fafff1d2d3bda55f28cce54ae15be693ac
+>>>>>>> eba9bbe16f1a19bb044a525d797ef239c37b2ce1
 V v 4 1 5ba13eb50586.03.7f.00.00.02.00.1c.e9
 F o 0 ""
 V v 5 1 5ba14e60c277.03.7f.00.00.02.00.1c.e9
 F o 0 ""
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> eba9bbe16f1a19bb044a525d797ef239c37b2ce1
 V v 6 1 5ba166b4104a.03.7f.00.00.02.00.1c.e9
 F o 0 ""
 O 6
 R cspuv 0 "/home/ece_lab/mentor/ECE4500/HW2/HW2/schematic/sheet1" 5 mgc_sheet 5ba166b4102d.03.7f.00.00.02.00.1c.e9 5ba139554951.03.7f.00.00.02.00.1c.e9
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 559099fafff1d2d3bda55f28cce54ae15be693ac
+>>>>>>> eba9bbe16f1a19bb044a525d797ef239c37b2ce1
 O 5
 R cspuv 0 "/home/ece_lab/mentor/ECE4500/HW2/HW2/schematic/sheet1" 4 mgc_sheet 5ba14e60c260.03.7f.00.00.02.00.1c.e9 5ba139554951.03.7f.00.00.02.00.1c.e9
 O 4
 R cspuv 0 "/home/ece_lab/mentor/ECE4500/HW2/HW2/schematic/sheet1" 3 mgc_sheet 5ba13eb50562.03.7f.00.00.02.00.1c.e9 5ba139554951.03.7f.00.00.02.00.1c.e9
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+O 3
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/HW2/HW2/schematic/sheet1" 2 mgc_sheet 5ba13aa0ce4b.03.7f.00.00.02.00.1c.e9 5ba139554951.03.7f.00.00.02.00.1c.e9
+>>>>>>> 559099fafff1d2d3bda55f28cce54ae15be693ac
+>>>>>>> eba9bbe16f1a19bb044a525d797ef239c37b2ce1

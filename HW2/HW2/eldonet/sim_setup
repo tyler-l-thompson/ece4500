@@ -346,7 +346,15 @@ $$set_sim_value("vsim_netlist_run_viewer_flag",0);
 
 // Netlister Options
 $$set_sim_value("sim_eldonet_check",@false);
+<<<<<<< HEAD
 $$set_sim_value("sim_eldonet_timestamp",1537368428);
+=======
+<<<<<<< HEAD
+$$set_sim_value("sim_eldonet_timestamp",1537368428);
+=======
+$$set_sim_value("sim_eldonet_timestamp",1537303946);
+>>>>>>> 559099fafff1d2d3bda55f28cce54ae15be693ac
+>>>>>>> eba9bbe16f1a19bb044a525d797ef239c37b2ce1
 $$set_sim_value("sim_netlist_run_viewer_flag",1);
 $$set_sim_value("sim_netlist_uptodate_check_flag",@yes);
 $$set_sim_value("sim_netlister_additional_globals","");

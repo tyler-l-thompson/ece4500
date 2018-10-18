@@ -5,7 +5,15 @@
 // Working Directories
 $$set_sim_value("sim_dms_file","/home/ece_lab/mentor/ECE4500/Lab2/Static_Complementary_CMOS_Lab2/eldonet/design.dms");
 $$set_sim_value("sim_simulation_depository","/home/ece_lab/mentor/ECE4500/Lab2/Static_Complementary_CMOS_Lab2/eldonet");
+<<<<<<< HEAD
 $$set_sim_value("sim_working_directory","/home/ece_lab/mentor/ECE4500/Lab2");
+=======
+<<<<<<< HEAD
+$$set_sim_value("sim_working_directory","/home/ece_lab/mentor/ECE4500/Lab2");
+=======
+$$set_sim_value("sim_working_directory","/home/ece_lab/mentor");
+>>>>>>> 559099fafff1d2d3bda55f28cce54ae15be693ac
+>>>>>>> eba9bbe16f1a19bb044a525d797ef239c37b2ce1
 $$set_sim_value("vsim_working_directory","/home/ece_lab/mentor");
 
 // Sweeps
@@ -241,7 +249,14 @@ $$set_sim_value("sim_monitor_font","stroke");
 $$set_sim_value("sim_monitor_font_half_height",@true);
 $$set_sim_value("sim_monitor_font_size","1");
 $$set_sim_value("sim_monitor_imported_to_sim_settings",@true);
+<<<<<<< HEAD
 $$set_sim_value("sim_ss_show_dialog",@true);
+=======
+<<<<<<< HEAD
+$$set_sim_value("sim_ss_show_dialog",@true);
+=======
+>>>>>>> 559099fafff1d2d3bda55f28cce54ae15be693ac
+>>>>>>> eba9bbe16f1a19bb044a525d797ef239c37b2ce1
 
 // Safe Operating Area
 $$set_sim_value("sim_soa_result","");
@@ -260,7 +275,15 @@ $$set_sim_value("sim_simulator",@eldo);
 $$set_sim_value("sim_parameters_vector",[]);
 
 // Includes
+<<<<<<< HEAD
 $$set_sim_value("sim_include_vector",["/home/ece_lab/mentor/mgc/mit_0.25.lib"]);
+=======
+<<<<<<< HEAD
+$$set_sim_value("sim_include_vector",["/home/ece_lab/mentor/mgc/mit_0.25.lib"]);
+=======
+$$set_sim_value("sim_include_vector",[]);
+>>>>>>> 559099fafff1d2d3bda55f28cce54ae15be693ac
+>>>>>>> eba9bbe16f1a19bb044a525d797ef239c37b2ce1
 
 // Model Libraries
 $$set_sim_value("model_lib_scenarios_sm",[]);
@@ -282,12 +305,27 @@ $$set_sim_value("sim_adit_command_default","$MGC_AMS_HOME/bin/adit");
 $$set_sim_value("sim_adit_command_options",[["<input_file>", ""], ["-outpath", "<simulation_depository>"]]);
 $$set_sim_value("sim_adms_command","$MGC_AMS_HOME/bin/vasim");
 $$set_sim_value("sim_adms_command_default","$MGC_AMS_HOME/bin/vasim");
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> eba9bbe16f1a19bb044a525d797ef239c37b2ce1
 $$set_sim_value("sim_adms_command_options",[["-c"], ["-cmd", "<input_file>"], ["-do", "$MGC_HOME/shared/pkgs/daicsim/userware/En_na/do_top_eldo.do"]]);
 $$set_sim_value("sim_command","$MGC_AMS_HOME/bin/eldo");
 $$set_sim_value("sim_command_options",[["-i", "<input_file>"], ["-o", "<output_file>"], ["-nocou"], ["-gwl", "jwdb"], ["-wdb_folder"]]);
 $$set_sim_value("sim_eldo_command","$MGC_AMS_HOME/bin/eldo");
 $$set_sim_value("sim_eldo_command_default","$MGC_AMS_HOME/bin/eldo");
 $$set_sim_value("sim_eldo_command_options",[["-i", "<input_file>"], ["-o", "<output_file>"], ["-nocou"], ["-gwl", "jwdb"], ["-wdb_folder"]]);
+<<<<<<< HEAD
+=======
+=======
+$$set_sim_value("sim_adms_command_options",[["-c"], ["-cmd", "<input_file>"], ["-do", "$MGC_HOME/shared/pkgs/daicsim/userware/En_na/do_top_eldo.do"], ["-wdb"]]);
+$$set_sim_value("sim_command","$MGC_AMS_HOME/bin/eldo");
+$$set_sim_value("sim_command_options",[["-i", "<input_file>"], ["-o", "<output_file>"], ["-gwl", "jwdb"], ["-nocou"], ["-wdb_folder"]]);
+$$set_sim_value("sim_eldo_command","$MGC_AMS_HOME/bin/eldo");
+$$set_sim_value("sim_eldo_command_default","$MGC_AMS_HOME/bin/eldo");
+$$set_sim_value("sim_eldo_command_options",[["-i", "<input_file>"], ["-o", "<output_file>"], ["-gwl", "jwdb"], ["-nocou"], ["-wdb_folder"]]);
+>>>>>>> 559099fafff1d2d3bda55f28cce54ae15be693ac
+>>>>>>> eba9bbe16f1a19bb044a525d797ef239c37b2ce1
 $$set_sim_value("sim_ezwave_ht",700);
 $$set_sim_value("sim_ezwave_marching_wfms",@false);
 $$set_sim_value("sim_ezwave_viewer_command","$MGC_AMS_HOME/bin/ezwave");
@@ -296,7 +334,14 @@ $$set_sim_value("sim_ezwave_wd",700);
 $$set_sim_value("sim_hspice_command","$MGC_HOME/bin/run_hspice");
 $$set_sim_value("sim_hspice_command_default","$MGC_HOME/bin/run_hspice");
 $$set_sim_value("sim_hspice_command_options",[["", "<input_file>"], ["", "<netlist_file>"], ["", "<output_file>"]]);
+<<<<<<< HEAD
 $$set_sim_value("sim_input_netlist","Static_Complementary_CMOS_Lab2_eldonet.spi");
+=======
+<<<<<<< HEAD
+$$set_sim_value("sim_input_netlist","Static_Complementary_CMOS_Lab2_eldonet.spi");
+=======
+>>>>>>> 559099fafff1d2d3bda55f28cce54ae15be693ac
+>>>>>>> eba9bbe16f1a19bb044a525d797ef239c37b2ce1
 $$set_sim_value("sim_model_editor",@text);
 $$set_sim_value("sim_model_editor_cmd","");
 $$set_sim_value("sim_modelsim_command","$MGC_AMS_HOME/modeltech/bin/vsim");
@@ -306,7 +351,14 @@ $$set_sim_value("sim_modelsim_path","$MGC_AMS_HOME/modeltech");
 $$set_sim_value("sim_other_command","");
 $$set_sim_value("sim_other_command_default","");
 $$set_sim_value("sim_other_command_options",[]);
+<<<<<<< HEAD
 $$set_sim_value("sim_output_file","Static_Complementary_CMOS_Lab2_eldonet.chi");
+=======
+<<<<<<< HEAD
+$$set_sim_value("sim_output_file","Static_Complementary_CMOS_Lab2_eldonet.chi");
+=======
+>>>>>>> 559099fafff1d2d3bda55f28cce54ae15be693ac
+>>>>>>> eba9bbe16f1a19bb044a525d797ef239c37b2ce1
 $$set_sim_value("sim_run_viewer",@true);
 $$set_sim_value("sim_simulation_type",@mixed);
 $$set_sim_value("sim_smartspice_command","$MGC_HOME/bin/run_smsp");
@@ -345,8 +397,18 @@ $$set_sim_value("vsim_library","work");
 $$set_sim_value("vsim_netlist_run_viewer_flag",0);
 
 // Netlister Options
+<<<<<<< HEAD
 $$set_sim_value("sim_eldonet_check",@false);
 $$set_sim_value("sim_eldonet_timestamp",1537905851);
+=======
+<<<<<<< HEAD
+$$set_sim_value("sim_eldonet_check",@false);
+$$set_sim_value("sim_eldonet_timestamp",1537905851);
+=======
+$$set_sim_value("sim_eldonet_check",@true);
+$$set_sim_value("sim_eldonet_timestamp",-1);
+>>>>>>> 559099fafff1d2d3bda55f28cce54ae15be693ac
+>>>>>>> eba9bbe16f1a19bb044a525d797ef239c37b2ce1
 $$set_sim_value("sim_netlist_run_viewer_flag",1);
 $$set_sim_value("sim_netlist_uptodate_check_flag",@yes);
 $$set_sim_value("sim_netlister_additional_globals","");
@@ -415,7 +477,15 @@ $$set_sim_value("sim_parasitics_vector",[]);
 $$set_sim_value("sim_to_vector",[]);
 
 // Node Zero
+<<<<<<< HEAD
 $$set_sim_value("node_0_entry","VSS");
+=======
+<<<<<<< HEAD
+$$set_sim_value("node_0_entry","VSS");
+=======
+$$set_sim_value("node_0_entry","GROUND");
+>>>>>>> 559099fafff1d2d3bda55f28cce54ae15be693ac
+>>>>>>> eba9bbe16f1a19bb044a525d797ef239c37b2ce1
 $$set_sim_value("node_0_entry_sm","//ground");
 $$set_sim_value("sim_node_0_set",@true);
 

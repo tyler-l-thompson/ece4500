@@ -1,6 +1,13 @@
 * Component: /home/ece_lab/mentor/ECE4500/Lab2/Static_Complementary_CMOS_Lab2  Viewpoint: eldonet
 .INCLUDE /home/ece_lab/mentor/ECE4500/Lab2/Static_Complementary_CMOS_Lab2/eldonet/Static_Complementary_CMOS_Lab2_eldonet.spi
+<<<<<<< HEAD
 .INCLUDE /home/ece_lab/mentor/mgc/mit_0.25.lib
+=======
+<<<<<<< HEAD
+.INCLUDE /home/ece_lab/mentor/mgc/mit_0.25.lib
+=======
+>>>>>>> 559099fafff1d2d3bda55f28cce54ae15be693ac
+>>>>>>> eba9bbe16f1a19bb044a525d797ef239c37b2ce1
 .OPTION NOASCII
 .OPTION MODWL
 .OPTION ENGNOT
@@ -8,6 +15,10 @@
 
 * --- Singles
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> eba9bbe16f1a19bb044a525d797ef239c37b2ce1
 * - Analysis Setup - Trans
 .TRAN 0 800N 0N 100N
 
@@ -22,5 +33,13 @@ VFORCE__A_3 C_NOT_18 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 11110000 R
 VFORCE__A B_18 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 00110011 R
 VFORCE__A_1 A_18 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 01010101 R
 
+<<<<<<< HEAD
+=======
+=======
+* --- Params
+.TEMP 27
+
+>>>>>>> 559099fafff1d2d3bda55f28cce54ae15be693ac
+>>>>>>> eba9bbe16f1a19bb044a525d797ef239c37b2ce1
 * --- Libsetup
 

@@ -4,7 +4,15 @@
 .CONNECT VSS 0
 
 
+<<<<<<< HEAD
 * ELDO netlist generated with ICnet by 'ece_lab' on Wed Sep 19 2018 at 10:47:02
+=======
+<<<<<<< HEAD
+* ELDO netlist generated with ICnet by 'ece_lab' on Wed Sep 19 2018 at 10:47:02
+=======
+* ELDO netlist generated with ICnet by 'ece_lab' on Tue Sep 18 2018 at 16:52:25
+>>>>>>> 559099fafff1d2d3bda55f28cce54ae15be693ac
+>>>>>>> eba9bbe16f1a19bb044a525d797ef239c37b2ce1
 
 *
 * Globals.

@@ -9,7 +9,15 @@
 * --- Singles
 
 * - Analysis Setup - DC
+<<<<<<< HEAD
 .DC V2 0 2.5 0.00001
+=======
+<<<<<<< HEAD
+.DC V2 0 2.5 0.00001
+=======
+.DC V2 2.5 0 -0.1
+>>>>>>> 559099fafff1d2d3bda55f28cce54ae15be693ac
+>>>>>>> eba9bbe16f1a19bb044a525d797ef239c37b2ce1
 
 * --- Waveform Outputs
 .PROBE DC V(IN) V(OUT)

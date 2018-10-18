@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> eba9bbe16f1a19bb044a525d797ef239c37b2ce1
 A 5 u mgc_cms_sim_db 5ba1389a63cd.03.7f.00.00.02.00.17.01 9 2 0 0
 V v 7 1 5ba18909cee5.03.7f.00.00.02.00.2e.66
 F f 7 "sim_settings.simdb_7"
@@ -8,3 +12,12 @@ F f 9 "sim_settings.simdb_9"
 O 9
 O 8
 O 7
+<<<<<<< HEAD
+=======
+=======
+A 5 u mgc_cms_sim_db 5ba1389a63cd.03.7f.00.00.02.00.17.01 1 2 0 0
+V v 1 1 5ba1389a63ce.03.7f.00.00.02.00.17.01
+F f 1 "sim_settings.simdb_1"
+O 1
+>>>>>>> 559099fafff1d2d3bda55f28cce54ae15be693ac
+>>>>>>> eba9bbe16f1a19bb044a525d797ef239c37b2ce1
