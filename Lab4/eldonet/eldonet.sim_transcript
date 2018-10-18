@@ -1,0 +1,189 @@
+
+Running eldo on linux-B210
+with Eldo libraries :
+/mgc/ams/ixl/lib/libeldoudm.so
+/mgc/ams/ixl/lib/libeldomos1.so
+/mgc/ams/ixl/lib/libeldoekv.so
+/mgc/ams/ixl/lib/libeldomosp9.so
+/mgc/ams/ixl/lib/libeldocsem.so
+/mgc/ams/ixl/lib/libeldomos2.so
+/mgc/ams/ixl/lib/libeldomos3.so
+/mgc/ams/ixl/lib/libeldobip.so
+/mgc/ams/ixl/lib/libeldodio.so
+/mgc/ams/ixl/lib/libeldojfet.so
+/mgc/ams/ixl/lib/libeldosoi.so
+/mgc/ams/ixl/lib/libeldomos4.so
+/mgc/ams/ixl/lib/libeldoasitft.so
+/mgc/ams/ixl/lib/libeldohisim.so
+/mgc/ams/ixl/lib/libeldospmod.so
+/mgc/ams/ixl/lib/libeldopsp.so
+/mgc/ams/ixl/lib/libeldomosvar.so
+/mgc/ams/ixl/lib/libeldomoto.so
+/mgc/ams/ixl/lib/libeldost.so
+/mgc/ams/ixl/lib/libeldobnr.so
+/mgc/ams/ixl/lib/libeldorockw.so
+/mgc/ams/ixl/lib/libeldopubhicum.so
+/mgc/ams/ixl/lib/libeldotftsh.so
+/mgc/ams/ixl/lib/libeldobta.so
+/mgc/ams/ixl/lib/libeldofas.so
+/mgc/ams/ixl/lib/libeldofascm.so
+/mgc/ams/ixl/lib/libeldosdsim.so
+/mgc/ams/ixl/lib/libeldowire.so
+/mgc/ams/ixl/lib/libogr.so loaded.
+
+
+
+              Software under License 
+       Copyright Mentor Graphics Corporation
+
+
+
+
+***** PRE-PROCESSING ...
+
+
+
+***** ANALYSIS ....
+
+Warning 316: In file "./mgc/mit_0.25.lib" line 62:
++   COMMAND .ENDS: The name does not match the .SUBCKT name.
+
+***** 0  error(s). 
+***** 1  warning(s). 
+
+
+
+***** GENERATION ...
+
+Warning 1615: In file "./ECE4500/Lab4/eldonet/Lab4_eldonet.cir" line 12:
++   COMMAND ".TRAN": Tstep can not be <= 0.0.
++   It is set to Tmax/20.0 = 4.000e-08 s.
+
+***** 0  error(s). 
+***** 2  warning(s). 
+
+
+INFORMATION ABOUT COMPILATION...
+
+
+Memory space allocated (bytes): 57942016
+20 elements
+10 nodes
+6 input signals
+
+
+Warning: A transition time < HMIN (1.000000e-12Sec) found on VFORCE__A
+HMIN assumed.. Set Eldo option 'HMIN' to a lower value if needed.
+
+
+Warning: A transition time < HMIN (1.000000e-12Sec) found on VFORCE__B
+HMIN assumed.. Set Eldo option 'HMIN' to a lower value if needed.
+
+
+Warning: A transition time < HMIN (1.000000e-12Sec) found on VFORCE__BNOT
+HMIN assumed.. Set Eldo option 'HMIN' to a lower value if needed.
+
+
+Warning: A transition time < HMIN (1.000000e-12Sec) found on VFORCE__CIN
+HMIN assumed.. Set Eldo option 'HMIN' to a lower value if needed.
+
+
+Warning: A transition time < HMIN (1.000000e-12Sec) found on VFORCE__CINNOT
+HMIN assumed.. Set Eldo option 'HMIN' to a lower value if needed.
+ Reset internal minimun time step.
+hmin value is 2.500000e-04Nanos
+
+Eldo VERSION : ELDO 2010.1 Thu Jul  1 14:15:09 GMT 2010
+
+*** DATE:  2-Oct-2018 18:08:22
+
+*** TITLE: * Component: /home/ece_lab/mentor/ECE4500/Lab4  Viewpoint: eldonet
+
+TEMPERATURE : 27.000000 degrees C
+
+ Reset internal minimun time step.
+hmin value is 2.500000e-04Nanos
+
+Performing DC analysis...
+
+--> Partitioning circuit...
+
+***> DC CPU TIME 0s 000ms <***
+
+DC:8 iterations FOR DC analysis
+A_18          0.0000     
+BNOT_18       2.5000     
+B_18          0.0000     
+CINNOT_18     2.5000     
+CIN_18        0.0000     
+COUT_18       45.7591P   
+N$221         26.6761N   
+N$253         2.5000     
+SUM_18        39.9971N   
+VDD           2.5000     
+
+   TOTAL POWER DISSIPATION:  28.6511P    WATTS
+
+
+Eldo NEWTON: VNTOL=1.000000e-06 RELTOL=7.500000e-04
+
+Connecting to JWDB server, please wait...
+connected to wdb server : -jwdbhost linux-B210 -jwdbport 49772
+
+Compute from 0.000000 Nano to 800.000000 Nano
+................................................
+Simulation progress           : 10% (t = 99.9995 N)
+Elapsed CPU time              :  0h  0mn  0s   0    ( 0h  0mn  0s   0)
+................................................
+Simulation progress           : 20% (t = 172.2098 N)
+Elapsed CPU time              :  0h  0mn  0s  10    ( 0h  0mn  0s  10)
+................................................
+Simulation progress           : 30% (t = 278.1432 N)
+Elapsed CPU time              :  0h  0mn  0s  10    ( 0h  0mn  0s  20)
+................................................
+Simulation progress           : 40% (t = 325.6573 N)
+Elapsed CPU time              :  0h  0mn  0s   0    ( 0h  0mn  0s  20)
+................................................
+Simulation progress           : 50% (t = 400.0000 N)
+Elapsed CPU time              :  0h  0mn  0s   0    ( 0h  0mn  0s  20)
+................................................
+Simulation progress           : 60% (t = 492.2587 N)
+Elapsed CPU time              :  0h  0mn  0s  10    ( 0h  0mn  0s  30)
+................................................
+Simulation progress           : 70% (t = 599.9995 N)
+Elapsed CPU time              :  0h  0mn  0s   0    ( 0h  0mn  0s  30)
+................................................
+Simulation progress           : 80% (t = 640.1354 N)
+Elapsed CPU time              :  0h  0mn  0s  10    ( 0h  0mn  0s  40)
+................................................
+Simulation progress           : 90% (t = 725.1781 N)
+Elapsed CPU time              :  0h  0mn  0s   0    ( 0h  0mn  0s  40)
+................................................
+Simulation progress           : 100% (t = 800.0000 N)
+Elapsed CPU time              :  0h  0mn  0s  10    ( 0h  0mn  0s  50)
+
+
+***>Current simulation completed
+
+
+
+
+SIMULATION INFORMATION 
+memory size allocated in bytes 58544128
+Latency: 0.000000%
+average number of newton iterations: 3.079545
+nb of components: 41
+nb of nodes: 31
+nb of MOS or BIP calls: 27180
+Number of steps computed: 257
+
+***>CPU TIME 0s 050ms <***
+
+***>MESSAGE SUMMARY: 2 warnings
+
+***>GLOBAL CPU TIME 0s 060ms <***
+
+
+***>GLOBAL ELAPSED TIME 1s <***
+
+

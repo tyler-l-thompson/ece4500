@@ -1,0 +1,15 @@
+A 5 u Eddm_design_viewpoint 5bc8e6da95a6.03.7f.00.00.02.00.75.c0 1 2 7 0
+V v 1 4 5bc8e6da95a6.03.7f.00.00.02.01.75.c0
+F f 1 "two_input_mux2.dvpt_1"
+F o 0 
+F o 0 
+F o 0 
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Project1/two_input_mux/schematic" 5 mgc_schematic 5bc8bd838b75.03.7f.00.00.02.00.4a.34 5bc8ad793b80.03.7f.00.00.02.00.4a.34
+R cspuv 1 "/home/ece_lab/mentor/ECE4500/Project1/two_input_mux/part" 2 Eddm_part 5bc8bf2461ce.03.7f.00.00.02.00.4a.34 5bc8aeb267e5.03.7f.00.00.02.00.4a.34
+R cspuv 2 "/home/ece_lab/mentor/ECE4500/Project1/two_input_mux/two_input_mux" 1 mgc_symbol 5bc8bedf101a.03.7f.00.00.02.01.4a.34 5bc8bc896c09.03.7f.00.00.02.00.4a.34
+R cspuv 3 "$MGC_DESIGN_KIT/symbols/nmos/part" 7 Eddm_part 39dcb6d2c6cf.03.93.22.22.3e.00.2e.08 399d7e4745c6.03.93.22.22.3e.00.4c.5c
+R cspuv 4 "$MGC_DESIGN_KIT/symbols/pmos/part" 6 Eddm_part 39dcb70a738a.03.93.22.22.3e.00.2e.08 399d7e54bb91.03.93.22.22.3e.00.4c.5c
+R cspuv 5 "$MGC_DESIGN_KIT/symbols/pmos/pmos" 6 mgc_symbol 39dcb70a734b.03.93.22.22.3e.00.2e.08 399d7e54d47a.03.93.22.22.3e.00.4c.5c
+R cspuv 6 "$MGC_DESIGN_KIT/symbols/nmos/nmos" 7 mgc_symbol 39dcb6d2c689.03.93.22.22.3e.00.2e.08 399d7e475de3.03.93.22.22.3e.00.4c.5c

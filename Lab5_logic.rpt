@@ -1,0 +1,22 @@
+ Logic loading report
+ ====================
+
+ Top level Layout cell : Lab5
+ Eddm Logic source : /home/ece_lab/mentor/ECE4500/Lab5/Mux_Lab5/eldonet
+
+
+*** Existing cell /home/ece_lab/mentor/ECE4500/Lab5
+
+
+IGNORED CELLS
+=============
+Following primitive cells are ignored since they are not found
+in library(working directory) and @nocreate_prim option is used.
+Resync of library may be required.
+
+
+       Schematic instance name                   Physical cell name
+       -------------------------                 --------------------
+      /X5                                        c
+      /M32                                       mp
+      /M15                                       mn

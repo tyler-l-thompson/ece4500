@@ -1,0 +1,26 @@
+* Component: /home/ece_lab/mentor/ECE4500/HW3/function_hw3  Viewpoint: eldonet
+.INCLUDE /home/ece_lab/mentor/ECE4500/HW3/function_hw3/eldonet/function_hw3_eldonet.spi
+.INCLUDE /home/ece_lab/mentor/mgc/mit_0.25.lib
+.OPTION NOASCII
+.OPTION MODWL
+.OPTION ENGNOT
+.OPTION AEX
+
+* --- Singles
+
+* - Analysis Setup - Trans
+.TRAN 0 800N 0N 100N
+
+* --- Waveform Outputs
+.PROBE TRAN V(A) V(ANOT) V(B) V(CNOT) V(F)
+
+* --- Params
+.TEMP 27
+
+* --- Forces
+VFORCE__B B VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 00110011 R
+VFORCE__A_1 ANOT VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 11110000 R
+VFORCE__A_2 CNOT VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 10101010 R
+
+* --- Libsetup
+

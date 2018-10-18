@@ -1,0 +1,24 @@
+* ELDO netlist generated with ICnet by 'ece_lab' on Wed Oct 10 2018 at 17:04:54
+
+*
+* Globals.
+*
+.global VSS VDD
+
+
+*
+* Component pathname : $MGC_DESIGN_KIT/symbols/ncap [SPICE]
+*
+*       .include /mgc/v9.0d_rhelx86linux/icstation_home/mgc_icstd_lib/mit0.25/symbols/ncap/NCAP
+
+*
+* MAIN CELL: Component pathname : /home/ece_lab/mentor/ECE4500/HW5
+*
+        V1 VDD VSS DC 2.5V
+        X1 F VSS VSS NCAP CAPACITANCE=20f
+        M4 N$4 CNOT VSS VSS NMOS L=1.2u W=2.0u M=1
+        M3 F A VSS VSS NMOS L=1.2u W=2.0u M=1
+        M2 F B N$4 VSS NMOS L=1.2u W=2.0u M=1
+        M1 F VSS VDD VDD PMOS L=7.0u W=2.0u M=1
+*
+.end

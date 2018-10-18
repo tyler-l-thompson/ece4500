@@ -1,0 +1,110 @@
+# This file provides name mapping information for all objects
+# on the schematic design.  It provides a mapping for each
+# object between its name on the schematic and its name in the netlist.
+version 1.0
+
+Globals
+   VSS VSS
+   VDD VDD
+End Globals
+
+Cell NMOS
+   Pin D D
+   Pin G G
+   Pin S S
+End Cell
+
+Cell PMOS
+   Pin D D
+   Pin G G
+   Pin S S
+   Pin B B
+End Cell
+
+Cell NCAP
+   Pin POS POS
+   Pin NEG NEG
+End Cell
+
+Cell DC_V_SOURCE
+   Pin POS POS
+   Pin NEG NEG
+End Cell
+
+Cell #top#
+   Pin F_18 F_18
+   Pin clk_18 CLK_18
+   Pin clk_not_18 CLK_NOT_18
+   Pin I_0_18 I_0_18
+   Pin I_1_18 I_1_18
+   Pin I_2_18 I_2_18
+   Pin I_3_18 I_3_18
+   Pin Sel_0_18 SEL_0_18
+   Pin Sel_1_18 SEL_1_18
+   Net N$245 N$245
+   Net N$179 N$179
+   Net N$134 N$134
+   Net N$181 N$181
+   Net N$112 N$112
+   Net N$113 N$113
+   Net N$70 N$70
+   Net N$110 N$110
+   Net N$172 N$172
+   Net N$173 N$173
+   Net N$175 N$175
+   Net N$176 N$176
+   Net N$178 N$178
+   Net N$125 N$125
+   Net N$127 N$127
+   Net N$111 N$111
+   Net N$109 N$109
+   Net N$108 N$108
+   Net N$107 N$107
+   Net N$106 N$106
+   Net I_2_18 I_2_18
+   Net I_1_18 I_1_18
+   Net I_0_18 I_0_18
+   Net clk_not_18 CLK_NOT_18
+   Net clk_18 CLK_18
+   Net Sel_0_18 SEL_0_18
+   Net I_3_18 I_3_18
+   Net F_18 F_18
+   Net Sel_1_18 SEL_1_18
+   Global VSS VSS
+   Global VDD VDD
+   Inst M5 M5 NMOS
+   Inst M6 M6 NMOS
+   Inst M7 M7 PMOS
+   Inst M10 M10 NMOS
+   Inst X5 X5 NCAP
+   Inst M18 M18 PMOS
+   Inst M21 M21 NMOS
+   Inst M22 M22 NMOS
+   Inst M20 M20 NMOS
+   Inst M17 M17 NMOS
+   Inst M19 M19 PMOS
+   Inst M32 M32 PMOS
+   Inst M31 M31 PMOS
+   Inst M26 M26 NMOS
+   Inst M25 M25 NMOS
+   Inst M14 M14 NMOS
+   Inst M13 M13 NMOS
+   Inst M4 M4 PMOS
+   Inst M3 M3 PMOS
+   Inst M2 M2 PMOS
+   Inst M1 M1 NMOS
+   Inst M9 M9 NMOS
+   Inst M8 M8 PMOS
+   Inst M27 M27 PMOS
+   Inst M12 M12 PMOS
+   Inst M11 M11 PMOS
+   Inst M28 M28 PMOS
+   Inst M24 M24 NMOS
+   Inst M23 M23 NMOS
+   Inst M16 M16 PMOS
+   Inst M30 M30 PMOS
+   Inst M29 M29 PMOS
+   Inst V1 V1 DC_V_SOURCE
+   Inst M15 M15 NMOS
+End Cell
+

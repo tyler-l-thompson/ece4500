@@ -1,0 +1,10 @@
+A 5 u Ic_cell_template 5bc4b706140f.03.7f.00.00.02.00.40.5d 1 4 8 0
+V v 1 2 5bc4c31675c5.03.7f.00.00.02.00.40.5d
+F f 1 "Lab6.iccel_1"
+F o 0 
+O 1
+R csduv 1 "/home/ece_lab/mentor/mgc/mit_25" 8 Ic_persist_process 4d337a69d114.03.7f.00.00.01.00.3d.8c 3ae460ae24b4.03.93.22.22.3e.00.42.a5
+R csduv 2 "/home/ece_lab/mentor/ECE4500/Lab6/SRFlipFlop_Lab6/eldonet" 7 Eddm_design_viewpoint 5bc4b6793742.03.7f.00.00.02.00.24.6e 5bc3c52bb664.03.7f.00.00.02.00.24.6e
+R cmduv 3 "49052f642000.0d.00.01.a5.b0.00.00.00" 1 Ic_device_template 49fba4394000.0d.00.01.a5.b0.00.00.00 49052f642000.0d.00.01.a5.b0.00.00.00
+R csduv 4 "$MGC_DESIGN_KIT/process/MPOLY" 1 Ic_cell_template 39ca3bb71aba.03.89.ca.b5.8b.00.3d.46 39de40031d9d.03.93.22.22.3e.03.0a.d0
+R csdni 7 "/home/ece_lab/mentor/mgc/mit_25.rules" 1 Mgc_file

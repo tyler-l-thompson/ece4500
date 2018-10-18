@@ -1,0 +1,22 @@
+* ELDO netlist generated with ICnet by 'ece_lab' on Mon Oct 15 2018 at 11:46:04
+
+*
+* Globals.
+*
+.global VDD VSS
+
+*
+* MAIN CELL: Component pathname : /home/ece_lab/mentor/ECE4500/Lab6/SRFlipFlop_Lab6
+*
+        V2 R_18 VSS DC 2.5V
+        V1 VDD VSS DC 2.5V
+        M3 QN_18 QN_NOT_18 VSS VSS NMOS L=2.0u W=3.0u M=1
+        M8 N$10 R_18 VSS VSS NMOS L=2.0u W=12.0u M=1
+        M7 QN_18 CLK_18 N$10 VSS NMOS L=2.0u W=12.0u M=1
+        M6 N$5 S_18 VSS VSS NMOS L=2.0u W=12.0u M=1
+        M5 QN_NOT_18 CLK_18 N$5 VSS NMOS L=2.0u W=12.0u M=1
+        M4 QN_NOT_18 QN_18 VSS VSS NMOS L=2.0u W=3.0u M=1
+        M2 QN_NOT_18 QN_18 VDD VDD PMOS L=2.0u W=9.0u M=1
+        M1 QN_18 QN_NOT_18 VDD VDD PMOS L=2.0u W=9.0u M=1
+*
+.end

@@ -1,0 +1,13 @@
+A 5 u mgc_schematic 5bc3c0af4563.03.7f.00.00.02.00.24.6e 9 2 1 0
+V v 7 1 5bc4b68698fb.03.7f.00.00.02.00.24.6e
+F o 0 ""
+V v 8 1 5bc4b690c0cf.03.7f.00.00.02.00.24.6e
+F o 0 ""
+V v 9 1 5bc8ad264dbb.03.7f.00.00.02.00.45.3e
+F o 0 ""
+O 9
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Lab6/SRFlipFlop_Lab6/schematic/sheet1" 8 mgc_sheet 5bc8ad264da8.03.7f.00.00.02.00.45.3e 5bc3c0af45a5.03.7f.00.00.02.00.24.6e
+O 8
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Lab6/SRFlipFlop_Lab6/schematic/sheet1" 7 mgc_sheet 5bc4b690c0b8.03.7f.00.00.02.00.24.6e 5bc3c0af45a5.03.7f.00.00.02.00.24.6e
+O 7
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Lab6/SRFlipFlop_Lab6/schematic/sheet1" 6 mgc_sheet 5bc4b68698e1.03.7f.00.00.02.00.24.6e 5bc3c0af45a5.03.7f.00.00.02.00.24.6e

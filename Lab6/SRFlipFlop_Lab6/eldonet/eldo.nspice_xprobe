@@ -1,0 +1,55 @@
+# This file provides name mapping information for all objects
+# on the schematic design.  It provides a mapping for each
+# object between its name on the schematic and its name in the netlist.
+version 1.0
+
+Globals
+   VDD VDD
+   VSS VSS
+End Globals
+
+Cell DC_V_SOURCE
+   Pin POS POS
+   Pin NEG NEG
+End Cell
+
+Cell NMOS
+   Pin D D
+   Pin G G
+   Pin S S
+End Cell
+
+Cell PMOS
+   Pin D D
+   Pin G G
+   Pin S S
+   Pin B B
+End Cell
+
+Cell #top#
+   Pin Qn_18 QN_18
+   Pin Qn_not_18 QN_NOT_18
+   Pin clk_18 CLK_18
+   Pin R_18 R_18
+   Pin S_18 S_18
+   Net N$10 N$10
+   Net N$5 N$5
+   Net R_18 R_18
+   Net S_18 S_18
+   Net Qn_18 QN_18
+   Net clk_18 CLK_18
+   Net Qn_not_18 QN_NOT_18
+   Global VDD VDD
+   Global VSS VSS
+   Inst V2 V2 DC_V_SOURCE
+   Inst V1 V1 DC_V_SOURCE
+   Inst M3 M3 NMOS
+   Inst M8 M8 NMOS
+   Inst M7 M7 NMOS
+   Inst M6 M6 NMOS
+   Inst M5 M5 NMOS
+   Inst M4 M4 NMOS
+   Inst M2 M2 PMOS
+   Inst M1 M1 PMOS
+End Cell
+

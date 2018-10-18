@@ -1,0 +1,27 @@
+* Component: /home/ece_lab/mentor/ECE4500/Project1/two_input_mux  Viewpoint: eldonet
+.INCLUDE /home/ece_lab/mentor/ECE4500/Project1/two_input_mux/eldonet/two_input_mux_eldonet.spi
+.INCLUDE /home/ece_lab/mentor/mgc/mit_0.25.lib
+.OPTION NOASCII
+.OPTION MODWL
+.OPTION ENGNOT
+.OPTION AEX
+
+* --- Singles
+
+* - Analysis Setup - Trans
+.TRAN 0 800N 0 100N
+
+* --- Waveform Outputs
+.PROBE TRAN V(A) V(B) V(F) V(SELECT) V(SELECT_NOT)
+
+* --- Params
+.TEMP 27
+
+* --- Forces
+VFORCE__Select SELECT VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 00001111 R
+VFORCE__Select_not SELECT_NOT VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 11110000 R
+VFORCE__A A VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 00110011 R
+VFORCE__B B VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 01010101 R
+
+* --- Libsetup
+

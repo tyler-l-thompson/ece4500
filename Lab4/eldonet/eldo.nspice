@@ -1,0 +1,27 @@
+* ELDO netlist generated with ICnet by 'ece_lab' on Tue Oct  2 2018 at 19:12:51
+
+*
+* Globals.
+*
+.global vdd vss
+
+*
+* MAIN CELL: Component pathname : /home/ece_lab/mentor/ECE4500/Lab4
+*
+        m13 cout_18 n$253 a_18 vss NMOS L=1.2u W=2.4u M=1
+        m10 n$253 n$221 vss vss NMOS L=1.2u W=2.25u M=1
+        m9 n$253 n$221 vdd vdd PMOS L=1.2u W=6.75u M=1
+        m4 n$221 b_18 a_18 vdd PMOS L=1.2u W=2.4u M=1
+        m3 n$221 bnot_18 a_18 vss NMOS L=1.2u W=2.4u M=1
+        m2 n$221 a_18 bnot_18 vss NMOS L=1.2u W=2.25u M=1
+        m1 n$221 a_18 b_18 vdd PMOS L=1.2u W=6.75u M=1
+        v1 vdd vss DC 2.5V
+        m8 sum_18 cin_18 n$221 vdd PMOS L=1.2u W=2.4u M=1
+        m7 sum_18 cinnot_18 n$221 vss NMOS L=1.2u W=2.4u M=1
+        m12 cout_18 n$253 cin_18 vdd PMOS L=1.2u W=2.4u M=1
+        m6 sum_18 n$221 cinnot_18 vss NMOS L=1.2u W=2.25u M=1
+        m11 cout_18 n$221 cin_18 vss NMOS L=1.2u W=2.4u M=1
+        m5 sum_18 n$221 cin_18 vdd PMOS L=1.2u W=6.75u M=1
+        m14 cout_18 n$221 a_18 vdd PMOS L=1.2u W=2.4u M=1
+*
+.end

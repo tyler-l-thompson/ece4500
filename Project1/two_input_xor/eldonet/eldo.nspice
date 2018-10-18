@@ -1,0 +1,17 @@
+* ELDO netlist generated with ICnet by 'ece_lab' on Thu Oct 18 2018 at 15:10:11
+
+*
+* Globals.
+*
+.global VSS VDD
+
+*
+* MAIN CELL: Component pathname : /home/ece_lab/mentor/ECE4500/Project1/two_input_xor
+*
+        V1 VDD VSS DC 2.5V
+        M4 F A_NOT B VSS NMOS L=1.2u W=2.4u M=1
+        M3 F A B VDD PMOS L=1.2u W=2.4u M=1
+        M2 F B A_NOT VSS NMOS L=1.2u W=2.4u M=1
+        M1 F B A VDD PMOS L=1.2u W=2.4u M=1
+*
+.end

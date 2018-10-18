@@ -1,0 +1,16 @@
+A 5 u mgc_symbol 5bc8bedf101a.03.7f.00.00.02.00.4a.34 3 2 1 0
+V v 1 2 5bc8bedf101a.03.7f.00.00.02.01.4a.34
+F f 1 "two_input_mux.smbl_1"
+F o 0 
+V v 2 2 5bc8bf88a8f1.03.7f.00.00.02.00.4a.34
+F f 2 "two_input_mux.smbl_2"
+F o 0 
+V v 3 2 5bc8c52fa48e.03.7f.00.00.02.00.4a.34
+F f 3 "two_input_mux.smbl_3"
+F o 0 
+O 3
+R csduv 0 "/home/ece_lab/mentor/ECE4500/Project1/two_input_mux/part" 2 Eddm_part 5bc8bf2461ce.03.7f.00.00.02.00.4a.34 5bc8aeb267e5.03.7f.00.00.02.00.4a.34
+O 2
+R csduv 0 "/home/ece_lab/mentor/ECE4500/Project1/two_input_mux/part" 2 Eddm_part 5bc8bf2461ce.03.7f.00.00.02.00.4a.34 5bc8aeb267e5.03.7f.00.00.02.00.4a.34
+O 1
+R csduv 0 "/home/ece_lab/mentor/ECE4500/Project1/two_input_mux/part" 2 Eddm_part 5bc8bf2461ce.03.7f.00.00.02.00.4a.34 5bc8aeb267e5.03.7f.00.00.02.00.4a.34

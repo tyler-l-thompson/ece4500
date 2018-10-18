@@ -1,0 +1,58 @@
+*
+* .CONNECT statements
+*
+.CONNECT VSS 0
+
+
+* ELDO netlist generated with ICnet by 'ece_lab' on Tue Oct  9 2018 at 20:20:04
+
+*
+* Globals.
+*
+.global VSS VDD
+
+
+*
+* Component pathname : $MGC_DESIGN_KIT/symbols/ncap [SPICE]
+*
+*       .include /mgc/v9.0d_rhelx86linux/icstation_home/mgc_icstd_lib/mit0.25/symbols/ncap/NCAP
+
+*
+* MAIN CELL: Component pathname : /home/ece_lab/mentor/ECE4500/Lab5/Mux_Lab5
+*
+        M5 N$173 I_1_18 N$108 VSS NMOS L=1.2u W=2.0u M=1
+        M6 N$108 SEL_0_18 N$127 VSS NMOS L=1.2u W=2.0u M=1
+        M7 N$109 N$173 N$175 VDD PMOS L=1.5u W=7.5u M=1
+        M10 N$110 SEL_1_18 N$70 VSS NMOS L=1.2u W=2.0u M=1
+        X5 F_18 VSS VSS NCAP CAPACITANCE=70F
+        M18 N$245 CLK_18 VDD VDD PMOS L=1.5u W=7.5u M=1
+        M21 N$127 CLK_18 VSS VSS NMOS L=1.2u W=2.0u M=1
+        M22 F_18 CLK_NOT_18 VSS VSS NMOS L=1.2u W=2.0u M=1
+        M20 F_18 CLK_NOT_18 VSS VSS NMOS L=1.2u W=2.0u M=1
+        M17 N$125 CLK_18 VSS VSS NMOS L=1.2u W=2.0u M=1
+        M19 N$172 CLK_NOT_18 VDD VDD PMOS L=1.5u W=7.5u M=1
+        M32 N$181 CLK_NOT_18 VDD VDD PMOS L=1.5u W=7.5u M=1
+        M31 N$179 CLK_18 VDD VDD PMOS L=1.5u W=7.5u M=1
+        M26 F_18 CLK_NOT_18 VSS VSS NMOS L=1.2u W=2.0u M=1
+        M25 N$134 CLK_18 VSS VSS NMOS L=1.2u W=2.0u M=1
+        M14 N$112 SEL_0_18 N$113 VSS NMOS L=1.2u W=2.0u M=1
+        M13 N$179 I_3_18 N$112 VSS NMOS L=1.2u W=2.0u M=1
+        M4 F_18 SEL_1_18 N$107 VDD PMOS L=1.5u W=7.5u M=1
+        M3 N$107 SEL_0_18 N$106 VDD PMOS L=1.5u W=7.5u M=1
+        M2 N$106 N$245 N$172 VDD PMOS L=1.5u W=7.5u M=1
+        M1 N$245 I_0_18 N$125 VSS NMOS L=1.2u W=2.0u M=1
+        M9 N$176 I_2_18 N$110 VSS NMOS L=1.2u W=2.0u M=1
+        M8 F_18 SEL_1_18 N$109 VDD PMOS L=1.5u W=7.5u M=1
+        M27 N$173 CLK_18 VDD VDD PMOS L=1.5u W=7.5u M=1
+        M12 F_18 SEL_0_18 N$111 VDD PMOS L=1.5u W=7.5u M=1
+        M11 N$111 N$176 N$178 VDD PMOS L=1.5u W=7.5u M=1
+        M28 N$175 CLK_NOT_18 VDD VDD PMOS L=1.5u W=7.5u M=1
+        M24 F_18 CLK_NOT_18 VSS VSS NMOS L=1.2u W=2.0u M=1
+        M23 N$70 CLK_18 VSS VSS NMOS L=1.2u W=2.0u M=1
+        M16 F_18 N$179 N$181 VDD PMOS L=1.5u W=7.5u M=1
+        M30 N$178 CLK_NOT_18 VDD VDD PMOS L=1.5u W=7.5u M=1
+        M29 N$176 CLK_18 VDD VDD PMOS L=1.5u W=7.5u M=1
+        V1 VDD VSS DC 2.5V
+        M15 N$113 SEL_1_18 N$134 VSS NMOS L=1.2u W=2.0u M=1
+*
+.end

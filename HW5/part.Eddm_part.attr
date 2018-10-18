@@ -1,0 +1,6 @@
+A 5 u Eddm_part 5bbe103295e3.03.7f.00.00.02.00.47.66 1 2 1 0
+V v 1 1 5bbe103295e3.03.7f.00.00.02.01.47.66
+F f 1 "part.part_1"
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "/home/ece_lab/mentor/ECE4500/HW5/schematic" 1 mgc_schematic 5bbe0e6d6ffb.03.7f.00.00.02.00.47.66 5bbe0e6d6ffa.03.7f.00.00.02.00.47.66

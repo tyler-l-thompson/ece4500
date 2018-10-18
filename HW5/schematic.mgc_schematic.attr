@@ -1,0 +1,13 @@
+A 5 u mgc_schematic 5bbe0e6d6ffa.03.7f.00.00.02.00.47.66 9 2 1 0
+V v 7 1 5bbe624b1b06.03.7f.00.00.02.00.4c.ca
+F o 0 ""
+V v 8 1 5bbe687a2cc1.03.7f.00.00.02.00.4c.ca
+F o 0 ""
+V v 9 1 5bbe68ef015e.03.7f.00.00.02.00.16.bd
+F o 0 ""
+O 9
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/HW5/schematic/sheet1" 8 mgc_sheet 5bbe68ef0115.03.7f.00.00.02.00.16.bd 5bbe0e6d704d.03.7f.00.00.02.00.47.66
+O 8
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/HW5/schematic/sheet1" 7 mgc_sheet 5bbe687a2ca5.03.7f.00.00.02.00.4c.ca 5bbe0e6d704d.03.7f.00.00.02.00.47.66
+O 7
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/HW5/schematic/sheet1" 6 mgc_sheet 5bbe624b1ae0.03.7f.00.00.02.00.4c.ca 5bbe0e6d704d.03.7f.00.00.02.00.47.66

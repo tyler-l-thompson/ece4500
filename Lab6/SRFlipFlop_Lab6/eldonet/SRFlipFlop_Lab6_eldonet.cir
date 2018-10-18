@@ -1,0 +1,25 @@
+* Component: /home/ece_lab/mentor/ECE4500/Lab6/SRFlipFlop_Lab6  Viewpoint: eldonet
+.INCLUDE /home/ece_lab/mentor/ECE4500/Lab6/SRFlipFlop_Lab6/eldonet/SRFlipFlop_Lab6_eldonet.spi
+.INCLUDE /home/ece_lab/mentor/mgc/mit_0.25.lib
+.OPTION NOASCII
+.OPTION MODWL
+.OPTION ENGNOT
+.OPTION AEX
+
+* --- Singles
+
+* - Analysis Setup - DC
+.DC V2 2.5 0 -0.00001
+
+* --- Waveform Outputs
+.PROBE DC V(CLK_18) V(QN_18) V(QN_NOT_18) V(R_18) V(S_18)
+
+* --- Params
+.TEMP 27
+
+* --- Forces
+VFORCE__CLK_2 CLK_18 VSS pattern 2.5 0 0 1e-12 1e-12 1e-08 1 R
+VFORCE__S_2 S_18 VSS pattern 2.5 0 0 1e-12 1e-12 1e-08 0 R
+
+* --- Libsetup
+

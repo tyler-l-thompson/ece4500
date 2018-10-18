@@ -1,0 +1,13 @@
+A 5 u mgc_schematic 5ba8fa094eee.03.7f.00.00.02.00.53.78 21 2 1 0
+V v 19 1 5baabc1c1337.03.7f.00.00.02.00.09.d1
+F o 0 ""
+V v 20 1 5baabf47668a.03.7f.00.00.02.00.09.d1
+F o 0 ""
+V v 21 1 5baac18781a8.03.7f.00.00.02.00.09.d1
+F o 0 ""
+O 21
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Lab3/Two_Input_XOR_Gate_lab3/schematic/sheet1" 20 mgc_sheet 5baac187818f.03.7f.00.00.02.00.09.d1 5ba8fa094f99.03.7f.00.00.02.00.53.78
+O 20
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Lab3/Two_Input_XOR_Gate_lab3/schematic/sheet1" 19 mgc_sheet 5baabf47666a.03.7f.00.00.02.00.09.d1 5ba8fa094f99.03.7f.00.00.02.00.53.78
+O 19
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Lab3/Two_Input_XOR_Gate_lab3/schematic/sheet1" 18 mgc_sheet 5baabc1c131f.03.7f.00.00.02.00.09.d1 5ba8fa094f99.03.7f.00.00.02.00.53.78

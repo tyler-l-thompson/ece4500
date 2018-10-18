@@ -1,0 +1,587 @@
+  Run on linux-B210 (Linux 2.6.16.60-0.21-bigsmp)
+
+/mgc/ams/ixl/bin/eldo.exe -i /home/ece_lab/mentor/ECE4500/Lab5/Mux_Lab5/eldonet/Mux_Lab5_eldonet.cir -o /home/ece_lab/mentor/ECE4500/Lab5/Mux_Lab5/eldonet/Mux_Lab5_eldonet.chi -gwl jwdb -nocou -wdb_folder -outname Mux_Lab5_eldonet_29 
+
+
+
+***** PRE-PROCESSING ...
+
+1******* 9-Oct-18 *******  ELDO 2010.1  (v7.3_1.1)  *******20:20:05******
+
+0* Component: /home/ece_lab/mentor/ECE4500/Lab5/Mux_Lab5  Viewpoint: eldonet
+
+0****     INPUT LISTING                                               
+
+0***********************************************************************
+    2  ** including /home/ece_lab/mentor/ECE4500/Lab5/Mux_Lab5/eldonet/Mux_Lab5_eldonet.spi
+    1  *
+    2  * .CONNECT statements
+    3  *
+    4  .CONNECT VSS 0
+    5  
+    6  
+    7  * ELDO netlist generated with ICnet by 'ece_lab' on Tue Oct  9 2018 at 20:20:04
+    8  
+    9  *
+   10  * Globals.
+   11  *
+   12  .GLOBAL VSS VDD
+   13  
+   14  
+   15  *
+   16  * Component pathname : $MGC_DESIGN_KIT/symbols/ncap [SPICE]
+   17  *
+   18  *       .include /mgc/v9.0d_rhelx86linux/icstation_home/mgc_icstd_lib/mit0.25/symbols/ncap/NCAP
+   19  
+   20  *
+   21  * MAIN CELL: Component pathname : /home/ece_lab/mentor/ECE4500/Lab5/Mux_Lab5
+   22  *
+   23          M5 N$173 I_1_18 N$108 VSS NMOS L=1.2U W=2.0U M=1
+   24          M6 N$108 SEL_0_18 N$127 VSS NMOS L=1.2U W=2.0U M=1
+   25          M7 N$109 N$173 N$175 VDD PMOS L=1.5U W=7.5U M=1
+   26          M10 N$110 SEL_1_18 N$70 VSS NMOS L=1.2U W=2.0U M=1
+   27          X5 F_18 VSS VSS NCAP CAPACITANCE=70F
+   28          M18 N$245 CLK_18 VDD VDD PMOS L=1.5U W=7.5U M=1
+   29          M21 N$127 CLK_18 VSS VSS NMOS L=1.2U W=2.0U M=1
+   30          M22 F_18 CLK_NOT_18 VSS VSS NMOS L=1.2U W=2.0U M=1
+   31          M20 F_18 CLK_NOT_18 VSS VSS NMOS L=1.2U W=2.0U M=1
+   32          M17 N$125 CLK_18 VSS VSS NMOS L=1.2U W=2.0U M=1
+   33          M19 N$172 CLK_NOT_18 VDD VDD PMOS L=1.5U W=7.5U M=1
+   34          M32 N$181 CLK_NOT_18 VDD VDD PMOS L=1.5U W=7.5U M=1
+   35          M31 N$179 CLK_18 VDD VDD PMOS L=1.5U W=7.5U M=1
+   36          M26 F_18 CLK_NOT_18 VSS VSS NMOS L=1.2U W=2.0U M=1
+   37          M25 N$134 CLK_18 VSS VSS NMOS L=1.2U W=2.0U M=1
+   38          M14 N$112 SEL_0_18 N$113 VSS NMOS L=1.2U W=2.0U M=1
+   39          M13 N$179 I_3_18 N$112 VSS NMOS L=1.2U W=2.0U M=1
+   40          M4 F_18 SEL_1_18 N$107 VDD PMOS L=1.5U W=7.5U M=1
+   41          M3 N$107 SEL_0_18 N$106 VDD PMOS L=1.5U W=7.5U M=1
+   42          M2 N$106 N$245 N$172 VDD PMOS L=1.5U W=7.5U M=1
+   43          M1 N$245 I_0_18 N$125 VSS NMOS L=1.2U W=2.0U M=1
+   44          M9 N$176 I_2_18 N$110 VSS NMOS L=1.2U W=2.0U M=1
+   45          M8 F_18 SEL_1_18 N$109 VDD PMOS L=1.5U W=7.5U M=1
+   46          M27 N$173 CLK_18 VDD VDD PMOS L=1.5U W=7.5U M=1
+   47          M12 F_18 SEL_0_18 N$111 VDD PMOS L=1.5U W=7.5U M=1
+   48          M11 N$111 N$176 N$178 VDD PMOS L=1.5U W=7.5U M=1
+   49          M28 N$175 CLK_NOT_18 VDD VDD PMOS L=1.5U W=7.5U M=1
+   50          M24 F_18 CLK_NOT_18 VSS VSS NMOS L=1.2U W=2.0U M=1
+   51          M23 N$70 CLK_18 VSS VSS NMOS L=1.2U W=2.0U M=1
+   52          M16 F_18 N$179 N$181 VDD PMOS L=1.5U W=7.5U M=1
+   53          M30 N$178 CLK_NOT_18 VDD VDD PMOS L=1.5U W=7.5U M=1
+   54          M29 N$176 CLK_18 VDD VDD PMOS L=1.5U W=7.5U M=1
+   55          V1 VDD VSS DC 2.5V
+   56          M15 N$113 SEL_1_18 N$134 VSS NMOS L=1.2U W=2.0U M=1
+   57  *
+   58  *end
+    2  
+    3  ** including /home/ece_lab/mentor/mgc/mit_0.25.lib
+    1  *I would like to thank MIT Lincoln Laboratory for allowing us to
+    2  *use their BSIM3v3 Spice models.  MIT Lincoln Laboratory current
+    3  *research includes Multiproject CMOS Fabrication as part of their
+    4  *Advanced Silicon Technology project.  For futher information,
+    5  *please visit their website at http://www.ll.mit.edu/AST
+    6  
+    7  * MOS Level 3 models
+    8  .MODEL NMOS NMOS LMIN=1.2E-06 LMAX=1.5E-06 WMIN=2.0E-06 WMAX=500E-06 LEVEL=3
+    9  +VTO=.79 GAMMA=.38 PHI=.53 RD=63 IS=1E-16 PB=.8 CGSO=1.973E-10
+   10  +CGDO=1.973E-10 RSH=45 CJ=0.00029 MJ=.486 CJSW=3.3E-10 MJSW=.33 JS=0.0001
+   11  +TOX=2.5E-08 NSUB=8.7E+15 NFS=8.2E+11 TPG=1 XJ=1E-07 LD=7E-08 UO=577
+   12  +VMAX=150000 FC=.5 DELTA=.3551 THETA=0.046 ETA=.16 KAPPA=0.05
+   13  
+   14  .MODEL PMOS PMOS  LMIN=1.2E-06 LMAX=100E-06 WMIN=2.0E-06 WMAX=500E-06 LEVEL=3
+   15  +VTO=-8.40000000E-01 GAMMA=.53 PHI=.58 RD=94 RS=94 IS=1E-16 PB=.8
+   16  +CGSO=3.284E-10 CGDO=3.284E-10 RSH=100 CJ=0.00041 MJ=.54 CJSW=3.4E-10 MJSW=.3
+   17  +JS=0.0001 TOX=2.5E-08 NSUB=1.75E+16 NFS=8.4E+11 TPG=1 XJ=0 LD=6E-08 UO=205
+   18  +VMAX=500000 FC=.5 DELTA=.4598 THETA=.14 ETA=.17 KAPPA=10
+   19  
+   20  * Diodes used in resistor subcircuits
+   21  .MODEL  NDIO  D  LEVEL=1 EG=1.110 RS=1.500E-10 CJ=1.599E-3 
+   22  +CJSW=1.609E-10 PB=1.100E+00 MJ=4.940E-01 MJSW=4.720E-01 
+   23  +JS=9.014E-07 JSW=6.405E-13 N=1.114
+   24  .MODEL  PDIO  D  LEVEL=1 EG=1.110 RS=1.500E-10 CJ=1.599E-3
+   25  +CJSW=1.609E-10 PB=1.100E+00 MJ=4.940E-01 MJSW=4.720E-01
+   26  +JS=9.014E-07 JSW=6.405E-13 N=1.114
+   27  
+   28  * 3-terminal NPLUS resistor
+   29  * POS=1 NEG=2 SUB=3
+   30  .SUBCKT NPLUS 1 2 3 R=1K W=0.5U
+   31    R1  1  4  (R/4) TC1=1.47E-3 TC2=0
+   32    R2  4  5  (R/4) TC1=1.47E-3 TC2=0
+   33    R3  5  6  (R/4) TC1=1.47E-3 TC2=0
+   34    R4  6  2  (R/4) TC1=1.47E-3 TC2=0
+   35    D1  3  1  NDIO W=(W) AREA=(W*(W*(R/80)/5)) PERI=(2*((W*(R/80)/5)+W/2))
+   36    D2  3  4  NDIO W=(W) AREA=(W*(W*(R/80)/5)) PERI=(2*(W*(R/80)/5))
+   37    D3  3  5  NDIO W=(W) AREA=(W*(W*(R/80)/5)) PERI=(2*(W*(R/80)/5))
+   38    D4  3  6  NDIO W=(W) AREA=(W*(W*(R/80)/5)) PERI=(2*(W*(R/80)/5))
+   39    D5  3  2  NDIO W=(W) AREA=(W*(W*(R/80)/5)) PERI=(2*((W*(R/80)/5)+W/2))
+   40  .ENDS NPLUS
+   41  
+   42  
+   43  * 3-terminal PPLUS resistor
+   44  * POS=1 NEG=2 SUB=3
+   45  .SUBCKT PPLUS 1 2 3 R=1K W=3U
+   46    R1   1  4  (R/4) TC1=1.54E-3 TC2=0
+   47    R2   4  5  (R/4) TC1=1.54E-3 TC2=0
+   48    R3   5  6  (R/4) TC1=1.54E-3 TC2=0
+   49    R4   6  2  (R/4) TC1=1.54E-3 TC2=0
+   50    D1   1  3  PDIO W=(W) AREA=(W*(W*(R/150)/5)) PERI=(2*((W*(R/150)/5)+W/2))
+   51    D2   4  3  PDIO W=(W) AREA=(W*(W*(R/150)/5)) PERI=(2*(W*(R/150)/5))
+   52    D3   5  3  PDIO W=(W) AREA=(W*(W*(R/150)/5)) PERI=(2*(W*(R/150)/5))
+   53    D4   6  3  PDIO W=(W) AREA=(W*(W*(R/150)/5)) PERI=(2*(W*(R/150)/5))
+   54    D5   2  3  PDIO W=(W) AREA=(W*(W*(R/150)/5)) PERI=(2*((W*(R/150)/5)+W/2))
+   55  .ENDS PPLUS
+   56  
+   57  *3 terminal capacitor
+   58  .SUBCKT NCAP M2 M1M3 N CAPACITANCE=1P
+   59    C1 M2 M1M3 (CAPACITANCE)
+   60    C2 M1M3 N ((SQRT((4*(87.8/72.6)*(87.8/72.6))+(CAPACITANCE/72.6E-18))-2*(87.8/72.6))*30.4E-18)
+   61    C3 M1M3 N ((SQRT((4*(87.8/72.6)*(87.8/72.6))+(CAPACITANCE/72.6E-18))-2*(87.8/72.6))*4*41.7E-18)
+   62  .ENDS CAP3T
+   63  
+   64  
+Warning 316: In file "./mgc/mit_0.25.lib" line 62:
++   COMMAND .ENDS: The name does not match the .SUBCKT name.
+    3  
+    4  .OPTION NOASCII
+    5  .OPTION MODWL
+    6  .OPTION ENGNOT
+    7  .OPTION AEX
+    8  
+    9  * --- Singles
+   10  
+   11  * - Analysis Setup - Trans
+   12  .TRAN 0 160000000N 0N 10000000N
+   13  
+   14  * --- Waveform Outputs
+   15  .PROBE TRAN V(CLK_18) V(CLK_NOT_18) V(F_18) V(I_0_18) V(I_1_18) V(I_2_18)
+   16  + V(I_3_18) V(SEL_0_18) V(SEL_1_18)
+   17  
+   18  * --- Params
+   19  .TEMP 27
+   20  
+   21  * --- Forces
+   22  VFORCE__I0I2_0 I_0_18 VSS pattern 2.5 0 0 1e-12 1e-12 1e-02 0011001100110011 R
+   23  VFORCE__I0I2_1 I_2_18 VSS pattern 2.5 0 0 1e-12 1e-12 1e-02 0011001100110011 R
+   24  VFORCE__I1I3_0 I_1_18 VSS pattern 2.5 0 0 1e-12 1e-12 1e-02 1100110011001100 R
+   25  VFORCE__I1I3_1 I_3_18 VSS pattern 2.5 0 0 1e-12 1e-12 1e-02 1100110011001100 R
+   26  VFORCE__SEL0 SEL_0_18 VSS pattern 2.5 0 0 1e-12 1e-12 1e-02 0000111100001111 R
+   27  VFORCE__SEL1 SEL_1_18 VSS pattern 2.5 0 0 1e-12 1e-12 1e-02 0000000011111111 R
+   28  VFORCE__SEL1_1 CLK_18 VSS pattern 2.5 0 0 1e-12 1e-12 1e-02 0101010101010101 R
+   29  VFORCE__SEL1_2 CLK_NOT_18 VSS pattern 2.5 0 0 1e-12 1e-12 1e-02 1010101010101010
+   30  + R
+   31  
+   32  * --- Libsetup
+   33  
+   34  .END
+
+End of file 
+
+
+***** 0  error(s). 
+***** 1  warning(s). 
+
+
+
+***** GENERATION ...
+
+Warning 252: In file "./mgc/mit_0.25.lib" line 60:
++   OBJECT "X5.C2": Self-connected object not created.
+Warning 252: In file "./mgc/mit_0.25.lib" line 61:
++   OBJECT "X5.C3": Self-connected object not created.
+Warning 87:Some X or device instances connected in parallel have been merged into a single instance.
++   This may cause some unexpected warning or error messages. See Eldo documentation for detail.
++   To prevent this merging, please use .option nocatmx .
+Warning 1615: In file "./ECE4500/Lab5/Mux_Lab5/eldonet/Mux_Lab5_eldonet.cir" line 12:
++   COMMAND ".TRAN": Tstep can not be <= 0.0.
++   It is set to Tmax/20.0 = 8.000e-03 s.
+
+***** 0  error(s). 
+***** 5  warning(s). 
+
+
+INFORMATION ABOUT COMPILATION 
+
+
+Memory space allocated (bytes): 57970688
+40 elements
+30 nodes 
+9 input signals
+Detail about objects and nodes found in the design...
+Number of nodes                     30
+Number of intrinsic nodes           0
+Number of input signals             9
+Number of resistors                 0
+Number of floating capacitors       0
+Number of grounded capacitors       1
+Number of inductors                 0
+Number of voltage sources           9
+Number of current sources           0
+Number of dependent sources         0
+Number of diodes                    0
+Number of BJT                       0
+Number of JFET                      0
+Number of MOS                       31
+Number of SWITCHES                  0
+Number of transmission lines        0
+Total number of elements            41
+Number of devices merged using M factor1
+
+
+Warning: A transition time < HMIN (1.000000e-12Sec) found on VFORCE__I0I2_0
+HMIN assumed.. Set Eldo option 'HMIN' to a lower value if needed.
+
+
+Warning: A transition time < HMIN (1.000000e-12Sec) found on VFORCE__I0I2_1
+HMIN assumed.. Set Eldo option 'HMIN' to a lower value if needed.
+
+
+Warning: A transition time < HMIN (1.000000e-12Sec) found on VFORCE__I1I3_0
+HMIN assumed.. Set Eldo option 'HMIN' to a lower value if needed.
+
+
+Warning: A transition time < HMIN (1.000000e-12Sec) found on VFORCE__I1I3_1
+HMIN assumed.. Set Eldo option 'HMIN' to a lower value if needed.
+
+
+Warning: A transition time < HMIN (1.000000e-12Sec) found on VFORCE__SEL0
+HMIN assumed.. Set Eldo option 'HMIN' to a lower value if needed.
+
+
+Warning: A transition time < HMIN (1.000000e-12Sec) found on VFORCE__SEL1
+HMIN assumed.. Set Eldo option 'HMIN' to a lower value if needed.
+
+
+Warning: A transition time < HMIN (1.000000e-12Sec) found on VFORCE__SEL1_1
+HMIN assumed.. Set Eldo option 'HMIN' to a lower value if needed.
+
+
+Warning: A transition time < HMIN (1.000000e-12Sec) found on VFORCE__SEL1_2
+HMIN assumed.. Set Eldo option 'HMIN' to a lower value if needed.
+ Reset internal minimun time step.
+hmin value is 2.499968e-04Nanos
+
+Eldo VERSION : ELDO 2010.1 Thu Jul  1 14:15:09 GMT 2010
+
+*** DATE:  9-Oct-2018 20:20:05
+
+*** TITLE: * Component: /home/ece_lab/mentor/ECE4500/Lab5/Mux_Lab5  Viewpoint: eldonet
+
+TEMPERATURE : 27.000000 degrees C
+
+1*************** 9-Oct-2018 ***********************  ELDO 2010.1  (v7.3_1.1)  ***********************20:20:05*****************
+
+0* Component: /home/ece_lab/mentor/ECE450
+0****                 MODELS PARAMETERS                                    TEMPERATURE =   27.000 DEG C
+
+0*************************************************************************************************************************
+
+
+
+ DEVICE          MOS
+ MODEL: NMOS
+ TYPE            N
+ LEVEL 3 : Berkeley Spice compatible model
+
+  names    values    units     names    values    units     names    values    units   
+  -----    ------    -----     -----    ------    -----     -----    ------    -----   
+VTO     = 7.9000E-01 V       KP      = 7.9699E-05 A/V^2   GAMMA   = 3.8000E-01 V^1/2  
+PHI     = 5.3000E-01 V       UO      = 5.7700E+02 unit1   VMAX    = 1.5000E+05 m/s    
+THETA   = 4.6000E-02 1/V     ETA     = 1.6000E-01 -       KAPPA   = 5.0000E-02 1/V    
+DELTA   = 3.5510E-01 -       NSUB    = 8.7000E+15 At/cm^3 NSS     = 0.0        At/cm^2
+NFS     = 8.2000E+11 At/cm^2 TPG     = 1.0000E+00 -       TOX     = 2.5000E-08 m      
+COX     = 1.3813E-03 F/m^2   CGSO    = 1.9730E-10 F/m     CGDO    = 1.9730E-10 F/m    
+CGBO    = 0.0        F/m     KF      = 0.0        -       AF      = 1.0000E+00 -      
+XQC     = 1.0000E+00 -       CAPLEV  = 0          -       
+
+ *** Common extrinsic model parameters ***
+OPTACM  = 0          -       ARLEV   = 6          -       ALEV    = 6          -      
+RLEV    = 6          -       
+ * Access resistances related parameters *
+RD      = 6.3000E+01 Ohm     RS      = 0.0        Ohm     RSH     = 4.5000E+01 Ohm/Sq.
+RDC     = 0.0        Ohm     RSC     = 0.0        Ohm     
+ * Geometry related parameters *
+LD      = 7.0000E-08 m       WD      = 0.0        m       DL      = 0.0        m      
+DW      = 0.0        m       LDIF    = 0.0        m       HDIF    = 0.0        m      
+WMLT    = 1.0000E+00 -       LMLT    = 1.0000E+00 -       DEL     = 0.0        m      
+XJ      = 1.0000E-07 m       
+ * Static bulk-diode related parameters *
+DIOLEV  = 1          -       JS      = 1.0000E-04 A/m^2   JSW     = 0.0        A/m    
+IS      = 1.0000E-16 A       N       = 1.0000E+00 -       NDS     = 1.0000E+00 -      
+VNDS    =-1.0000E+00 V       VDLIN   = 5.0000E-01 -       
+ * Dynamic bulk-diode related parameters *
+DCAPLEV = 2          -       CJGATE  = 0.0                CBD     = 0.0        F      
+CBS     = 0.0        F       CJ      = 2.9000E-04 F/m^2   CJSW    = 3.3000E-10 F/m    
+FC      = 5.0000E-01 -       MJ      = 4.8600E-01 -       MJSW    = 3.3000E-01 -      
+TT      = 0.0        s       PB      = 8.0000E-01 V       PBSW    = 8.0000E-01 V      
+ * Temperature related Parameters 
+EG      = 1.1100E+00 eV      GAP1    = 7.0200E-04 eV/degK GAP2    = 1.1080E+03 degK   
+TNOM    = 2.7000E+01 degC    TLEV    = 0          -       TLEVC   = 0          -      
+TLEVI   = 1          -       XTI     = 0.0        -       
+ * Temperature Access Resistance related parameters * TLEVR = 1 
+TRD1    = 0.0        1/degK  TRS1    = 0.0        1/degK  TRSH1   = 0.0        1/degK 
+TRD2    = 0.0        unit2   TRS2    = 0.0        unit2   TRSH2   = 0.0        unit2  
+
+unit1 represents cm^2/V.s
+unit2 represents 1/degK^2
+
+ DEVICE          MOS
+ MODEL: PMOS
+ TYPE            P
+ LEVEL 3 : Berkeley Spice compatible model
+
+  names    values    units     names    values    units     names    values    units   
+  -----    ------    -----     -----    ------    -----     -----    ------    -----   
+VTO     =-8.4000E-01 V       KP      = 2.8316E-05 A/V^2   GAMMA   = 5.3000E-01 V^1/2  
+PHI     = 5.8000E-01 V       UO      = 2.0500E+02 unit1   VMAX    = 5.0000E+05 m/s    
+THETA   = 1.4000E-01 1/V     ETA     = 1.7000E-01 -       KAPPA   = 1.0000E+01 1/V    
+DELTA   = 4.5980E-01 -       NSUB    = 1.7500E+16 At/cm^3 NSS     = 0.0        At/cm^2
+NFS     = 8.4000E+11 At/cm^2 TPG     = 1.0000E+00 -       TOX     = 2.5000E-08 m      
+COX     = 1.3813E-03 F/m^2   CGSO    = 3.2840E-10 F/m     CGDO    = 3.2840E-10 F/m    
+CGBO    = 0.0        F/m     KF      = 0.0        -       AF      = 1.0000E+00 -      
+XQC     = 1.0000E+00 -       CAPLEV  = 0          -       
+
+ *** Common extrinsic model parameters ***
+OPTACM  = 0          -       ARLEV   = 6          -       ALEV    = 6          -      
+RLEV    = 6          -       
+ * Access resistances related parameters *
+RD      = 9.4000E+01 Ohm     RS      = 9.4000E+01 Ohm     RSH     = 1.0000E+02 Ohm/Sq.
+RDC     = 0.0        Ohm     RSC     = 0.0        Ohm     
+ * Geometry related parameters *
+LD      = 6.0000E-08 m       WD      = 0.0        m       DL      = 0.0        m      
+DW      = 0.0        m       LDIF    = 0.0        m       HDIF    = 0.0        m      
+WMLT    = 1.0000E+00 -       LMLT    = 1.0000E+00 -       DEL     = 0.0        m      
+XJ      = 0.0        m       
+ * Static bulk-diode related parameters *
+DIOLEV  = 1          -       JS      = 1.0000E-04 A/m^2   JSW     = 0.0        A/m    
+IS      = 1.0000E-16 A       N       = 1.0000E+00 -       NDS     = 1.0000E+00 -      
+VNDS    =-1.0000E+00 V       VDLIN   = 5.0000E-01 -       
+ * Dynamic bulk-diode related parameters *
+DCAPLEV = 2          -       CJGATE  = 0.0                CBD     = 0.0        F      
+CBS     = 0.0        F       CJ      = 4.1000E-04 F/m^2   CJSW    = 3.4000E-10 F/m    
+FC      = 5.0000E-01 -       MJ      = 5.4000E-01 -       MJSW    = 3.0000E-01 -      
+TT      = 0.0        s       PB      = 8.0000E-01 V       PBSW    = 8.0000E-01 V      
+ * Temperature related Parameters 
+EG      = 1.1100E+00 eV      GAP1    = 7.0200E-04 eV/degK GAP2    = 1.1080E+03 degK   
+TNOM    = 2.7000E+01 degC    TLEV    = 0          -       TLEVC   = 0          -      
+TLEVI   = 1          -       XTI     = 0.0        -       
+ * Temperature Access Resistance related parameters * TLEVR = 1 
+TRD1    = 0.0        1/degK  TRS1    = 0.0        1/degK  TRSH1   = 0.0        1/degK 
+TRD2    = 0.0        unit2   TRS2    = 0.0        unit2   TRSH2   = 0.0        unit2  
+
+unit1 represents cm^2/V.s
+unit2 represents 1/degK^2
+
+
+ Reset internal minimun time step.
+hmin value is 2.499968e-04Nanos
+
+
+
+1*************** 9-Oct-2018 ***********************  ELDO 2010.1  (v7.3_1.1)  ***********************20:20:05*****************
+
+0* Component: /home/ece_lab/mentor/ECE4500/Lab5/Mux_Lab5  Viewpoint: eldonet
+0****                 OPTION SUMMARY                                        TEMPERATURE =   27.000 DEG C
+
+0*************************************************************************************************************************
+
+
+
+
+
+*** DC Control Options : 
+
+GMIN           = 1.00e-12 NMAXSIZE       = 60000    ITL1           = 100      
+GRAMP          = 0        NETSIZE        = 100      VMINDC         = UNDEF    
+VMAXDC         = UNDEF    
+
+*** Initial Accuracy Control Options (May be adjusted during simulation): 
+
+ITOL           = 1.00e-06 EPS            = 5.00e-03 VNTOL          = 1.00e-06 
+RELTOL         = 1.00e-03 RELERR         = 5.00e-02 PIVREL         = 1.00e-03 
+PIVTOL         = 1.00e-16 ABSTOL         = 1.00e-12 FLXTOL         = 1.00e-11 
+MAXORD         = 2.00e+00 
+
+*** Time-step Control Options : 
+
+ZOOMTIME       = 1.00e+00 STEP           = 0.00e+00 STARTSMP       = 0.00e+00 
+FREQSMP        = 0.00e+00 COURESOL       = 0.00e+00 TRTOL          = 7.00e+00 
+HMIN           = 2.50e-13 ITL3           = 3        ITL4           = 13       
+FT             = 1.25e-01 DCLOG          = 1.00e+00 LVLTIM         = 2        
+LVLCNV         = 2        DVDT           = -1       RELVAR         = 1.50e-01 
+ABSVAR         = 2.00e-01 SAMPLE         = 0.00e+00 HMAX           = UNDEF    
+
+
+*** MosFet default Options : 
+
+SCALE          = 1.00e+00 SCALM          = 1.00e+00 SCALEBSIM      = 1.00e+00 
+DEFAD          = UNDEF    DEFAS          = UNDEF    DEFPD          = UNDEF    
+DEFPS          = UNDEF    DEFW           = 1.00e-04 DEFL           = 1.00e-04 
+DEFNRD         = UNDEF    DEFNRS         = UNDEF    XA             = 6.00e-06 
+LIMRMOS        = UNDEF    SHRINK         = 1.00e+00 
+
+*** General Information Options : 
+
+SDA            = 0        CPTIME         = UNDEF    STAT           = 0        
+TIMEDIV        = 0        SIMUDIV        = 10       SAVETIME       = 0        
+MAXTRAN        = 1000     MAXNODES       = 10000    MAXV           = 1.00e+13 
+LIMPROBE       = 10000    FLICKER_NOISE  = 0        THERMAL_NOISE  = 0        
+TNOM           = 2.70e+01 TMAX           = UNDEF    
+SPICDC         = 0        SPIOUT         = 0        NEWTON         = 1        
+OSR            = 0        TRAP           = 1        GEAR           = 0        
+BE             = 0        PROBEOP        = 0        NOLAT          = 0        
+NWLAT          = 0        ANALOG         = 0        BBDEBUG        = 0        
+NOSIZECHK      = 0        QTRUNC         = 0        UNBOUND        = 0        
+LCAPOP         = 0        NOAEX          = 1        AEX            = 1        
+AEX            = 1        STVER          = 0        MOTOROLA       = 0        
+AMS            = 0        ASPEC          = 0        INPUT          = 0        
+NOINIT         = 0        PSF            = 0        WSF            = 0        
+WSFASCII       = 0        NOBIN          = 0        NOCOU          = 1        
+WL             = 0        NODE           = 0        LIST           = 0        
+SPI3BIN        = 0        SPI3ASC        = 0        NOMOD          = 0        
+WSF            = 0        WSFASCII       = 0        NOBIN          = 0        
+NOCOU          = 1        RMOS           = 0        NWRMOS         = 1        
+NONWRMOS       = 0        USEDEFAP       = 0        NOASCII        = 1        
+ASCII          = 0        MIXED          = 0        SWITCH         = 0        
+USERSWITCH     = 0        TIMING         = 0        MODWL          = 1        
+ULOGIC         = 0        
+
+
+
+***> DC CPU TIME 0s 000ms <***
+
+DC:10 iterations FOR DC analysis
+
+
+
+
+1*************** 9-Oct-2018 ***********************  ELDO 2010.1  (v7.3_1.1)  ***********************20:20:05*****************
+
+0* Component: /home/ece_lab/mentor/ECE4500/Lab5/Mux_Lab5  Viewpoint: eldonet
+0****                 INITIAL TRANSIENT SOLUTION                           TEMPERATURE =   27.000 DEG C
+
+0*************************************************************************************************************************
+
+
+  NODE         VOLTAGE      NODE         VOLTAGE      NODE         VOLTAGE    
+CLK_18        0.0000      CLK_NOT_18    2.5000      F_18          413.3009P   
+I_0_18        0.0000      I_1_18        2.5000      I_2_18        0.0000      
+I_3_18        2.5000      N$106         554.0015M   N$107         530.7634M   
+N$108         2.0844      N$109         524.3650M   N$110         157.4162M   
+N$111         524.3650M   N$112         2.0864      N$113         133.9640M   
+N$125         136.2609M   N$127         113.2688M   N$134         21.6114M    
+N$172         2.4544      N$173         2.5000      N$175         2.4538      
+N$176         2.5000      N$178         2.4538      N$179         2.5000      
+N$181         2.4379      N$245         2.5000      N$70          22.1727M    
+SEL_0_18      0.0000      SEL_1_18      0.0000      VDD           2.5000      
+
+
+
+   VOLTAGE SOURCE CURRENT
+
+NAME      CURRENT      VOLTAGE      POWER        
+V1        -849.7892F    2.5000      -2.1245P     
+VFORCE__I0I2_0   0.0000       0.0000       0.0000      
+VFORCE__I0I2_1   0.0000       0.0000       0.0000      
+VFORCE__I1I3_0   0.0000       2.5000       0.0000      
+VFORCE__I1I3_1   0.0000       2.5000       0.0000      
+VFORCE__SEL0   0.0000       0.0000       0.0000      
+VFORCE__SEL1   0.0000       0.0000       0.0000      
+VFORCE__SEL1_1   0.0000       0.0000       0.0000      
+VFORCE__SEL1_2   0.0000       2.5000       0.0000      
+
+   TOTAL POWER DISSIPATION:  2.1245P     WATTS
+
+
+
+
+
+Eldo NEWTON: VNTOL=1.000000e-06 RELTOL=7.500000e-04
+
+................................................
+Simulation progress           : 10% (t = 16.2966 M)
+Elapsed CPU time              :  0h  0mn  0s  20    ( 0h  0mn  0s  20)
+................................................
+Simulation progress           : 20% (t = 32.9672 M)
+Elapsed CPU time              :  0h  0mn  0s  30    ( 0h  0mn  0s  50)
+................................................
+Simulation progress           : 30% (t = 50.0000 M)
+Elapsed CPU time              :  0h  0mn  0s  20    ( 0h  0mn  0s  70)
+................................................
+Simulation progress           : 40% (t = 64.7438 M)
+Elapsed CPU time              :  0h  0mn  0s  20    ( 0h  0mn  0s  90)
+................................................
+Simulation progress           : 50% (t = 80.0000 M)
+Elapsed CPU time              :  0h  0mn  0s  20    ( 0h  0mn  0s 110)
+................................................
+Simulation progress           : 60% (t = 96.0771 M)
+Elapsed CPU time              :  0h  0mn  0s  30    ( 0h  0mn  0s 140)
+................................................
+Simulation progress           : 70% (t = 112.3963 M)
+Elapsed CPU time              :  0h  0mn  0s  20    ( 0h  0mn  0s 160)
+................................................
+Simulation progress           : 80% (t = 129.1076 M)
+Elapsed CPU time              :  0h  0mn  0s  10    ( 0h  0mn  0s 170)
+................................................
+Simulation progress           : 90% (t = 144.1877 M)
+Elapsed CPU time              :  0h  0mn  0s  30    ( 0h  0mn  0s 200)
+................................................
+Simulation progress           : 100% (t = 160.0000 M)
+Elapsed CPU time              :  0h  0mn  0s  10    ( 0h  0mn  0s 210)
+
+
+
+1*************** 9-Oct-2018 ***********************  ELDO 2010.1  (v7.3_1.1)  ***********************20:20:05*****************
+
+0* Component: /home/ece_lab/mentor/ECE4500/Lab5/Mux_Lab5  Viewpoint: eldonet
+0****                 ACCOUNTING INFORMATION                                TEMPERATURE =   27.000 DEG C
+
+0*************************************************************************************************************************
+
+
+
+
+
+Number of nodes                     77
+Number of intrinsic nodes           47
+Number of input signals             9
+Number of resistors                 0
+Number of floating capacitors       0
+Number of grounded capacitors       1
+Number of inductors                 0
+Number of voltage sources           9
+Number of current sources           0
+Number of dependent sources         0
+Number of diodes                    0
+Number of BJT                       0
+Number of JFET                      0
+Number of MOS                       31
+Number of SWITCHES                  0
+Number of transmission lines        0
+Total number of elements            41
+Number of devices merged using M factor1
+Number of equations                 68
+Number of non-zero terms            218
+Percent Zeros                       9.529e+01
+Number of Newton iterations            3907
+Average number of Newton iterations per accepted time steps             3.919e+00
+Number of accepted time steps       997
+Number of rejected time steps       50
+      due to LTE                    1
+      due to Newton                 49
+Evaluation of active devices        210449
+Memory size                         58892288
+
+***>CPU TIME 0s 210ms <***
+
+***>MESSAGE SUMMARY: 5 warnings
+
+***>GLOBAL CPU TIME 0s 250ms <***
+
+
+***>GLOBAL ELAPSED TIME 1s <***
+
+
+  Job started at  9-Oct-2018 20:20:05
+  Job end at      9-Oct-2018 20:20:06
+
+  Run on linux-B210 (Linux 2.6.16.60-0.21-bigsmp)
+

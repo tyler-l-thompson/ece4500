@@ -1,0 +1,11 @@
+A 5 u Ic_cell_template 5bc8e6da8128.03.7f.00.00.02.00.75.c0 1 4 7 0
+V v 1 2 5bc8e8311140.03.7f.00.00.02.00.75.c0
+F f 1 "full_add_sub.iccel_1"
+F o 0 
+O 1
+R csduv 1 "/home/ece_lab/mentor/mgc/mit_25" 8 Ic_persist_process 4d337a69d114.03.7f.00.00.01.00.3d.8c 3ae460ae24b4.03.93.22.22.3e.00.42.a5
+R csduv 2 "/home/ece_lab/mentor/ECE4500/Project1/full_add_sub/eldonet" 10 Eddm_design_viewpoint 5bc8e215068e.03.7f.00.00.02.00.4a.34 5bc8c5404fea.03.7f.00.00.02.00.4a.34
+R csduv 3 "/home/ece_lab/mentor/ECE4500/Project1/two_input_mux" 5 Ic_cell_template 5bc8e7c33ec6.03.7f.00.00.02.00.75.c0 5bc8b08f27e6.03.7f.00.00.02.00.50.60
+R csduv 4 "/home/ece_lab/mentor/ECE4500/Project1/two_input_xor" 4 Ic_cell_template 5bc8e7c33cdb.03.7f.00.00.02.00.75.c0 5bc8dacfa5be.03.7f.00.00.02.00.50.60
+R csduv 5 "/home/ece_lab/mentor/ECE4500/Project1/full_add_sub_lib2" 1 Ic_lib_template 5bc8e7c3408a.03.7f.00.00.02.00.75.c0 5bc8e7706744.03.7f.00.00.02.00.75.c0
+R csdni 6 "/home/ece_lab/mentor/mgc/mit_25.rules" 1 Mgc_file

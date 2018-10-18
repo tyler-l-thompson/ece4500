@@ -1,0 +1,13 @@
+A 5 u mgc_schematic 5bc8ad793b80.03.7f.00.00.02.00.4a.34 5 2 1 0
+V v 3 1 5bc8aed726e6.03.7f.00.00.02.00.4a.34
+F o 0 ""
+V v 4 1 5bc8b028210a.03.7f.00.00.02.00.4a.34
+F o 0 ""
+V v 5 1 5bc8bd838b75.03.7f.00.00.02.00.4a.34
+F o 0 ""
+O 5
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Project1/two_input_mux/schematic/sheet1" 4 mgc_sheet 5bc8bd838b4a.03.7f.00.00.02.00.4a.34 5bc8ad793c49.03.7f.00.00.02.00.4a.34
+O 4
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Project1/two_input_mux/schematic/sheet1" 3 mgc_sheet 5bc8b02820e9.03.7f.00.00.02.00.4a.34 5bc8ad793c49.03.7f.00.00.02.00.4a.34
+O 3
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Project1/two_input_mux/schematic/sheet1" 2 mgc_sheet 5bc8aed726ca.03.7f.00.00.02.00.4a.34 5bc8ad793c49.03.7f.00.00.02.00.4a.34

@@ -1,0 +1,25 @@
+*
+* .CONNECT statements
+*
+.CONNECT VSS 0
+
+
+* ELDO netlist generated with ICnet by 'ece_lab' on Tue Sep 25 2018 at 16:04:09
+
+*
+* Globals.
+*
+.global VSS VDD
+
+*
+* MAIN CELL: Component pathname : /home/ece_lab/mentor/ECE4500/Lab2/Static_Complementary_CMOS_Lab2
+*
+        V1 VDD VSS DC 2.5V
+        M6 N$9 A_18 VSS VSS NMOS L=1.2u W=2.0u M=1
+        M5 N$9 B_18 VSS VSS NMOS L=1.2u W=2.0u M=1
+        M4 F_18 C_NOT_18 N$9 VSS NMOS L=1.2u W=3.0u M=1
+        M3 F_18 B_18 N$33 VDD PMOS L=1.2u W=7.5u M=1
+        M2 N$33 A_18 VDD VDD PMOS L=1.2u W=7.5u M=1
+        M1 F_18 C_NOT_18 VDD VDD PMOS L=1.2u W=3.5u M=1
+*
+.end

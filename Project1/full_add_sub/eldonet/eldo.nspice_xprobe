@@ -1,0 +1,107 @@
+# This file provides name mapping information for all objects
+# on the schematic design.  It provides a mapping for each
+# object between its name on the schematic and its name in the netlist.
+version 1.0
+
+Globals
+   VDD VDD
+   VSS VSS
+End Globals
+
+Cell NMOS
+   Pin D D
+   Pin G G
+   Pin S S
+End Cell
+
+Cell PMOS
+   Pin D D
+   Pin G G
+   Pin S S
+   Pin B B
+End Cell
+
+Cell TWO_INPUT_XOR
+   Pin F F
+   Pin A A
+   Pin A_not A_NOT
+   Pin B B
+   Pin VDD VDD
+   Net F F
+   Net B B
+   Net A_not A_NOT
+   Net A A
+   Net VDD_esc1 VDD_ESC1
+   Global VDD VDD
+   Inst M4 M4 NMOS
+   Inst M3 M3 PMOS
+   Inst M2 M2 NMOS
+   Inst M1 M1 PMOS
+End Cell
+
+Cell DC_V_SOURCE
+   Pin POS POS
+   Pin NEG NEG
+End Cell
+
+Cell TWO_INPUT_MUX
+   Pin F F
+   Pin A A
+   Pin B B
+   Pin Select SELECT
+   Pin Select_not SELECT_NOT
+   Pin VDD VDD
+   Net Select_not SELECT_NOT
+   Net Select SELECT
+   Net F F
+   Net B B
+   Net A A
+   Net VDD_esc1 VDD_ESC1
+   Global VDD VDD
+   Inst M4 M4 PMOS
+   Inst M3 M3 NMOS
+   Inst M2 M2 PMOS
+   Inst M1 M1 NMOS
+End Cell
+
+Cell #top#
+   Pin Bout_Cout BOUT_COUT
+   Pin Sum_D SUM_D
+   Pin A A
+   Pin A_not A_NOT
+   Pin A_xor_B A_XOR_B
+   Pin A_xor_B_not A_XOR_B_NOT
+   Pin Bin_Cin BIN_CIN
+   Pin CC0 CC0
+   Pin CC0_not CC0_NOT
+   Pin CC3 CC3
+   Pin CC3_not CC3_NOT
+   Net N$75 N$75
+   Net N$70 N$70
+   Net N$38 N$38
+   Net N$37 N$37
+   Net N$36 N$36
+   Net N$4 N$4
+   Net N$35 N$35
+   Net N$2 N$2
+   Net Bout_Cout BOUT_COUT
+   Net CC3 CC3
+   Net CC3_not CC3_NOT
+   Net CC0 CC0
+   Net CC0_not CC0_NOT
+   Net Bin_Cin BIN_CIN
+   Net Sum_D SUM_D
+   Net A A
+   Net A_xor_B A_XOR_B
+   Net A_not A_NOT
+   Net A_xor_B_not A_XOR_B_NOT
+   Global VDD VDD
+   Global VSS VSS
+   Inst TWO_INPUT_XOR1 X_TWO_INPUT_XOR1 TWO_INPUT_XOR
+   Inst V1 V1 DC_V_SOURCE
+   Inst TWO_INPUT_MUX4 X_TWO_INPUT_MUX4 TWO_INPUT_MUX
+   Inst TWO_INPUT_MUX3 X_TWO_INPUT_MUX3 TWO_INPUT_MUX
+   Inst TWO_INPUT_MUX2 X_TWO_INPUT_MUX2 TWO_INPUT_MUX
+   Inst TWO_INPUT_MUX1 X_TWO_INPUT_MUX1 TWO_INPUT_MUX
+End Cell
+

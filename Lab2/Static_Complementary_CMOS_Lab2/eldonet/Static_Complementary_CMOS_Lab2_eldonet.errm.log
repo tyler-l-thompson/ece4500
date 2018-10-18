@@ -1,0 +1,4 @@
+START report: Tue Sep 25 16:04:10 2018 
+** Warning: (eldo - 1615)  In file "./Static_Complementary_CMOS_Lab2/eldonet/Static_Complementary_CMOS_Lab2_eldonet.cir" line 12:
++   COMMAND ".TRAN": Tstep can not be <= 0.0.
++   It is set to Tmax/20.0 = 4.000e-08 s.

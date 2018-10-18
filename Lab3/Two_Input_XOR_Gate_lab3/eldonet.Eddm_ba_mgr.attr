@@ -1,0 +1,19 @@
+A 5 u Eddm_ba_mgr 5ba8fc426ef1.03.7f.00.00.02.00.53.78 5 2 9 0
+V v 3 1 5baa85bb74ef.03.7f.00.00.02.00.68.09
+F f 3 "eldonet.ba_3"
+V v 4 1 5baa85f26b03.03.7f.00.00.02.00.68.09
+F f 4 "eldonet.ba_4"
+V v 5 1 5baac35e867a.03.7f.00.00.02.00.17.50
+F f 5 "eldonet.ba_5"
+O 5
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 7 "/home/ece_lab/mentor/ECE4500/Lab3/Two_Input_XOR_Gate_lab3/eldonet" 23 Eddm_design_viewpoint 5baac35e8633.03.7f.00.00.02.00.17.50 5ba8fc426d54.03.7f.00.00.02.00.53.78
+R cspuv 8 "/home/ece_lab/mentor/ECE4500/Lab3/Two_Input_XOR_Gate_lab3/schematic" 21 mgc_schematic 5baac18781a8.03.7f.00.00.02.00.09.d1 5ba8fa094eee.03.7f.00.00.02.00.53.78
+O 4
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 5 "/home/ece_lab/mentor/ECE4500/Lab3/Two_Input_XOR_Gate_lab3/eldonet" 14 Eddm_design_viewpoint 5baa85f26ad5.03.7f.00.00.02.00.68.09 5ba8fc426d54.03.7f.00.00.02.00.53.78
+R cspuv 6 "/home/ece_lab/mentor/ECE4500/Lab3/Two_Input_XOR_Gate_lab3/schematic" 13 mgc_schematic 5baa85e2e37e.03.7f.00.00.02.00.68.09 5ba8fa094eee.03.7f.00.00.02.00.53.78
+O 3
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 3 "/home/ece_lab/mentor/ECE4500/Lab3/Two_Input_XOR_Gate_lab3/eldonet" 13 Eddm_design_viewpoint 5baa85bb74c9.03.7f.00.00.02.00.68.09 5ba8fc426d54.03.7f.00.00.02.00.53.78
+R cspuv 4 "/home/ece_lab/mentor/ECE4500/Lab3/Two_Input_XOR_Gate_lab3/schematic" 12 mgc_schematic 5baa85752eb7.03.7f.00.00.02.00.68.09 5ba8fa094eee.03.7f.00.00.02.00.53.78

@@ -1,0 +1,11 @@
+START report: Tue Oct  9 20:20:05 2018 
+** Warning: (eldo - 252)  In file "./mgc/mit_0.25.lib" line 60:
++   OBJECT "X5.C2": Self-connected object not created.
+** Warning: (eldo - 252)  In file "./mgc/mit_0.25.lib" line 61:
++   OBJECT "X5.C3": Self-connected object not created.
+** Warning: (eldo - 87) Some X or device instances connected in parallel have been merged into a single instance.
++   This may cause some unexpected warning or error messages. See Eldo documentation for detail.
++   To prevent this merging, please use .option nocatmx .
+** Warning: (eldo - 1615)  In file "./ECE4500/Lab5/Mux_Lab5/eldonet/Mux_Lab5_eldonet.cir" line 12:
++   COMMAND ".TRAN": Tstep can not be <= 0.0.
++   It is set to Tmax/20.0 = 8.000e-03 s.

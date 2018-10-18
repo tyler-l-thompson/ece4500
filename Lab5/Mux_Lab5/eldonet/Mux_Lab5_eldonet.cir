@@ -1,0 +1,33 @@
+* Component: /home/ece_lab/mentor/ECE4500/Lab5/Mux_Lab5  Viewpoint: eldonet
+.INCLUDE /home/ece_lab/mentor/ECE4500/Lab5/Mux_Lab5/eldonet/Mux_Lab5_eldonet.spi
+.INCLUDE /home/ece_lab/mentor/mgc/mit_0.25.lib
+.OPTION NOASCII
+.OPTION MODWL
+.OPTION ENGNOT
+.OPTION AEX
+
+* --- Singles
+
+* - Analysis Setup - Trans
+.TRAN 0 160000000N 0N 10000000N
+
+* --- Waveform Outputs
+.PROBE TRAN V(CLK_18) V(CLK_NOT_18) V(F_18) V(I_0_18) V(I_1_18) V(I_2_18)
++ V(I_3_18) V(SEL_0_18) V(SEL_1_18)
+
+* --- Params
+.TEMP 27
+
+* --- Forces
+VFORCE__I0I2_0 I_0_18 VSS pattern 2.5 0 0 1e-12 1e-12 1e-02 0011001100110011 R
+VFORCE__I0I2_1 I_2_18 VSS pattern 2.5 0 0 1e-12 1e-12 1e-02 0011001100110011 R
+VFORCE__I1I3_0 I_1_18 VSS pattern 2.5 0 0 1e-12 1e-12 1e-02 1100110011001100 R
+VFORCE__I1I3_1 I_3_18 VSS pattern 2.5 0 0 1e-12 1e-12 1e-02 1100110011001100 R
+VFORCE__SEL0 SEL_0_18 VSS pattern 2.5 0 0 1e-12 1e-12 1e-02 0000111100001111 R
+VFORCE__SEL1 SEL_1_18 VSS pattern 2.5 0 0 1e-12 1e-12 1e-02 0000000011111111 R
+VFORCE__SEL1_1 CLK_18 VSS pattern 2.5 0 0 1e-12 1e-12 1e-02 0101010101010101 R
+VFORCE__SEL1_2 CLK_NOT_18 VSS pattern 2.5 0 0 1e-12 1e-12 1e-02 1010101010101010
++ R
+
+* --- Libsetup
+

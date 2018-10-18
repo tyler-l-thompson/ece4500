@@ -1,0 +1,4 @@
+START report: Tue Sep 25 18:12:59 2018 
+** Warning: (eldo - 1615)  In file "./Two_Input_XOR_Gate_lab3/eldonet/Two_Input_XOR_Gate_lab3_eldonet.cir" line 12:
++   COMMAND ".TRAN": Tstep can not be <= 0.0.
++   It is set to Tmax/20.0 = 2.000e-08 s.

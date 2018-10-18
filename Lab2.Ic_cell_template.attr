@@ -1,0 +1,38 @@
+A 5 u Ic_cell_template 5ba19078ee1b.03.7f.00.00.02.00.45.d8 4 4 10 0
+V v 1 2 5ba1958528bc.03.7f.00.00.02.00.45.d8
+F f 1 "Lab2.iccel_1"
+F o 0 
+V v 2 2 5ba19819a8e7.03.7f.00.00.02.00.45.d8
+F f 2 "Lab2.iccel_2"
+F o 0 
+V v 3 2 5ba1a7751dc4.03.7f.00.00.02.00.45.d8
+F f 3 "Lab2.iccel_3"
+F o 0 
+V v 4 2 5ba25fe7bf13.03.7f.00.00.02.00.45.d8
+F f 4 "Lab2.iccel_4"
+F o 0 
+O 4
+R csduv 1 "/home/ece_lab/mentor/mgc/mit_25" 8 Ic_persist_process 4d337a69d114.03.7f.00.00.01.00.3d.8c 3ae460ae24b4.03.93.22.22.3e.00.42.a5
+R csduv 2 "/home/ece_lab/mentor/ECE4500/Lab2/Static_Complementary_CMOS_Lab2/eldonet" 9 Eddm_design_viewpoint 5ba18f212221.03.7f.00.00.02.00.2e.66 5ba1388fd4df.03.7f.00.00.02.00.17.01
+R cmduv 3 "49052f642000.0d.00.01.a5.b0.00.00.00" 1 Ic_device_template 49fba4394000.0d.00.01.a5.b0.00.00.00 49052f642000.0d.00.01.a5.b0.00.00.00
+R csdni 4 "/home/ece_lab/mentor/mgc/mit_25.rules" 1 Mgc_file
+R csduv 8 "$MGC_DESIGN_KIT/process/MPOLY" 1 Ic_cell_template 39ca3bb71aba.03.89.ca.b5.8b.00.3d.46 39de40031d9d.03.93.22.22.3e.03.0a.d0
+R csduv 9 "$MGC_DESIGN_KIT/process/M1M2" 1 Ic_cell_template 39ca3bbe3747.03.89.ca.b5.8b.00.3d.46 39de40031d9c.03.93.22.22.3e.00.0a.d0
+O 3
+R csduv 1 "/home/ece_lab/mentor/mgc/mit_25" 8 Ic_persist_process 4d337a69d114.03.7f.00.00.01.00.3d.8c 3ae460ae24b4.03.93.22.22.3e.00.42.a5
+R csduv 2 "/home/ece_lab/mentor/ECE4500/Lab2/Static_Complementary_CMOS_Lab2/eldonet" 9 Eddm_design_viewpoint 5ba18f212221.03.7f.00.00.02.00.2e.66 5ba1388fd4df.03.7f.00.00.02.00.17.01
+R cmduv 3 "49052f642000.0d.00.01.a5.b0.00.00.00" 1 Ic_device_template 49fba4394000.0d.00.01.a5.b0.00.00.00 49052f642000.0d.00.01.a5.b0.00.00.00
+R csdni 4 "/home/ece_lab/mentor/mgc/mit_25.rules" 1 Mgc_file
+R csduv 8 "$MGC_DESIGN_KIT/process/MPOLY" 1 Ic_cell_template 39ca3bb71aba.03.89.ca.b5.8b.00.3d.46 39de40031d9d.03.93.22.22.3e.03.0a.d0
+R csduv 9 "$MGC_DESIGN_KIT/process/M1M2" 1 Ic_cell_template 39ca3bbe3747.03.89.ca.b5.8b.00.3d.46 39de40031d9c.03.93.22.22.3e.00.0a.d0
+O 2
+R csduv 1 "/home/ece_lab/mentor/mgc/mit_25" 8 Ic_persist_process 4d337a69d114.03.7f.00.00.01.00.3d.8c 3ae460ae24b4.03.93.22.22.3e.00.42.a5
+R csduv 2 "/home/ece_lab/mentor/ECE4500/Lab2/Static_Complementary_CMOS_Lab2/eldonet" 9 Eddm_design_viewpoint 5ba18f212221.03.7f.00.00.02.00.2e.66 5ba1388fd4df.03.7f.00.00.02.00.17.01
+R cmduv 3 "49052f642000.0d.00.01.a5.b0.00.00.00" 1 Ic_device_template 49fba4394000.0d.00.01.a5.b0.00.00.00 49052f642000.0d.00.01.a5.b0.00.00.00
+R csdni 4 "/home/ece_lab/mentor/mgc/mit_25.rules" 1 Mgc_file
+R csduv 5 "$MGC_DESIGN_KIT/process/MPOLY" 1 Ic_cell_template 39ca3bb71aba.03.89.ca.b5.8b.00.3d.46 39de40031d9d.03.93.22.22.3e.03.0a.d0
+O 1
+R csduv 1 "/home/ece_lab/mentor/mgc/mit_25" 8 Ic_persist_process 4d337a69d114.03.7f.00.00.01.00.3d.8c 3ae460ae24b4.03.93.22.22.3e.00.42.a5
+R csduv 2 "/home/ece_lab/mentor/ECE4500/Lab2/Static_Complementary_CMOS_Lab2/eldonet" 9 Eddm_design_viewpoint 5ba18f212221.03.7f.00.00.02.00.2e.66 5ba1388fd4df.03.7f.00.00.02.00.17.01
+R cmduv 3 "49052f642000.0d.00.01.a5.b0.00.00.00" 1 Ic_device_template 49fba4394000.0d.00.01.a5.b0.00.00.00 49052f642000.0d.00.01.a5.b0.00.00.00
+R csdni 4 "/home/ece_lab/mentor/mgc/mit_25.rules" 1 Mgc_file

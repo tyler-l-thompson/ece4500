@@ -1,0 +1,40 @@
+A 5 u Eddm_design_viewpoint 5bb2401e8590.03.7f.00.00.02.00.36.79 30 2 286 0
+V v 28 4 5bb269dbeeda.03.7f.00.00.02.00.36.79
+F f 28 "eldonet.dvpt_28"
+F o 0 ""
+F o 0 ""
+F o 0 ""
+V v 29 4 5bb3f9b0db7c.03.7f.00.00.02.00.36.79
+F f 29 "eldonet.dvpt_29"
+F o 0 ""
+F o 0 ""
+F o 0 ""
+V v 30 4 5bb501c607fd.03.7f.00.00.02.00.36.79
+F f 30 "eldonet.dvpt_30"
+F o 0 ""
+F o 0 ""
+F o 0 ""
+O 30
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Lab4/part" 1 Eddm_part 5bb2400c0086.03.7f.00.00.02.01.36.79 5bb2400c0086.03.7f.00.00.02.00.36.79
+R cspuv 1 "/home/ece_lab/mentor/ECE4500/Lab4/schematic" 26 mgc_schematic 5bb26a6534a4.03.7f.00.00.02.00.36.79 5bb23c86adc6.03.7f.00.00.02.00.36.79
+R cspuv 2 "/home/ece_lab/mentor/ECE4500/Lab4/eldonet" 1 Eddm_ba_mgr 5bb2401e8765.03.7f.00.00.02.01.36.79 5bb2401e8765.03.7f.00.00.02.00.36.79
+R cspuv 3 "$MGC_DESIGN_KIT/symbols/nmos/part" 7 Eddm_part 39dcb6d2c6cf.03.93.22.22.3e.00.2e.08 399d7e4745c6.03.93.22.22.3e.00.4c.5c
+R cspuv 9 "$MGC_DESIGN_KIT/symbols/dc_v_source/part" 1 Eddm_part 3890a89d50f5.03.86.56.31.70.00.34.2e 399db67c7221.03.93.22.22.3e.04.28.aa
+R cspuv 142 "$MGC_DESIGN_KIT/symbols/pmos/part" 6 Eddm_part 39dcb70a738a.03.93.22.22.3e.00.2e.08 399d7e54bb91.03.93.22.22.3e.00.4c.5c
+O 29
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Lab4/part" 1 Eddm_part 5bb2400c0086.03.7f.00.00.02.01.36.79 5bb2400c0086.03.7f.00.00.02.00.36.79
+R cspuv 1 "/home/ece_lab/mentor/ECE4500/Lab4/schematic" 26 mgc_schematic 5bb26a6534a4.03.7f.00.00.02.00.36.79 5bb23c86adc6.03.7f.00.00.02.00.36.79
+R cspuv 2 "/home/ece_lab/mentor/ECE4500/Lab4/eldonet" 1 Eddm_ba_mgr 5bb2401e8765.03.7f.00.00.02.01.36.79 5bb2401e8765.03.7f.00.00.02.00.36.79
+R cspuv 3 "$MGC_DESIGN_KIT/symbols/nmos/part" 7 Eddm_part 39dcb6d2c6cf.03.93.22.22.3e.00.2e.08 399d7e4745c6.03.93.22.22.3e.00.4c.5c
+R cspuv 9 "$MGC_DESIGN_KIT/symbols/dc_v_source/part" 1 Eddm_part 3890a89d50f5.03.86.56.31.70.00.34.2e 399db67c7221.03.93.22.22.3e.04.28.aa
+R cspuv 142 "$MGC_DESIGN_KIT/symbols/pmos/part" 6 Eddm_part 39dcb70a738a.03.93.22.22.3e.00.2e.08 399d7e54bb91.03.93.22.22.3e.00.4c.5c
+O 28
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Lab4/part" 1 Eddm_part 5bb2400c0086.03.7f.00.00.02.01.36.79 5bb2400c0086.03.7f.00.00.02.00.36.79
+R cspuv 1 "/home/ece_lab/mentor/ECE4500/Lab4/schematic" 25 mgc_schematic 5bb269c0d4d6.03.7f.00.00.02.00.36.79 5bb23c86adc6.03.7f.00.00.02.00.36.79
+R cspuv 2 "/home/ece_lab/mentor/ECE4500/Lab4/eldonet" 1 Eddm_ba_mgr 5bb2401e8765.03.7f.00.00.02.01.36.79 5bb2401e8765.03.7f.00.00.02.00.36.79
+R cspuv 3 "$MGC_DESIGN_KIT/symbols/nmos/part" 7 Eddm_part 39dcb6d2c6cf.03.93.22.22.3e.00.2e.08 399d7e4745c6.03.93.22.22.3e.00.4c.5c
+R cspuv 9 "$MGC_DESIGN_KIT/symbols/dc_v_source/part" 1 Eddm_part 3890a89d50f5.03.86.56.31.70.00.34.2e 399db67c7221.03.93.22.22.3e.04.28.aa
+R cspuv 142 "$MGC_DESIGN_KIT/symbols/pmos/part" 6 Eddm_part 39dcb70a738a.03.93.22.22.3e.00.2e.08 399d7e54bb91.03.93.22.22.3e.00.4c.5c

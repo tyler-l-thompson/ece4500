@@ -1,0 +1,19 @@
+START report: Mon Oct 15 11:46:05 2018 
+** Warning: (eldo - 255)  In file "./ECE4500/Lab6/SRFlipFlop_Lab6/eldonet/SRFlipFlop_Lab6_eldonet.spi" line 19:
++   OBJECT "M3":  Size not consistent with LMIN/LMAX/WMIN/WMAX/TEMPMIN/TEMPMAX specification.
++    l (2.000000e+00u) is greater than lmax (1.500000e+00u)
+** Warning: (eldo - 255)  In file "./ECE4500/Lab6/SRFlipFlop_Lab6/eldonet/SRFlipFlop_Lab6_eldonet.spi" line 20:
++   OBJECT "M8":  Size not consistent with LMIN/LMAX/WMIN/WMAX/TEMPMIN/TEMPMAX specification.
++    l (2.000000e+00u) is greater than lmax (1.500000e+00u)
+** Warning: (eldo - 255)  In file "./ECE4500/Lab6/SRFlipFlop_Lab6/eldonet/SRFlipFlop_Lab6_eldonet.spi" line 21:
++   OBJECT "M7":  Size not consistent with LMIN/LMAX/WMIN/WMAX/TEMPMIN/TEMPMAX specification.
++    l (2.000000e+00u) is greater than lmax (1.500000e+00u)
+** Warning: (eldo - 255)  In file "./ECE4500/Lab6/SRFlipFlop_Lab6/eldonet/SRFlipFlop_Lab6_eldonet.spi" line 22:
++   OBJECT "M6":  Size not consistent with LMIN/LMAX/WMIN/WMAX/TEMPMIN/TEMPMAX specification.
++    l (2.000000e+00u) is greater than lmax (1.500000e+00u)
+** Warning: (eldo - 255)  In file "./ECE4500/Lab6/SRFlipFlop_Lab6/eldonet/SRFlipFlop_Lab6_eldonet.spi" line 23:
++   OBJECT "M5":  Size not consistent with LMIN/LMAX/WMIN/WMAX/TEMPMIN/TEMPMAX specification.
++    l (2.000000e+00u) is greater than lmax (1.500000e+00u)
+** Warning: (eldo - 255)  In file "./ECE4500/Lab6/SRFlipFlop_Lab6/eldonet/SRFlipFlop_Lab6_eldonet.spi" line 24:
++   OBJECT "M4":  Size not consistent with LMIN/LMAX/WMIN/WMAX/TEMPMIN/TEMPMAX specification.
++    l (2.000000e+00u) is greater than lmax (1.500000e+00u)
