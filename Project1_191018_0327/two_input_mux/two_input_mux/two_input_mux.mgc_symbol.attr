@@ -1,0 +1,6 @@
+A 5 u mgc_symbol 5bc980d4669c.03.7f.00.00.02.00.38.68 1 2 1 0
+V v 1 2 5bc980d4669c.03.7f.00.00.02.01.38.68
+F f 1 "two_input_mux.smbl_1"
+F o 0 
+O 1
+R csduv 0 "/home/ece_lab/mentor/ECE4500/Project1/two_input_mux/two_input_mux/part" 2 Eddm_part 5bc980e515a2.03.7f.00.00.02.00.38.68 5bc9790ba289.03.7f.00.00.02.00.38.68

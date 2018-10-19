@@ -1,0 +1,26 @@
+* Component: /home/ece_lab/mentor/ECE4500/Project1/two_input_xor/two_input_xor  Viewpoint: eldonet
+.INCLUDE /home/ece_lab/mentor/ECE4500/Project1/two_input_xor/two_input_xor/eldonet/two_input_xor_eldonet.spi
+.INCLUDE /home/ece_lab/mentor/mgc/mit_0.25.lib
+.OPTION NOASCII
+.OPTION MODWL
+.OPTION ENGNOT
+.OPTION AEX
+
+* --- Singles
+
+* - Analysis Setup - Trans
+.TRAN 0 400N 0 100N
+
+* --- Waveform Outputs
+.PROBE TRAN V(A) V(B) V(B_NOT) V(F)
+
+* --- Params
+.TEMP 27
+
+* --- Forces
+VFORCE__B_not B_NOT VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 1010 R
+VFORCE B VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 0101 R
+VFORCE_1 A VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 0011 R
+
+* --- Libsetup
+

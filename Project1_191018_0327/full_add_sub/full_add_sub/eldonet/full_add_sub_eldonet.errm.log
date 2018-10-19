@@ -1,0 +1,4 @@
+START report: Fri Oct 19 03:19:41 2018 
+** Warning: (eldo - 1615)  In file "./ECE4500/Project1/full_add_sub/full_add_sub/eldonet/full_add_sub_eldonet.cir" line 12:
++   COMMAND ".TRAN": Tstep can not be <= 0.0.
++   It is set to Tmax/20.0 = 1.600e-07 s.

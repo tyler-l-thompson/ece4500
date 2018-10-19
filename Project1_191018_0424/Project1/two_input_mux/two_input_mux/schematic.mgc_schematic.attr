@@ -1,0 +1,14 @@
+A 5 u mgc_schematic 5bc98e690ca6.03.7f.00.00.02.00.49.a6 3 2 1 0
+V v 1 1 5bc98e690ca6.03.7f.00.00.02.01.49.a6
+F o 0 ""
+V v 2 1 5bc98fcb76a8.03.7f.00.00.02.00.49.a6
+F o 0 ""
+V v 3 1 5bc99083da48.03.7f.00.00.02.00.49.a6
+F o 0 ""
+O 3
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Project1/two_input_mux/two_input_mux/schematic/sheet1" 2 mgc_sheet 5bc99083da31.03.7f.00.00.02.00.49.a6 5bc98e690d54.03.7f.00.00.02.00.49.a6
+O 2
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Project1/two_input_mux/two_input_mux/schematic/sheet1" 1 mgc_sheet 5bc98e690d54.03.7f.00.00.02.01.49.a6 5bc98e690d54.03.7f.00.00.02.00.49.a6
+O 1
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Project1/two_input_mux/two_input_mux/schematic/sheet1" 1 mgc_sheet 5bc98e690d54.03.7f.00.00.02.01.49.a6 5bc98e690d54.03.7f.00.00.02.00.49.a6
+P "eddm__refer_state" "eddm__refer_floating"

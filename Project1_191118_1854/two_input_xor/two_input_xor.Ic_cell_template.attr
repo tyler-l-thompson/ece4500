@@ -1,0 +1,10 @@
+A 5 u Ic_cell_template 5bca52a5a46b.03.7f.00.00.02.00.06.68 1 4 6 0
+V v 1 2 5bca55338aea.03.7f.00.00.02.00.06.68
+F f 1 "two_input_xor.iccel_1"
+F o 0 
+O 1
+R csduv 1 "/home/ece_lab/mentor/mgc/mit_25" 8 Ic_persist_process 4d337a69d114.03.7f.00.00.01.00.3d.8c 3ae460ae24b4.03.93.22.22.3e.00.42.a5
+R csduv 2 "/home/ece_lab/mentor/ECE4500/Project1/two_input_xor/two_input_xor/eldonet" 2 Eddm_design_viewpoint 5bca3fb32e35.03.7f.00.00.02.00.65.be 5bca3f1b59c0.03.7f.00.00.02.00.65.be
+R cmduv 3 "49052f642000.0d.00.01.a5.b0.00.00.00" 1 Ic_device_template 49fba4394000.0d.00.01.a5.b0.00.00.00 49052f642000.0d.00.01.a5.b0.00.00.00
+R csduv 4 "$MGC_DESIGN_KIT/process/MPOLY" 1 Ic_cell_template 39ca3bb71aba.03.89.ca.b5.8b.00.3d.46 39de40031d9d.03.93.22.22.3e.03.0a.d0
+R csdni 5 "/home/ece_lab/mentor/mgc/mit_25.rules" 1 Mgc_file
