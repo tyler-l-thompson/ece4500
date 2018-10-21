@@ -1,0 +1,7 @@
+A 5 u Eddm_part 5bca64f1477d.03.7f.00.00.02.00.0d.cf 1 2 1 0
+V v 1 1 5bca64f1477d.03.7f.00.00.02.01.0d.cf
+F f 1 "part.part_1"
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "/home/ece_lab/mentor/ECE4500/HW6/npcmos_hw6/schematic" 1 mgc_schematic 5bca634eb1be.03.7f.00.00.02.00.0d.cf 5bca634eb1bd.03.7f.00.00.02.00.0d.cf
+P "eddm__refer_state" "eddm__refer_floating"

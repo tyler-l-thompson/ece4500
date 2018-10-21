@@ -1,0 +1,13 @@
+A 5 u mgc_schematic 5bca634eb1bd.03.7f.00.00.02.00.0d.cf 50 2 1 0
+V v 48 1 5bca7925c61b.03.7f.00.00.02.00.0d.cf
+F o 0 ""
+V v 49 1 5bca7971b4f7.03.7f.00.00.02.00.0d.cf
+F o 0 ""
+V v 50 1 5bca79fdeea2.03.7f.00.00.02.00.0d.cf
+F o 0 ""
+O 50
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/HW6/npcmos_hw6/schematic/sheet1" 49 mgc_sheet 5bca79fdee87.03.7f.00.00.02.00.0d.cf 5bca634eb25a.03.7f.00.00.02.00.0d.cf
+O 49
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/HW6/npcmos_hw6/schematic/sheet1" 48 mgc_sheet 5bca7971b4da.03.7f.00.00.02.00.0d.cf 5bca634eb25a.03.7f.00.00.02.00.0d.cf
+O 48
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/HW6/npcmos_hw6/schematic/sheet1" 47 mgc_sheet 5bca7925c5f8.03.7f.00.00.02.00.0d.cf 5bca634eb25a.03.7f.00.00.02.00.0d.cf

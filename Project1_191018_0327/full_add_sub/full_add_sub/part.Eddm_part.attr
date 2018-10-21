@@ -1,0 +1,6 @@
+A 5 u Eddm_part 5bc9845ce261.03.7f.00.00.02.00.38.68 1 2 1 0
+V v 1 1 5bc9845ce261.03.7f.00.00.02.01.38.68
+F f 1 "part.part_1"
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "/home/ece_lab/mentor/ECE4500/Project1/full_add_sub/full_add_sub/schematic" 1 mgc_schematic 5bc981573903.03.7f.00.00.02.00.38.68 5bc981573902.03.7f.00.00.02.00.38.68

@@ -1,0 +1,63 @@
+A 5 u Eddm_design_viewpoint 5bc984949713.03.7f.00.00.02.00.38.68 3 2 23 0
+V v 1 4 5bc984949713.03.7f.00.00.02.01.38.68
+F f 1 "eldonet.dvpt_1"
+F o 0 
+F o 0 
+F o 0 
+V v 2 4 5bc985e9d0d2.03.7f.00.00.02.00.38.68
+F f 2 "eldonet.dvpt_2"
+F o 0 
+F o 0 
+F o 0 
+V v 3 4 5bc985ed275d.03.7f.00.00.02.00.38.68
+F f 3 "eldonet.dvpt_3"
+F o 0 
+F o 0 
+F o 0 
+O 3
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Project1/full_add_sub/full_add_sub/part" 1 Eddm_part 5bc9845ce261.03.7f.00.00.02.01.38.68 5bc9845ce261.03.7f.00.00.02.00.38.68
+R cspuv 1 "/home/ece_lab/mentor/ECE4500/Project1/full_add_sub/full_add_sub/schematic" 4 mgc_schematic 5bc9848004da.03.7f.00.00.02.00.38.68 5bc981573902.03.7f.00.00.02.00.38.68
+R cspuv 2 "/home/ece_lab/mentor/ECE4500/Project1/full_add_sub/full_add_sub/eldonet" 1 Eddm_ba_mgr 5bc9849497e1.03.7f.00.00.02.01.38.68 5bc9849497e1.03.7f.00.00.02.00.38.68
+R cspuv 3 "/home/ece_lab/mentor/ECE4500/Project1/two_input_mux/two_input_mux/part" 2 Eddm_part 5bc980e515a2.03.7f.00.00.02.00.38.68 5bc9790ba289.03.7f.00.00.02.00.38.68
+R cspuv 4 "/home/ece_lab/mentor/ECE4500/Project1/two_input_xor/two_input_xor/part" 2 Eddm_part 5bc97757035e.03.7f.00.00.02.00.38.68 5bc96d2e3a66.03.7f.00.00.02.00.38.68
+R cspuv 5 "$MGC_DESIGN_KIT/symbols/dc_v_source/part" 1 Eddm_part 3890a89d50f5.03.86.56.31.70.00.34.2e 399db67c7221.03.93.22.22.3e.04.28.aa
+R cspuv 6 "/home/ece_lab/mentor/ECE4500/Project1/two_input_mux/two_input_mux/schematic" 4 mgc_schematic 5bc97ac51cb6.03.7f.00.00.02.00.38.68 5bc977902884.03.7f.00.00.02.00.38.68
+R cspuv 8 "/home/ece_lab/mentor/ECE4500/Project1/two_input_xor/two_input_xor/schematic" 4 mgc_schematic 5bc96eb40bf1.03.7f.00.00.02.00.38.68 5bc96bae92c3.03.7f.00.00.02.00.38.68
+R cspuv 19 "$MGC_DESIGN_KIT/symbols/pmos/part" 6 Eddm_part 39dcb70a738a.03.93.22.22.3e.00.2e.08 399d7e54bb91.03.93.22.22.3e.00.4c.5c
+R cspuv 20 "$MGC_DESIGN_KIT/symbols/nmos/part" 7 Eddm_part 39dcb6d2c6cf.03.93.22.22.3e.00.2e.08 399d7e4745c6.03.93.22.22.3e.00.4c.5c
+O 2
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Project1/full_add_sub/full_add_sub/part" 1 Eddm_part 5bc9845ce261.03.7f.00.00.02.01.38.68 5bc9845ce261.03.7f.00.00.02.00.38.68
+R cspuv 1 "/home/ece_lab/mentor/ECE4500/Project1/full_add_sub/full_add_sub/schematic" 4 mgc_schematic 5bc9848004da.03.7f.00.00.02.00.38.68 5bc981573902.03.7f.00.00.02.00.38.68
+R cspuv 2 "/home/ece_lab/mentor/ECE4500/Project1/full_add_sub/full_add_sub/eldonet" 1 Eddm_ba_mgr 5bc9849497e1.03.7f.00.00.02.01.38.68 5bc9849497e1.03.7f.00.00.02.00.38.68
+R cspuv 3 "/home/ece_lab/mentor/ECE4500/Project1/two_input_mux/two_input_mux/part" 2 Eddm_part 5bc980e515a2.03.7f.00.00.02.00.38.68 5bc9790ba289.03.7f.00.00.02.00.38.68
+R cspuv 4 "/home/ece_lab/mentor/ECE4500/Project1/two_input_xor/two_input_xor/part" 2 Eddm_part 5bc97757035e.03.7f.00.00.02.00.38.68 5bc96d2e3a66.03.7f.00.00.02.00.38.68
+R cspuv 5 "$MGC_DESIGN_KIT/symbols/dc_v_source/part" 1 Eddm_part 3890a89d50f5.03.86.56.31.70.00.34.2e 399db67c7221.03.93.22.22.3e.04.28.aa
+R cspuv 6 "/home/ece_lab/mentor/ECE4500/Project1/two_input_mux/two_input_mux/schematic" 4 mgc_schematic 5bc97ac51cb6.03.7f.00.00.02.00.38.68 5bc977902884.03.7f.00.00.02.00.38.68
+R cspuv 7 "/home/ece_lab/mentor/ECE4500/Project1/two_input_mux/two_input_mux/two_input_mux" 1 mgc_symbol 5bc980d4669c.03.7f.00.00.02.01.38.68 5bc980d4669c.03.7f.00.00.02.00.38.68
+R cspuv 8 "/home/ece_lab/mentor/ECE4500/Project1/two_input_xor/two_input_xor/schematic" 4 mgc_schematic 5bc96eb40bf1.03.7f.00.00.02.00.38.68 5bc96bae92c3.03.7f.00.00.02.00.38.68
+R cspuv 9 "/home/ece_lab/mentor/ECE4500/Project1/two_input_xor/two_input_xor/two_input_xor" 1 mgc_symbol 5bc9773755b9.03.7f.00.00.02.01.38.68 5bc9773755b9.03.7f.00.00.02.00.38.68
+R cspuv 10 "$MGC_DESIGN_KIT/symbols/dc_v_source/dc_v_source" 1 mgc_symbol 3890a89d50ce.03.86.56.31.70.00.34.2e 3890a962031f.03.86.56.31.70.02.34.72
+R cspuv 11 "$MGC_DESIGN_KIT/symbols/vss/part" 1 Eddm_part 3597fafab24d.03.86.56.31.87.00.1a.94 399d7a63280e.03.93.22.22.3e.01.28.aa
+P "eddm__refer_state" "eddm__refer_floating"
+R cspuv 12 "$MGC_DESIGN_KIT/symbols/portin/part" 1 Eddm_part 35773eaadc18.03.86.56.31.87.00.0e.9f 3994813f8cc6.03.93.22.22.3e.00.28.aa
+P "eddm__refer_state" "eddm__refer_floating"
+R cspuv 13 "$MGC_DESIGN_KIT/symbols/portout/part" 1 Eddm_part 35785fdc394b.03.86.56.31.87.00.12.30 39948143d242.03.93.22.22.3e.02.28.aa
+P "eddm__refer_state" "eddm__refer_floating"
+R cspuv 14 "$MGC_DESIGN_KIT/symbols/vdd/part" 1 Eddm_part 3597fa6cdda4.03.86.56.31.87.00.1a.94 399d7a63280d.03.93.22.22.3e.03.28.aa
+P "eddm__refer_state" "eddm__refer_floating"
+R cspuv 15 "$MGC_DESIGN_KIT/symbols/vss/vss" 1 mgc_symbol 359806396644.03.86.56.31.87.00.1b.10 399d7a63280e.03.93.22.22.3e.00.28.aa
+R cspuv 16 "$MGC_DESIGN_KIT/symbols/portin/portin" 1 mgc_symbol 35773d18855d.03.86.56.31.87.00.0e.9f 3994813f8cc5.03.93.22.22.3e.01.28.aa
+R cspuv 17 "$MGC_DESIGN_KIT/symbols/portout/portout" 1 mgc_symbol 357ed6243e32.03.86.56.31.87.00.28.94 39948143d242.03.93.22.22.3e.01.28.aa
+R cspuv 18 "$MGC_DESIGN_KIT/symbols/vdd/vdd" 1 mgc_symbol 3598062d64ad.03.86.56.31.87.00.1b.10 399d7a63280d.03.93.22.22.3e.02.28.aa
+R cspuv 19 "$MGC_DESIGN_KIT/symbols/pmos/part" 6 Eddm_part 39dcb70a738a.03.93.22.22.3e.00.2e.08 399d7e54bb91.03.93.22.22.3e.00.4c.5c
+R cspuv 20 "$MGC_DESIGN_KIT/symbols/nmos/part" 7 Eddm_part 39dcb6d2c6cf.03.93.22.22.3e.00.2e.08 399d7e4745c6.03.93.22.22.3e.00.4c.5c
+R cspuv 21 "$MGC_DESIGN_KIT/symbols/nmos/nmos" 7 mgc_symbol 39dcb6d2c689.03.93.22.22.3e.00.2e.08 399d7e475de3.03.93.22.22.3e.00.4c.5c
+R cspuv 22 "$MGC_DESIGN_KIT/symbols/pmos/pmos" 6 mgc_symbol 39dcb70a734b.03.93.22.22.3e.00.2e.08 399d7e54d47a.03.93.22.22.3e.00.4c.5c
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Project1/full_add_sub/full_add_sub/part" 1 Eddm_part 5bc9845ce261.03.7f.00.00.02.01.38.68 5bc9845ce261.03.7f.00.00.02.00.38.68
+R cspuv 1 "/home/ece_lab/mentor/ECE4500/Project1/full_add_sub/full_add_sub/schematic" 1 mgc_schematic 5bc981573903.03.7f.00.00.02.00.38.68 5bc981573902.03.7f.00.00.02.00.38.68
+P "eddm__refer_state" "eddm__refer_floating"
+R cspuv 2 "/home/ece_lab/mentor/ECE4500/Project1/full_add_sub/full_add_sub/eldonet" 1 Eddm_ba_mgr 5bc9849497e1.03.7f.00.00.02.01.38.68 5bc9849497e1.03.7f.00.00.02.00.38.68

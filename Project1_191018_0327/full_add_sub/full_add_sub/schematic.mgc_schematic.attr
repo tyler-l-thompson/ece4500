@@ -1,0 +1,13 @@
+A 5 u mgc_schematic 5bc981573902.03.7f.00.00.02.00.38.68 5 2 1 0
+V v 3 1 5bc9847f5bf1.03.7f.00.00.02.00.38.68
+F o 0 ""
+V v 4 1 5bc9848004da.03.7f.00.00.02.00.38.68
+F o 0 ""
+V v 5 1 5bc985f41ca7.03.7f.00.00.02.00.38.68
+F o 0 ""
+O 5
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Project1/full_add_sub/full_add_sub/schematic/sheet1" 4 mgc_sheet 5bc985f41c89.03.7f.00.00.02.00.38.68 5bc981573975.03.7f.00.00.02.00.38.68
+O 4
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Project1/full_add_sub/full_add_sub/schematic/sheet1" 3 mgc_sheet 5bc9848004c9.03.7f.00.00.02.00.38.68 5bc981573975.03.7f.00.00.02.00.38.68
+O 3
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Project1/full_add_sub/full_add_sub/schematic/sheet1" 2 mgc_sheet 5bc9847f5bd8.03.7f.00.00.02.00.38.68 5bc981573975.03.7f.00.00.02.00.38.68

@@ -1,0 +1,6 @@
+A 5 u mgc_symbol 5bc9773755b9.03.7f.00.00.02.00.38.68 1 2 1 0
+V v 1 2 5bc9773755b9.03.7f.00.00.02.01.38.68
+F f 1 "two_input_xor.smbl_1"
+F o 0 
+O 1
+R csduv 0 "/home/ece_lab/mentor/ECE4500/Project1/two_input_xor/two_input_xor/part" 2 Eddm_part 5bc97757035e.03.7f.00.00.02.00.38.68 5bc96d2e3a66.03.7f.00.00.02.00.38.68

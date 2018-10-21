@@ -1,0 +1,48 @@
+*
+* .CONNECT statements
+*
+.CONNECT VSS 0
+
+
+* ELDO netlist generated with ICnet by 'ece_lab' on Fri Oct 19 2018 at 03:19:40
+
+*
+* Globals.
+*
+.global VDD VSS
+
+*
+* Component pathname : /home/ece_lab/mentor/ECE4500/Project1/two_input_xor/two_input_xor
+*
+.subckt TWO_INPUT_XOR  F A B B_NOT VDD_ESC1
+
+        .CONNECT VDD VDD_ESC1
+        M4 F A B_NOT VSS NMOS L=1.2u W=2.4u M=1
+        M3 F B_NOT A VSS NMOS L=1.2u W=2.4u M=1
+        M2 F B A VDD PMOS L=1.2u W=2.4u M=1
+        M1 F A B VDD PMOS L=1.2u W=2.4u M=1
+.ends TWO_INPUT_XOR
+
+*
+* Component pathname : /home/ece_lab/mentor/ECE4500/Project1/two_input_mux/two_input_mux
+*
+.subckt TWO_INPUT_MUX  F A B SELECT SELECT_NOT VDD_ESC1
+
+        .CONNECT VDD VDD_ESC1
+        M4 F SELECT A VSS NMOS L=1.2u W=2.4u M=1
+        M3 F SELECT_NOT A VDD PMOS L=1.2u W=2.4u M=1
+        M2 F SELECT_NOT B VSS NMOS L=1.2u W=2.4u M=1
+        M1 F SELECT B VDD PMOS L=1.2u W=2.4u M=1
+.ends TWO_INPUT_MUX
+
+*
+* MAIN CELL: Component pathname : /home/ece_lab/mentor/ECE4500/Project1/full_add_sub/full_add_sub
+*
+        V1 VDD VSS DC 2.5V
+        X_TWO_INPUT_XOR1 SUM_DIFF N$14 A_XOR_B A_XOR_B_NOT VDD TWO_INPUT_XOR
+        X_TWO_INPUT_MUX4 N$14 BIN_CIN VSS CC3 CC3_NOT VDD TWO_INPUT_MUX
+        X_TWO_INPUT_MUX3 BOUT_COUT N$2 N$4 CC0 CC0_NOT VDD TWO_INPUT_MUX
+        X_TWO_INPUT_MUX2 N$4 A_NOT N$14 A_XOR_B A_XOR_B_NOT VDD TWO_INPUT_MUX
+        X_TWO_INPUT_MUX1 N$2 N$14 A A_XOR_B A_XOR_B_NOT VDD TWO_INPUT_MUX
+*
+.end

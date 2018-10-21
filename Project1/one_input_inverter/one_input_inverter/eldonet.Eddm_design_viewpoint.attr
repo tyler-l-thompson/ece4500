@@ -1,0 +1,25 @@
+A 5 u Eddm_design_viewpoint 5bca4ad93925.03.7f.00.00.02.00.7d.bc 2 2 17 0
+V v 1 4 5bca4ad93926.03.7f.00.00.02.00.7d.bc
+F f 1 "eldonet.dvpt_1"
+F o 0 
+F o 0 
+F o 0 
+V v 2 4 5bca4b4ef194.03.7f.00.00.02.00.7d.bc
+F f 2 "eldonet.dvpt_2"
+F o 0 
+F o 0 
+F o 0 
+O 2
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Project1/one_input_inverter/one_input_inverter/part" 1 Eddm_part 5bca4ad92e94.03.7f.00.00.02.01.7d.bc 5bca4ad92e94.03.7f.00.00.02.00.7d.bc
+R cspuv 1 "/home/ece_lab/mentor/ECE4500/Project1/one_input_inverter/one_input_inverter/schematic" 2 mgc_schematic 5bca4ad931f8.03.7f.00.00.02.00.7d.bc 5bca4a40ca34.03.7f.00.00.02.00.7d.bc
+R cspuv 2 "/home/ece_lab/mentor/ECE4500/Project1/one_input_inverter/one_input_inverter/eldonet" 1 Eddm_ba_mgr 5bca4ad93a11.03.7f.00.00.02.01.7d.bc 5bca4ad93a11.03.7f.00.00.02.00.7d.bc
+R cspuv 3 "$MGC_DESIGN_KIT/symbols/pmos/part" 6 Eddm_part 39dcb70a738a.03.93.22.22.3e.00.2e.08 399d7e54bb91.03.93.22.22.3e.00.4c.5c
+R cspuv 4 "$MGC_DESIGN_KIT/symbols/nmos/part" 7 Eddm_part 39dcb6d2c6cf.03.93.22.22.3e.00.2e.08 399d7e4745c6.03.93.22.22.3e.00.4c.5c
+R cspuv 5 "$MGC_DESIGN_KIT/symbols/dc_v_source/part" 1 Eddm_part 3890a89d50f5.03.86.56.31.70.00.34.2e 399db67c7221.03.93.22.22.3e.04.28.aa
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Project1/one_input_inverter/one_input_inverter/part" 1 Eddm_part 5bca4ad92e94.03.7f.00.00.02.01.7d.bc 5bca4ad92e94.03.7f.00.00.02.00.7d.bc
+R cspuv 1 "/home/ece_lab/mentor/ECE4500/Project1/one_input_inverter/one_input_inverter/schematic" 1 mgc_schematic 5bca4a40ca35.03.7f.00.00.02.00.7d.bc 5bca4a40ca34.03.7f.00.00.02.00.7d.bc
+P "eddm__refer_state" "eddm__refer_floating"
+R cspuv 2 "/home/ece_lab/mentor/ECE4500/Project1/one_input_inverter/one_input_inverter/eldonet" 1 Eddm_ba_mgr 5bca4ad93a11.03.7f.00.00.02.01.7d.bc 5bca4ad93a11.03.7f.00.00.02.00.7d.bc
