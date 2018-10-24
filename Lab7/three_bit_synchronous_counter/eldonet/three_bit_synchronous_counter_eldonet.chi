@@ -1,0 +1,783 @@
+  Run on linux-B210 (Linux 2.6.16.60-0.21-bigsmp)
+
+/mgc/ams/ixl/bin/eldo.exe -i /home/ece_lab/mentor/ECE4500/Lab7/three_bit_synchronous_counter/eldonet/three_bit_synchronous_counter_eldonet.cir -o /home/ece_lab/mentor/ECE4500/Lab7/three_bit_synchronous_counter/eldonet/three_bit_synchronous_counter_eldonet.chi -gwl jwdb -nocou -wdb_folder -outname three_bit_synchronous_counter_eldonet_21 
+
+
+
+***** PRE-PROCESSING ...
+
+1*******23-Oct-18 *******  ELDO 2010.1  (v7.3_1.1)  *******20:34:46******
+
+0* Component: /home/ece_lab/mentor/ECE4500/Lab7/three_bit_synchronous_counter  Viewpoint: eldonet
+
+0****     INPUT LISTING                                               
+
+0***********************************************************************
+    2  ** including /home/ece_lab/mentor/ECE4500/Lab7/three_bit_synchronous_counter/eldonet/three_bit_synchronous_counter_eldonet.spi
+    1  *
+    2  * .CONNECT statements
+    3  *
+    4  .CONNECT VSS 0
+    5  
+    6  
+    7  * ELDO netlist generated with ICnet by 'ece_lab' on Tue Oct 23 2018 at 20:34:45
+    8  
+    9  *
+   10  * Globals.
+   11  *
+   12  .GLOBAL VDD VSS
+   13  
+   14  *
+   15  * Component pathname : /home/ece_lab/mentor/ECE4500/Project1/one_input_inverter/one_input_inverter
+   16  *
+   17  .SUBCKT ONE_INPUT_INVERTER  OUT IN VDD_ESC1 VSS_ESC2
+   18  
+   19          .CONNECT VSS VSS_ESC2
+   20          .CONNECT VDD VDD_ESC1
+   21          M2 OUT IN VSS VSS NMOS L=1.2U W=2.25U M=1
+   22          M1 OUT IN VDD VDD PMOS L=1.2U W=6.75U M=1
+   23  .ENDS ONE_INPUT_INVERTER
+   24  
+   25  *
+   26  * Component pathname : /home/ece_lab/mentor/ECE4500/Lab7/two_input_and
+   27  *
+   28  .SUBCKT TWO_INPUT_AND  F A B VDD_ESC1 VSS_ESC2
+   29  
+   30          .CONNECT VSS VSS_ESC2
+   31          .CONNECT VDD VDD_ESC1
+   32          M4 A N$15 F VDD PMOS L=1.2U W=2.4U M=1
+   33          M3 A B F VSS NMOS L=1.2U W=2.4U M=1
+   34          X_ONE_INPUT_INVERTER1 N$15 B VDD VSS ONE_INPUT_INVERTER
+   35          M2 F N$15 B VSS NMOS L=1.2U W=2.4U M=1
+   36          M1 A B F VSS NMOS L=1.2U W=2.4U M=1
+   37  .ENDS TWO_INPUT_AND
+   38  
+   39  *
+   40  * Component pathname : /home/ece_lab/mentor/ECE4500/Lab7/three_input_and
+   41  *
+   42  .SUBCKT THREE_INPUT_AND  F A B C VDD_ESC1 VSS_ESC2
+   43  
+   44          .CONNECT VSS VSS_ESC2
+   45          .CONNECT VDD VDD_ESC1
+   46          X_TWO_INPUT_AND2 F N$46 C VDD VSS TWO_INPUT_AND
+   47          X_TWO_INPUT_AND1 N$46 A B VDD VSS TWO_INPUT_AND
+   48  .ENDS THREE_INPUT_AND
+   49  
+   50  *
+   51  * Component pathname : /home/ece_lab/mentor/ECE4500/Lab7/asynchronous_sr_latch
+   52  *
+   53  .SUBCKT ASYNCHRONOUS_SR_LATCH  QN_18 QN_NOT_18 CLR_NOT_18 R_18 S_18 VDD_ESC1
+   54  + VSS_ESC2
+   55  
+   56          .CONNECT VDD VDD_ESC1
+   57          .CONNECT VSS VSS_ESC2
+   58          M7 QN_18 R_18 VSS VSS NMOS L=2.0U W=12.0U M=1
+   59          M1 QN_18 CLR_NOT_18 VSS VSS NMOS L=2.0U W=12.0U M=1
+   60          M8 QN_NOT_18 S_18 VSS VSS NMOS L=2.0U W=12.0U M=1
+   61          M5 QN_NOT_18 QN_18 VSS VSS NMOS L=2.0U W=3.0U M=1
+   62          M4 QN_18 QN_NOT_18 VSS VSS NMOS L=2.0U W=3.0U M=1
+   63          M3 QN_NOT_18 QN_18 VDD VDD PMOS L=2.0U W=9.0U M=1
+   64          M2 QN_18 QN_NOT_18 VDD VDD PMOS L=2.0U W=9.0U M=1
+   65  .ENDS ASYNCHRONOUS_SR_LATCH
+   66  
+   67  *
+   68  * Component pathname : /home/ece_lab/mentor/ECE4500/Lab7/two_input_nor
+   69  *
+   70  .SUBCKT TWO_INPUT_NOR  F A_NOT B B_NOT VDD_ESC1
+   71  
+   72          .CONNECT VDD VDD_ESC1
+   73          M5 A_NOT B F VDD PMOS L=1.2U W=2.4U M=1
+   74          M3 A_NOT B_NOT F VSS NMOS L=1.2U W=2.4U M=1
+   75          M2 F B B_NOT VSS NMOS L=1.2U W=2.4U M=1
+   76          M1 A_NOT B_NOT F VSS NMOS L=1.2U W=2.4U M=1
+   77  .ENDS TWO_INPUT_NOR
+   78  
+   79  *
+   80  * Component pathname : /home/ece_lab/mentor/ECE4500/Lab7/t_flip_flop
+   81  *
+   82  .SUBCKT T_FLIP_FLOP  QN_18 QN_NOT_18 CLK_18 CLR_NOT_18 T_18 VDD_ESC1 VSS_ESC2
+   83  
+   84          .CONNECT VSS VSS_ESC2
+   85          .CONNECT VDD VDD_ESC1
+   86          X_ONE_INPUT_INVERTER24 N$432 N$407 VDD VSS ONE_INPUT_INVERTER
+   87          X_ONE_INPUT_INVERTER23 N$407 N$416 VDD VSS ONE_INPUT_INVERTER
+   88          X_ONE_INPUT_INVERTER22 N$431 N$401 VDD VSS ONE_INPUT_INVERTER
+   89          X_ONE_INPUT_INVERTER21 N$401 N$415 VDD VSS ONE_INPUT_INVERTER
+   90          X_ONE_INPUT_INVERTER2 N$313 N$427 VDD VSS ONE_INPUT_INVERTER
+   91          X_ONE_INPUT_INVERTER1 N$357 N$296 VDD VSS ONE_INPUT_INVERTER
+   92          X_THREE_INPUT_AND2 N$302 CLK_18 T_18 QN_NOT_18 VDD VSS THREE_INPUT_AND
+   93          X_THREE_INPUT_AND1 N$296 CLK_18 T_18 QN_18 VDD VSS THREE_INPUT_AND
+   94          X_ONE_INPUT_INVERTER3 N$189 CLR_NOT_18 VDD VSS ONE_INPUT_INVERTER
+   95          X_ONE_INPUT_INVERTER18 N$415 N$385 VDD VSS ONE_INPUT_INVERTER
+   96          X_ONE_INPUT_INVERTER17 N$385 N$399 VDD VSS ONE_INPUT_INVERTER
+   97          X_ASYNCHRONOUS_SR_LATCH1 QN_18 QN_NOT_18 N$189 N$337 N$336 VDD VSS ASYNCHRONOUS_SR_LATCH
+   98          X_ONE_INPUT_INVERTER14 N$399 N$364 VDD VSS ONE_INPUT_INVERTER
+   99          X_ONE_INPUT_INVERTER13 N$364 N$378 VDD VSS ONE_INPUT_INVERTER
+  100          X_TWO_INPUT_NOR2 N$336 N$330 N$334 N$321 VDD TWO_INPUT_NOR
+  101          X_TWO_INPUT_NOR1 N$337 N$330 N$314 N$313 VDD TWO_INPUT_NOR
+  102          X_ONE_INPUT_INVERTER7 N$334 N$321 VDD VSS ONE_INPUT_INVERTER
+  103          X_ONE_INPUT_INVERTER4 N$314 N$313 VDD VSS ONE_INPUT_INVERTER
+  104          X_ONE_INPUT_INVERTER9 N$354 N$351 VDD VSS ONE_INPUT_INVERTER
+  105          X_ONE_INPUT_INVERTER10 N$378 N$354 VDD VSS ONE_INPUT_INVERTER
+  106          X_ONE_INPUT_INVERTER26 N$421 N$418 VDD VSS ONE_INPUT_INVERTER
+  107          X_ONE_INPUT_INVERTER25 N$418 N$431 VDD VSS ONE_INPUT_INVERTER
+  108          X_ONE_INPUT_INVERTER8 N$330 CLK_18 VDD VSS ONE_INPUT_INVERTER
+  109          X_ONE_INPUT_INVERTER16 N$400 N$370 VDD VSS ONE_INPUT_INVERTER
+  110          X_ONE_INPUT_INVERTER15 N$370 N$379 VDD VSS ONE_INPUT_INVERTER
+  111          X_ONE_INPUT_INVERTER12 N$379 N$360 VDD VSS ONE_INPUT_INVERTER
+  112          X_ONE_INPUT_INVERTER11 N$360 N$357 VDD VSS ONE_INPUT_INVERTER
+  113          X_ONE_INPUT_INVERTER6 N$321 N$421 VDD VSS ONE_INPUT_INVERTER
+  114          X_ONE_INPUT_INVERTER5 N$351 N$302 VDD VSS ONE_INPUT_INVERTER
+  115          X_ONE_INPUT_INVERTER20 N$416 N$391 VDD VSS ONE_INPUT_INVERTER
+  116          X_ONE_INPUT_INVERTER19 N$391 N$400 VDD VSS ONE_INPUT_INVERTER
+  117          X_ONE_INPUT_INVERTER28 N$427 N$424 VDD VSS ONE_INPUT_INVERTER
+  118          X_ONE_INPUT_INVERTER27 N$424 N$432 VDD VSS ONE_INPUT_INVERTER
+  119  .ENDS T_FLIP_FLOP
+  120  
+  121  *
+  122  * MAIN CELL: Component pathname : /home/ece_lab/mentor/ECE4500/Lab7/three_bit_synchronous_counter
+  123  *
+  124          X_TWO_INPUT_AND4 CY_18 N$147 N$150 VDD VSS TWO_INPUT_AND
+  125          X_TWO_INPUT_AND3 N$150 Q2_18 CLK_18 VDD VSS TWO_INPUT_AND
+  126          X_TWO_INPUT_AND2 N$147 Q0_18 Q1_18 VDD VSS TWO_INPUT_AND
+  127          X_TWO_INPUT_AND1 N$143 Q0_18 Q1_18 VDD VSS TWO_INPUT_AND
+  128          X_T_FLIP_FLOP3 Q2_18 N$89 CLK_18 CLR_NOT_18 N$143 VDD VSS T_FLIP_FLOP
+  129          X_T_FLIP_FLOP2 Q1_18 N$87 CLK_18 CLR_NOT_18 Q0_18 VDD VSS T_FLIP_FLOP
+  130          X_T_FLIP_FLOP1 Q0_18 N$84 CLK_18 CLR_NOT_18 VDD VDD VSS T_FLIP_FLOP
+  131          V1 VDD VSS DC 2.5V
+  132  *
+  133  *end
+    2  
+    3  ** including /home/ece_lab/mentor/mgc/mit_0.25.lib
+    1  *I would like to thank MIT Lincoln Laboratory for allowing us to
+    2  *use their BSIM3v3 Spice models.  MIT Lincoln Laboratory current
+    3  *research includes Multiproject CMOS Fabrication as part of their
+    4  *Advanced Silicon Technology project.  For futher information,
+    5  *please visit their website at http://www.ll.mit.edu/AST
+    6  
+    7  * MOS Level 3 models
+    8  .MODEL NMOS NMOS LMIN=1.2E-06 LMAX=1.5E-06 WMIN=2.0E-06 WMAX=500E-06 LEVEL=3
+    9  +VTO=.79 GAMMA=.38 PHI=.53 RD=63 IS=1E-16 PB=.8 CGSO=1.973E-10
+   10  +CGDO=1.973E-10 RSH=45 CJ=0.00029 MJ=.486 CJSW=3.3E-10 MJSW=.33 JS=0.0001
+   11  +TOX=2.5E-08 NSUB=8.7E+15 NFS=8.2E+11 TPG=1 XJ=1E-07 LD=7E-08 UO=577
+   12  +VMAX=150000 FC=.5 DELTA=.3551 THETA=0.046 ETA=.16 KAPPA=0.05
+   13  
+   14  .MODEL PMOS PMOS  LMIN=1.2E-06 LMAX=100E-06 WMIN=2.0E-06 WMAX=500E-06 LEVEL=3
+   15  +VTO=-8.40000000E-01 GAMMA=.53 PHI=.58 RD=94 RS=94 IS=1E-16 PB=.8
+   16  +CGSO=3.284E-10 CGDO=3.284E-10 RSH=100 CJ=0.00041 MJ=.54 CJSW=3.4E-10 MJSW=.3
+   17  +JS=0.0001 TOX=2.5E-08 NSUB=1.75E+16 NFS=8.4E+11 TPG=1 XJ=0 LD=6E-08 UO=205
+   18  +VMAX=500000 FC=.5 DELTA=.4598 THETA=.14 ETA=.17 KAPPA=10
+   19  
+   20  * Diodes used in resistor subcircuits
+   21  .MODEL  NDIO  D  LEVEL=1 EG=1.110 RS=1.500E-10 CJ=1.599E-3 
+   22  +CJSW=1.609E-10 PB=1.100E+00 MJ=4.940E-01 MJSW=4.720E-01 
+   23  +JS=9.014E-07 JSW=6.405E-13 N=1.114
+   24  .MODEL  PDIO  D  LEVEL=1 EG=1.110 RS=1.500E-10 CJ=1.599E-3
+   25  +CJSW=1.609E-10 PB=1.100E+00 MJ=4.940E-01 MJSW=4.720E-01
+   26  +JS=9.014E-07 JSW=6.405E-13 N=1.114
+   27  
+   28  * 3-terminal NPLUS resistor
+   29  * POS=1 NEG=2 SUB=3
+   30  .SUBCKT NPLUS 1 2 3 R=1K W=0.5U
+   31    R1  1  4  (R/4) TC1=1.47E-3 TC2=0
+   32    R2  4  5  (R/4) TC1=1.47E-3 TC2=0
+   33    R3  5  6  (R/4) TC1=1.47E-3 TC2=0
+   34    R4  6  2  (R/4) TC1=1.47E-3 TC2=0
+   35    D1  3  1  NDIO W=(W) AREA=(W*(W*(R/80)/5)) PERI=(2*((W*(R/80)/5)+W/2))
+   36    D2  3  4  NDIO W=(W) AREA=(W*(W*(R/80)/5)) PERI=(2*(W*(R/80)/5))
+   37    D3  3  5  NDIO W=(W) AREA=(W*(W*(R/80)/5)) PERI=(2*(W*(R/80)/5))
+   38    D4  3  6  NDIO W=(W) AREA=(W*(W*(R/80)/5)) PERI=(2*(W*(R/80)/5))
+   39    D5  3  2  NDIO W=(W) AREA=(W*(W*(R/80)/5)) PERI=(2*((W*(R/80)/5)+W/2))
+   40  .ENDS NPLUS
+   41  
+   42  
+   43  * 3-terminal PPLUS resistor
+   44  * POS=1 NEG=2 SUB=3
+   45  .SUBCKT PPLUS 1 2 3 R=1K W=3U
+   46    R1   1  4  (R/4) TC1=1.54E-3 TC2=0
+   47    R2   4  5  (R/4) TC1=1.54E-3 TC2=0
+   48    R3   5  6  (R/4) TC1=1.54E-3 TC2=0
+   49    R4   6  2  (R/4) TC1=1.54E-3 TC2=0
+   50    D1   1  3  PDIO W=(W) AREA=(W*(W*(R/150)/5)) PERI=(2*((W*(R/150)/5)+W/2))
+   51    D2   4  3  PDIO W=(W) AREA=(W*(W*(R/150)/5)) PERI=(2*(W*(R/150)/5))
+   52    D3   5  3  PDIO W=(W) AREA=(W*(W*(R/150)/5)) PERI=(2*(W*(R/150)/5))
+   53    D4   6  3  PDIO W=(W) AREA=(W*(W*(R/150)/5)) PERI=(2*(W*(R/150)/5))
+   54    D5   2  3  PDIO W=(W) AREA=(W*(W*(R/150)/5)) PERI=(2*((W*(R/150)/5)+W/2))
+   55  .ENDS PPLUS
+   56  
+   57  *3 terminal capacitor
+   58  .SUBCKT NCAP M2 M1M3 N CAPACITANCE=1P
+   59    C1 M2 M1M3 (CAPACITANCE)
+   60    C2 M1M3 N ((SQRT((4*(87.8/72.6)*(87.8/72.6))+(CAPACITANCE/72.6E-18))-2*(87.8/72.6))*30.4E-18)
+   61    C3 M1M3 N ((SQRT((4*(87.8/72.6)*(87.8/72.6))+(CAPACITANCE/72.6E-18))-2*(87.8/72.6))*4*41.7E-18)
+   62  .ENDS CAP3T
+   63  
+   64  
+Warning 316: In file "./mgc/mit_0.25.lib" line 62:
++   COMMAND .ENDS: The name does not match the .SUBCKT name.
+    3  
+    4  .OPTION NOASCII
+    5  .OPTION MODWL
+    6  .OPTION ENGNOT
+    7  .OPTION AEX
+    8  
+    9  * --- Singles
+   10  
+   11  * - Analysis Setup - Trans
+   12  .TRAN 0 2800N 0 100N
+   13  
+   14  * --- Waveform Outputs
+   15  .PROBE TRAN V(CLK_18) V(CLR_NOT_18) V(CY_18) V(Q0_18) V(Q1_18) V(Q2_18)
+   16  
+   17  * --- Params
+   18  .TEMP 27
+   19  
+   20  * --- Forces
+   21  VFORCE__CLK CLK_18 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07
+   22  + 0101010101010101010101010101 R
+   23  VFORCE__CLR_not CLR_NOT_18 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07
+   24  + 0011100011101111111111111111 R
+   25  
+   26  * --- Libsetup
+   27  
+   28  .END
+
+End of file 
+
+
+***** 0  error(s). 
+***** 1  warning(s). 
+
+
+
+***** GENERATION ...
+
+Warning 255: In file "./ECE4500/Lab7/three_bit_synchronous_counter/eldonet/three_bit_synchronous_counter_eldonet.spi" line 58:
++   OBJECT "X_T_FLIP_FLOP3.X_ASYNCHRONOUS_SR_LATCH1.M7":  Size not consistent with LMIN/LMAX/WMIN/WMAX/TEMPMIN/TEMPMAX specification.
++    l (2.000000e+00u) is greater than lmax (1.500000e+00u)
+Warning 255: In file "./ECE4500/Lab7/three_bit_synchronous_counter/eldonet/three_bit_synchronous_counter_eldonet.spi" line 59:
++   OBJECT "X_T_FLIP_FLOP3.X_ASYNCHRONOUS_SR_LATCH1.M1":  Size not consistent with LMIN/LMAX/WMIN/WMAX/TEMPMIN/TEMPMAX specification.
++    l (2.000000e+00u) is greater than lmax (1.500000e+00u)
+Warning 255: In file "./ECE4500/Lab7/three_bit_synchronous_counter/eldonet/three_bit_synchronous_counter_eldonet.spi" line 60:
++   OBJECT "X_T_FLIP_FLOP3.X_ASYNCHRONOUS_SR_LATCH1.M8":  Size not consistent with LMIN/LMAX/WMIN/WMAX/TEMPMIN/TEMPMAX specification.
++    l (2.000000e+00u) is greater than lmax (1.500000e+00u)
+Warning 255: In file "./ECE4500/Lab7/three_bit_synchronous_counter/eldonet/three_bit_synchronous_counter_eldonet.spi" line 61:
++   OBJECT "X_T_FLIP_FLOP3.X_ASYNCHRONOUS_SR_LATCH1.M5":  Size not consistent with LMIN/LMAX/WMIN/WMAX/TEMPMIN/TEMPMAX specification.
++    l (2.000000e+00u) is greater than lmax (1.500000e+00u)
+Warning 255: In file "./ECE4500/Lab7/three_bit_synchronous_counter/eldonet/three_bit_synchronous_counter_eldonet.spi" line 62:
++   OBJECT "X_T_FLIP_FLOP3.X_ASYNCHRONOUS_SR_LATCH1.M4":  Size not consistent with LMIN/LMAX/WMIN/WMAX/TEMPMIN/TEMPMAX specification.
++    l (2.000000e+00u) is greater than lmax (1.500000e+00u)
+Warning 255: In file "./ECE4500/Lab7/three_bit_synchronous_counter/eldonet/three_bit_synchronous_counter_eldonet.spi" line 58:
++   OBJECT "X_T_FLIP_FLOP2.X_ASYNCHRONOUS_SR_LATCH1.M7":  Size not consistent with LMIN/LMAX/WMIN/WMAX/TEMPMIN/TEMPMAX specification.
++    l (2.000000e+00u) is greater than lmax (1.500000e+00u)
+Warning 255: In file "./ECE4500/Lab7/three_bit_synchronous_counter/eldonet/three_bit_synchronous_counter_eldonet.spi" line 59:
++   OBJECT "X_T_FLIP_FLOP2.X_ASYNCHRONOUS_SR_LATCH1.M1":  Size not consistent with LMIN/LMAX/WMIN/WMAX/TEMPMIN/TEMPMAX specification.
++    l (2.000000e+00u) is greater than lmax (1.500000e+00u)
+Warning 255: In file "./ECE4500/Lab7/three_bit_synchronous_counter/eldonet/three_bit_synchronous_counter_eldonet.spi" line 60:
++   OBJECT "X_T_FLIP_FLOP2.X_ASYNCHRONOUS_SR_LATCH1.M8":  Size not consistent with LMIN/LMAX/WMIN/WMAX/TEMPMIN/TEMPMAX specification.
++    l (2.000000e+00u) is greater than lmax (1.500000e+00u)
+Warning 255: In file "./ECE4500/Lab7/three_bit_synchronous_counter/eldonet/three_bit_synchronous_counter_eldonet.spi" line 61:
++   OBJECT "X_T_FLIP_FLOP2.X_ASYNCHRONOUS_SR_LATCH1.M5":  Size not consistent with LMIN/LMAX/WMIN/WMAX/TEMPMIN/TEMPMAX specification.
++    l (2.000000e+00u) is greater than lmax (1.500000e+00u)
+Warning 255: In file "./ECE4500/Lab7/three_bit_synchronous_counter/eldonet/three_bit_synchronous_counter_eldonet.spi" line 62:
++   OBJECT "X_T_FLIP_FLOP2.X_ASYNCHRONOUS_SR_LATCH1.M4":  Size not consistent with LMIN/LMAX/WMIN/WMAX/TEMPMIN/TEMPMAX specification.
++    l (2.000000e+00u) is greater than lmax (1.500000e+00u)
+Warning 255: In file "./ECE4500/Lab7/three_bit_synchronous_counter/eldonet/three_bit_synchronous_counter_eldonet.spi" line 58:
++   OBJECT "X_T_FLIP_FLOP1.X_ASYNCHRONOUS_SR_LATCH1.M7":  Size not consistent with LMIN/LMAX/WMIN/WMAX/TEMPMIN/TEMPMAX specification.
++    l (2.000000e+00u) is greater than lmax (1.500000e+00u)
+Warning 255: In file "./ECE4500/Lab7/three_bit_synchronous_counter/eldonet/three_bit_synchronous_counter_eldonet.spi" line 59:
++   OBJECT "X_T_FLIP_FLOP1.X_ASYNCHRONOUS_SR_LATCH1.M1":  Size not consistent with LMIN/LMAX/WMIN/WMAX/TEMPMIN/TEMPMAX specification.
++    l (2.000000e+00u) is greater than lmax (1.500000e+00u)
+Warning 255: In file "./ECE4500/Lab7/three_bit_synchronous_counter/eldonet/three_bit_synchronous_counter_eldonet.spi" line 60:
++   OBJECT "X_T_FLIP_FLOP1.X_ASYNCHRONOUS_SR_LATCH1.M8":  Size not consistent with LMIN/LMAX/WMIN/WMAX/TEMPMIN/TEMPMAX specification.
++    l (2.000000e+00u) is greater than lmax (1.500000e+00u)
+Warning 255: In file "./ECE4500/Lab7/three_bit_synchronous_counter/eldonet/three_bit_synchronous_counter_eldonet.spi" line 61:
++   OBJECT "X_T_FLIP_FLOP1.X_ASYNCHRONOUS_SR_LATCH1.M5":  Size not consistent with LMIN/LMAX/WMIN/WMAX/TEMPMIN/TEMPMAX specification.
++    l (2.000000e+00u) is greater than lmax (1.500000e+00u)
+Warning 255: In file "./ECE4500/Lab7/three_bit_synchronous_counter/eldonet/three_bit_synchronous_counter_eldonet.spi" line 62:
++   OBJECT "X_T_FLIP_FLOP1.X_ASYNCHRONOUS_SR_LATCH1.M4":  Size not consistent with LMIN/LMAX/WMIN/WMAX/TEMPMIN/TEMPMAX specification.
++    l (2.000000e+00u) is greater than lmax (1.500000e+00u)
+Warning 1615: In file "./ECE4500/Lab7/three_bit_synchronous_counter/eldonet/three_bit_synchronous_counter_eldonet.cir" line 12:
++   COMMAND ".TRAN": Tstep can not be <= 0.0.
++   It is set to Tmax/20.0 = 1.400e-07 s.
+
+***** 0  error(s). 
+***** 17  warning(s). 
+
+
+INFORMATION ABOUT COMPILATION 
+
+
+Memory space allocated (bytes): 58032128
+312 elements
+131 nodes 
+3 input signals
+Detail about objects and nodes found in the design...
+Number of nodes                     131
+Number of intrinsic nodes           0
+Number of input signals             3
+Number of resistors                 0
+Number of floating capacitors       0
+Number of grounded capacitors       0
+Number of inductors                 0
+Number of voltage sources           3
+Number of current sources           0
+Number of dependent sources         0
+Number of diodes                    0
+Number of BJT                       0
+Number of JFET                      0
+Number of MOS                       309
+Number of SWITCHES                  0
+Number of transmission lines        0
+Total number of elements            312
+
+
+Warning: A transition time < HMIN (1.000000e-12Sec) found on VFORCE__CLK
+HMIN assumed.. Set Eldo option 'HMIN' to a lower value if needed.
+
+
+Warning: A transition time < HMIN (1.000000e-12Sec) found on VFORCE__CLR_NOT
+HMIN assumed.. Set Eldo option 'HMIN' to a lower value if needed.
+ Reset internal minimun time step.
+hmin value is 2.500000e-04Nanos
+
+Eldo VERSION : ELDO 2010.1 Thu Jul  1 14:15:09 GMT 2010
+
+*** DATE: 23-Oct-2018 20:34:46
+
+*** TITLE: * Component: /home/ece_lab/mentor/ECE4500/Lab7/three_bit_synchronous_counter  Viewpoint: eldonet
+
+TEMPERATURE : 27.000000 degrees C
+
+1***************23-Oct-2018 ***********************  ELDO 2010.1  (v7.3_1.1)  ***********************20:34:46*****************
+
+0* Component: /home/ece_lab/mentor/ECE450
+0****                 MODELS PARAMETERS                                    TEMPERATURE =   27.000 DEG C
+
+0*************************************************************************************************************************
+
+
+
+ DEVICE          MOS
+ MODEL: NMOS
+ TYPE            N
+ LEVEL 3 : Berkeley Spice compatible model
+
+  names    values    units     names    values    units     names    values    units   
+  -----    ------    -----     -----    ------    -----     -----    ------    -----   
+VTO     = 7.9000E-01 V       KP      = 7.9699E-05 A/V^2   GAMMA   = 3.8000E-01 V^1/2  
+PHI     = 5.3000E-01 V       UO      = 5.7700E+02 unit1   VMAX    = 1.5000E+05 m/s    
+THETA   = 4.6000E-02 1/V     ETA     = 1.6000E-01 -       KAPPA   = 5.0000E-02 1/V    
+DELTA   = 3.5510E-01 -       NSUB    = 8.7000E+15 At/cm^3 NSS     = 0.0        At/cm^2
+NFS     = 8.2000E+11 At/cm^2 TPG     = 1.0000E+00 -       TOX     = 2.5000E-08 m      
+COX     = 1.3813E-03 F/m^2   CGSO    = 1.9730E-10 F/m     CGDO    = 1.9730E-10 F/m    
+CGBO    = 0.0        F/m     KF      = 0.0        -       AF      = 1.0000E+00 -      
+XQC     = 1.0000E+00 -       CAPLEV  = 0          -       
+
+ *** Common extrinsic model parameters ***
+OPTACM  = 0          -       ARLEV   = 6          -       ALEV    = 6          -      
+RLEV    = 6          -       
+ * Access resistances related parameters *
+RD      = 6.3000E+01 Ohm     RS      = 0.0        Ohm     RSH     = 4.5000E+01 Ohm/Sq.
+RDC     = 0.0        Ohm     RSC     = 0.0        Ohm     
+ * Geometry related parameters *
+LD      = 7.0000E-08 m       WD      = 0.0        m       DL      = 0.0        m      
+DW      = 0.0        m       LDIF    = 0.0        m       HDIF    = 0.0        m      
+WMLT    = 1.0000E+00 -       LMLT    = 1.0000E+00 -       DEL     = 0.0        m      
+XJ      = 1.0000E-07 m       
+ * Static bulk-diode related parameters *
+DIOLEV  = 1          -       JS      = 1.0000E-04 A/m^2   JSW     = 0.0        A/m    
+IS      = 1.0000E-16 A       N       = 1.0000E+00 -       NDS     = 1.0000E+00 -      
+VNDS    =-1.0000E+00 V       VDLIN   = 5.0000E-01 -       
+ * Dynamic bulk-diode related parameters *
+DCAPLEV = 2          -       CJGATE  = 0.0                CBD     = 0.0        F      
+CBS     = 0.0        F       CJ      = 2.9000E-04 F/m^2   CJSW    = 3.3000E-10 F/m    
+FC      = 5.0000E-01 -       MJ      = 4.8600E-01 -       MJSW    = 3.3000E-01 -      
+TT      = 0.0        s       PB      = 8.0000E-01 V       PBSW    = 8.0000E-01 V      
+ * Temperature related Parameters 
+EG      = 1.1100E+00 eV      GAP1    = 7.0200E-04 eV/degK GAP2    = 1.1080E+03 degK   
+TNOM    = 2.7000E+01 degC    TLEV    = 0          -       TLEVC   = 0          -      
+TLEVI   = 1          -       XTI     = 0.0        -       
+ * Temperature Access Resistance related parameters * TLEVR = 1 
+TRD1    = 0.0        1/degK  TRS1    = 0.0        1/degK  TRSH1   = 0.0        1/degK 
+TRD2    = 0.0        unit2   TRS2    = 0.0        unit2   TRSH2   = 0.0        unit2  
+
+unit1 represents cm^2/V.s
+unit2 represents 1/degK^2
+
+ DEVICE          MOS
+ MODEL: PMOS
+ TYPE            P
+ LEVEL 3 : Berkeley Spice compatible model
+
+  names    values    units     names    values    units     names    values    units   
+  -----    ------    -----     -----    ------    -----     -----    ------    -----   
+VTO     =-8.4000E-01 V       KP      = 2.8316E-05 A/V^2   GAMMA   = 5.3000E-01 V^1/2  
+PHI     = 5.8000E-01 V       UO      = 2.0500E+02 unit1   VMAX    = 5.0000E+05 m/s    
+THETA   = 1.4000E-01 1/V     ETA     = 1.7000E-01 -       KAPPA   = 1.0000E+01 1/V    
+DELTA   = 4.5980E-01 -       NSUB    = 1.7500E+16 At/cm^3 NSS     = 0.0        At/cm^2
+NFS     = 8.4000E+11 At/cm^2 TPG     = 1.0000E+00 -       TOX     = 2.5000E-08 m      
+COX     = 1.3813E-03 F/m^2   CGSO    = 3.2840E-10 F/m     CGDO    = 3.2840E-10 F/m    
+CGBO    = 0.0        F/m     KF      = 0.0        -       AF      = 1.0000E+00 -      
+XQC     = 1.0000E+00 -       CAPLEV  = 0          -       
+
+ *** Common extrinsic model parameters ***
+OPTACM  = 0          -       ARLEV   = 6          -       ALEV    = 6          -      
+RLEV    = 6          -       
+ * Access resistances related parameters *
+RD      = 9.4000E+01 Ohm     RS      = 9.4000E+01 Ohm     RSH     = 1.0000E+02 Ohm/Sq.
+RDC     = 0.0        Ohm     RSC     = 0.0        Ohm     
+ * Geometry related parameters *
+LD      = 6.0000E-08 m       WD      = 0.0        m       DL      = 0.0        m      
+DW      = 0.0        m       LDIF    = 0.0        m       HDIF    = 0.0        m      
+WMLT    = 1.0000E+00 -       LMLT    = 1.0000E+00 -       DEL     = 0.0        m      
+XJ      = 0.0        m       
+ * Static bulk-diode related parameters *
+DIOLEV  = 1          -       JS      = 1.0000E-04 A/m^2   JSW     = 0.0        A/m    
+IS      = 1.0000E-16 A       N       = 1.0000E+00 -       NDS     = 1.0000E+00 -      
+VNDS    =-1.0000E+00 V       VDLIN   = 5.0000E-01 -       
+ * Dynamic bulk-diode related parameters *
+DCAPLEV = 2          -       CJGATE  = 0.0                CBD     = 0.0        F      
+CBS     = 0.0        F       CJ      = 4.1000E-04 F/m^2   CJSW    = 3.4000E-10 F/m    
+FC      = 5.0000E-01 -       MJ      = 5.4000E-01 -       MJSW    = 3.0000E-01 -      
+TT      = 0.0        s       PB      = 8.0000E-01 V       PBSW    = 8.0000E-01 V      
+ * Temperature related Parameters 
+EG      = 1.1100E+00 eV      GAP1    = 7.0200E-04 eV/degK GAP2    = 1.1080E+03 degK   
+TNOM    = 2.7000E+01 degC    TLEV    = 0          -       TLEVC   = 0          -      
+TLEVI   = 1          -       XTI     = 0.0        -       
+ * Temperature Access Resistance related parameters * TLEVR = 1 
+TRD1    = 0.0        1/degK  TRS1    = 0.0        1/degK  TRSH1   = 0.0        1/degK 
+TRD2    = 0.0        unit2   TRS2    = 0.0        unit2   TRSH2   = 0.0        unit2  
+
+unit1 represents cm^2/V.s
+unit2 represents 1/degK^2
+
+
+ Reset internal minimun time step.
+hmin value is 2.500000e-04Nanos
+
+
+
+1***************23-Oct-2018 ***********************  ELDO 2010.1  (v7.3_1.1)  ***********************20:34:46*****************
+
+0* Component: /home/ece_lab/mentor/ECE4500/Lab7/three_bit_synchronous_counter  Viewpoint: eldonet
+0****                 OPTION SUMMARY                                        TEMPERATURE =   27.000 DEG C
+
+0*************************************************************************************************************************
+
+
+
+
+
+*** DC Control Options : 
+
+GMIN           = 1.00e-12 NMAXSIZE       = 60000    ITL1           = 100      
+GRAMP          = 0        NETSIZE        = 100      VMINDC         = UNDEF    
+VMAXDC         = UNDEF    
+
+*** Initial Accuracy Control Options (May be adjusted during simulation): 
+
+ITOL           = 1.00e-06 EPS            = 5.00e-03 VNTOL          = 1.00e-06 
+RELTOL         = 1.00e-03 RELERR         = 5.00e-02 PIVREL         = 1.00e-03 
+PIVTOL         = 1.00e-16 ABSTOL         = 1.00e-12 FLXTOL         = 1.00e-11 
+MAXORD         = 2.00e+00 
+
+*** Time-step Control Options : 
+
+ZOOMTIME       = 1.00e+00 STEP           = 0.00e+00 STARTSMP       = 0.00e+00 
+FREQSMP        = 0.00e+00 COURESOL       = 0.00e+00 TRTOL          = 7.00e+00 
+HMIN           = 2.50e-13 ITL3           = 3        ITL4           = 13       
+FT             = 1.25e-01 DCLOG          = 1.00e+00 LVLTIM         = 2        
+LVLCNV         = 2        DVDT           = -1       RELVAR         = 1.50e-01 
+ABSVAR         = 2.00e-01 SAMPLE         = 0.00e+00 HMAX           = UNDEF    
+
+
+*** MosFet default Options : 
+
+SCALE          = 1.00e+00 SCALM          = 1.00e+00 SCALEBSIM      = 1.00e+00 
+DEFAD          = UNDEF    DEFAS          = UNDEF    DEFPD          = UNDEF    
+DEFPS          = UNDEF    DEFW           = 1.00e-04 DEFL           = 1.00e-04 
+DEFNRD         = UNDEF    DEFNRS         = UNDEF    XA             = 6.00e-06 
+LIMRMOS        = UNDEF    SHRINK         = 1.00e+00 
+
+*** General Information Options : 
+
+SDA            = 0        CPTIME         = UNDEF    STAT           = 0        
+TIMEDIV        = 0        SIMUDIV        = 10       SAVETIME       = 0        
+MAXTRAN        = 1000     MAXNODES       = 10000    MAXV           = 1.00e+13 
+LIMPROBE       = 10000    FLICKER_NOISE  = 0        THERMAL_NOISE  = 0        
+TNOM           = 2.70e+01 TMAX           = UNDEF    
+SPICDC         = 0        SPIOUT         = 0        NEWTON         = 0        
+OSR            = 0        TRAP           = 1        GEAR           = 0        
+BE             = 0        PROBEOP        = 0        NOLAT          = 0        
+NWLAT          = 0        ANALOG         = 0        BBDEBUG        = 0        
+NOSIZECHK      = 0        QTRUNC         = 0        UNBOUND        = 0        
+LCAPOP         = 0        NOAEX          = 1        AEX            = 1        
+AEX            = 1        STVER          = 0        MOTOROLA       = 0        
+AMS            = 0        ASPEC          = 0        INPUT          = 0        
+NOINIT         = 0        PSF            = 0        WSF            = 0        
+WSFASCII       = 0        NOBIN          = 0        NOCOU          = 1        
+WL             = 0        NODE           = 0        LIST           = 0        
+SPI3BIN        = 0        SPI3ASC        = 0        NOMOD          = 0        
+WSF            = 0        WSFASCII       = 0        NOBIN          = 0        
+NOCOU          = 1        RMOS           = 0        NWRMOS         = 1        
+NONWRMOS       = 0        USEDEFAP       = 0        NOASCII        = 1        
+ASCII          = 0        MIXED          = 0        SWITCH         = 0        
+USERSWITCH     = 0        TIMING         = 0        MODWL          = 1        
+ULOGIC         = 0        
+
+
+
+***> DC CPU TIME 0s 090ms <***
+
+DC:22 iterations FOR DC analysis
+
+
+
+
+1***************23-Oct-2018 ***********************  ELDO 2010.1  (v7.3_1.1)  ***********************20:34:46*****************
+
+0* Component: /home/ece_lab/mentor/ECE4500/Lab7/three_bit_synchronous_counter  Viewpoint: eldonet
+0****                 INITIAL TRANSIENT SOLUTION                           TEMPERATURE =   27.000 DEG C
+
+0*************************************************************************************************************************
+
+
+  NODE         VOLTAGE    
+ VDD       2.5000     
+ CLK_18       0.0000     
+ CLR_NOT_18       0.0000     
+ X_TWO_INPUT_AND3.N$15       2.5000     
+ X_T_FLIP_FLOP3.N$189       2.5000     
+ X_T_FLIP_FLOP2.N$189       2.5000     
+ X_T_FLIP_FLOP1.N$189       2.5000     
+ X_T_FLIP_FLOP1.X_THREE_INPUT_AND2.X_TWO_INPUT_AND1.N$15       8.1062N    
+ X_T_FLIP_FLOP1.X_THREE_INPUT_AND1.X_TWO_INPUT_AND1.N$15       8.1062N    
+ N$150       67.9266P   
+ X_TWO_INPUT_AND4.N$15       2.5000     
+ CY_18       101.8900P  
+ Q2_18       146.2488P  
+ X_T_FLIP_FLOP3.X_THREE_INPUT_AND1.X_TWO_INPUT_AND2.N$15       2.5000     
+ X_T_FLIP_FLOP3.N$296       180.2127P  
+ X_T_FLIP_FLOP3.N$357       2.5000     
+ X_T_FLIP_FLOP3.N$360       8.1062N    
+ X_T_FLIP_FLOP3.N$379       2.5000     
+ X_T_FLIP_FLOP3.N$370       8.1062N    
+ X_T_FLIP_FLOP3.N$400       2.5000     
+ X_T_FLIP_FLOP3.N$391       8.1062N    
+ X_T_FLIP_FLOP3.N$416       2.5000     
+ X_T_FLIP_FLOP3.N$407       8.1062N    
+ X_T_FLIP_FLOP3.N$432       2.5000     
+ X_T_FLIP_FLOP3.N$424       8.1062N    
+ X_T_FLIP_FLOP3.N$427       2.5000     
+ Q0_18       4.3270N    
+ X_T_FLIP_FLOP2.X_THREE_INPUT_AND2.X_TWO_INPUT_AND1.N$15       2.5000     
+ X_T_FLIP_FLOP2.X_THREE_INPUT_AND1.X_TWO_INPUT_AND1.N$15       2.5000     
+ X_T_FLIP_FLOP1.X_THREE_INPUT_AND1.X_TWO_INPUT_AND2.N$15       2.5000     
+ X_T_FLIP_FLOP1.X_THREE_INPUT_AND1.N$46       7.1640N    
+ X_T_FLIP_FLOP1.N$296       4.3610N    
+ X_T_FLIP_FLOP1.N$357       2.5000     
+ X_T_FLIP_FLOP1.N$360       8.1062N    
+ X_T_FLIP_FLOP1.N$379       2.5000     
+ X_T_FLIP_FLOP1.N$370       8.1062N    
+ X_T_FLIP_FLOP1.N$400       2.5000     
+ X_T_FLIP_FLOP1.N$391       8.1062N    
+ X_T_FLIP_FLOP1.N$416       2.5000     
+ X_T_FLIP_FLOP1.N$407       8.1062N    
+ X_T_FLIP_FLOP1.N$432       2.5000     
+ X_T_FLIP_FLOP1.N$424       8.1062N    
+ X_T_FLIP_FLOP1.N$427       2.5000     
+ Q1_18       4.3368N    
+ X_TWO_INPUT_AND2.N$15       2.5000     
+ X_TWO_INPUT_AND1.N$15       2.5000     
+ X_T_FLIP_FLOP2.X_THREE_INPUT_AND1.X_TWO_INPUT_AND2.N$15       2.5000     
+ N$147       4.4047N    
+ X_T_FLIP_FLOP2.X_THREE_INPUT_AND1.N$46       4.3949N    
+ X_T_FLIP_FLOP2.N$296       4.3708N    
+ X_T_FLIP_FLOP2.N$357       2.5000     
+ X_T_FLIP_FLOP2.N$360       8.1062N    
+ X_T_FLIP_FLOP2.N$379       2.5000     
+ X_T_FLIP_FLOP2.N$370       8.1062N    
+ X_T_FLIP_FLOP2.N$400       2.5000     
+ X_T_FLIP_FLOP2.N$391       8.1062N    
+ X_T_FLIP_FLOP2.N$416       2.5000     
+ X_T_FLIP_FLOP2.N$407       8.1062N    
+ X_T_FLIP_FLOP2.N$432       2.5000     
+ X_T_FLIP_FLOP2.N$424       8.1062N    
+ X_T_FLIP_FLOP2.N$427       2.5000     
+ N$143       18.8007N   
+ X_T_FLIP_FLOP3.X_THREE_INPUT_AND2.X_TWO_INPUT_AND1.N$15       2.5000     
+ X_T_FLIP_FLOP3.X_THREE_INPUT_AND1.X_TWO_INPUT_AND1.N$15       2.5000     
+ X_T_FLIP_FLOP3.X_THREE_INPUT_AND1.N$46       18.8686N   
+ N$89       2.5000     
+ X_T_FLIP_FLOP3.X_THREE_INPUT_AND2.X_TWO_INPUT_AND2.N$15       8.1062N    
+ X_T_FLIP_FLOP3.X_THREE_INPUT_AND2.N$46       33.1627N   
+ X_T_FLIP_FLOP3.N$302       40.3098N   
+ X_T_FLIP_FLOP3.N$351       2.5000     
+ X_T_FLIP_FLOP3.N$354       8.0068N    
+ X_T_FLIP_FLOP3.N$378       2.5000     
+ X_T_FLIP_FLOP3.N$364       8.0993N    
+ X_T_FLIP_FLOP3.N$399       2.5000     
+ X_T_FLIP_FLOP3.N$385       8.0993N    
+ X_T_FLIP_FLOP3.N$415       2.5000     
+ X_T_FLIP_FLOP3.N$401       8.0993N    
+ X_T_FLIP_FLOP3.N$431       2.5000     
+ X_T_FLIP_FLOP3.N$418       8.0993N    
+ X_T_FLIP_FLOP3.N$421       2.5000     
+ N$87       2.5000     
+ X_T_FLIP_FLOP2.X_THREE_INPUT_AND2.X_TWO_INPUT_AND2.N$15       8.0984N    
+ X_T_FLIP_FLOP2.X_THREE_INPUT_AND2.N$46       18.6890N   
+ X_T_FLIP_FLOP2.N$302       25.8361N   
+ X_T_FLIP_FLOP2.N$351       2.5000     
+ X_T_FLIP_FLOP2.N$354       8.0962N    
+ X_T_FLIP_FLOP2.N$378       2.5000     
+ X_T_FLIP_FLOP2.N$364       8.0993N    
+ X_T_FLIP_FLOP2.N$399       2.5000     
+ X_T_FLIP_FLOP2.N$385       8.0993N    
+ X_T_FLIP_FLOP2.N$415       2.5000     
+ X_T_FLIP_FLOP2.N$401       8.0993N    
+ X_T_FLIP_FLOP2.N$431       2.5000     
+ X_T_FLIP_FLOP2.N$418       8.0993N    
+ X_T_FLIP_FLOP2.N$421       2.5000     
+ N$84       2.5000     
+ X_T_FLIP_FLOP1.X_THREE_INPUT_AND2.X_TWO_INPUT_AND2.N$15       8.1057N    
+ X_T_FLIP_FLOP1.X_THREE_INPUT_AND2.N$46       14.3111N   
+ X_T_FLIP_FLOP1.N$302       21.4581N   
+ X_T_FLIP_FLOP1.N$351       2.5000     
+ X_T_FLIP_FLOP1.N$354       8.1049N    
+ X_T_FLIP_FLOP1.N$378       2.5000     
+ X_T_FLIP_FLOP1.N$364       8.0993N    
+ X_T_FLIP_FLOP1.N$399       2.5000     
+ X_T_FLIP_FLOP1.N$385       8.0993N    
+ X_T_FLIP_FLOP1.N$415       2.5000     
+ X_T_FLIP_FLOP1.N$401       8.0993N    
+ X_T_FLIP_FLOP1.N$431       2.5000     
+ X_T_FLIP_FLOP1.N$418       8.0993N    
+ X_T_FLIP_FLOP1.N$421       2.5000     
+ X_T_FLIP_FLOP3.N$313       41.1042N   
+ X_T_FLIP_FLOP3.N$314       2.5000     
+ X_T_FLIP_FLOP3.N$337       72.0645N   
+ X_T_FLIP_FLOP3.N$321       41.1042N   
+ X_T_FLIP_FLOP3.N$334       2.5000     
+ X_T_FLIP_FLOP3.N$330       2.5000     
+ X_T_FLIP_FLOP3.N$336       72.0645N   
+ X_T_FLIP_FLOP2.N$313       41.1042N   
+ X_T_FLIP_FLOP2.N$314       2.5000     
+ X_T_FLIP_FLOP2.N$337       72.0645N   
+ X_T_FLIP_FLOP2.N$321       41.1042N   
+ X_T_FLIP_FLOP2.N$334       2.5000     
+ X_T_FLIP_FLOP2.N$330       2.5000     
+ X_T_FLIP_FLOP2.N$336       72.0645N   
+ X_T_FLIP_FLOP1.N$313       41.1042N   
+ X_T_FLIP_FLOP1.N$314       2.5000     
+ X_T_FLIP_FLOP1.N$337       72.0645N   
+ X_T_FLIP_FLOP1.N$321       41.1042N   
+ X_T_FLIP_FLOP1.N$334       2.5000     
+ X_T_FLIP_FLOP1.N$330       2.5000     
+ X_T_FLIP_FLOP1.N$336       72.0645N   
+
+
+
+   VOLTAGE SOURCE CURRENT
+
+NAME      CURRENT      VOLTAGE      POWER        
+V1        -388.2438P    2.5000      -970.6095P   
+VFORCE__CLK   12.3009P     0.0000       0.0000      
+VFORCE__CLR_NOT   0.0000       0.0000       0.0000      
+
+   TOTAL POWER DISSIPATION:  970.6095P   WATTS
+
+
+
+
+
+Eldo NEWTON: VNTOL=1.000000e-06 RELTOL=7.500000e-04
+
+................................................
+Simulation progress           : 10% (t = 299.9995 N)
+Elapsed CPU time              :  0h  0mn  0s 150    ( 0h  0mn  0s 150)
+................................................
+Simulation progress           : 20% (t = 576.4238 N)
+Elapsed CPU time              :  0h  0mn  0s 230    ( 0h  0mn  0s 380)
+................................................
+Simulation progress           : 30% (t = 852.6254 N)
+Elapsed CPU time              :  0h  0mn  0s 200    ( 0h  0mn  0s 580)
+................................................
+Simulation progress           : 40% (t = 1.1317 U)
+Elapsed CPU time              :  0h  0mn  0s 260    ( 0h  0mn  0s 840)
+................................................
+Simulation progress           : 50% (t = 1.4000 U)
+Elapsed CPU time              :  0h  0mn  0s 160    ( 0h  0mn  1s   0)
+................................................
+Simulation progress           : 60% (t = 1.7000 U)
+Elapsed CPU time              :  0h  0mn  0s 250    ( 0h  0mn  1s 250)
+................................................
+Simulation progress           : 70% (t = 1.9743 U)
+Elapsed CPU time              :  0h  0mn  0s 250    ( 0h  0mn  1s 500)
+................................................
+Simulation progress           : 80% (t = 2.2535 U)
+Elapsed CPU time              :  0h  0mn  0s 250    ( 0h  0mn  1s 750)
+................................................
+Simulation progress           : 90% (t = 2.5213 U)
+Elapsed CPU time              :  0h  0mn  0s 220    ( 0h  0mn  1s 970)
+................................................
+Simulation progress           : 100% (t = 2.8000 U)
+Elapsed CPU time              :  0h  0mn  0s 180    ( 0h  0mn  2s 150)
+
+
+
+1***************23-Oct-2018 ***********************  ELDO 2010.1  (v7.3_1.1)  ***********************20:34:46*****************
+
+0* Component: /home/ece_lab/mentor/ECE4500/Lab7/three_bit_synchronous_counter  Viewpoint: eldonet
+0****                 ACCOUNTING INFORMATION                                TEMPERATURE =   27.000 DEG C
+
+0*************************************************************************************************************************
+
+
+
+
+
+Number of nodes                     568
+Number of intrinsic nodes           437
+Number of input signals             3
+Number of resistors                 0
+Number of floating capacitors       0
+Number of grounded capacitors       0
+Number of inductors                 0
+Number of voltage sources           3
+Number of current sources           0
+Number of dependent sources         0
+Number of diodes                    0
+Number of BJT                       0
+Number of JFET                      0
+Number of MOS                       309
+Number of SWITCHES                  0
+Number of transmission lines        0
+Total number of elements            312
+Number of equations                 565
+Number of non-zero terms            2979
+Percent Zeros                       9.907e+01
+Number of Newton iterations            8683
+Average number of Newton iterations per accepted time steps             3.882e+00
+Number of accepted time steps       2237
+Number of rejected time steps       80
+      due to LTE                    9
+      due to Newton                 71
+Evaluation of active devices        2480209
+Memory size                         59416576
+
+***>CPU TIME 2s 150ms <***
+
+***>MESSAGE SUMMARY: 17 warnings
+
+***>GLOBAL CPU TIME 2s 270ms <***
+
+
+***>GLOBAL ELAPSED TIME 3s <***
+
+
+  Job started at 23-Oct-2018 20:34:46
+  Job end at     23-Oct-2018 20:34:49
+
+  Run on linux-B210 (Linux 2.6.16.60-0.21-bigsmp)
+

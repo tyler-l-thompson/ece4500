@@ -1,0 +1,27 @@
+* Component: /home/ece_lab/mentor/ECE4500/Lab7/t_flip_flop  Viewpoint: eldonet
+.INCLUDE /home/ece_lab/mentor/ECE4500/Lab7/t_flip_flop/eldonet/t_flip_flop_eldonet.spi
+.INCLUDE /home/ece_lab/mentor/mgc/mit_0.25.lib
+.OPTION NOASCII
+.OPTION MODWL
+.OPTION ENGNOT
+.OPTION AEX
+
+* --- Singles
+
+* - Analysis Setup - Trans
+.TRAN 0 800N 0 100N
+
+* --- Waveform Outputs
+.PROBE TRAN V(CLK_18) V(CLR_NOT_18) V(QN_18) V(QN_NOT_18) V(T_18)
+.PROBE TRAN V(R) V(S)
+
+* --- Params
+.TEMP 27
+
+* --- Forces
+VFORCE__T T_18 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 11111111 R
+VFORCE__clrnot CLR_NOT_18 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 00111111 R
+VFORCE__clk CLK_18 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 01010101 R
+
+* --- Libsetup
+

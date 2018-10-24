@@ -1,0 +1,40 @@
+* ELDO netlist generated with ICnet by 'ece_lab' on Tue Oct 23 2018 at 18:36:19
+
+*
+* Globals.
+*
+.global VDD VSS
+
+*
+* Component pathname : /home/ece_lab/mentor/ECE4500/Project1/one_input_inverter/one_input_inverter
+*
+.subckt ONE_INPUT_INVERTER  OUT IN VDD_ESC1 VSS_ESC2
+
+        .CONNECT VSS VSS_ESC2
+        .CONNECT VDD VDD_ESC1
+        M2 OUT IN VSS VSS NMOS L=1.2u W=2.25u M=1
+        M1 OUT IN VDD VDD PMOS L=1.2u W=6.75u M=1
+.ends ONE_INPUT_INVERTER
+
+*
+* Component pathname : /home/ece_lab/mentor/ECE4500/Lab7/two_input_and
+*
+.subckt TWO_INPUT_AND  F A B VDD_ESC1 VSS_ESC2
+
+        .CONNECT VSS VSS_ESC2
+        .CONNECT VDD VDD_ESC1
+        M4 A N$15 F VDD PMOS L=1.2u W=2.4u M=1
+        M3 A B F VSS NMOS L=1.2u W=2.4u M=1
+        X_ONE_INPUT_INVERTER1 N$15 B VDD VSS ONE_INPUT_INVERTER
+        M2 F N$15 B VSS NMOS L=1.2u W=2.4u M=1
+        M1 A B F VSS NMOS L=1.2u W=2.4u M=1
+.ends TWO_INPUT_AND
+
+*
+* MAIN CELL: Component pathname : /home/ece_lab/mentor/ECE4500/Lab7/three_input_and
+*
+        X_TWO_INPUT_AND2 F N$46 C VDD VSS TWO_INPUT_AND
+        X_TWO_INPUT_AND1 N$46 A B VDD VSS TWO_INPUT_AND
+        V1 VDD VSS DC 2.5V
+*
+.end

@@ -1,0 +1,70 @@
+A 5 u Eddm_design_viewpoint 5bce0e7f96de.03.7f.00.00.02.00.7d.11 30 2 422 0
+V v 28 4 5bcfb0e13f8d.03.7f.00.00.02.00.1e.01
+F f 28 "eldonet.dvpt_28"
+F o 0 ""
+F o 0 ""
+F o 0 ""
+V v 29 4 5bcfb1865791.03.7f.00.00.02.00.1e.01
+F f 29 "eldonet.dvpt_29"
+F o 0 ""
+F o 0 ""
+F o 0 ""
+V v 30 4 5bcfb7589258.03.7f.00.00.02.00.76.b9
+F f 30 "eldonet.dvpt_30"
+F o 0 ""
+F o 0 ""
+F o 0 ""
+O 30
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Lab7/t_flip_flop/part" 2 Eddm_part 5bcfb22c444f.03.7f.00.00.02.00.1e.01 5bce0e74181e.03.7f.00.00.02.00.7d.11
+R cspuv 1 "/home/ece_lab/mentor/ECE4500/Lab7/t_flip_flop/schematic" 31 mgc_schematic 5bcfb7337399.03.7f.00.00.02.00.76.b9 5bce0909e582.03.7f.00.00.02.00.7d.11
+R cspuv 2 "/home/ece_lab/mentor/ECE4500/Lab7/t_flip_flop/eldonet" 1 Eddm_ba_mgr 5bce0e7f97ca.03.7f.00.00.02.01.7d.11 5bce0e7f97ca.03.7f.00.00.02.00.7d.11
+R cspuv 6 "$MGC_DESIGN_KIT/symbols/dc_v_source/part" 1 Eddm_part 3890a89d50f5.03.86.56.31.70.00.34.2e 399db67c7221.03.93.22.22.3e.04.28.aa
+R cspuv 21 "$MGC_DESIGN_KIT/symbols/pmos/part" 6 Eddm_part 39dcb70a738a.03.93.22.22.3e.00.2e.08 399d7e54bb91.03.93.22.22.3e.00.4c.5c
+R cspuv 22 "$MGC_DESIGN_KIT/symbols/nmos/part" 7 Eddm_part 39dcb6d2c6cf.03.93.22.22.3e.00.2e.08 399d7e4745c6.03.93.22.22.3e.00.4c.5c
+R cspuv 201 "/home/ece_lab/mentor/ECE4500/Lab7/asynchronous_sr_latch/part" 4 Eddm_part 5bcf93bf2593.03.7f.00.00.02.00.1e.01 5bce06192b03.03.7f.00.00.02.00.7d.11
+R cspuv 203 "/home/ece_lab/mentor/ECE4500/Project1/one_input_inverter/one_input_inverter/part" 2 Eddm_part 5bca4b94192b.03.7f.00.00.02.00.7d.bc 5bca4ad92e94.03.7f.00.00.02.00.7d.bc
+R cspuv 205 "/home/ece_lab/mentor/ECE4500/Lab7/asynchronous_sr_latch/schematic" 31 mgc_schematic 5bcf9690d41a.03.7f.00.00.02.00.1e.01 5bce0540d41e.03.7f.00.00.02.00.7d.11
+R cspuv 209 "/home/ece_lab/mentor/ECE4500/Project1/one_input_inverter/one_input_inverter/schematic" 3 mgc_schematic 5bca4b5453cb.03.7f.00.00.02.00.7d.bc 5bca4a40ca34.03.7f.00.00.02.00.7d.bc
+R cspuv 235 "/home/ece_lab/mentor/ECE4500/Lab7/two_input_and/part" 2 Eddm_part 5bcf9d4248ac.03.7f.00.00.02.00.1e.01 5bcf9c6c90e1.03.7f.00.00.02.00.1e.01
+R cspuv 238 "/home/ece_lab/mentor/ECE4500/Lab7/two_input_and/schematic" 5 mgc_schematic 5bcfa229241d.03.7f.00.00.02.00.1e.01 5bcf9b0fb263.03.7f.00.00.02.00.1e.01
+R cspuv 307 "/home/ece_lab/mentor/ECE4500/Lab7/three_input_and/part" 3 Eddm_part 5bcfa2b7f1dc.03.7f.00.00.02.00.1e.01 5bce0c1a23d7.03.7f.00.00.02.00.7d.11
+R cspuv 311 "/home/ece_lab/mentor/ECE4500/Lab7/three_input_and/schematic" 7 mgc_schematic 5bcfa37ada67.03.7f.00.00.02.00.1e.01 5bce0a5643ad.03.7f.00.00.02.00.7d.11
+R cspuv 339 "/home/ece_lab/mentor/ECE4500/Lab7/two_input_nor/part" 2 Eddm_part 5bcfad2804b6.03.7f.00.00.02.00.1e.01 5bcfab83f327.03.7f.00.00.02.00.1e.01
+R cspuv 342 "/home/ece_lab/mentor/ECE4500/Lab7/two_input_nor/schematic" 4 mgc_schematic 5bcfae9c5c5d.03.7f.00.00.02.00.1e.01 5bcfa99d3727.03.7f.00.00.02.00.1e.01
+O 29
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Lab7/t_flip_flop/part" 1 Eddm_part 5bce0e74181e.03.7f.00.00.02.01.7d.11 5bce0e74181e.03.7f.00.00.02.00.7d.11
+R cspuv 1 "/home/ece_lab/mentor/ECE4500/Lab7/t_flip_flop/schematic" 28 mgc_schematic 5bcfb12cea46.03.7f.00.00.02.00.1e.01 5bce0909e582.03.7f.00.00.02.00.7d.11
+R cspuv 2 "/home/ece_lab/mentor/ECE4500/Lab7/t_flip_flop/eldonet" 1 Eddm_ba_mgr 5bce0e7f97ca.03.7f.00.00.02.01.7d.11 5bce0e7f97ca.03.7f.00.00.02.00.7d.11
+R cspuv 6 "$MGC_DESIGN_KIT/symbols/dc_v_source/part" 1 Eddm_part 3890a89d50f5.03.86.56.31.70.00.34.2e 399db67c7221.03.93.22.22.3e.04.28.aa
+R cspuv 21 "$MGC_DESIGN_KIT/symbols/pmos/part" 6 Eddm_part 39dcb70a738a.03.93.22.22.3e.00.2e.08 399d7e54bb91.03.93.22.22.3e.00.4c.5c
+R cspuv 22 "$MGC_DESIGN_KIT/symbols/nmos/part" 7 Eddm_part 39dcb6d2c6cf.03.93.22.22.3e.00.2e.08 399d7e4745c6.03.93.22.22.3e.00.4c.5c
+R cspuv 201 "/home/ece_lab/mentor/ECE4500/Lab7/asynchronous_sr_latch/part" 4 Eddm_part 5bcf93bf2593.03.7f.00.00.02.00.1e.01 5bce06192b03.03.7f.00.00.02.00.7d.11
+R cspuv 203 "/home/ece_lab/mentor/ECE4500/Project1/one_input_inverter/one_input_inverter/part" 2 Eddm_part 5bca4b94192b.03.7f.00.00.02.00.7d.bc 5bca4ad92e94.03.7f.00.00.02.00.7d.bc
+R cspuv 205 "/home/ece_lab/mentor/ECE4500/Lab7/asynchronous_sr_latch/schematic" 31 mgc_schematic 5bcf9690d41a.03.7f.00.00.02.00.1e.01 5bce0540d41e.03.7f.00.00.02.00.7d.11
+R cspuv 209 "/home/ece_lab/mentor/ECE4500/Project1/one_input_inverter/one_input_inverter/schematic" 3 mgc_schematic 5bca4b5453cb.03.7f.00.00.02.00.7d.bc 5bca4a40ca34.03.7f.00.00.02.00.7d.bc
+R cspuv 235 "/home/ece_lab/mentor/ECE4500/Lab7/two_input_and/part" 2 Eddm_part 5bcf9d4248ac.03.7f.00.00.02.00.1e.01 5bcf9c6c90e1.03.7f.00.00.02.00.1e.01
+R cspuv 238 "/home/ece_lab/mentor/ECE4500/Lab7/two_input_and/schematic" 5 mgc_schematic 5bcfa229241d.03.7f.00.00.02.00.1e.01 5bcf9b0fb263.03.7f.00.00.02.00.1e.01
+R cspuv 307 "/home/ece_lab/mentor/ECE4500/Lab7/three_input_and/part" 3 Eddm_part 5bcfa2b7f1dc.03.7f.00.00.02.00.1e.01 5bce0c1a23d7.03.7f.00.00.02.00.7d.11
+R cspuv 311 "/home/ece_lab/mentor/ECE4500/Lab7/three_input_and/schematic" 7 mgc_schematic 5bcfa37ada67.03.7f.00.00.02.00.1e.01 5bce0a5643ad.03.7f.00.00.02.00.7d.11
+R cspuv 339 "/home/ece_lab/mentor/ECE4500/Lab7/two_input_nor/part" 2 Eddm_part 5bcfad2804b6.03.7f.00.00.02.00.1e.01 5bcfab83f327.03.7f.00.00.02.00.1e.01
+R cspuv 342 "/home/ece_lab/mentor/ECE4500/Lab7/two_input_nor/schematic" 4 mgc_schematic 5bcfae9c5c5d.03.7f.00.00.02.00.1e.01 5bcfa99d3727.03.7f.00.00.02.00.1e.01
+O 28
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Lab7/t_flip_flop/part" 1 Eddm_part 5bce0e74181e.03.7f.00.00.02.01.7d.11 5bce0e74181e.03.7f.00.00.02.00.7d.11
+R cspuv 1 "/home/ece_lab/mentor/ECE4500/Lab7/t_flip_flop/schematic" 27 mgc_schematic 5bcfb0998f7e.03.7f.00.00.02.00.1e.01 5bce0909e582.03.7f.00.00.02.00.7d.11
+R cspuv 2 "/home/ece_lab/mentor/ECE4500/Lab7/t_flip_flop/eldonet" 1 Eddm_ba_mgr 5bce0e7f97ca.03.7f.00.00.02.01.7d.11 5bce0e7f97ca.03.7f.00.00.02.00.7d.11
+R cspuv 6 "$MGC_DESIGN_KIT/symbols/dc_v_source/part" 1 Eddm_part 3890a89d50f5.03.86.56.31.70.00.34.2e 399db67c7221.03.93.22.22.3e.04.28.aa
+R cspuv 21 "$MGC_DESIGN_KIT/symbols/pmos/part" 6 Eddm_part 39dcb70a738a.03.93.22.22.3e.00.2e.08 399d7e54bb91.03.93.22.22.3e.00.4c.5c
+R cspuv 22 "$MGC_DESIGN_KIT/symbols/nmos/part" 7 Eddm_part 39dcb6d2c6cf.03.93.22.22.3e.00.2e.08 399d7e4745c6.03.93.22.22.3e.00.4c.5c
+R cspuv 201 "/home/ece_lab/mentor/ECE4500/Lab7/asynchronous_sr_latch/part" 4 Eddm_part 5bcf93bf2593.03.7f.00.00.02.00.1e.01 5bce06192b03.03.7f.00.00.02.00.7d.11
+R cspuv 203 "/home/ece_lab/mentor/ECE4500/Project1/one_input_inverter/one_input_inverter/part" 2 Eddm_part 5bca4b94192b.03.7f.00.00.02.00.7d.bc 5bca4ad92e94.03.7f.00.00.02.00.7d.bc
+R cspuv 205 "/home/ece_lab/mentor/ECE4500/Lab7/asynchronous_sr_latch/schematic" 31 mgc_schematic 5bcf9690d41a.03.7f.00.00.02.00.1e.01 5bce0540d41e.03.7f.00.00.02.00.7d.11
+R cspuv 209 "/home/ece_lab/mentor/ECE4500/Project1/one_input_inverter/one_input_inverter/schematic" 3 mgc_schematic 5bca4b5453cb.03.7f.00.00.02.00.7d.bc 5bca4a40ca34.03.7f.00.00.02.00.7d.bc
+R cspuv 235 "/home/ece_lab/mentor/ECE4500/Lab7/two_input_and/part" 2 Eddm_part 5bcf9d4248ac.03.7f.00.00.02.00.1e.01 5bcf9c6c90e1.03.7f.00.00.02.00.1e.01
+R cspuv 238 "/home/ece_lab/mentor/ECE4500/Lab7/two_input_and/schematic" 5 mgc_schematic 5bcfa229241d.03.7f.00.00.02.00.1e.01 5bcf9b0fb263.03.7f.00.00.02.00.1e.01
+R cspuv 307 "/home/ece_lab/mentor/ECE4500/Lab7/three_input_and/part" 3 Eddm_part 5bcfa2b7f1dc.03.7f.00.00.02.00.1e.01 5bce0c1a23d7.03.7f.00.00.02.00.7d.11
+R cspuv 311 "/home/ece_lab/mentor/ECE4500/Lab7/three_input_and/schematic" 7 mgc_schematic 5bcfa37ada67.03.7f.00.00.02.00.1e.01 5bce0a5643ad.03.7f.00.00.02.00.7d.11
+R cspuv 339 "/home/ece_lab/mentor/ECE4500/Lab7/two_input_nor/part" 2 Eddm_part 5bcfad2804b6.03.7f.00.00.02.00.1e.01 5bcfab83f327.03.7f.00.00.02.00.1e.01
+R cspuv 342 "/home/ece_lab/mentor/ECE4500/Lab7/two_input_nor/schematic" 4 mgc_schematic 5bcfae9c5c5d.03.7f.00.00.02.00.1e.01 5bcfa99d3727.03.7f.00.00.02.00.1e.01

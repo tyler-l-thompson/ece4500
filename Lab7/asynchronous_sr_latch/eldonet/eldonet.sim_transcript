@@ -1,0 +1,190 @@
+
+Running eldo on linux-B210
+with Eldo libraries :
+/mgc/ams/ixl/lib/libeldoudm.so
+/mgc/ams/ixl/lib/libeldomos1.so
+/mgc/ams/ixl/lib/libeldoekv.so
+/mgc/ams/ixl/lib/libeldomosp9.so
+/mgc/ams/ixl/lib/libeldocsem.so
+/mgc/ams/ixl/lib/libeldomos2.so
+/mgc/ams/ixl/lib/libeldomos3.so
+/mgc/ams/ixl/lib/libeldobip.so
+/mgc/ams/ixl/lib/libeldodio.so
+/mgc/ams/ixl/lib/libeldojfet.so
+/mgc/ams/ixl/lib/libeldosoi.so
+/mgc/ams/ixl/lib/libeldomos4.so
+/mgc/ams/ixl/lib/libeldoasitft.so
+/mgc/ams/ixl/lib/libeldohisim.so
+/mgc/ams/ixl/lib/libeldospmod.so
+/mgc/ams/ixl/lib/libeldopsp.so
+/mgc/ams/ixl/lib/libeldomosvar.so
+/mgc/ams/ixl/lib/libeldomoto.so
+/mgc/ams/ixl/lib/libeldost.so
+/mgc/ams/ixl/lib/libeldobnr.so
+/mgc/ams/ixl/lib/libeldorockw.so
+/mgc/ams/ixl/lib/libeldopubhicum.so
+/mgc/ams/ixl/lib/libeldotftsh.so
+/mgc/ams/ixl/lib/libeldobta.so
+/mgc/ams/ixl/lib/libeldofas.so
+/mgc/ams/ixl/lib/libeldofascm.so
+/mgc/ams/ixl/lib/libeldosdsim.so
+/mgc/ams/ixl/lib/libeldowire.so
+/mgc/ams/ixl/lib/libogr.so loaded.
+
+
+
+              Software under License 
+       Copyright Mentor Graphics Corporation
+
+
+
+
+***** PRE-PROCESSING ...
+
+
+
+***** ANALYSIS ....
+
+Warning 316: In file "./mgc/mit_0.25.lib" line 62:
++   COMMAND .ENDS: The name does not match the .SUBCKT name.
+
+***** 0  error(s). 
+***** 1  warning(s). 
+
+
+
+***** GENERATION ...
+
+Warning 255: In file "./ECE4500/Lab7/asynchronous_sr_latch/eldonet/asynchronous_sr_latch_eldonet.spi" line 17:
++   OBJECT "M8":  Size not consistent with LMIN/LMAX/WMIN/WMAX/TEMPMIN/TEMPMAX specification.
++    l (2.000000e+00u) is greater than lmax (1.500000e+00u)
+Warning 255: In file "./ECE4500/Lab7/asynchronous_sr_latch/eldonet/asynchronous_sr_latch_eldonet.spi" line 18:
++   OBJECT "M7":  Size not consistent with LMIN/LMAX/WMIN/WMAX/TEMPMIN/TEMPMAX specification.
++    l (2.000000e+00u) is greater than lmax (1.500000e+00u)
+Warning 255: In file "./ECE4500/Lab7/asynchronous_sr_latch/eldonet/asynchronous_sr_latch_eldonet.spi" line 19:
++   OBJECT "M1":  Size not consistent with LMIN/LMAX/WMIN/WMAX/TEMPMIN/TEMPMAX specification.
++    l (2.000000e+00u) is greater than lmax (1.500000e+00u)
+Warning 255: In file "./ECE4500/Lab7/asynchronous_sr_latch/eldonet/asynchronous_sr_latch_eldonet.spi" line 21:
++   OBJECT "M5":  Size not consistent with LMIN/LMAX/WMIN/WMAX/TEMPMIN/TEMPMAX specification.
++    l (2.000000e+00u) is greater than lmax (1.500000e+00u)
+Warning 255: In file "./ECE4500/Lab7/asynchronous_sr_latch/eldonet/asynchronous_sr_latch_eldonet.spi" line 22:
++   OBJECT "M4":  Size not consistent with LMIN/LMAX/WMIN/WMAX/TEMPMIN/TEMPMAX specification.
++    l (2.000000e+00u) is greater than lmax (1.500000e+00u)
+Warning 1615: In file "./ECE4500/Lab7/asynchronous_sr_latch/eldonet/asynchronous_sr_latch_eldonet.cir" line 12:
++   COMMAND ".TRAN": Tstep can not be <= 0.0.
++   It is set to Tmax/20.0 = 4.000e-08 s.
+Warning 347:  COMMAND .PRINT or .PLOT: element CLK_18 not declared
+
+***** 0  error(s). 
+***** 8  warning(s). 
+
+
+INFORMATION ABOUT COMPILATION...
+
+
+Memory space allocated (bytes): 57942016
+11 elements
+6 nodes
+4 input signals
+
+
+Warning: A transition time < HMIN (1.000000e-12Sec) found on VFORCE__CLR_NOT
+HMIN assumed.. Set Eldo option 'HMIN' to a lower value if needed.
+
+
+Warning: A transition time < HMIN (1.000000e-12Sec) found on VFORCE__R
+HMIN assumed.. Set Eldo option 'HMIN' to a lower value if needed.
+
+
+Warning: A transition time < HMIN (1.000000e-12Sec) found on VFORCE__S
+HMIN assumed.. Set Eldo option 'HMIN' to a lower value if needed.
+ Reset internal minimun time step.
+hmin value is 2.500000e-04Nanos
+
+Eldo VERSION : ELDO 2010.1 Thu Jul  1 14:15:09 GMT 2010
+
+*** DATE: 23-Oct-2018 17:32:07
+
+*** TITLE: * Component: /home/ece_lab/mentor/ECE4500/Lab7/asynchronous_sr_latch  Viewpoint: eldonet
+
+TEMPERATURE : 27.000000 degrees C
+
+ Reset internal minimun time step.
+hmin value is 2.500000e-04Nanos
+
+Performing DC analysis...
+
+--> Partitioning circuit...
+
+***> DC CPU TIME 0s 000ms <***
+
+DC:1 iterations FOR DC analysis
+CLR_NOT_18    0.0000     
+QN_18         126.6147P  
+QN_NOT_18     2.5000     
+R_18          2.5000     
+S_18          0.0000     
+VDD           2.5000     
+
+   TOTAL POWER DISSIPATION:  2.2967P     WATTS
+
+
+Eldo NEWTON: VNTOL=1.000000e-06 RELTOL=7.500000e-04
+
+Connecting to JWDB server, please wait...
+connected to wdb server : -jwdbhost linux-B210 -jwdbport 43295
+
+Compute from 0.000000 Nano to 800.000000 Nano
+................................................
+Simulation progress           : 10% (t = 131.0715 N)
+Elapsed CPU time              :  0h  0mn  0s   0    ( 0h  0mn  0s   0)
+................................................
+Simulation progress           : 20% (t = 231.0715 N)
+Elapsed CPU time              :  0h  0mn  0s   0    ( 0h  0mn  0s   0)
+................................................
+Simulation progress           : 30% (t = 299.9995 N)
+Elapsed CPU time              :  0h  0mn  0s   0    ( 0h  0mn  0s   0)
+................................................
+Simulation progress           : 40% (t = 322.7828 N)
+Elapsed CPU time              :  0h  0mn  0s  10    ( 0h  0mn  0s  10)
+................................................
+Simulation progress           : 50% (t = 471.8498 N)
+Elapsed CPU time              :  0h  0mn  0s   0    ( 0h  0mn  0s  10)
+................................................
+Simulation progress           : 70% (t = 571.8498 N)
+Elapsed CPU time              :  0h  0mn  0s   0    ( 0h  0mn  0s  10)
+................................................
+Simulation progress           : 80% (t = 653.4857 N)
+Elapsed CPU time              :  0h  0mn  0s   0    ( 0h  0mn  0s  10)
+................................................
+Simulation progress           : 90% (t = 799.9995 N)
+Elapsed CPU time              :  0h  0mn  0s   0    ( 0h  0mn  0s  10)
+................................................
+Simulation progress           : 100% (t = 800.0000 N)
+Elapsed CPU time              :  0h  0mn  0s   0    ( 0h  0mn  0s  10)
+
+
+***>Current simulation completed
+
+
+
+
+SIMULATION INFORMATION 
+memory size allocated in bytes 58540032
+Latency: 0.000000%
+average number of newton iterations: 2.452381
+nb of components: 20
+nb of nodes: 15
+nb of MOS or BIP calls: 2915
+Number of steps computed: 84
+
+***>CPU TIME 0s 010ms <***
+
+***>MESSAGE SUMMARY: 8 warnings
+
+***>GLOBAL CPU TIME 0s 020ms <***
+
+
+***>GLOBAL ELAPSED TIME 1s <***
+
+

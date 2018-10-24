@@ -1,0 +1,13 @@
+A 5 u mgc_schematic 5bcfa99d3727.03.7f.00.00.02.00.1e.01 4 2 1 0
+V v 2 1 5bcfab8401bc.03.7f.00.00.02.00.1e.01
+F o 0 ""
+V v 3 1 5bcfaccd12ba.03.7f.00.00.02.00.1e.01
+F o 0 ""
+V v 4 1 5bcfae9c5c5d.03.7f.00.00.02.00.1e.01
+F o 0 ""
+O 4
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Lab7/two_input_nor/schematic/sheet1" 3 mgc_sheet 5bcfae9c5c4f.03.7f.00.00.02.00.1e.01 5bcfa99d37df.03.7f.00.00.02.00.1e.01
+O 3
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Lab7/two_input_nor/schematic/sheet1" 2 mgc_sheet 5bcfaccd129d.03.7f.00.00.02.00.1e.01 5bcfa99d37df.03.7f.00.00.02.00.1e.01
+O 2
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Lab7/two_input_nor/schematic/sheet1" 1 mgc_sheet 5bcfa99d37df.03.7f.00.00.02.01.1e.01 5bcfa99d37df.03.7f.00.00.02.00.1e.01
