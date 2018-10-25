@@ -1,0 +1,20 @@
+* ELDO netlist generated with ICnet by 'ece_lab' on Tue Oct 23 2018 at 17:32:06
+
+*
+* Globals.
+*
+.global VDD VSS
+
+*
+* MAIN CELL: Component pathname : /home/ece_lab/mentor/ECE4500/Lab7/asynchronous_sr_latch
+*
+        M8 QN_NOT_18 S_18 VSS VSS NMOS L=2.0u W=12.0u M=1
+        M7 QN_18 R_18 VSS VSS NMOS L=2.0u W=12.0u M=1
+        M1 QN_18 CLR_NOT_18 VSS VSS NMOS L=2.0u W=12.0u M=1
+        V1 VDD VSS DC 2.5V
+        M5 QN_NOT_18 QN_18 VSS VSS NMOS L=2.0u W=3.0u M=1
+        M4 QN_18 QN_NOT_18 VSS VSS NMOS L=2.0u W=3.0u M=1
+        M3 QN_NOT_18 QN_18 VDD VDD PMOS L=2.0u W=9.0u M=1
+        M2 QN_18 QN_NOT_18 VDD VDD PMOS L=2.0u W=9.0u M=1
+*
+.end

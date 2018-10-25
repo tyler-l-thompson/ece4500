@@ -1,0 +1,27 @@
+* Component: /home/ece_lab/mentor/ECE4500/Lab7/three_bit_synchronous_counter  Viewpoint: eldonet
+.INCLUDE /home/ece_lab/mentor/ECE4500/Lab7/three_bit_synchronous_counter/eldonet/three_bit_synchronous_counter_eldonet.spi
+.INCLUDE /home/ece_lab/mentor/mgc/mit_0.25.lib
+.OPTION NOASCII
+.OPTION MODWL
+.OPTION ENGNOT
+.OPTION AEX
+
+* --- Singles
+
+* - Analysis Setup - Trans
+.TRAN 0 2800N 0 100N
+
+* --- Waveform Outputs
+.PROBE TRAN V(CLK_18) V(CLR_NOT_18) V(CY_18) V(Q0_18) V(Q1_18) V(Q2_18)
+
+* --- Params
+.TEMP 27
+
+* --- Forces
+VFORCE__CLK CLK_18 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07
++ 0101010101010101010101010101 R
+VFORCE__CLR_not CLR_NOT_18 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07
++ 0011100011101111111111111111 R
+
+* --- Libsetup
+

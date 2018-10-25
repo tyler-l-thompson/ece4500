@@ -1,0 +1,13 @@
+A 5 u mgc_schematic 5bce0909e582.03.7f.00.00.02.00.7d.11 35 2 1 0
+V v 33 1 5bcfb9a76993.03.7f.00.00.02.00.76.b9
+F o 0 ""
+V v 34 1 5bcfbab367fd.03.7f.00.00.02.00.76.b9
+F o 0 ""
+V v 35 1 5bcfbaf82c31.03.7f.00.00.02.00.76.b9
+F o 0 ""
+O 35
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Lab7/t_flip_flop/schematic/sheet1" 34 mgc_sheet 5bcfbaf82c0e.03.7f.00.00.02.00.76.b9 5bce0909e5fe.03.7f.00.00.02.00.7d.11
+O 34
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Lab7/t_flip_flop/schematic/sheet1" 33 mgc_sheet 5bcfbab367df.03.7f.00.00.02.00.76.b9 5bce0909e5fe.03.7f.00.00.02.00.7d.11
+O 33
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Lab7/t_flip_flop/schematic/sheet1" 32 mgc_sheet 5bcfb9a7696d.03.7f.00.00.02.00.76.b9 5bce0909e5fe.03.7f.00.00.02.00.7d.11

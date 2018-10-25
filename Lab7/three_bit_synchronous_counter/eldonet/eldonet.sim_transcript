@@ -1,0 +1,254 @@
+
+Running eldo on linux-B210
+with Eldo libraries :
+/mgc/ams/ixl/lib/libeldoudm.so
+/mgc/ams/ixl/lib/libeldomos1.so
+/mgc/ams/ixl/lib/libeldoekv.so
+/mgc/ams/ixl/lib/libeldomosp9.so
+/mgc/ams/ixl/lib/libeldocsem.so
+/mgc/ams/ixl/lib/libeldomos2.so
+/mgc/ams/ixl/lib/libeldomos3.so
+/mgc/ams/ixl/lib/libeldobip.so
+/mgc/ams/ixl/lib/libeldodio.so
+/mgc/ams/ixl/lib/libeldojfet.so
+/mgc/ams/ixl/lib/libeldosoi.so
+/mgc/ams/ixl/lib/libeldomos4.so
+/mgc/ams/ixl/lib/libeldoasitft.so
+/mgc/ams/ixl/lib/libeldohisim.so
+/mgc/ams/ixl/lib/libeldospmod.so
+/mgc/ams/ixl/lib/libeldopsp.so
+/mgc/ams/ixl/lib/libeldomosvar.so
+/mgc/ams/ixl/lib/libeldomoto.so
+/mgc/ams/ixl/lib/libeldost.so
+/mgc/ams/ixl/lib/libeldobnr.so
+/mgc/ams/ixl/lib/libeldorockw.so
+/mgc/ams/ixl/lib/libeldopubhicum.so
+/mgc/ams/ixl/lib/libeldotftsh.so
+/mgc/ams/ixl/lib/libeldobta.so
+/mgc/ams/ixl/lib/libeldofas.so
+/mgc/ams/ixl/lib/libeldofascm.so
+/mgc/ams/ixl/lib/libeldosdsim.so
+/mgc/ams/ixl/lib/libeldowire.so
+/mgc/ams/ixl/lib/libogr.so loaded.
+
+
+
+              Software under License 
+       Copyright Mentor Graphics Corporation
+
+
+
+
+***** PRE-PROCESSING ...
+
+
+
+***** ANALYSIS ....
+
+Warning 316: In file "./mgc/mit_0.25.lib" line 62:
++   COMMAND .ENDS: The name does not match the .SUBCKT name.
+
+***** 0  error(s). 
+***** 1  warning(s). 
+
+
+
+***** GENERATION ...
+
+Warning 255: In file "./ECE4500/Lab7/three_bit_synchronous_counter/eldonet/three_bit_synchronous_counter_eldonet.spi" line 58:
++   OBJECT "X_T_FLIP_FLOP3.X_ASYNCHRONOUS_SR_LATCH1.M7":  Size not consistent with LMIN/LMAX/WMIN/WMAX/TEMPMIN/TEMPMAX specification.
++    l (2.000000e+00u) is greater than lmax (1.500000e+00u)
+Warning 255: In file "./ECE4500/Lab7/three_bit_synchronous_counter/eldonet/three_bit_synchronous_counter_eldonet.spi" line 59:
++   OBJECT "X_T_FLIP_FLOP3.X_ASYNCHRONOUS_SR_LATCH1.M1":  Size not consistent with LMIN/LMAX/WMIN/WMAX/TEMPMIN/TEMPMAX specification.
++    l (2.000000e+00u) is greater than lmax (1.500000e+00u)
+Warning 255: In file "./ECE4500/Lab7/three_bit_synchronous_counter/eldonet/three_bit_synchronous_counter_eldonet.spi" line 60:
++   OBJECT "X_T_FLIP_FLOP3.X_ASYNCHRONOUS_SR_LATCH1.M8":  Size not consistent with LMIN/LMAX/WMIN/WMAX/TEMPMIN/TEMPMAX specification.
++    l (2.000000e+00u) is greater than lmax (1.500000e+00u)
+Warning 255: In file "./ECE4500/Lab7/three_bit_synchronous_counter/eldonet/three_bit_synchronous_counter_eldonet.spi" line 61:
++   OBJECT "X_T_FLIP_FLOP3.X_ASYNCHRONOUS_SR_LATCH1.M5":  Size not consistent with LMIN/LMAX/WMIN/WMAX/TEMPMIN/TEMPMAX specification.
++    l (2.000000e+00u) is greater than lmax (1.500000e+00u)
+Warning 255: In file "./ECE4500/Lab7/three_bit_synchronous_counter/eldonet/three_bit_synchronous_counter_eldonet.spi" line 62:
++   OBJECT "X_T_FLIP_FLOP3.X_ASYNCHRONOUS_SR_LATCH1.M4":  Size not consistent with LMIN/LMAX/WMIN/WMAX/TEMPMIN/TEMPMAX specification.
++    l (2.000000e+00u) is greater than lmax (1.500000e+00u)
+Warning 255: In file "./ECE4500/Lab7/three_bit_synchronous_counter/eldonet/three_bit_synchronous_counter_eldonet.spi" line 58:
++   OBJECT "X_T_FLIP_FLOP2.X_ASYNCHRONOUS_SR_LATCH1.M7":  Size not consistent with LMIN/LMAX/WMIN/WMAX/TEMPMIN/TEMPMAX specification.
++    l (2.000000e+00u) is greater than lmax (1.500000e+00u)
+Warning 255: In file "./ECE4500/Lab7/three_bit_synchronous_counter/eldonet/three_bit_synchronous_counter_eldonet.spi" line 59:
++   OBJECT "X_T_FLIP_FLOP2.X_ASYNCHRONOUS_SR_LATCH1.M1":  Size not consistent with LMIN/LMAX/WMIN/WMAX/TEMPMIN/TEMPMAX specification.
++    l (2.000000e+00u) is greater than lmax (1.500000e+00u)
+Warning 255: In file "./ECE4500/Lab7/three_bit_synchronous_counter/eldonet/three_bit_synchronous_counter_eldonet.spi" line 60:
++   OBJECT "X_T_FLIP_FLOP2.X_ASYNCHRONOUS_SR_LATCH1.M8":  Size not consistent with LMIN/LMAX/WMIN/WMAX/TEMPMIN/TEMPMAX specification.
++    l (2.000000e+00u) is greater than lmax (1.500000e+00u)
+Warning 255: In file "./ECE4500/Lab7/three_bit_synchronous_counter/eldonet/three_bit_synchronous_counter_eldonet.spi" line 61:
++   OBJECT "X_T_FLIP_FLOP2.X_ASYNCHRONOUS_SR_LATCH1.M5":  Size not consistent with LMIN/LMAX/WMIN/WMAX/TEMPMIN/TEMPMAX specification.
++    l (2.000000e+00u) is greater than lmax (1.500000e+00u)
+Warning 255: In file "./ECE4500/Lab7/three_bit_synchronous_counter/eldonet/three_bit_synchronous_counter_eldonet.spi" line 62:
++   OBJECT "X_T_FLIP_FLOP2.X_ASYNCHRONOUS_SR_LATCH1.M4":  Size not consistent with LMIN/LMAX/WMIN/WMAX/TEMPMIN/TEMPMAX specification.
++    l (2.000000e+00u) is greater than lmax (1.500000e+00u)
+Warning 255: In file "./ECE4500/Lab7/three_bit_synchronous_counter/eldonet/three_bit_synchronous_counter_eldonet.spi" line 58:
++   OBJECT "X_T_FLIP_FLOP1.X_ASYNCHRONOUS_SR_LATCH1.M7":  Size not consistent with LMIN/LMAX/WMIN/WMAX/TEMPMIN/TEMPMAX specification.
++    l (2.000000e+00u) is greater than lmax (1.500000e+00u)
+Warning 255: In file "./ECE4500/Lab7/three_bit_synchronous_counter/eldonet/three_bit_synchronous_counter_eldonet.spi" line 59:
++   OBJECT "X_T_FLIP_FLOP1.X_ASYNCHRONOUS_SR_LATCH1.M1":  Size not consistent with LMIN/LMAX/WMIN/WMAX/TEMPMIN/TEMPMAX specification.
++    l (2.000000e+00u) is greater than lmax (1.500000e+00u)
+Warning 255: In file "./ECE4500/Lab7/three_bit_synchronous_counter/eldonet/three_bit_synchronous_counter_eldonet.spi" line 60:
++   OBJECT "X_T_FLIP_FLOP1.X_ASYNCHRONOUS_SR_LATCH1.M8":  Size not consistent with LMIN/LMAX/WMIN/WMAX/TEMPMIN/TEMPMAX specification.
++    l (2.000000e+00u) is greater than lmax (1.500000e+00u)
+Warning 255: In file "./ECE4500/Lab7/three_bit_synchronous_counter/eldonet/three_bit_synchronous_counter_eldonet.spi" line 61:
++   OBJECT "X_T_FLIP_FLOP1.X_ASYNCHRONOUS_SR_LATCH1.M5":  Size not consistent with LMIN/LMAX/WMIN/WMAX/TEMPMIN/TEMPMAX specification.
++    l (2.000000e+00u) is greater than lmax (1.500000e+00u)
+Warning 255: In file "./ECE4500/Lab7/three_bit_synchronous_counter/eldonet/three_bit_synchronous_counter_eldonet.spi" line 62:
++   OBJECT "X_T_FLIP_FLOP1.X_ASYNCHRONOUS_SR_LATCH1.M4":  Size not consistent with LMIN/LMAX/WMIN/WMAX/TEMPMIN/TEMPMAX specification.
++    l (2.000000e+00u) is greater than lmax (1.500000e+00u)
+Warning 1615: In file "./ECE4500/Lab7/three_bit_synchronous_counter/eldonet/three_bit_synchronous_counter_eldonet.cir" line 12:
++   COMMAND ".TRAN": Tstep can not be <= 0.0.
++   It is set to Tmax/20.0 = 1.400e-07 s.
+
+***** 0  error(s). 
+***** 17  warning(s). 
+
+
+INFORMATION ABOUT COMPILATION...
+
+
+Memory space allocated (bytes): 58032128
+312 elements
+131 nodes
+3 input signals
+
+
+Warning: A transition time < HMIN (1.000000e-12Sec) found on VFORCE__CLK
+HMIN assumed.. Set Eldo option 'HMIN' to a lower value if needed.
+
+
+Warning: A transition time < HMIN (1.000000e-12Sec) found on VFORCE__CLR_NOT
+HMIN assumed.. Set Eldo option 'HMIN' to a lower value if needed.
+ Reset internal minimun time step.
+hmin value is 2.500000e-04Nanos
+
+Eldo VERSION : ELDO 2010.1 Thu Jul  1 14:15:09 GMT 2010
+
+*** DATE: 23-Oct-2018 20:34:46
+
+*** TITLE: * Component: /home/ece_lab/mentor/ECE4500/Lab7/three_bit_synchronous_counter  Viewpoint: eldonet
+
+TEMPERATURE : 27.000000 degrees C
+
+ Reset internal minimun time step.
+hmin value is 2.500000e-04Nanos
+
+Performing DC analysis...
+
+--> Partitioning circuit...
+--> DC Iteration number 0
+ -->Solving block number 1
+--> DC Iteration number 1
+ -->Solving block number 1
+--> DC Iteration number 2
+ -->Solving block number 1
+--> DC Iteration number 3
+ -->Solving block number 1
+--> DC Iteration number 4
+ -->Solving block number 1
+--> DC Iteration number 5
+ -->Solving block number 1
+--> DC Iteration number 6
+ -->Solving block number 1
+--> DC Iteration number 7
+ -->Solving block number 1
+--> DC Iteration number 8
+ -->Solving block number 1
+--> DC Iteration number 9
+ -->Solving block number 1
+--> DC Iteration number 10
+ -->Solving block number 1
+--> DC Iteration number 11
+ -->Solving block number 1
+--> DC Iteration number 12
+ -->Solving block number 1
+--> DC Iteration number 13
+ -->Solving block number 1
+--> DC Iteration number 14
+ -->Solving block number 1
+--> DC Iteration number 15
+ -->Solving block number 1
+--> DC Iteration number 16
+ -->Solving block number 1
+--> DC Iteration number 17
+ -->Solving block number 1
+--> DC Iteration number 18
+ -->Solving block number 1
+--> DC Iteration number 19
+ -->Solving block number 1
+
+--> Partitioning circuit...
+
+***> DC CPU TIME 0s 090ms <***
+
+DC:22 iterations FOR DC analysis
+
+   TOTAL POWER DISSIPATION:  970.6095P   WATTS
+
+
+Eldo NEWTON: VNTOL=1.000000e-06 RELTOL=7.500000e-04
+
+Connecting to JWDB server, please wait...
+connected to wdb server : -jwdbhost linux-B210 -jwdbport 42460
+
+Compute from 0.000000 Nano to 2.800000E+03 Nano
+................................................
+Simulation progress           : 10% (t = 299.9995 N)
+Elapsed CPU time              :  0h  0mn  0s 150    ( 0h  0mn  0s 150)
+................................................
+Simulation progress           : 20% (t = 576.4238 N)
+Elapsed CPU time              :  0h  0mn  0s 230    ( 0h  0mn  0s 380)
+................................................
+Simulation progress           : 30% (t = 852.6254 N)
+Elapsed CPU time              :  0h  0mn  0s 200    ( 0h  0mn  0s 580)
+................................................
+Simulation progress           : 40% (t = 1.1317 U)
+Elapsed CPU time              :  0h  0mn  0s 260    ( 0h  0mn  0s 840)
+................................................
+Simulation progress           : 50% (t = 1.4000 U)
+Elapsed CPU time              :  0h  0mn  0s 160    ( 0h  0mn  1s   0)
+................................................
+Simulation progress           : 60% (t = 1.7000 U)
+Elapsed CPU time              :  0h  0mn  0s 250    ( 0h  0mn  1s 250)
+................................................
+Simulation progress           : 70% (t = 1.9743 U)
+Elapsed CPU time              :  0h  0mn  0s 250    ( 0h  0mn  1s 500)
+................................................
+Simulation progress           : 80% (t = 2.2535 U)
+Elapsed CPU time              :  0h  0mn  0s 250    ( 0h  0mn  1s 750)
+................................................
+Simulation progress           : 90% (t = 2.5213 U)
+Elapsed CPU time              :  0h  0mn  0s 220    ( 0h  0mn  1s 970)
+................................................
+Simulation progress           : 100% (t = 2.8000 U)
+Elapsed CPU time              :  0h  0mn  0s 180    ( 0h  0mn  2s 150)
+
+
+***>Current simulation completed
+
+
+
+
+SIMULATION INFORMATION 
+memory size allocated in bytes 59416576
+Latency: 0.000000%
+average number of newton iterations: 3.747518
+nb of components: 749
+nb of nodes: 568
+nb of MOS or BIP calls: 2480209
+Number of steps computed: 2237
+
+***>CPU TIME 2s 150ms <***
+
+***>MESSAGE SUMMARY: 17 warnings
+
+***>GLOBAL CPU TIME 2s 270ms <***
+
+
+***>GLOBAL ELAPSED TIME 3s <***
+
+

@@ -1,0 +1,19 @@
+START report: Tue Oct 23 20:05:26 2018 
+** Warning: (eldo - 255)  In file "./ECE4500/Lab7/t_flip_flop/eldonet/t_flip_flop_eldonet.spi" line 58:
++   OBJECT "X_ASYNCHRONOUS_SR_LATCH1.M7":  Size not consistent with LMIN/LMAX/WMIN/WMAX/TEMPMIN/TEMPMAX specification.
++    l (2.000000e+00u) is greater than lmax (1.500000e+00u)
+** Warning: (eldo - 255)  In file "./ECE4500/Lab7/t_flip_flop/eldonet/t_flip_flop_eldonet.spi" line 59:
++   OBJECT "X_ASYNCHRONOUS_SR_LATCH1.M1":  Size not consistent with LMIN/LMAX/WMIN/WMAX/TEMPMIN/TEMPMAX specification.
++    l (2.000000e+00u) is greater than lmax (1.500000e+00u)
+** Warning: (eldo - 255)  In file "./ECE4500/Lab7/t_flip_flop/eldonet/t_flip_flop_eldonet.spi" line 60:
++   OBJECT "X_ASYNCHRONOUS_SR_LATCH1.M8":  Size not consistent with LMIN/LMAX/WMIN/WMAX/TEMPMIN/TEMPMAX specification.
++    l (2.000000e+00u) is greater than lmax (1.500000e+00u)
+** Warning: (eldo - 255)  In file "./ECE4500/Lab7/t_flip_flop/eldonet/t_flip_flop_eldonet.spi" line 61:
++   OBJECT "X_ASYNCHRONOUS_SR_LATCH1.M5":  Size not consistent with LMIN/LMAX/WMIN/WMAX/TEMPMIN/TEMPMAX specification.
++    l (2.000000e+00u) is greater than lmax (1.500000e+00u)
+** Warning: (eldo - 255)  In file "./ECE4500/Lab7/t_flip_flop/eldonet/t_flip_flop_eldonet.spi" line 62:
++   OBJECT "X_ASYNCHRONOUS_SR_LATCH1.M4":  Size not consistent with LMIN/LMAX/WMIN/WMAX/TEMPMIN/TEMPMAX specification.
++    l (2.000000e+00u) is greater than lmax (1.500000e+00u)
+** Warning: (eldo - 1615)  In file "./ECE4500/Lab7/t_flip_flop/eldonet/t_flip_flop_eldonet.cir" line 12:
++   COMMAND ".TRAN": Tstep can not be <= 0.0.
++   It is set to Tmax/20.0 = 4.000e-08 s.

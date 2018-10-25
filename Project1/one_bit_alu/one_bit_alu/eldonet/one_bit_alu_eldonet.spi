@@ -1,0 +1,104 @@
+*
+* .CONNECT statements
+*
+.CONNECT VSS 0
+
+
+* ELDO netlist generated with ICnet by 'ece_lab' on Thu Oct 25 2018 at 14:08:14
+
+*
+* Globals.
+*
+.global VSS VDD
+
+*
+* Component pathname : /home/ece_lab/mentor/ECE4500/Project1/two_input_or/two_input_or
+*
+.subckt TWO_INPUT_OR  F A_NOT B_NOT VDD_ESC1 VSS_ESC2
+
+        .CONNECT VSS VSS_ESC2
+        .CONNECT VDD VDD_ESC1
+        M3 N$11 B_NOT VSS VSS NMOS L=1.2u W=6.4u M=1
+        M2 F A_NOT N$11 VSS NMOS L=1.2u W=6.4u M=1
+        M1 F VSS VDD VDD PMOS L=4.8u W=2.4u M=1
+.ends TWO_INPUT_OR
+
+*
+* Component pathname : /home/ece_lab/mentor/ECE4500/Project1/one_input_inverter/one_input_inverter
+*
+.subckt ONE_INPUT_INVERTER  OUT IN VDD_ESC1 VSS_ESC2
+
+        .CONNECT VSS VSS_ESC2
+        .CONNECT VDD VDD_ESC1
+        M2 OUT IN VSS VSS NMOS L=1.2u W=2.25u M=1
+        M1 OUT IN VDD VDD PMOS L=1.2u W=6.75u M=1
+.ends ONE_INPUT_INVERTER
+
+*
+* Component pathname : /home/ece_lab/mentor/ECE4500/Project1/two_input_mux/two_input_mux
+*
+.subckt TWO_INPUT_MUX  F A B SELECT SELECT_NOT VDD_ESC1
+
+        .CONNECT VDD VDD_ESC1
+        M4 F SELECT B VDD PMOS L=1.2u W=2.4u M=1
+        M3 F SELECT_NOT B VSS NMOS L=1.2u W=2.4u M=1
+        M2 F SELECT_NOT A VDD PMOS L=1.2u W=2.4u M=1
+        M1 F SELECT A VSS NMOS L=1.2u W=2.4u M=1
+.ends TWO_INPUT_MUX
+
+*
+* Component pathname : /home/ece_lab/mentor/ECE4500/Project1/two_input_xor/two_input_xor
+*
+.subckt TWO_INPUT_XOR  F A A_NOT B VDD_ESC1
+
+        .CONNECT VDD VDD_ESC1
+        M4 F A_NOT B VSS NMOS L=1.2u W=2.4u M=1
+        M3 F A B VDD PMOS L=1.2u W=2.4u M=1
+        M2 F B A_NOT VSS NMOS L=1.2u W=2.4u M=1
+        M1 F B A VDD PMOS L=1.2u W=2.4u M=1
+.ends TWO_INPUT_XOR
+
+*
+* Component pathname : /home/ece_lab/mentor/ECE4500/Project1/full_add_sub/full_add_sub
+*
+.subckt FULL_ADD_SUB  BOUT_COUT SUM_DIFF A A_NOT A_XOR_B A_XOR_B_NOT BIN_CIN
++ CC0 CC0_NOT CC3 CC3_NOT VDD_ESC1 VSS_ESC2
+
+        .CONNECT VSS VSS_ESC2
+        .CONNECT VDD VDD_ESC1
+        X_TWO_INPUT_XOR1 SUM_DIFF A_XOR_B A_XOR_B_NOT N$39 VDD TWO_INPUT_XOR
+        X_TWO_INPUT_MUX4 N$39 BIN_CIN VSS CC3 CC3_NOT VDD TWO_INPUT_MUX
+        X_TWO_INPUT_MUX3 BOUT_COUT N$11 N$9 CC0 CC0_NOT VDD TWO_INPUT_MUX
+        X_TWO_INPUT_MUX2 N$9 A_NOT N$39 A_XOR_B A_XOR_B_NOT VDD TWO_INPUT_MUX
+        X_TWO_INPUT_MUX1 N$11 N$39 A A_XOR_B A_XOR_B_NOT VDD TWO_INPUT_MUX
+.ends FULL_ADD_SUB
+
+*
+* Component pathname : /home/ece_lab/mentor/ECE4500/Project1/two_input_and_2/two_input_and
+*
+.subckt TWO_INPUT_AND  F A B B_NOT VDD_ESC1
+
+        .CONNECT VDD VDD_ESC1
+        M5 A B F VSS NMOS L=1.2u W=2.4u M=1
+        M4 F B_NOT B VSS NMOS L=1.2u W=2.4u M=1
+        M3 A B F VSS NMOS L=1.2u W=2.4u M=1
+        M2 A B_NOT F VDD PMOS L=1.2u W=2.4u M=1
+.ends TWO_INPUT_AND
+
+*
+* MAIN CELL: Component pathname : /home/ece_lab/mentor/ECE4500/Project1/one_bit_alu/one_bit_alu
+*
+        X_TWO_INPUT_OR1 A_OR_B A_NOT N$10 VDD VSS TWO_INPUT_OR
+        X_ONE_INPUT_INVERTER5 N$38 CC3 VDD VSS ONE_INPUT_INVERTER
+        X_ONE_INPUT_INVERTER4 N$40 CC0 VDD VSS ONE_INPUT_INVERTER
+        X_ONE_INPUT_INVERTER3 N$10 B VDD VSS ONE_INPUT_INVERTER
+        X_ONE_INPUT_INVERTER2 A_NOT A VDD VSS ONE_INPUT_INVERTER
+        X_ONE_INPUT_INVERTER1 N$22 A_XOR_B VDD VSS ONE_INPUT_INVERTER
+        X_TWO_INPUT_MUX1 N$17 ADD A CC0 N$40 VDD TWO_INPUT_MUX
+        X_TWO_INPUT_XOR1 A_XOR_B B N$10 N$17 VDD TWO_INPUT_XOR
+        X_FULL_ADD_SUB1 BOUT_COUT SUM_DIFF A A_NOT A_XOR_B N$22 BIN_CIN
++ CC0 N$40 CC3 N$38 VDD VSS FULL_ADD_SUB
+        V1 VDD VSS DC 2.5V
+        X_TWO_INPUT_AND1 A_AND_B A B N$10 VDD TWO_INPUT_AND
+*
+.end

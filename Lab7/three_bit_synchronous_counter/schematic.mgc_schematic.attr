@@ -1,0 +1,13 @@
+A 5 u mgc_schematic 5bcdfdfb0ac2.03.7f.00.00.02.00.7d.11 15 2 1 0
+V v 13 1 5bcfbcd14668.03.7f.00.00.02.00.76.b9
+F o 0 ""
+V v 14 1 5bcfbdb4df23.03.7f.00.00.02.00.76.b9
+F o 0 ""
+V v 15 1 5bcfc06407b4.03.7f.00.00.02.00.76.b9
+F o 0 ""
+O 15
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Lab7/three_bit_synchronous_counter/schematic/sheet1" 14 mgc_sheet 5bcfc0640795.03.7f.00.00.02.00.76.b9 5bcdfdfb0bec.03.7f.00.00.02.00.7d.11
+O 14
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Lab7/three_bit_synchronous_counter/schematic/sheet1" 13 mgc_sheet 5bcfbdb4df0b.03.7f.00.00.02.00.76.b9 5bcdfdfb0bec.03.7f.00.00.02.00.7d.11
+O 13
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Lab7/three_bit_synchronous_counter/schematic/sheet1" 12 mgc_sheet 5bcfbcd14647.03.7f.00.00.02.00.76.b9 5bcdfdfb0bec.03.7f.00.00.02.00.7d.11

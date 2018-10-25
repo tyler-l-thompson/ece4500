@@ -99,7 +99,7 @@ hmin value is 2.500000e-04Nanos
 
 Eldo VERSION : ELDO 2010.1 Thu Jul  1 14:15:09 GMT 2010
 
-*** DATE: 19-Oct-2018 20:40:21
+*** DATE: 24-Oct-2018 13:40:19
 
 *** TITLE: * Component: /home/ece_lab/mentor/ECE4500/HW6/npcmos_hw6  Viewpoint: eldonet
 
@@ -133,24 +133,24 @@ VDD           2.5000
 Eldo NEWTON: VNTOL=1.000000e-06 RELTOL=7.500000e-04
 
 Connecting to JWDB server, please wait...
-connected to wdb server : -jwdbhost linux-B210 -jwdbport 46297
+connected to wdb server : -jwdbhost linux-B210 -jwdbport 37301
 
 Compute from 0.000000 Nano to 1.600000E+03 Nano
 ................................................
 Simulation progress           : 10% (t = 199.9995 N)
-Elapsed CPU time              :  0h  0mn  0s  10    ( 0h  0mn  0s  10)
+Elapsed CPU time              :  0h  0mn  0s   0    ( 0h  0mn  0s   0)
 ................................................
 Simulation progress           : 20% (t = 328.3987 N)
-Elapsed CPU time              :  0h  0mn  0s   0    ( 0h  0mn  0s  10)
+Elapsed CPU time              :  0h  0mn  0s  10    ( 0h  0mn  0s  10)
 ................................................
 Simulation progress           : 30% (t = 499.9995 N)
 Elapsed CPU time              :  0h  0mn  0s  10    ( 0h  0mn  0s  20)
 ................................................
 Simulation progress           : 40% (t = 651.7156 N)
-Elapsed CPU time              :  0h  0mn  0s  10    ( 0h  0mn  0s  30)
+Elapsed CPU time              :  0h  0mn  0s   0    ( 0h  0mn  0s  20)
 ................................................
 Simulation progress           : 50% (t = 800.0001 N)
-Elapsed CPU time              :  0h  0mn  0s   0    ( 0h  0mn  0s  30)
+Elapsed CPU time              :  0h  0mn  0s  10    ( 0h  0mn  0s  30)
  Newton: No convergence at time :900.000452Nano ; try to pass over...
   pb on or around node M1_D
 
@@ -179,10 +179,10 @@ Simulation progress           : 70% (t = 1.1232 U)
 Elapsed CPU time              :  0h  0mn  0s  10    ( 0h  0mn  0s  50)
 ................................................
 Simulation progress           : 80% (t = 1.3000 U)
-Elapsed CPU time              :  0h  0mn  0s   0    ( 0h  0mn  0s  50)
+Elapsed CPU time              :  0h  0mn  0s  10    ( 0h  0mn  0s  60)
 ................................................
 Simulation progress           : 90% (t = 1.4751 U)
-Elapsed CPU time              :  0h  0mn  0s  10    ( 0h  0mn  0s  60)
+Elapsed CPU time              :  0h  0mn  0s   0    ( 0h  0mn  0s  60)
 ................................................
 Simulation progress           : 100% (t = 1.6000 U)
 Elapsed CPU time              :  0h  0mn  0s   0    ( 0h  0mn  0s  60)
@@ -206,9 +206,9 @@ Number of steps computed: 683
 
 ***>MESSAGE SUMMARY: 4 warnings
 
-***>GLOBAL CPU TIME 0s 090ms <***
+***>GLOBAL CPU TIME 0s 080ms <***
 
 
-***>GLOBAL ELAPSED TIME 2s <***
+***>GLOBAL ELAPSED TIME 1s <***
 
 

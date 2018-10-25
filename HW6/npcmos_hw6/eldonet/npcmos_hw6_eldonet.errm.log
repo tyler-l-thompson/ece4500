@@ -1,4 +1,4 @@
-START report: Fri Oct 19 20:40:20 2018 
+START report: Wed Oct 24 13:40:18 2018 
 ** Warning: (eldo - 252)  In file "./mgc/mit_0.25.lib" line 60:
 +   OBJECT "X1.C2": Self-connected object not created.
 ** Warning: (eldo - 252)  In file "./mgc/mit_0.25.lib" line 61:

@@ -1,0 +1,12 @@
+A 5 u Eddm_part 5bca3f15478f.03.7f.00.00.02.00.65.be 2 2 2 0
+V v 1 1 5bca3f15478f.03.7f.00.00.02.01.65.be
+F f 1 "part.part_1"
+V v 2 1 5bca400ce482.03.7f.00.00.02.00.65.be
+F f 2 "part.part_2"
+O 2
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "/home/ece_lab/mentor/ECE4500/Project1/two_input_xor/two_input_xor/schematic" 1 mgc_schematic 5bca3df382ec.03.7f.00.00.02.01.65.be 5bca3df382ec.03.7f.00.00.02.00.65.be
+R csduv 1 "/home/ece_lab/mentor/ECE4500/Project1/two_input_xor/two_input_xor/two_input_xor" 1 mgc_symbol 5bca3fd3d331.03.7f.00.00.02.00.65.be 5bca3fd3d330.03.7f.00.00.02.00.65.be
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "/home/ece_lab/mentor/ECE4500/Project1/two_input_xor/two_input_xor/schematic" 1 mgc_schematic 5bca3df382ec.03.7f.00.00.02.01.65.be 5bca3df382ec.03.7f.00.00.02.00.65.be

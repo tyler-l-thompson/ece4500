@@ -1,6 +1,13 @@
-A 5 u Eddm_part 5bc3c52bafb1.03.7f.00.00.02.00.24.6e 1 2 1 0
+A 5 u Eddm_part 5bc3c52bafb1.03.7f.00.00.02.00.24.6e 2 2 2 0
 V v 1 1 5bc3c52bafb1.03.7f.00.00.02.01.24.6e
 F f 1 "part.part_1"
+V v 2 1 5bcdfd981a7a.03.7f.00.00.02.00.7b.41
+F f 2 "part.part_2"
+O 2
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "/home/ece_lab/mentor/ECE4500/Lab6/SRFlipFlop_Lab6/schematic" 1 mgc_schematic 5bc3c0af4563.03.7f.00.00.02.01.24.6e 5bc3c0af4563.03.7f.00.00.02.00.24.6e
+P "eddm__refer_state" "eddm__refer_floating"
+R csduv 1 "/home/ece_lab/mentor/ECE4500/Lab6/SRFlipFlop_Lab6/SRFlipFlop_Lab6" 1 mgc_symbol 5bcdfd2268a9.03.7f.00.00.02.00.7b.41 5bcdfc9f78f6.03.7f.00.00.02.00.7b.41
 O 1
 P "eddm__stream_to_use" "eddm__propl_dstream"
 R csduv 0 "/home/ece_lab/mentor/ECE4500/Lab6/SRFlipFlop_Lab6/schematic" 1 mgc_schematic 5bc3c0af4563.03.7f.00.00.02.01.24.6e 5bc3c0af4563.03.7f.00.00.02.00.24.6e

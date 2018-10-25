@@ -1,0 +1,12 @@
+A 5 u Eddm_part 5bcf9c6c90e1.03.7f.00.00.02.00.1e.01 2 2 2 0
+V v 1 1 5bcf9c6c90e1.03.7f.00.00.02.01.1e.01
+F f 1 "part.part_1"
+V v 2 1 5bcf9d4248ac.03.7f.00.00.02.00.1e.01
+F f 2 "part.part_2"
+O 2
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "/home/ece_lab/mentor/ECE4500/Lab7/two_input_and/schematic" 1 mgc_schematic 5bcf9b0fb264.03.7f.00.00.02.00.1e.01 5bcf9b0fb263.03.7f.00.00.02.00.1e.01
+R csduv 1 "/home/ece_lab/mentor/ECE4500/Lab7/two_input_and/two_input_and" 1 mgc_symbol 5bcf9d1a99d2.03.7f.00.00.02.01.1e.01 5bcf9d1a99d2.03.7f.00.00.02.00.1e.01
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "/home/ece_lab/mentor/ECE4500/Lab7/two_input_and/schematic" 1 mgc_schematic 5bcf9b0fb264.03.7f.00.00.02.00.1e.01 5bcf9b0fb263.03.7f.00.00.02.00.1e.01

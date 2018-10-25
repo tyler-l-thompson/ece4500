@@ -1,0 +1,28 @@
+* Component: /home/ece_lab/mentor/ECE4500/HW6/pncmos_hw6_design2  Viewpoint: eldonet
+.INCLUDE /home/ece_lab/mentor/ECE4500/HW6/pncmos_hw6_design2/eldonet/pncmos_hw6_design2_eldonet.spi
+.INCLUDE /home/ece_lab/mentor/mgc/mit_0.25.lib
+.OPTION NOASCII
+.OPTION MODWL
+.OPTION ENGNOT
+.OPTION AEX
+
+* --- Singles
+
+* - Analysis Setup - Trans
+.TRAN 0 32000000N 0 2000000N
+
+* --- Waveform Outputs
+.PROBE TRAN V(A) V(B) V(C) V(CLK) V(CLK_NOT) V(F)
+
+* --- Params
+.TEMP 27
+
+* --- Forces
+VFORCE__CLK CLK VSS pattern 2.5 0 0 1e-12 1e-12 2e-03 0101010101010101 R
+VFORCE__CLK_not CLK_NOT VSS pattern 2.5 0 0 1e-12 1e-12 2e-03 1010101010101010 R
+VFORCE__A A VSS pattern 2.5 0 0 1e-12 1e-12 2e-03 0000000011111111 R
+VFORCE__B B VSS pattern 2.5 0 0 1e-12 1e-12 2e-03 0000111100001111 R
+VFORCE__C C VSS pattern 2.5 0 0 1e-12 1e-12 2e-03 0011001100110011 R
+
+* --- Libsetup
+

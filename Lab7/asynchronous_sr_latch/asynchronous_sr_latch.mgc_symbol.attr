@@ -1,0 +1,16 @@
+A 5 u mgc_symbol 5bce0630e521.03.7f.00.00.02.00.7d.11 4 2 1 0
+V v 2 2 5bcf87775b69.03.7f.00.00.02.00.1e.01
+F f 2 "asynchronous_sr_latch.smbl_2"
+F o 0 ""
+V v 3 2 5bcf93bf253c.03.7f.00.00.02.00.1e.01
+F f 3 "asynchronous_sr_latch.smbl_3"
+F o 0 ""
+V v 4 2 5bcf93d09189.03.7f.00.00.02.00.1e.01
+F f 4 "asynchronous_sr_latch.smbl_4"
+F o 0 ""
+O 4
+R csduv 0 "/home/ece_lab/mentor/ECE4500/Lab7/asynchronous_sr_latch/part" 4 Eddm_part 5bcf93bf2593.03.7f.00.00.02.00.1e.01 5bce06192b03.03.7f.00.00.02.00.7d.11
+O 3
+R csduv 0 "/home/ece_lab/mentor/ECE4500/Lab7/asynchronous_sr_latch/part" 4 Eddm_part 5bcf93bf2593.03.7f.00.00.02.00.1e.01 5bce06192b03.03.7f.00.00.02.00.7d.11
+O 2
+R csduv 0 "/home/ece_lab/mentor/ECE4500/Lab7/asynchronous_sr_latch/part" 3 Eddm_part 5bcf87775be6.03.7f.00.00.02.00.1e.01 5bce06192b03.03.7f.00.00.02.00.7d.11

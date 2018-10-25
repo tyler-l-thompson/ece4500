@@ -1,0 +1,13 @@
+A 5 u mgc_schematic 5bd0be03e901.03.7f.00.00.02.00.19.30 21 2 1 0
+V v 19 1 5bd0c9654963.03.7f.00.00.02.00.19.30
+F o 0 ""
+V v 20 1 5bd0ca214276.03.7f.00.00.02.00.19.30
+F o 0 ""
+V v 21 1 5bd0ca8752a9.03.7f.00.00.02.00.19.30
+F o 0 ""
+O 21
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/HW6/pncmos_hw6_design2/schematic/sheet1" 20 mgc_sheet 5bd0ca87529d.03.7f.00.00.02.00.19.30 5bd0be03e9af.03.7f.00.00.02.00.19.30
+O 20
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/HW6/pncmos_hw6_design2/schematic/sheet1" 19 mgc_sheet 5bd0ca214267.03.7f.00.00.02.00.19.30 5bd0be03e9af.03.7f.00.00.02.00.19.30
+O 19
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/HW6/pncmos_hw6_design2/schematic/sheet1" 18 mgc_sheet 5bd0c965494e.03.7f.00.00.02.00.19.30 5bd0be03e9af.03.7f.00.00.02.00.19.30

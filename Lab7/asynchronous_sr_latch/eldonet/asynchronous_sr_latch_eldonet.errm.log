@@ -1,0 +1,19 @@
+START report: Tue Oct 23 17:32:06 2018 
+** Warning: (eldo - 255)  In file "./ECE4500/Lab7/asynchronous_sr_latch/eldonet/asynchronous_sr_latch_eldonet.spi" line 17:
++   OBJECT "M8":  Size not consistent with LMIN/LMAX/WMIN/WMAX/TEMPMIN/TEMPMAX specification.
++    l (2.000000e+00u) is greater than lmax (1.500000e+00u)
+** Warning: (eldo - 255)  In file "./ECE4500/Lab7/asynchronous_sr_latch/eldonet/asynchronous_sr_latch_eldonet.spi" line 18:
++   OBJECT "M7":  Size not consistent with LMIN/LMAX/WMIN/WMAX/TEMPMIN/TEMPMAX specification.
++    l (2.000000e+00u) is greater than lmax (1.500000e+00u)
+** Warning: (eldo - 255)  In file "./ECE4500/Lab7/asynchronous_sr_latch/eldonet/asynchronous_sr_latch_eldonet.spi" line 19:
++   OBJECT "M1":  Size not consistent with LMIN/LMAX/WMIN/WMAX/TEMPMIN/TEMPMAX specification.
++    l (2.000000e+00u) is greater than lmax (1.500000e+00u)
+** Warning: (eldo - 255)  In file "./ECE4500/Lab7/asynchronous_sr_latch/eldonet/asynchronous_sr_latch_eldonet.spi" line 21:
++   OBJECT "M5":  Size not consistent with LMIN/LMAX/WMIN/WMAX/TEMPMIN/TEMPMAX specification.
++    l (2.000000e+00u) is greater than lmax (1.500000e+00u)
+** Warning: (eldo - 255)  In file "./ECE4500/Lab7/asynchronous_sr_latch/eldonet/asynchronous_sr_latch_eldonet.spi" line 22:
++   OBJECT "M4":  Size not consistent with LMIN/LMAX/WMIN/WMAX/TEMPMIN/TEMPMAX specification.
++    l (2.000000e+00u) is greater than lmax (1.500000e+00u)
+** Warning: (eldo - 1615)  In file "./ECE4500/Lab7/asynchronous_sr_latch/eldonet/asynchronous_sr_latch_eldonet.cir" line 12:
++   COMMAND ".TRAN": Tstep can not be <= 0.0.
++   It is set to Tmax/20.0 = 4.000e-08 s.
