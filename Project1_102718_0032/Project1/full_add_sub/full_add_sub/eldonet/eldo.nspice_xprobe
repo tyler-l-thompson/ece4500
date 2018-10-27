@@ -1,0 +1,106 @@
+# This file provides name mapping information for all objects
+# on the schematic design.  It provides a mapping for each
+# object between its name on the schematic and its name in the netlist.
+version 1.0
+
+Globals
+   VSS vss
+   VDD vdd
+End Globals
+
+Cell dc_v_source
+   Pin POS pos
+   Pin NEG neg
+End Cell
+
+Cell nmos
+   Pin D d
+   Pin G g
+   Pin S s
+End Cell
+
+Cell pmos
+   Pin D d
+   Pin G g
+   Pin S s
+   Pin B b
+End Cell
+
+Cell two_input_xor
+   Pin F f
+   Pin A a
+   Pin A_not a_not
+   Pin B b
+   Pin VDD vdd
+   Net F f
+   Net B b
+   Net A_not a_not
+   Net A a
+   Net VDD_esc1 vdd_esc1
+   Global VDD vdd
+   Inst M4 m4 nmos
+   Inst M3 m3 pmos
+   Inst M2 m2 nmos
+   Inst M1 m1 pmos
+End Cell
+
+Cell two_input_mux
+   Pin F f
+   Pin A a
+   Pin B b
+   Pin Select select
+   Pin Select_not select_not
+   Pin VDD vdd
+   Net Select_not select_not
+   Net Select select
+   Net F f
+   Net B b
+   Net A a
+   Net VDD_esc1 vdd_esc1
+   Global VDD vdd
+   Inst M4 m4 pmos
+   Inst M3 m3 nmos
+   Inst M2 m2 pmos
+   Inst M1 m1 nmos
+End Cell
+
+Cell #top#
+   Pin Bout_Cout bout_cout
+   Pin Sum_Diff sum_diff
+   Pin A a
+   Pin A_not a_not
+   Pin A_xor_B a_xor_b
+   Pin A_xor_B_not a_xor_b_not
+   Pin Bin_Cin bin_cin
+   Pin CC0 cc0
+   Pin CC0_not cc0_not
+   Pin CC3 cc3
+   Pin CC3_not cc3_not
+   Pin VDD vdd
+   Pin VSS vss
+   Net N$39 n$39
+   Net N$9 n$9
+   Net N$11 n$11
+   Net Sum_Diff sum_diff
+   Net CC3_not cc3_not
+   Net CC3 cc3
+   Net CC0_not cc0_not
+   Net CC0 cc0
+   Net Bout_Cout bout_cout
+   Net Bin_Cin bin_cin
+   Net A_xor_B_not a_xor_b_not
+   Net A_xor_B a_xor_b
+   Net A_not a_not
+   Net A a
+   Net VDD_esc1 vdd_esc1
+   Net VSS_esc2 vss_esc2
+   Global VSS vss
+   Global VDD vdd
+   Inst V1 v1 dc_v_source
+   Inst TWO_INPUT_XOR1 x_two_input_xor1 two_input_xor
+   Inst TWO_INPUT_MUX4 x_two_input_mux4 two_input_mux
+   Inst TWO_INPUT_MUX3 x_two_input_mux3 two_input_mux
+   Inst TWO_INPUT_MUX2 x_two_input_mux2 two_input_mux
+   Inst TWO_INPUT_MUX1 x_two_input_mux1 two_input_mux
+End Cell
+

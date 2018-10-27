@@ -1,0 +1,18 @@
+A 5 u Eddm_part 5bca44dc93b9.03.7f.00.00.02.00.6f.5d 3 2 2 0
+V v 1 1 5bca44dc93b9.03.7f.00.00.02.01.6f.5d
+F f 1 "part.part_1"
+V v 2 1 5bca488f525e.03.7f.00.00.02.00.6f.5d
+F f 2 "part.part_2"
+V v 3 1 5bd1fa382da2.03.7f.00.00.02.00.58.e3
+F f 3 "part.part_3"
+O 3
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "/home/ece_lab/mentor/ECE4500/Project1/two_input_or/two_input_or/schematic" 1 mgc_schematic 5bca4438cf24.03.7f.00.00.02.01.6f.5d 5bca4438cf24.03.7f.00.00.02.00.6f.5d
+R csduv 1 "/home/ece_lab/mentor/ECE4500/Project1/two_input_or/two_input_or/two_input_or" 2 mgc_symbol 5bd1fa382d98.03.7f.00.00.02.00.58.e3 5bca48710e9b.03.7f.00.00.02.00.6f.5d
+O 2
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "/home/ece_lab/mentor/ECE4500/Project1/two_input_or/two_input_or/schematic" 1 mgc_schematic 5bca4438cf24.03.7f.00.00.02.01.6f.5d 5bca4438cf24.03.7f.00.00.02.00.6f.5d
+R csduv 1 "/home/ece_lab/mentor/ECE4500/Project1/two_input_or/two_input_or/two_input_or" 1 mgc_symbol 5bca48710e9b.03.7f.00.00.02.01.6f.5d 5bca48710e9b.03.7f.00.00.02.00.6f.5d
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "/home/ece_lab/mentor/ECE4500/Project1/two_input_or/two_input_or/schematic" 1 mgc_schematic 5bca4438cf24.03.7f.00.00.02.01.6f.5d 5bca4438cf24.03.7f.00.00.02.00.6f.5d

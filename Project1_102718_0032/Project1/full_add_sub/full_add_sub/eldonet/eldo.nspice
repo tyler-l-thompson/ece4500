@@ -1,0 +1,42 @@
+* ELDO netlist generated with ICnet by 'ece_lab' on Thu Oct 25 2018 at 14:27:53
+
+*
+* Globals.
+*
+.global vss vdd
+
+*
+* Component pathname : /home/ece_lab/mentor/ECE4500/Project1/two_input_xor/two_input_xor
+*
+.subckt two_input_xor  f a a_not b vdd_esc1
+
+        .connect vdd vdd_esc1
+        m4 f a_not b vss NMOS L=1.2u W=2.4u M=1
+        m3 f a b vdd PMOS L=1.2u W=2.4u M=1
+        m2 f b a_not vss NMOS L=1.2u W=2.4u M=1
+        m1 f b a vdd PMOS L=1.2u W=2.4u M=1
+.ends two_input_xor
+
+*
+* Component pathname : /home/ece_lab/mentor/ECE4500/Project1/two_input_mux/two_input_mux
+*
+.subckt two_input_mux  f a b select select_not vdd_esc1
+
+        .connect vdd vdd_esc1
+        m4 f select b vdd PMOS L=1.2u W=2.4u M=1
+        m3 f select_not b vss NMOS L=1.2u W=2.4u M=1
+        m2 f select_not a vdd PMOS L=1.2u W=2.4u M=1
+        m1 f select a vss NMOS L=1.2u W=2.4u M=1
+.ends two_input_mux
+
+*
+* MAIN CELL: Component pathname : /home/ece_lab/mentor/ECE4500/Project1/full_add_sub/full_add_sub
+*
+        v1 vdd vss DC 2.5V
+        x_two_input_xor1 sum_diff a_xor_b a_xor_b_not n$39 vdd two_input_xor
+        x_two_input_mux4 n$39 bin_cin vss cc3 cc3_not vdd two_input_mux
+        x_two_input_mux3 bout_cout n$11 n$9 cc0 cc0_not vdd two_input_mux
+        x_two_input_mux2 n$9 a_not n$39 a_xor_b a_xor_b_not vdd two_input_mux
+        x_two_input_mux1 n$11 n$39 a a_xor_b a_xor_b_not vdd two_input_mux
+*
+.end

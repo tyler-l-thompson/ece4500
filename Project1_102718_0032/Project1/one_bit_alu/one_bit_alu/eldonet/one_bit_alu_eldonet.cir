@@ -1,0 +1,36 @@
+* Component: /home/ece_lab/mentor/ECE4500/Project1/one_bit_alu/one_bit_alu  Viewpoint: eldonet
+.INCLUDE /home/ece_lab/mentor/ECE4500/Project1/one_bit_alu/one_bit_alu/eldonet/one_bit_alu_eldonet.spi
+.INCLUDE /home/ece_lab/mentor/mgc/mit_0.25.lib
+.OPTION NOASCII
+.OPTION MODWL
+.OPTION ENGNOT
+.OPTION AEX
+
+* --- Singles
+
+* - Analysis Setup - Trans
+.TRAN 0 3200N 0 100N
+
+* --- Waveform Outputs
+.PROBE TRAN V(A) V(A_AND_B) V(A_NOT) V(A_OR_B) V(A_XOR_B) V(ADD) V(B) V(BIN_CIN)
++ V(BOUT_COUT) V(CC0) V(CC3) V(SUM_DIFF)
+
+* --- Params
+.TEMP 27
+
+* --- Forces
+VFORCE__A A VSS pattern 2.5 0 0 1e-12 1e-12 1e-07
++ 00000000000000001111111111111111 R
+VFORCE__Add ADD VSS pattern 2.5 0 0 1e-12 1e-12 1e-07
++ 11111111111111111111111111111111 R
+VFORCE__B B VSS pattern 2.5 0 0 1e-12 1e-12 1e-07
++ 00000000111111110000000011111111 R
+VFORCE__Bin_Cin BIN_CIN VSS pattern 2.5 0 0 1e-12 1e-12 1e-07
++ 00001111000011110000111100001111 R
+VFORCE__Bin_Cin_1 CC0 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07
++ 00110011001100110011001100110011 R
+VFORCE__Bin_Cin_2 CC3 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07
++ 01010101010101010101010101010101 R
+
+* --- Libsetup
+
