@@ -1,0 +1,1005 @@
+  Run on linux-B210 (Linux 2.6.16.60-0.21-bigsmp)
+
+/mgc/ams/ixl/bin/eldo.exe -i /home/ece_lab/mentor/4500/Project_1/Project_1_MUX/eldonet/Project_1_MUX_eldonet.cir -o /home/ece_lab/mentor/4500/Project_1/Project_1_MUX/eldonet/Project_1_MUX_eldonet.chi -gwl jwdb -nocou -wdb_folder -outname Project_1_MUX_eldonet_04 
+
+
+
+***** PRE-PROCESSING ...
+
+1*******27-Oct-18 *******  ELDO 2010.1  (v7.3_1.1)  *******11:22:28******
+
+0* Component: /home/ece_lab/mentor/4500/Project_1/Project_1_MUX  Viewpoint: eldonet
+
+0****     INPUT LISTING                                               
+
+0***********************************************************************
+    2  ** including /home/ece_lab/mentor/4500/Project_1/Project_1_MUX/eldonet/Project_1_MUX_eldonet.spi
+    1  *
+    2  * .CONNECT statements
+    3  *
+    4  .CONNECT VSS 0
+    5  
+    6  
+    7  * ELDO netlist generated with ICnet by 'ece_lab' on Sat Oct 27 2018 at 11:22:27
+    8  
+    9  *
+   10  * Globals.
+   11  *
+   12  .GLOBAL VDD VSS
+   13  
+   14  *
+   15  * Component pathname : /home/ece_lab/mentor/4500/Project_1/4input_MUX
+   16  *
+   17  .SUBCKT 4INPUT_MUX  F0 F1 F2 F3 A0 A1 A2 A3 B0 B1 B2 B3 SEL SEL_NOT
+   18  
+   19          M16 B3 SEL F3 VSS NMOS L=1.2U W=2U M=1
+   20          M15 B3 SEL_NOT F3 VDD PMOS L=1.2U W=7.5U M=1
+   21          M14 A3 SEL_NOT F3 VSS NMOS L=1.2U W=2U M=1
+   22          M13 A3 SEL F3 VDD PMOS L=1.2U W=7.5U M=1
+   23          M12 B2 SEL F2 VSS NMOS L=1.2U W=2U M=1
+   24          M11 B2 SEL_NOT F2 VDD PMOS L=1.2U W=7.5U M=1
+   25          M10 A2 SEL_NOT F2 VSS NMOS L=1.2U W=2U M=1
+   26          M9 A2 SEL F2 VDD PMOS L=1.2U W=7.5U M=1
+   27          M8 B1 SEL F1 VSS NMOS L=1.2U W=2U M=1
+   28          M7 B1 SEL_NOT F1 VDD PMOS L=1.2U W=7.5U M=1
+   29          M6 A1 SEL_NOT F1 VSS NMOS L=1.2U W=2U M=1
+   30          M5 A1 SEL F1 VDD PMOS L=1.2U W=7.5U M=1
+   31          M4 B0 SEL F0 VSS NMOS L=1.2U W=2U M=1
+   32          M3 B0 SEL_NOT F0 VDD PMOS L=1.2U W=7.5U M=1
+   33          M2 A0 SEL_NOT F0 VSS NMOS L=1.2U W=2U M=1
+   34          M1 A0 SEL F0 VDD PMOS L=1.2U W=7.5U M=1
+   35  .ENDS 4INPUT_MUX
+   36  
+   37  *
+   38  * MAIN CELL: Component pathname : /home/ece_lab/mentor/4500/Project_1/Project_1_MUX
+   39  *
+   40          X_4INPUT_MUX7 N$53 N$55 N$57 N$59 ZERO0 ZERO1 ZERO2 ZERO3 A_PLUS_B_WITH_CARRY0
+   41  + A_PLUS_B_WITH_CARRY1 A_PLUS_B_WITH_CARRY2 A_PLUS_B_WITH_CARRY3 CC0 CC0_NOT 4INPUT_MUX
+   42          X_4INPUT_MUX6 N$45 N$47 N$49 N$51 ASLA0 ASLA1 ASLA2 ASLA3 ASRA0
+   43  + ASRA1 ASRA2 ASRA3 CC0 CC0_NOT 4INPUT_MUX
+   44          V1 VDD VSS DC 2.5V
+   45          X_4INPUT_MUX15 F0 F1 F2 F3 N$101 N$103 N$105 N$109 N$288 N$289 N$290
+   46  + N$291 CC3 CC3_NOT 4INPUT_MUX
+   47          X_4INPUT_MUX14 N$288 N$289 N$290 N$291 N$69 N$71 N$73 N$75 N$77
+   48  + N$79 N$81 N$83 CC2 CC2_NOT 4INPUT_MUX
+   49          X_4INPUT_MUX13 N$101 N$103 N$105 N$109 N$85 N$87 N$89 N$91 N$93
+   50  + N$95 N$97 N$99 CC2 CC2_NOT 4INPUT_MUX
+   51          X_4INPUT_MUX12 N$77 N$79 N$81 N$83 N$53 N$55 N$57 N$59 N$61 N$63
+   52  + N$65 N$67 CC1 CC1_NOT 4INPUT_MUX
+   53          X_4INPUT_MUX11 N$69 N$71 N$73 N$75 N$36 N$38 N$39 N$41 N$45 N$47
+   54  + N$49 N$51 CC1 CC1_NOT 4INPUT_MUX
+   55          X_4INPUT_MUX10 N$93 N$95 N$97 N$99 N$20 N$22 N$24 N$25 N$27 N$29
+   56  + N$31 N$33 CC1 CC1_NOT 4INPUT_MUX
+   57          X_4INPUT_MUX9 N$85 N$87 N$89 N$91 N$2 N$4 N$9 N$8 N$12 N$14 N$16
+   58  + N$18 CC1 CC1_NOT 4INPUT_MUX
+   59          X_4INPUT_MUX8 N$61 N$63 N$65 N$67 A_MINUS_B_WITH_BORROW0 A_MINUS_B_WITH_BORROW1
+   60  + A_MINUS_B_WITH_BORROW2 A_MINUS_B_WITH_BORROW3 B_PLUS_ONE0 B_PLUS_ONE1
+   61  + B_PLUS_ONE2 B_PLUS_ONE3 CC0 CC0_NOT 4INPUT_MUX
+   62          X_4INPUT_MUX5 N$36 N$38 N$39 N$41 LSLA0 LSLA1 LSLA2 LSLA3 LSRA0
+   63  + LSRA1 LSRA2 LSRA3 CC0 CC0_NOT 4INPUT_MUX
+   64          X_4INPUT_MUX4 N$27 N$29 N$31 N$33 A_MINUS_B0 A_MINUS_B1 A_MINUS_B2
+   65  + A_MINUS_B3 B0 B1 B2 B3 CC0 CC0_NOT 4INPUT_MUX
+   66          X_4INPUT_MUX3 N$20 N$22 N$24 N$25 A_XOR_B0 A_XOR_B1 A_XOR_B2 A_XOR_B3
+   67  + A_PLUS_B0 A_PLUS_B1 A_PLUS_B2 A_PLUS_B3 CC0 CC0_NOT 4INPUT_MUX
+   68          X_4INPUT_MUX2 N$12 N$14 N$16 N$18 A_AND_B0 A_AND_B1 A_AND_B2 A_AND_B3
+   69  + A_OR_B0 A_OR_B1 A_OR_B2 A_OR_B3 CC0 CC0_NOT 4INPUT_MUX
+   70          X_4INPUT_MUX1 N$2 N$4 N$9 N$8 A0 A1 A2 A3 A0_NOT A1_NOT A2_NOT A3_NOT
+   71  + CC0 CC0_NOT 4INPUT_MUX
+   72  *
+   73  *end
+    2  
+    3  ** including /home/ece_lab/mentor/mgc/mit_0.25.lib
+    1  *I would like to thank MIT Lincoln Laboratory for allowing us to
+    2  *use their BSIM3v3 Spice models.  MIT Lincoln Laboratory current
+    3  *research includes Multiproject CMOS Fabrication as part of their
+    4  *Advanced Silicon Technology project.  For futher information,
+    5  *please visit their website at http://www.ll.mit.edu/AST
+    6  
+    7  * MOS Level 3 models
+    8  .MODEL NMOS NMOS LMIN=1.2E-06 LMAX=1.5E-06 WMIN=2.0E-06 WMAX=500E-06 LEVEL=3
+    9  +VTO=.79 GAMMA=.38 PHI=.53 RD=63 IS=1E-16 PB=.8 CGSO=1.973E-10
+   10  +CGDO=1.973E-10 RSH=45 CJ=0.00029 MJ=.486 CJSW=3.3E-10 MJSW=.33 JS=0.0001
+   11  +TOX=2.5E-08 NSUB=8.7E+15 NFS=8.2E+11 TPG=1 XJ=1E-07 LD=7E-08 UO=577
+   12  +VMAX=150000 FC=.5 DELTA=.3551 THETA=0.046 ETA=.16 KAPPA=0.05
+   13  
+   14  .MODEL PMOS PMOS  LMIN=1.2E-06 LMAX=100E-06 WMIN=2.0E-06 WMAX=500E-06 LEVEL=3
+   15  +VTO=-8.40000000E-01 GAMMA=.53 PHI=.58 RD=94 RS=94 IS=1E-16 PB=.8
+   16  +CGSO=3.284E-10 CGDO=3.284E-10 RSH=100 CJ=0.00041 MJ=.54 CJSW=3.4E-10 MJSW=.3
+   17  +JS=0.0001 TOX=2.5E-08 NSUB=1.75E+16 NFS=8.4E+11 TPG=1 XJ=0 LD=6E-08 UO=205
+   18  +VMAX=500000 FC=.5 DELTA=.4598 THETA=.14 ETA=.17 KAPPA=10
+   19  
+   20  * Diodes used in resistor subcircuits
+   21  .MODEL  NDIO  D  LEVEL=1 EG=1.110 RS=1.500E-10 CJ=1.599E-3 
+   22  +CJSW=1.609E-10 PB=1.100E+00 MJ=4.940E-01 MJSW=4.720E-01 
+   23  +JS=9.014E-07 JSW=6.405E-13 N=1.114
+   24  .MODEL  PDIO  D  LEVEL=1 EG=1.110 RS=1.500E-10 CJ=1.599E-3
+   25  +CJSW=1.609E-10 PB=1.100E+00 MJ=4.940E-01 MJSW=4.720E-01
+   26  +JS=9.014E-07 JSW=6.405E-13 N=1.114
+   27  
+   28  * 3-terminal NPLUS resistor
+   29  * POS=1 NEG=2 SUB=3
+   30  .SUBCKT NPLUS 1 2 3 R=1K W=0.5U
+   31    R1  1  4  (R/4) TC1=1.47E-3 TC2=0
+   32    R2  4  5  (R/4) TC1=1.47E-3 TC2=0
+   33    R3  5  6  (R/4) TC1=1.47E-3 TC2=0
+   34    R4  6  2  (R/4) TC1=1.47E-3 TC2=0
+   35    D1  3  1  NDIO W=(W) AREA=(W*(W*(R/80)/5)) PERI=(2*((W*(R/80)/5)+W/2))
+   36    D2  3  4  NDIO W=(W) AREA=(W*(W*(R/80)/5)) PERI=(2*(W*(R/80)/5))
+   37    D3  3  5  NDIO W=(W) AREA=(W*(W*(R/80)/5)) PERI=(2*(W*(R/80)/5))
+   38    D4  3  6  NDIO W=(W) AREA=(W*(W*(R/80)/5)) PERI=(2*(W*(R/80)/5))
+   39    D5  3  2  NDIO W=(W) AREA=(W*(W*(R/80)/5)) PERI=(2*((W*(R/80)/5)+W/2))
+   40  .ENDS NPLUS
+   41  
+   42  
+   43  * 3-terminal PPLUS resistor
+   44  * POS=1 NEG=2 SUB=3
+   45  .SUBCKT PPLUS 1 2 3 R=1K W=3U
+   46    R1   1  4  (R/4) TC1=1.54E-3 TC2=0
+   47    R2   4  5  (R/4) TC1=1.54E-3 TC2=0
+   48    R3   5  6  (R/4) TC1=1.54E-3 TC2=0
+   49    R4   6  2  (R/4) TC1=1.54E-3 TC2=0
+   50    D1   1  3  PDIO W=(W) AREA=(W*(W*(R/150)/5)) PERI=(2*((W*(R/150)/5)+W/2))
+   51    D2   4  3  PDIO W=(W) AREA=(W*(W*(R/150)/5)) PERI=(2*(W*(R/150)/5))
+   52    D3   5  3  PDIO W=(W) AREA=(W*(W*(R/150)/5)) PERI=(2*(W*(R/150)/5))
+   53    D4   6  3  PDIO W=(W) AREA=(W*(W*(R/150)/5)) PERI=(2*(W*(R/150)/5))
+   54    D5   2  3  PDIO W=(W) AREA=(W*(W*(R/150)/5)) PERI=(2*((W*(R/150)/5)+W/2))
+   55  .ENDS PPLUS
+   56  
+   57  *3 terminal capacitor
+   58  .SUBCKT NCAP M2 M1M3 N CAPACITANCE=1P
+   59    C1 M2 M1M3 (CAPACITANCE)
+   60    C2 M1M3 N ((SQRT((4*(87.8/72.6)*(87.8/72.6))+(CAPACITANCE/72.6E-18))-2*(87.8/72.6))*30.4E-18)
+   61    C3 M1M3 N ((SQRT((4*(87.8/72.6)*(87.8/72.6))+(CAPACITANCE/72.6E-18))-2*(87.8/72.6))*4*41.7E-18)
+   62  .ENDS CAP3T
+   63  
+   64  
+Warning 316: In file "./mgc/mit_0.25.lib" line 62:
++   COMMAND .ENDS: The name does not match the .SUBCKT name.
+    3  
+    4  .OPTION NOASCII
+    5  .OPTION MODWL
+    6  .OPTION ENGNOT
+    7  .OPTION AEX
+    8  
+    9  * --- Singles
+   10  
+   11  * - Analysis Setup - Trans
+   12  .TRAN 0 1600N 0N 100N
+   13  
+   14  * --- Waveform Outputs
+   15  .PROBE TRAN V(A0) V(A0_NOT) V(A1) V(A1_NOT) V(A2) V(A2_NOT) V(A3) V(A3_NOT)
+   16  + V(A_AND_B0) V(A_AND_B1) V(A_AND_B2) V(A_AND_B3) V(A_MINUS_B0) V(A_MINUS_B1)
+   17  + V(A_MINUS_B2) V(A_MINUS_B3) V(A_MINUS_B_WITH_BORROW0) V(A_MINUS_B_WITH_BORROW1)
+   18  + V(A_MINUS_B_WITH_BORROW2) V(A_MINUS_B_WITH_BORROW3) V(A_OR_B0) V(A_OR_B1)
+   19  + V(A_OR_B2) V(A_OR_B3) V(A_PLUS_B0) V(A_PLUS_B1) V(A_PLUS_B2) V(A_PLUS_B3)
+   20  + V(A_PLUS_B_WITH_CARRY0) V(A_PLUS_B_WITH_CARRY1) V(A_PLUS_B_WITH_CARRY2)
+   21  + V(A_PLUS_B_WITH_CARRY3) V(A_XOR_B0) V(A_XOR_B1) V(A_XOR_B2) V(A_XOR_B3) V(ASLA0)
+   22  + V(ASLA1) V(ASLA2) V(ASLA3) V(ASRA0) V(ASRA1) V(ASRA2) V(ASRA3) V(B0) V(B1) V(B2)
+   23  + V(B3) V(B_PLUS_ONE0) V(B_PLUS_ONE1) V(B_PLUS_ONE2) V(B_PLUS_ONE3) V(CC0)
+   24  + V(CC0_NOT) V(CC1) V(CC1_NOT) V(CC2) V(CC2_NOT) V(CC3) V(CC3_NOT) V(F0) V(F1)
+   25  + V(F2) V(F3) V(LSLA0) V(LSLA1) V(LSLA2) V(LSLA3) V(LSRA0) V(LSRA1) V(LSRA2)
+   26  + V(LSRA3) V(ZERO0) V(ZERO1) V(ZERO2) V(ZERO3)
+   27  
+   28  * --- Params
+   29  .TEMP 27
+   30  
+   31  * --- Forces
+   32  VFORCE__A0 A0 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 0 R
+   33  VFORCE__A0_NOT A0_NOT VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 1 R
+   34  VFORCE__A1 A1 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 0 R
+   35  VFORCE__A1_NOT A1_NOT VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 0 R
+   36  VFORCE__A2 A2 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 0 R
+   37  VFORCE__A2_NOT A2_NOT VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 0 R
+   38  VFORCE__A3_NOT A3_NOT VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 0 R
+   39  VFORCE__A_AND_B0 A_AND_B0 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 0 R
+   40  VFORCE__A_AND_B1 A_AND_B1 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 1 R
+   41  VFORCE__A_AND_B2 A_AND_B2 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 0 R
+   42  VFORCE__A_AND_B3 A_AND_B3 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 0 R
+   43  VFORCE__A_MINUS_B_WITH_BORROW2 A_OR_B0 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 1 R
+   44  VFORCE__A_MINUS_B_WITH_BORROW2_1 A_OR_B1 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 1
+   45  + R
+   46  VFORCE__A_MINUS_B_WITH_BORROW2_2 A_OR_B2 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 0
+   47  + R
+   48  VFORCE__A_MINUS_B_WITH_BORROW2_3 A_OR_B3 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 0
+   49  + R
+   50  VFORCE__A_MINUS_B_WITH_BORROW2_4 A_XOR_B0 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07
+   51  + 0 R
+   52  VFORCE__A_MINUS_B_WITH_BORROW2_5 A_XOR_B1 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07
+   53  + 0 R
+   54  VFORCE__A_MINUS_B_WITH_BORROW2_6 A_XOR_B2 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07
+   55  + 1 R
+   56  VFORCE__A_MINUS_B_WITH_BORROW2_7 A_XOR_B3 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07
+   57  + 0 R
+   58  VFORCE__A_MINUS_B_WITH_BORROW2_8 A_PLUS_B0 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07
+   59  + 1 R
+   60  VFORCE__A_MINUS_B_WITH_BORROW2_9 A_PLUS_B2 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07
+   61  + 1 R
+   62  VFORCE__A_MINUS_B_WITH_BORROW2_10 A_PLUS_B1 VSS pattern 2.5 0 0 1e-12 1e-12
+   63  + 1e-07 0 R
+   64  VFORCE__A_MINUS_B_WITH_BORROW2_11 A_PLUS_B3 VSS pattern 2.5 0 0 1e-12 1e-12
+   65  + 1e-07 0 R
+   66  VFORCE__A_MINUS_B_WITH_BORROW2_12 A_MINUS_B0 VSS pattern 2.5 0 0 1e-12 1e-12
+   67  + 1e-07 0 R
+   68  VFORCE__A_MINUS_B_WITH_BORROW2_13 A_MINUS_B1 VSS pattern 2.5 0 0 1e-12 1e-12
+   69  + 1e-07 1 R
+   70  VFORCE__A_MINUS_B_WITH_BORROW2_14 A_MINUS_B2 VSS pattern 2.5 0 0 1e-12 1e-12
+   71  + 1e-07 1 R
+   72  VFORCE__A_MINUS_B_WITH_BORROW2_15 A_MINUS_B3 VSS pattern 2.5 0 0 1e-12 1e-12
+   73  + 1e-07 0 R
+   74  VFORCE__A_MINUS_B_WITH_BORROW2_16 B0 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 1 R
+   75  VFORCE__A_MINUS_B_WITH_BORROW2_17 B1 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 1 R
+   76  VFORCE__A_MINUS_B_WITH_BORROW2_18 B2 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 1 R
+   77  VFORCE__A_MINUS_B_WITH_BORROW2_19 B3 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 0 R
+   78  VFORCE__A_MINUS_B_WITH_BORROW2_20 LSLA0 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 0
+   79  + R
+   80  VFORCE__A_MINUS_B_WITH_BORROW2_21 LSLA1 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 0
+   81  + R
+   82  VFORCE__A_MINUS_B_WITH_BORROW2_22 LSLA2 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 0
+   83  + R
+   84  VFORCE__A_MINUS_B_WITH_BORROW2_23 LSLA3 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 1
+   85  + R
+   86  VFORCE__A_MINUS_B_WITH_BORROW2_24 LSRA0 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 1
+   87  + R
+   88  VFORCE__A_MINUS_B_WITH_BORROW2_25 LSRA1 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 0
+   89  + R
+   90  VFORCE__A_MINUS_B_WITH_BORROW2_26 LSRA2 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 0
+   91  + R
+   92  VFORCE__A_MINUS_B_WITH_BORROW2_27 LSRA3 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 1
+   93  + R
+   94  VFORCE__A_MINUS_B_WITH_BORROW2_28 ASLA0 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 0
+   95  + R
+   96  VFORCE__A_MINUS_B_WITH_BORROW2_29 ASLA1 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 1
+   97  + R
+   98  VFORCE__A_MINUS_B_WITH_BORROW2_30 ASLA2 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 0
+   99  + R
+  100  VFORCE__A_MINUS_B_WITH_BORROW2_31 ASLA3 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 1
+  101  + R
+  102  VFORCE__A_MINUS_B_WITH_BORROW2_32 ASRA0 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 1
+  103  + R
+  104  VFORCE__A_MINUS_B_WITH_BORROW2_33 ASRA1 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 1
+  105  + R
+  106  VFORCE__A_MINUS_B_WITH_BORROW2_34 ASRA2 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 0
+  107  + R
+  108  VFORCE__A_MINUS_B_WITH_BORROW2_35 ASRA3 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 1
+  109  + R
+  110  VFORCE__A_MINUS_B_WITH_BORROW2_36 ZERO0 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 0
+  111  + R
+  112  VFORCE__A_MINUS_B_WITH_BORROW2_37 ZERO1 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 0
+  113  + R
+  114  VFORCE__A_MINUS_B_WITH_BORROW2_38 ZERO2 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 1
+  115  + R
+  116  VFORCE__A_MINUS_B_WITH_BORROW2_39 ZERO3 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 1
+  117  + R
+  118  VFORCE__A_MINUS_B_WITH_BORROW2_40 A_PLUS_B_WITH_CARRY0 VSS pattern 2.5 0 0 1e-12
+  119  + 1e-12 1e-07 1 R
+  120  VFORCE__A_MINUS_B_WITH_BORROW2_41 A_PLUS_B_WITH_CARRY2 VSS pattern 2.5 0 0 1e-12
+  121  + 1e-12 1e-07 1 R
+  122  VFORCE__A_MINUS_B_WITH_BORROW2_42 A_PLUS_B_WITH_CARRY3 VSS pattern 2.5 0 0 1e-12
+  123  + 1e-12 1e-07 1 R
+  124  VFORCE__A_MINUS_B_WITH_BORROW2_43 A_MINUS_B_WITH_BORROW0 VSS pattern 2.5 0 0
+  125  + 1e-12 1e-12 1e-07 0 R
+  126  VFORCE__A_MINUS_B_WITH_BORROW2_44 A_MINUS_B_WITH_BORROW1 VSS pattern 2.5 0 0
+  127  + 1e-12 1e-12 1e-07 1 R
+  128  VFORCE__A_MINUS_B_WITH_BORROW2_45 A_MINUS_B_WITH_BORROW2 VSS pattern 2.5 0 0
+  129  + 1e-12 1e-12 1e-07 1 R
+  130  VFORCE__A_MINUS_B_WITH_BORROW2_46 A_MINUS_B_WITH_BORROW3 VSS pattern 2.5 0 0
+  131  + 1e-12 1e-12 1e-07 1 R
+  132  VFORCE__A_MINUS_B_WITH_BORROW2_47 CC0_NOT VSS pattern 2.5 0 0 1e-12 1e-12 1e-07
+  133  + 1010101010101010 R
+  134  VFORCE__A_MINUS_B_WITH_BORROW2_48 B_PLUS_ONE1 VSS pattern 2.5 0 0 1e-12 1e-12
+  135  + 1e-07 1 R
+  136  VFORCE__A_MINUS_B_WITH_BORROW2_49 B_PLUS_ONE2 VSS pattern 2.5 0 0 1e-12 1e-12
+  137  + 1e-07 1 R
+  138  VFORCE__A_MINUS_B_WITH_BORROW2_50 B_PLUS_ONE3 VSS pattern 2.5 0 0 1e-12 1e-12
+  139  + 1e-07 1 R
+  140  VFORCE__A_MINUS_B_WITH_BORROW2_51 CC1 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07
+  141  + 0011001100110011 R
+  142  VFORCE__A_MINUS_B_WITH_BORROW2_52 B_PLUS_ONE0 VSS pattern 2.5 0 0 1e-12 1e-12
+  143  + 1e-07 1 R
+  144  VFORCE__A_MINUS_B_WITH_BORROW2_53 CC1_NOT VSS pattern 2.5 0 0 1e-12 1e-12 1e-07
+  145  + 1100110011001100 R
+  146  VFORCE__A_MINUS_B_WITH_BORROW2_54 CC2 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07
+  147  + 0000111100001111 R
+  148  VFORCE__A_MINUS_B_WITH_BORROW2_55 CC2_NOT VSS pattern 2.5 0 0 1e-12 1e-12 1e-07
+  149  + 1111000011110000 R
+  150  VFORCE__A_MINUS_B_WITH_BORROW2_56 CC3 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07
+  151  + 0000000011111111 R
+  152  VFORCE__A_MINUS_B_WITH_BORROW2_57 CC3_NOT VSS pattern 2.5 0 0 1e-12 1e-12 1e-07
+  153  + 1111111100000000 R
+  154  
+  155  * --- Libsetup
+  156  
+  157  .END
+
+End of file 
+
+
+***** 0  error(s). 
+***** 1  warning(s). 
+
+
+
+***** GENERATION ...
+
+Warning 1615: In file "./4500/Project_1/Project_1_MUX/eldonet/Project_1_MUX_eldonet.cir" line 12:
++   COMMAND ".TRAN": Tstep can not be <= 0.0.
++   It is set to Tmax/20.0 = 8.000e-08 s.
+
+***** 0  error(s). 
+***** 2  warning(s). 
+
+
+INFORMATION ABOUT COMPILATION 
+
+
+Memory space allocated (bytes): 58048512
+310 elements
+133 nodes 
+70 input signals
+Detail about objects and nodes found in the design...
+Number of nodes                     133
+Number of intrinsic nodes           0
+Number of input signals             70
+Number of resistors                 0
+Number of floating capacitors       0
+Number of grounded capacitors       0
+Number of inductors                 0
+Number of voltage sources           70
+Number of current sources           0
+Number of dependent sources         0
+Number of diodes                    0
+Number of BJT                       0
+Number of JFET                      0
+Number of MOS                       240
+Number of SWITCHES                  0
+Number of transmission lines        0
+Total number of elements            310
+Warning 108:  NODE "CC0": This node is a floating gate.
++   List of MOS devices connected to that node follows:
++   --> X_4INPUT_MUX7.M16
++   --> X_4INPUT_MUX7.M13
++   --> X_4INPUT_MUX7.M12
++   --> X_4INPUT_MUX7.M9
++   --> X_4INPUT_MUX7.M8
++   --> X_4INPUT_MUX7.M5
++   --> X_4INPUT_MUX7.M4
++   --> X_4INPUT_MUX7.M1
++   --> X_4INPUT_MUX6.M16
++   --> X_4INPUT_MUX6.M13
++   --> X_4INPUT_MUX6.M12
++   --> X_4INPUT_MUX6.M9
++   --> X_4INPUT_MUX6.M8
++   --> X_4INPUT_MUX6.M5
++   --> X_4INPUT_MUX6.M4
++   --> X_4INPUT_MUX6.M1
++   --> X_4INPUT_MUX8.M16
++   --> X_4INPUT_MUX8.M13
++   --> X_4INPUT_MUX8.M12
++   --> X_4INPUT_MUX8.M9
++   --> X_4INPUT_MUX8.M8
++   --> X_4INPUT_MUX8.M5
++   --> X_4INPUT_MUX8.M4
++   --> X_4INPUT_MUX8.M1
++   --> X_4INPUT_MUX5.M16
++   --> X_4INPUT_MUX5.M13
++   --> X_4INPUT_MUX5.M12
++   --> X_4INPUT_MUX5.M9
++   --> X_4INPUT_MUX5.M8
++   --> X_4INPUT_MUX5.M5
++   --> X_4INPUT_MUX5.M4
++   --> X_4INPUT_MUX5.M1
++   --> X_4INPUT_MUX4.M16
++   --> X_4INPUT_MUX4.M13
++   --> X_4INPUT_MUX4.M12
++   --> X_4INPUT_MUX4.M9
++   --> X_4INPUT_MUX4.M8
++   --> X_4INPUT_MUX4.M5
++   --> X_4INPUT_MUX4.M4
++   --> X_4INPUT_MUX4.M1
++   --> X_4INPUT_MUX3.M16
++   --> X_4INPUT_MUX3.M13
++   --> X_4INPUT_MUX3.M12
++   --> X_4INPUT_MUX3.M9
++   --> X_4INPUT_MUX3.M8
++   --> X_4INPUT_MUX3.M5
++   --> X_4INPUT_MUX3.M4
++   --> X_4INPUT_MUX3.M1
++   --> X_4INPUT_MUX2.M16
++   --> X_4INPUT_MUX2.M13
++   --> X_4INPUT_MUX2.M12
++   --> X_4INPUT_MUX2.M9
++   --> X_4INPUT_MUX2.M8
++   --> X_4INPUT_MUX2.M5
++   --> X_4INPUT_MUX2.M4
++   --> X_4INPUT_MUX2.M1
++   --> X_4INPUT_MUX1.M16
++   --> X_4INPUT_MUX1.M13
++   --> X_4INPUT_MUX1.M12
++   --> X_4INPUT_MUX1.M9
++   --> X_4INPUT_MUX1.M8
++   --> X_4INPUT_MUX1.M5
++   --> X_4INPUT_MUX1.M4
++   --> X_4INPUT_MUX1.M1
+
+
+
+Warning: A transition time < HMIN (1.000000e-12Sec) found on VFORCE__A_MINUS_B_WITH_BORROW2_47
+HMIN assumed.. Set Eldo option 'HMIN' to a lower value if needed.
+
+
+Warning: A transition time < HMIN (1.000000e-12Sec) found on VFORCE__A_MINUS_B_WITH_BORROW2_51
+HMIN assumed.. Set Eldo option 'HMIN' to a lower value if needed.
+
+
+Warning: A transition time < HMIN (1.000000e-12Sec) found on VFORCE__A_MINUS_B_WITH_BORROW2_53
+HMIN assumed.. Set Eldo option 'HMIN' to a lower value if needed.
+
+
+Warning: A transition time < HMIN (1.000000e-12Sec) found on VFORCE__A_MINUS_B_WITH_BORROW2_54
+HMIN assumed.. Set Eldo option 'HMIN' to a lower value if needed.
+
+
+Warning: A transition time < HMIN (1.000000e-12Sec) found on VFORCE__A_MINUS_B_WITH_BORROW2_55
+HMIN assumed.. Set Eldo option 'HMIN' to a lower value if needed.
+
+
+Warning: A transition time < HMIN (1.000000e-12Sec) found on VFORCE__A_MINUS_B_WITH_BORROW2_56
+HMIN assumed.. Set Eldo option 'HMIN' to a lower value if needed.
+
+
+Warning: A transition time < HMIN (1.000000e-12Sec) found on VFORCE__A_MINUS_B_WITH_BORROW2_57
+HMIN assumed.. Set Eldo option 'HMIN' to a lower value if needed.
+ Reset internal minimun time step.
+hmin value is 2.500000e-04Nanos
+
+Eldo VERSION : ELDO 2010.1 Thu Jul  1 14:15:09 GMT 2010
+
+*** DATE: 27-Oct-2018 11:22:29
+
+*** TITLE: * Component: /home/ece_lab/mentor/4500/Project_1/Project_1_MUX  Viewpoint: eldonet
+
+TEMPERATURE : 27.000000 degrees C
+
+1***************27-Oct-2018 ***********************  ELDO 2010.1  (v7.3_1.1)  ***********************11:22:29*****************
+
+0* Component: /home/ece_lab/mentor/4500/P
+0****                 MODELS PARAMETERS                                    TEMPERATURE =   27.000 DEG C
+
+0*************************************************************************************************************************
+
+
+
+ DEVICE          MOS
+ MODEL: NMOS
+ TYPE            N
+ LEVEL 3 : Berkeley Spice compatible model
+
+  names    values    units     names    values    units     names    values    units   
+  -----    ------    -----     -----    ------    -----     -----    ------    -----   
+VTO     = 7.9000E-01 V       KP      = 7.9699E-05 A/V^2   GAMMA   = 3.8000E-01 V^1/2  
+PHI     = 5.3000E-01 V       UO      = 5.7700E+02 unit1   VMAX    = 1.5000E+05 m/s    
+THETA   = 4.6000E-02 1/V     ETA     = 1.6000E-01 -       KAPPA   = 5.0000E-02 1/V    
+DELTA   = 3.5510E-01 -       NSUB    = 8.7000E+15 At/cm^3 NSS     = 0.0        At/cm^2
+NFS     = 8.2000E+11 At/cm^2 TPG     = 1.0000E+00 -       TOX     = 2.5000E-08 m      
+COX     = 1.3813E-03 F/m^2   CGSO    = 1.9730E-10 F/m     CGDO    = 1.9730E-10 F/m    
+CGBO    = 0.0        F/m     KF      = 0.0        -       AF      = 1.0000E+00 -      
+XQC     = 1.0000E+00 -       CAPLEV  = 0          -       
+
+ *** Common extrinsic model parameters ***
+OPTACM  = 0          -       ARLEV   = 6          -       ALEV    = 6          -      
+RLEV    = 6          -       
+ * Access resistances related parameters *
+RD      = 6.3000E+01 Ohm     RS      = 0.0        Ohm     RSH     = 4.5000E+01 Ohm/Sq.
+RDC     = 0.0        Ohm     RSC     = 0.0        Ohm     
+ * Geometry related parameters *
+LD      = 7.0000E-08 m       WD      = 0.0        m       DL      = 0.0        m      
+DW      = 0.0        m       LDIF    = 0.0        m       HDIF    = 0.0        m      
+WMLT    = 1.0000E+00 -       LMLT    = 1.0000E+00 -       DEL     = 0.0        m      
+XJ      = 1.0000E-07 m       
+ * Static bulk-diode related parameters *
+DIOLEV  = 1          -       JS      = 1.0000E-04 A/m^2   JSW     = 0.0        A/m    
+IS      = 1.0000E-16 A       N       = 1.0000E+00 -       NDS     = 1.0000E+00 -      
+VNDS    =-1.0000E+00 V       VDLIN   = 5.0000E-01 -       
+ * Dynamic bulk-diode related parameters *
+DCAPLEV = 2          -       CJGATE  = 0.0                CBD     = 0.0        F      
+CBS     = 0.0        F       CJ      = 2.9000E-04 F/m^2   CJSW    = 3.3000E-10 F/m    
+FC      = 5.0000E-01 -       MJ      = 4.8600E-01 -       MJSW    = 3.3000E-01 -      
+TT      = 0.0        s       PB      = 8.0000E-01 V       PBSW    = 8.0000E-01 V      
+ * Temperature related Parameters 
+EG      = 1.1100E+00 eV      GAP1    = 7.0200E-04 eV/degK GAP2    = 1.1080E+03 degK   
+TNOM    = 2.7000E+01 degC    TLEV    = 0          -       TLEVC   = 0          -      
+TLEVI   = 1          -       XTI     = 0.0        -       
+ * Temperature Access Resistance related parameters * TLEVR = 1 
+TRD1    = 0.0        1/degK  TRS1    = 0.0        1/degK  TRSH1   = 0.0        1/degK 
+TRD2    = 0.0        unit2   TRS2    = 0.0        unit2   TRSH2   = 0.0        unit2  
+
+unit1 represents cm^2/V.s
+unit2 represents 1/degK^2
+
+ DEVICE          MOS
+ MODEL: PMOS
+ TYPE            P
+ LEVEL 3 : Berkeley Spice compatible model
+
+  names    values    units     names    values    units     names    values    units   
+  -----    ------    -----     -----    ------    -----     -----    ------    -----   
+VTO     =-8.4000E-01 V       KP      = 2.8316E-05 A/V^2   GAMMA   = 5.3000E-01 V^1/2  
+PHI     = 5.8000E-01 V       UO      = 2.0500E+02 unit1   VMAX    = 5.0000E+05 m/s    
+THETA   = 1.4000E-01 1/V     ETA     = 1.7000E-01 -       KAPPA   = 1.0000E+01 1/V    
+DELTA   = 4.5980E-01 -       NSUB    = 1.7500E+16 At/cm^3 NSS     = 0.0        At/cm^2
+NFS     = 8.4000E+11 At/cm^2 TPG     = 1.0000E+00 -       TOX     = 2.5000E-08 m      
+COX     = 1.3813E-03 F/m^2   CGSO    = 3.2840E-10 F/m     CGDO    = 3.2840E-10 F/m    
+CGBO    = 0.0        F/m     KF      = 0.0        -       AF      = 1.0000E+00 -      
+XQC     = 1.0000E+00 -       CAPLEV  = 0          -       
+
+ *** Common extrinsic model parameters ***
+OPTACM  = 0          -       ARLEV   = 6          -       ALEV    = 6          -      
+RLEV    = 6          -       
+ * Access resistances related parameters *
+RD      = 9.4000E+01 Ohm     RS      = 9.4000E+01 Ohm     RSH     = 1.0000E+02 Ohm/Sq.
+RDC     = 0.0        Ohm     RSC     = 0.0        Ohm     
+ * Geometry related parameters *
+LD      = 6.0000E-08 m       WD      = 0.0        m       DL      = 0.0        m      
+DW      = 0.0        m       LDIF    = 0.0        m       HDIF    = 0.0        m      
+WMLT    = 1.0000E+00 -       LMLT    = 1.0000E+00 -       DEL     = 0.0        m      
+XJ      = 0.0        m       
+ * Static bulk-diode related parameters *
+DIOLEV  = 1          -       JS      = 1.0000E-04 A/m^2   JSW     = 0.0        A/m    
+IS      = 1.0000E-16 A       N       = 1.0000E+00 -       NDS     = 1.0000E+00 -      
+VNDS    =-1.0000E+00 V       VDLIN   = 5.0000E-01 -       
+ * Dynamic bulk-diode related parameters *
+DCAPLEV = 2          -       CJGATE  = 0.0                CBD     = 0.0        F      
+CBS     = 0.0        F       CJ      = 4.1000E-04 F/m^2   CJSW    = 3.4000E-10 F/m    
+FC      = 5.0000E-01 -       MJ      = 5.4000E-01 -       MJSW    = 3.0000E-01 -      
+TT      = 0.0        s       PB      = 8.0000E-01 V       PBSW    = 8.0000E-01 V      
+ * Temperature related Parameters 
+EG      = 1.1100E+00 eV      GAP1    = 7.0200E-04 eV/degK GAP2    = 1.1080E+03 degK   
+TNOM    = 2.7000E+01 degC    TLEV    = 0          -       TLEVC   = 0          -      
+TLEVI   = 1          -       XTI     = 0.0        -       
+ * Temperature Access Resistance related parameters * TLEVR = 1 
+TRD1    = 0.0        1/degK  TRS1    = 0.0        1/degK  TRSH1   = 0.0        1/degK 
+TRD2    = 0.0        unit2   TRS2    = 0.0        unit2   TRSH2   = 0.0        unit2  
+
+unit1 represents cm^2/V.s
+unit2 represents 1/degK^2
+
+
+ Reset internal minimun time step.
+hmin value is 2.500000e-04Nanos
+
+
+
+1***************27-Oct-2018 ***********************  ELDO 2010.1  (v7.3_1.1)  ***********************11:22:29*****************
+
+0* Component: /home/ece_lab/mentor/4500/Project_1/Project_1_MUX  Viewpoint: eldonet
+0****                 OPTION SUMMARY                                        TEMPERATURE =   27.000 DEG C
+
+0*************************************************************************************************************************
+
+
+
+
+
+*** DC Control Options : 
+
+GMIN           = 1.00e-12 NMAXSIZE       = 60000    ITL1           = 100      
+GRAMP          = 0        NETSIZE        = 100      VMINDC         = UNDEF    
+VMAXDC         = UNDEF    
+
+*** Initial Accuracy Control Options (May be adjusted during simulation): 
+
+ITOL           = 1.00e-06 EPS            = 5.00e-03 VNTOL          = 1.00e-06 
+RELTOL         = 1.00e-03 RELERR         = 5.00e-02 PIVREL         = 1.00e-03 
+PIVTOL         = 1.00e-16 ABSTOL         = 1.00e-12 FLXTOL         = 1.00e-11 
+MAXORD         = 2.00e+00 
+
+*** Time-step Control Options : 
+
+ZOOMTIME       = 1.00e+00 STEP           = 0.00e+00 STARTSMP       = 0.00e+00 
+FREQSMP        = 0.00e+00 COURESOL       = 0.00e+00 TRTOL          = 7.00e+00 
+HMIN           = 2.50e-13 ITL3           = 3        ITL4           = 13       
+FT             = 1.25e-01 DCLOG          = 1.00e+00 LVLTIM         = 2        
+LVLCNV         = 2        DVDT           = -1       RELVAR         = 1.50e-01 
+ABSVAR         = 2.00e-01 SAMPLE         = 0.00e+00 HMAX           = UNDEF    
+
+
+*** MosFet default Options : 
+
+SCALE          = 1.00e+00 SCALM          = 1.00e+00 SCALEBSIM      = 1.00e+00 
+DEFAD          = UNDEF    DEFAS          = UNDEF    DEFPD          = UNDEF    
+DEFPS          = UNDEF    DEFW           = 1.00e-04 DEFL           = 1.00e-04 
+DEFNRD         = UNDEF    DEFNRS         = UNDEF    XA             = 6.00e-06 
+LIMRMOS        = UNDEF    SHRINK         = 1.00e+00 
+
+*** General Information Options : 
+
+SDA            = 0        CPTIME         = UNDEF    STAT           = 0        
+TIMEDIV        = 0        SIMUDIV        = 10       SAVETIME       = 0        
+MAXTRAN        = 1000     MAXNODES       = 10000    MAXV           = 1.00e+13 
+LIMPROBE       = 10000    FLICKER_NOISE  = 0        THERMAL_NOISE  = 0        
+TNOM           = 2.70e+01 TMAX           = UNDEF    
+SPICDC         = 0        SPIOUT         = 0        NEWTON         = 0        
+OSR            = 0        TRAP           = 1        GEAR           = 0        
+BE             = 0        PROBEOP        = 0        NOLAT          = 0        
+NWLAT          = 0        ANALOG         = 0        BBDEBUG        = 0        
+NOSIZECHK      = 0        QTRUNC         = 0        UNBOUND        = 0        
+LCAPOP         = 0        NOAEX          = 1        AEX            = 1        
+AEX            = 1        STVER          = 0        MOTOROLA       = 0        
+AMS            = 0        ASPEC          = 0        INPUT          = 0        
+NOINIT         = 0        PSF            = 0        WSF            = 0        
+WSFASCII       = 0        NOBIN          = 0        NOCOU          = 1        
+WL             = 0        NODE           = 0        LIST           = 0        
+SPI3BIN        = 0        SPI3ASC        = 0        NOMOD          = 0        
+WSF            = 0        WSFASCII       = 0        NOBIN          = 0        
+NOCOU          = 1        RMOS           = 0        NWRMOS         = 1        
+NONWRMOS       = 0        USEDEFAP       = 0        NOASCII        = 1        
+ASCII          = 0        MIXED          = 0        SWITCH         = 0        
+USERSWITCH     = 0        TIMING         = 0        MODWL          = 1        
+ULOGIC         = 0        
+
+
+
+***> DC CPU TIME 0s 020ms <***
+
+DC:2 iterations FOR DC analysis
+
+
+
+
+1***************27-Oct-2018 ***********************  ELDO 2010.1  (v7.3_1.1)  ***********************11:22:29*****************
+
+0* Component: /home/ece_lab/mentor/4500/Project_1/Project_1_MUX  Viewpoint: eldonet
+0****                 INITIAL TRANSIENT SOLUTION                           TEMPERATURE =   27.000 DEG C
+
+0*************************************************************************************************************************
+
+
+  NODE         VOLTAGE    
+ VDD       2.5000     
+ ZERO0       0.0000     
+ ZERO1       0.0000     
+ ZERO2       2.5000     
+ ZERO3       2.5000     
+ A_PLUS_B_WITH_CARRY0       2.5000     
+ A_PLUS_B_WITH_CARRY2       2.5000     
+ A_PLUS_B_WITH_CARRY3       2.5000     
+ CC0_NOT       2.5000     
+ ASLA0       0.0000     
+ ASLA1       2.5000     
+ ASLA2       0.0000     
+ ASLA3       2.5000     
+ ASRA0       2.5000     
+ ASRA1       2.5000     
+ ASRA2       0.0000     
+ ASRA3       2.5000     
+ CC3       0.0000     
+ CC3_NOT       2.5000     
+ CC2       0.0000     
+ CC2_NOT       2.5000     
+ CC1       0.0000     
+ CC1_NOT       2.5000     
+ A_MINUS_B_WITH_BORROW0       0.0000     
+ A_MINUS_B_WITH_BORROW1       2.5000     
+ A_MINUS_B_WITH_BORROW2       2.5000     
+ A_MINUS_B_WITH_BORROW3       2.5000     
+ B_PLUS_ONE0       2.5000     
+ B_PLUS_ONE1       2.5000     
+ B_PLUS_ONE2       2.5000     
+ B_PLUS_ONE3       2.5000     
+ LSLA0       0.0000     
+ LSLA1       0.0000     
+ LSLA2       0.0000     
+ LSLA3       2.5000     
+ LSRA0       2.5000     
+ LSRA1       0.0000     
+ LSRA2       0.0000     
+ LSRA3       2.5000     
+ A_MINUS_B0       0.0000     
+ A_MINUS_B1       2.5000     
+ A_MINUS_B2       2.5000     
+ A_MINUS_B3       0.0000     
+ B0       2.5000     
+ B1       2.5000     
+ B2       2.5000     
+ B3       0.0000     
+ A_XOR_B0       0.0000     
+ A_XOR_B1       0.0000     
+ A_XOR_B2       2.5000     
+ A_XOR_B3       0.0000     
+ A_PLUS_B0       2.5000     
+ A_PLUS_B1       0.0000     
+ A_PLUS_B2       2.5000     
+ A_PLUS_B3       0.0000     
+ A_AND_B0       0.0000     
+ A_AND_B1       2.5000     
+ A_AND_B2       0.0000     
+ A_AND_B3       0.0000     
+ A_OR_B0       2.5000     
+ A_OR_B1       2.5000     
+ A_OR_B2       0.0000     
+ A_OR_B3       0.0000     
+ A0       0.0000     
+ A1       0.0000     
+ A2       0.0000     
+ A0_NOT       2.5000     
+ A1_NOT       0.0000     
+ A2_NOT       0.0000     
+ A3_NOT       0.0000     
+ CC0       0.0000     
+ N$53       24.2473N   
+ N$55       24.2879N   
+ N$57       2.5000     
+ N$59       2.5000     
+ A_PLUS_B_WITH_CARRY1       2.4125M    
+ N$45       24.1253N   
+ N$47       2.5000     
+ N$49       122.0217P  
+ N$51       2.5000     
+ F0       25.0608N   
+ F1       49.0639N   
+ F2       73.0671N   
+ F3       640.5389M  
+ N$101       24.9794N   
+ N$103       48.9826N   
+ N$105       72.9858N   
+ N$109       640.5389M  
+ N$288       24.7354N   
+ N$289       48.7386N   
+ N$290       72.7417N   
+ N$291       2.5000     
+ N$69       24.6133N   
+ N$71       48.6165N   
+ N$73       48.6165N   
+ N$75       2.5000     
+ N$77       24.3693N   
+ N$79       48.4131N   
+ N$81       2.5000     
+ N$83       2.5000     
+ N$85       24.7760N   
+ N$87       48.7792N   
+ N$89       48.7792N   
+ N$91       640.5389M  
+ N$93       24.3693N   
+ N$95       48.3725N   
+ N$97       2.5000     
+ N$99       2.1765N    
+ N$61       24.1253N   
+ N$63       2.5000     
+ N$65       2.5000     
+ N$67       2.5000     
+ N$36       24.3693N   
+ N$38       24.3693N   
+ N$39       24.3693N   
+ N$41       2.5000     
+ N$20       24.2473N   
+ N$22       24.2473N   
+ N$24       2.5000     
+ N$25       1.1493N    
+ N$27       24.1253N   
+ N$29       2.5000     
+ N$31       2.5000     
+ N$33       122.0209P  
+ N$2       24.4507N   
+ N$4       24.4506N   
+ N$9       24.4506N   
+ N$8       640.5389M  
+ N$12       24.1253N   
+ N$14       2.5000     
+ N$16       122.0217P  
+ N$18       1.0273N    
+ A3       640.5389M  
+
+
+
+   VOLTAGE SOURCE CURRENT
+
+NAME      CURRENT      VOLTAGE      POWER        
+V1        -1.4878P      2.5000      -3.7195P     
+VFORCE__A0   5.8202P      0.0000       0.0000      
+VFORCE__A0_NOT  -5.7139P      2.5000      -14.2848P    
+VFORCE__A1   5.8202P      0.0000       0.0000      
+VFORCE__A1_NOT   9.6660F      0.0000       0.0000      
+VFORCE__A2   5.8202P      0.0000       0.0000      
+VFORCE__A2_NOT   9.6660F      0.0000       0.0000      
+VFORCE__A3_NOT   224.7905F    0.0000       0.0000      
+VFORCE__A_AND_B0   5.7429P      0.0000       0.0000      
+VFORCE__A_AND_B1  -5.7429P      2.5000      -14.3573P    
+VFORCE__A_AND_B2   38.6637F     0.0000       0.0000      
+VFORCE__A_AND_B3   253.7881F    0.0000       0.0000      
+VFORCE__A_MINUS_B_WITH_BORROW2  -5.7139P      2.5000      -14.2848P    
+VFORCE__A_MINUS_B_WITH_BORROW2_1  -9.6642F      2.5000      -24.1606F    
+VFORCE__A_MINUS_B_WITH_BORROW2_2   9.6659F      0.0000       0.0000      
+VFORCE__A_MINUS_B_WITH_BORROW2_3   9.6659F      0.0000       0.0000      
+VFORCE__A_MINUS_B_WITH_BORROW2_4   5.7719P      0.0000       0.0000      
+VFORCE__A_MINUS_B_WITH_BORROW2_5   5.7719P      0.0000       0.0000      
+VFORCE__A_MINUS_B_WITH_BORROW2_6  -5.7719P      2.5000      -14.4297P    
+VFORCE__A_MINUS_B_WITH_BORROW2_7   282.7857F    0.0000       0.0000      
+VFORCE__A_MINUS_B_WITH_BORROW2_8  -5.7139P      2.5000      -14.2848P    
+VFORCE__A_MINUS_B_WITH_BORROW2_9  -9.6642F      2.5000      -24.1606F    
+VFORCE__A_MINUS_B_WITH_BORROW2_10   9.6660F      0.0000       0.0000      
+VFORCE__A_MINUS_B_WITH_BORROW2_11   9.6659F      0.0000       0.0000      
+VFORCE__A_MINUS_B_WITH_BORROW2_12   5.7429P      0.0000       0.0000      
+VFORCE__A_MINUS_B_WITH_BORROW2_13  -5.7429P      2.5000      -14.3573P    
+VFORCE__A_MINUS_B_WITH_BORROW2_14  -38.6623F     2.5000      -96.6558F    
+VFORCE__A_MINUS_B_WITH_BORROW2_15   38.6635F     0.0000       0.0000      
+VFORCE__A_MINUS_B_WITH_BORROW2_16  -5.7139P      2.5000      -14.2848P    
+VFORCE__A_MINUS_B_WITH_BORROW2_17  -9.6642F      2.5000      -24.1606F    
+VFORCE__A_MINUS_B_WITH_BORROW2_18  -9.6642F      2.5000      -24.1606F    
+VFORCE__A_MINUS_B_WITH_BORROW2_19   9.6659F      0.0000       0.0000      
+VFORCE__A_MINUS_B_WITH_BORROW2_20   5.8009P      0.0000       0.0000      
+VFORCE__A_MINUS_B_WITH_BORROW2_21   5.8009P      0.0000       0.0000      
+VFORCE__A_MINUS_B_WITH_BORROW2_22   5.8009P      0.0000       0.0000      
+VFORCE__A_MINUS_B_WITH_BORROW2_23  -685.4641F    2.5000      -1.7137P     
+VFORCE__A_MINUS_B_WITH_BORROW2_24  -5.7139P      2.5000      -14.2848P    
+VFORCE__A_MINUS_B_WITH_BORROW2_25   9.6660F      0.0000       0.0000      
+VFORCE__A_MINUS_B_WITH_BORROW2_26   9.6660F      0.0000       0.0000      
+VFORCE__A_MINUS_B_WITH_BORROW2_27  -9.6642F      2.5000      -24.1606F    
+VFORCE__A_MINUS_B_WITH_BORROW2_28   5.7429P      0.0000       0.0000      
+VFORCE__A_MINUS_B_WITH_BORROW2_29  -5.7429P      2.5000      -14.3573P    
+VFORCE__A_MINUS_B_WITH_BORROW2_30   38.6637F     0.0000       0.0000      
+VFORCE__A_MINUS_B_WITH_BORROW2_31  -38.6623F     2.5000      -96.6558F    
+VFORCE__A_MINUS_B_WITH_BORROW2_32  -5.7139P      2.5000      -14.2848P    
+VFORCE__A_MINUS_B_WITH_BORROW2_33  -9.6642F      2.5000      -24.1606F    
+VFORCE__A_MINUS_B_WITH_BORROW2_34   9.6659F      0.0000       0.0000      
+VFORCE__A_MINUS_B_WITH_BORROW2_35  -9.6642F      2.5000      -24.1606F    
+VFORCE__A_MINUS_B_WITH_BORROW2_36   5.7719P      0.0000       0.0000      
+VFORCE__A_MINUS_B_WITH_BORROW2_37   5.7815P      0.0000       0.0000      
+VFORCE__A_MINUS_B_WITH_BORROW2_38  -5.7719P      2.5000      -14.4297P    
+VFORCE__A_MINUS_B_WITH_BORROW2_39  -67.6604F     2.5000      -169.1510F   
+VFORCE__A_MINUS_B_WITH_BORROW2_40  -5.7139P      2.5000      -14.2848P    
+VFORCE__A_MINUS_B_WITH_BORROW2_41  -9.6642F      2.5000      -24.1606F    
+VFORCE__A_MINUS_B_WITH_BORROW2_42  -9.6642F      2.5000      -24.1606F    
+VFORCE__A_MINUS_B_WITH_BORROW2_43   5.7429P      0.0000       0.0000      
+VFORCE__A_MINUS_B_WITH_BORROW2_44  -5.7429P      2.5000      -14.3573P    
+VFORCE__A_MINUS_B_WITH_BORROW2_45  -38.6623F     2.5000      -96.6558F    
+VFORCE__A_MINUS_B_WITH_BORROW2_46  -38.6623F     2.5000      -96.6558F    
+VFORCE__A_MINUS_B_WITH_BORROW2_47   0.0000       2.5000       0.0000      
+VFORCE__A_MINUS_B_WITH_BORROW2_48  -9.6642F      2.5000      -24.1606F    
+VFORCE__A_MINUS_B_WITH_BORROW2_49  -9.6642F      2.5000      -24.1606F    
+VFORCE__A_MINUS_B_WITH_BORROW2_50  -9.6642F      2.5000      -24.1606F    
+VFORCE__A_MINUS_B_WITH_BORROW2_51   0.0000       0.0000       0.0000      
+VFORCE__A_MINUS_B_WITH_BORROW2_52  -5.7139P      2.5000      -14.2848P    
+VFORCE__A_MINUS_B_WITH_BORROW2_53   0.0000       2.5000       0.0000      
+VFORCE__A_MINUS_B_WITH_BORROW2_54   0.0000       0.0000       0.0000      
+VFORCE__A_MINUS_B_WITH_BORROW2_55   0.0000       2.5000       0.0000      
+VFORCE__A_MINUS_B_WITH_BORROW2_56   0.0000       0.0000       0.0000      
+VFORCE__A_MINUS_B_WITH_BORROW2_57   0.0000       2.5000       0.0000      
+
+   TOTAL POWER DISSIPATION:  206.8456P   WATTS
+
+
+
+
+
+Eldo NEWTON: VNTOL=1.000000e-06 RELTOL=7.500000e-04
+
+................................................
+Simulation progress           : 10% (t = 171.0922 N)
+Elapsed CPU time              :  0h  0mn  0s 110    ( 0h  0mn  0s 110)
+................................................
+Simulation progress           : 20% (t = 336.0406 N)
+Elapsed CPU time              :  0h  0mn  0s 390    ( 0h  0mn  0s 500)
+................................................
+Simulation progress           : 30% (t = 499.9995 N)
+Elapsed CPU time              :  0h  0mn  0s 150    ( 0h  0mn  0s 650)
+ Newton: No convergence at time :600.000472Nano ; try to pass over...
+  pb on or around node X_4INPUT_MUX2.M7_S
+
+May be setting EPS to a lower value, for instance setting
+.OPTION EPS = 1u
+would help solving this problem..
+TIME 6.000005e-07: end of non-convergence points................................................
+Simulation progress           : 40% (t = 656.7327 N)
+Elapsed CPU time              :  0h  0mn  0s 170    ( 0h  0mn  0s 820)
+................................................
+Simulation progress           : 50% (t = 800.0001 N)
+Elapsed CPU time              :  0h  0mn  0s  50    ( 0h  0mn  0s 870)
+ Newton: No convergence at time :800.000504Nano ; try to pass over...
+  pb on or around node X_4INPUT_MUX13.M7_S
+
+May be setting EPS to a lower value, for instance setting
+.OPTION EPS = 1u
+would help solving this problem..
+TIME 8.000005e-07: end of non-convergence points................................................
+Simulation progress           : 60% (t = 962.3464 N)
+Elapsed CPU time              :  0h  0mn  0s 310    ( 0h  0mn  1s 180)
+ Newton: No convergence at time :1.000000E+03Nano ; try to pass over...
+  pb on or around node X_4INPUT_MUX2.M7_S
+
+May be setting EPS to a lower value, for instance setting
+.OPTION EPS = 1u
+would help solving this problem..
+TIME 1.000000e-06: end of non-convergence points................................................
+Simulation progress           : 70% (t = 1.1358 U)
+Elapsed CPU time              :  0h  0mn  0s 310    ( 0h  0mn  1s 490)
+ Newton: No convergence at time :1.200000E+03Nano ; try to pass over...
+  pb on or around node N$109
+
+May be setting EPS to a lower value, for instance setting
+.OPTION EPS = 1u
+would help solving this problem..
+TIME 1.200000e-06: end of non-convergence points Newton: No convergence at time :1.200000E+03Nano ; try to pass over...
+  pb on or around node X_4INPUT_MUX7.M3_D
+
+May be setting EPS to a lower value, for instance setting
+.OPTION EPS = 1u
+would help solving this problem..
+ Newton: No convergence at time :1.200000E+03Nano ; try to pass over...
+  pb on or around node X_4INPUT_MUX7.M15_S
+
+May be setting EPS to a lower value, for instance setting
+.OPTION EPS = 1u
+would help solving this problem..
+TIME 1.200001e-06: end of non-convergence points................................................
+Simulation progress           : 80% (t = 1.3000 U)
+Elapsed CPU time              :  0h  0mn  0s 550    ( 0h  0mn  2s  40)
+ Newton: No convergence at time :1.400000E+03Nano ; try to pass over...
+  pb on or around node X_4INPUT_MUX8.M3_D
+
+May be setting EPS to a lower value, for instance setting
+.OPTION EPS = 1u
+would help solving this problem..
+TIME 1.400000e-06: end of non-convergence points................................................
+Simulation progress           : 90% (t = 1.4485 U)
+Elapsed CPU time              :  0h  0mn  0s 420    ( 0h  0mn  2s 460)
+................................................
+Simulation progress           : 100% (t = 1.6000 U)
+Elapsed CPU time              :  0h  0mn  0s 190    ( 0h  0mn  2s 650)
+
+
+
+1***************27-Oct-2018 ***********************  ELDO 2010.1  (v7.3_1.1)  ***********************11:22:29*****************
+
+0* Component: /home/ece_lab/mentor/4500/Project_1/Project_1_MUX  Viewpoint: eldonet
+0****                 ACCOUNTING INFORMATION                                TEMPERATURE =   27.000 DEG C
+
+0*************************************************************************************************************************
+
+
+
+
+
+Number of nodes                     493
+Number of intrinsic nodes           360
+Number of input signals             70
+Number of resistors                 0
+Number of floating capacitors       0
+Number of grounded capacitors       0
+Number of inductors                 0
+Number of voltage sources           70
+Number of current sources           0
+Number of dependent sources         0
+Number of diodes                    0
+Number of BJT                       0
+Number of JFET                      0
+Number of MOS                       240
+Number of SWITCHES                  0
+Number of transmission lines        0
+Total number of elements            310
+Number of equations                 423
+Number of non-zero terms            1919
+Percent Zeros                       9.893e+01
+Number of Newton iterations            3605
+Average number of Newton iterations per accepted time steps             4.972e+00
+Number of accepted time steps       725
+Number of rejected time steps       58
+      due to LTE                    0
+      due to Newton                 66
+Evaluation of active devices        1603313
+Memory size                         59297792
+
+***>CPU TIME 2s 650ms <***
+
+***>MESSAGE SUMMARY: 3 warnings
+
+***>GLOBAL CPU TIME 2s 730ms <***
+
+
+***>GLOBAL ELAPSED TIME 5s <***
+
+
+  Job started at 27-Oct-2018 11:22:28
+  Job end at     27-Oct-2018 11:22:33
+
+  Run on linux-B210 (Linux 2.6.16.60-0.21-bigsmp)
+

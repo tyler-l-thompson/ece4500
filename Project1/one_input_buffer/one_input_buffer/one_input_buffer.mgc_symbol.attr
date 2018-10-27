@@ -1,0 +1,6 @@
+A 5 u mgc_symbol 5bd4adaade38.03.7f.00.00.02.00.7a.8a 1 2 1 0
+V v 1 2 5bd4adaade39.03.7f.00.00.02.00.7a.8a
+F f 1 "one_input_buffer.smbl_1"
+F o 0 
+O 1
+R csduv 0 "/home/ece_lab/mentor/ECE4500/Project1/one_input_buffer/one_input_buffer/part" 2 Eddm_part 5bd4adcf7b59.03.7f.00.00.02.00.7a.8a 5bd4acb48163.03.7f.00.00.02.00.71.9f

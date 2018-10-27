@@ -1,12 +1,12 @@
   Run on linux-B210 (Linux 2.6.16.60-0.21-bigsmp)
 
-/mgc/ams/ixl/bin/eldo.exe -i /home/ece_lab/mentor/ECE4500/Project1/one_bit_alu/one_bit_alu/eldonet/one_bit_alu_eldonet.cir -o /home/ece_lab/mentor/ECE4500/Project1/one_bit_alu/one_bit_alu/eldonet/one_bit_alu_eldonet.chi -gwl jwdb -nocou -wdb_folder -outname one_bit_alu_eldonet_02 
+/mgc/ams/ixl/bin/eldo.exe -i /home/ece_lab/mentor/ECE4500/Project1/one_bit_alu/one_bit_alu/eldonet/one_bit_alu_eldonet.cir -o /home/ece_lab/mentor/ECE4500/Project1/one_bit_alu/one_bit_alu/eldonet/one_bit_alu_eldonet.chi -gwl jwdb -nocou -wdb_folder -outname one_bit_alu_eldonet_10 
 
 
 
 ***** PRE-PROCESSING ...
 
-1*******25-Oct-18 *******  ELDO 2010.1  (v7.3_1.1)  *******14:08:14******
+1*******27-Oct-18 *******  ELDO 2010.1  (v7.3_1.1)  *******16:13:58******
 
 0* Component: /home/ece_lab/mentor/ECE4500/Project1/one_bit_alu/one_bit_alu  Viewpoint: eldonet
 
@@ -20,7 +20,7 @@
     4  .CONNECT VSS 0
     5  
     6  
-    7  * ELDO netlist generated with ICnet by 'ece_lab' on Thu Oct 25 2018 at 14:08:14
+    7  * ELDO netlist generated with ICnet by 'ece_lab' on Sat Oct 27 2018 at 16:13:57
     8  
     9  *
    10  * Globals.
@@ -28,66 +28,66 @@
    12  .GLOBAL VSS VDD
    13  
    14  *
-   15  * Component pathname : /home/ece_lab/mentor/ECE4500/Project1/two_input_or/two_input_or
+   15  * Component pathname : /home/ece_lab/mentor/ECE4500/Project1/two_input_xor/two_input_xor
    16  *
-   17  .SUBCKT TWO_INPUT_OR  F A_NOT B_NOT VDD_ESC1 VSS_ESC2
+   17  .SUBCKT TWO_INPUT_XOR  F A A_NOT B VDD_ESC1
    18  
-   19          .CONNECT VSS VSS_ESC2
-   20          .CONNECT VDD VDD_ESC1
-   21          M3 N$11 B_NOT VSS VSS NMOS L=1.2U W=6.4U M=1
-   22          M2 F A_NOT N$11 VSS NMOS L=1.2U W=6.4U M=1
-   23          M1 F VSS VDD VDD PMOS L=4.8U W=2.4U M=1
-   24  .ENDS TWO_INPUT_OR
+   19          .CONNECT VDD VDD_ESC1
+   20          M4 F A_NOT B VSS NMOS L=1.2U W=2.4U M=1
+   21          M3 F A B VDD PMOS L=1.2U W=2.4U M=1
+   22          M2 F B A_NOT VSS NMOS L=1.2U W=2.4U M=1
+   23          M1 F B A VDD PMOS L=1.2U W=2.4U M=1
+   24  .ENDS TWO_INPUT_XOR
    25  
    26  *
-   27  * Component pathname : /home/ece_lab/mentor/ECE4500/Project1/one_input_inverter/one_input_inverter
+   27  * Component pathname : /home/ece_lab/mentor/ECE4500/Project1/two_input_mux/two_input_mux
    28  *
-   29  .SUBCKT ONE_INPUT_INVERTER  OUT IN VDD_ESC1 VSS_ESC2
+   29  .SUBCKT TWO_INPUT_MUX  F A B SELECT SELECT_NOT VDD_ESC1
    30  
-   31          .CONNECT VSS VSS_ESC2
-   32          .CONNECT VDD VDD_ESC1
-   33          M2 OUT IN VSS VSS NMOS L=1.2U W=2.25U M=1
-   34          M1 OUT IN VDD VDD PMOS L=1.2U W=6.75U M=1
-   35  .ENDS ONE_INPUT_INVERTER
-   36  
-   37  *
-   38  * Component pathname : /home/ece_lab/mentor/ECE4500/Project1/two_input_mux/two_input_mux
-   39  *
-   40  .SUBCKT TWO_INPUT_MUX  F A B SELECT SELECT_NOT VDD_ESC1
-   41  
-   42          .CONNECT VDD VDD_ESC1
-   43          M4 F SELECT B VDD PMOS L=1.2U W=2.4U M=1
-   44          M3 F SELECT_NOT B VSS NMOS L=1.2U W=2.4U M=1
-   45          M2 F SELECT_NOT A VDD PMOS L=1.2U W=2.4U M=1
-   46          M1 F SELECT A VSS NMOS L=1.2U W=2.4U M=1
-   47  .ENDS TWO_INPUT_MUX
-   48  
-   49  *
-   50  * Component pathname : /home/ece_lab/mentor/ECE4500/Project1/two_input_xor/two_input_xor
-   51  *
-   52  .SUBCKT TWO_INPUT_XOR  F A A_NOT B VDD_ESC1
-   53  
-   54          .CONNECT VDD VDD_ESC1
-   55          M4 F A_NOT B VSS NMOS L=1.2U W=2.4U M=1
-   56          M3 F A B VDD PMOS L=1.2U W=2.4U M=1
-   57          M2 F B A_NOT VSS NMOS L=1.2U W=2.4U M=1
-   58          M1 F B A VDD PMOS L=1.2U W=2.4U M=1
-   59  .ENDS TWO_INPUT_XOR
-   60  
-   61  *
-   62  * Component pathname : /home/ece_lab/mentor/ECE4500/Project1/full_add_sub/full_add_sub
-   63  *
-   64  .SUBCKT FULL_ADD_SUB  BOUT_COUT SUM_DIFF A A_NOT A_XOR_B A_XOR_B_NOT BIN_CIN
-   65  + CC0 CC0_NOT CC3 CC3_NOT VDD_ESC1 VSS_ESC2
-   66  
-   67          .CONNECT VSS VSS_ESC2
-   68          .CONNECT VDD VDD_ESC1
-   69          X_TWO_INPUT_XOR1 SUM_DIFF A_XOR_B A_XOR_B_NOT N$39 VDD TWO_INPUT_XOR
-   70          X_TWO_INPUT_MUX4 N$39 BIN_CIN VSS CC3 CC3_NOT VDD TWO_INPUT_MUX
-   71          X_TWO_INPUT_MUX3 BOUT_COUT N$11 N$9 CC0 CC0_NOT VDD TWO_INPUT_MUX
-   72          X_TWO_INPUT_MUX2 N$9 A_NOT N$39 A_XOR_B A_XOR_B_NOT VDD TWO_INPUT_MUX
-   73          X_TWO_INPUT_MUX1 N$11 N$39 A A_XOR_B A_XOR_B_NOT VDD TWO_INPUT_MUX
-   74  .ENDS FULL_ADD_SUB
+   31          .CONNECT VDD VDD_ESC1
+   32          M4 F SELECT B VDD PMOS L=1.2U W=2.4U M=1
+   33          M3 F SELECT_NOT B VSS NMOS L=1.2U W=2.4U M=1
+   34          M2 F SELECT_NOT A VDD PMOS L=1.2U W=2.4U M=1
+   35          M1 F SELECT A VSS NMOS L=1.2U W=2.4U M=1
+   36  .ENDS TWO_INPUT_MUX
+   37  
+   38  *
+   39  * Component pathname : /home/ece_lab/mentor/ECE4500/Project1/full_add_sub/full_add_sub
+   40  *
+   41  .SUBCKT FULL_ADD_SUB  BOUT_COUT SUM_DIFF A A_NOT A_XOR_B A_XOR_B_NOT BIN_CIN
+   42  + CC0 CC0_NOT CC3 CC3_NOT VDD_ESC1 VSS_ESC2
+   43  
+   44          .CONNECT VSS VSS_ESC2
+   45          .CONNECT VDD VDD_ESC1
+   46          X_TWO_INPUT_XOR1 SUM_DIFF A_XOR_B A_XOR_B_NOT N$39 VDD TWO_INPUT_XOR
+   47          X_TWO_INPUT_MUX4 N$39 BIN_CIN VSS CC3 CC3_NOT VDD TWO_INPUT_MUX
+   48          X_TWO_INPUT_MUX3 BOUT_COUT N$11 N$9 CC0 CC0_NOT VDD TWO_INPUT_MUX
+   49          X_TWO_INPUT_MUX2 N$9 A_NOT N$39 A_XOR_B A_XOR_B_NOT VDD TWO_INPUT_MUX
+   50          X_TWO_INPUT_MUX1 N$11 N$39 A A_XOR_B A_XOR_B_NOT VDD TWO_INPUT_MUX
+   51  .ENDS FULL_ADD_SUB
+   52  
+   53  *
+   54  * Component pathname : /home/ece_lab/mentor/ECE4500/Project1/one_input_inverter/one_input_inverter
+   55  *
+   56  .SUBCKT ONE_INPUT_INVERTER  OUT IN VDD_ESC1 VSS_ESC2
+   57  
+   58          .CONNECT VSS VSS_ESC2
+   59          .CONNECT VDD VDD_ESC1
+   60          M2 OUT IN VSS VSS NMOS L=1.2U W=2.25U M=1
+   61          M1 OUT IN VDD VDD PMOS L=1.2U W=6.75U M=1
+   62  .ENDS ONE_INPUT_INVERTER
+   63  
+   64  *
+   65  * Component pathname : /home/ece_lab/mentor/ECE4500/Project1/two_input_or/two_input_or
+   66  *
+   67  .SUBCKT TWO_INPUT_OR  F A_NOT B_NOT VDD_ESC1 VSS_ESC2
+   68  
+   69          .CONNECT VSS VSS_ESC2
+   70          .CONNECT VDD VDD_ESC1
+   71          M3 N$11 B_NOT VSS VSS NMOS L=1.2U W=6.4U M=1
+   72          M2 F A_NOT N$11 VSS NMOS L=1.2U W=6.4U M=1
+   73          M1 F VSS VDD VDD PMOS L=4.8U W=2.4U M=1
+   74  .ENDS TWO_INPUT_OR
    75  
    76  *
    77  * Component pathname : /home/ece_lab/mentor/ECE4500/Project1/two_input_and_2/two_input_and
@@ -104,18 +104,18 @@
    88  *
    89  * MAIN CELL: Component pathname : /home/ece_lab/mentor/ECE4500/Project1/one_bit_alu/one_bit_alu
    90  *
-   91          X_TWO_INPUT_OR1 A_OR_B A_NOT N$10 VDD VSS TWO_INPUT_OR
-   92          X_ONE_INPUT_INVERTER5 N$38 CC3 VDD VSS ONE_INPUT_INVERTER
-   93          X_ONE_INPUT_INVERTER4 N$40 CC0 VDD VSS ONE_INPUT_INVERTER
-   94          X_ONE_INPUT_INVERTER3 N$10 B VDD VSS ONE_INPUT_INVERTER
-   95          X_ONE_INPUT_INVERTER2 A_NOT A VDD VSS ONE_INPUT_INVERTER
-   96          X_ONE_INPUT_INVERTER1 N$22 A_XOR_B VDD VSS ONE_INPUT_INVERTER
-   97          X_TWO_INPUT_MUX1 N$17 ADD A CC0 N$40 VDD TWO_INPUT_MUX
-   98          X_TWO_INPUT_XOR1 A_XOR_B B N$10 N$17 VDD TWO_INPUT_XOR
-   99          X_FULL_ADD_SUB1 BOUT_COUT SUM_DIFF A A_NOT A_XOR_B N$22 BIN_CIN
-  100  + CC0 N$40 CC3 N$38 VDD VSS FULL_ADD_SUB
-  101          V1 VDD VSS DC 2.5V
-  102          X_TWO_INPUT_AND1 A_AND_B A B N$10 VDD TWO_INPUT_AND
+   91          X_FULL_ADD_SUB1 BOUT_COUT SUM_DIFF N$109 A_NOT A_XOR_B N$22 BIN_CIN
+   92  + CC0 N$40 CC3 N$38 VDD VSS FULL_ADD_SUB
+   93          V1 VDD VSS DC 2.5V
+   94          X_ONE_INPUT_INVERTER2 A_NOT A VDD VSS ONE_INPUT_INVERTER
+   95          X_TWO_INPUT_OR1 A_OR_B A_NOT N$10 VDD VSS TWO_INPUT_OR
+   96          X_TWO_INPUT_MUX1 N$109 ADD A CC1 CC1_NOT VDD TWO_INPUT_MUX
+   97          X_ONE_INPUT_INVERTER3 N$10 B VDD VSS ONE_INPUT_INVERTER
+   98          X_ONE_INPUT_INVERTER4 N$40 CC0 VDD VSS ONE_INPUT_INVERTER
+   99          X_ONE_INPUT_INVERTER5 N$38 CC3 VDD VSS ONE_INPUT_INVERTER
+  100          X_TWO_INPUT_AND1 A_AND_B A B N$10 VDD TWO_INPUT_AND
+  101          X_ONE_INPUT_INVERTER1 N$22 A_XOR_B VDD VSS ONE_INPUT_INVERTER
+  102          X_TWO_INPUT_XOR1 A_XOR_B B N$10 N$109 VDD TWO_INPUT_XOR
   103  *
   104  *end
     2  
@@ -205,22 +205,26 @@ Warning 316: In file "./mgc/mit_0.25.lib" line 62:
    19  .TEMP 27
    20  
    21  * --- Forces
-   22  VFORCE__A A VSS pattern 2.5 0 0 1e-12 1e-12 1e-07
-   23  + 00000000000000001111111111111111 R
-   24  VFORCE__Add ADD VSS pattern 2.5 0 0 1e-12 1e-12 1e-07
-   25  + 11111111111111111111111111111111 R
-   26  VFORCE__B B VSS pattern 2.5 0 0 1e-12 1e-12 1e-07
-   27  + 00000000111111110000000011111111 R
-   28  VFORCE__Bin_Cin BIN_CIN VSS pattern 2.5 0 0 1e-12 1e-12 1e-07
-   29  + 00001111000011110000111100001111 R
-   30  VFORCE__Bin_Cin_1 CC0 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07
-   31  + 00110011001100110011001100110011 R
-   32  VFORCE__Bin_Cin_2 CC3 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07
-   33  + 01010101010101010101010101010101 R
-   34  
-   35  * --- Libsetup
-   36  
-   37  .END
+   22  VFORCE__Add ADD VSS pattern 2.5 0 0 1e-12 1e-12 1e-07
+   23  + 11111111111111111111111111111111 R
+   24  VFORCE__B CC3 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07
+   25  + 00000000111111110000000011111111 R
+   26  VFORCE__Bin_Cin A VSS pattern 2.5 0 0 1e-12 1e-12 1e-07
+   27  + 00001111000011110000111100001111 R
+   28  VFORCE__Bin_Cin_1 B VSS pattern 2.5 0 0 1e-12 1e-12 1e-07
+   29  + 00110011001100110011001100110011 R
+   30  VFORCE__Bin_Cin_2 BIN_CIN VSS pattern 2.5 0 0 1e-12 1e-12 1e-07
+   31  + 01010101010101010101010101010101 R
+   32  VFORCE__A_1 CC0 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07
+   33  + 00000000000000001111111111111111 R
+   34  VFORCE__Bin_Cin_3 CC1 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07
+   35  + 00000000000000000000000000000000 R
+   36  VFORCE__Bin_Cin_4 CC1_NOT VSS pattern 2.5 0 0 1e-12 1e-12 1e-07
+   37  + 1111111111111111111111111111111 R
+   38  
+   39  * --- Libsetup
+   40  
+   41  .END
 
 End of file 
 
@@ -244,18 +248,18 @@ INFORMATION ABOUT COMPILATION
 
 
 Memory space allocated (bytes): 57978880
-52 elements
-22 nodes 
-7 input signals
+54 elements
+24 nodes 
+9 input signals
 Detail about objects and nodes found in the design...
-Number of nodes                     22
+Number of nodes                     24
 Number of intrinsic nodes           0
-Number of input signals             7
+Number of input signals             9
 Number of resistors                 0
 Number of floating capacitors       0
 Number of grounded capacitors       0
 Number of inductors                 0
-Number of voltage sources           7
+Number of voltage sources           9
 Number of current sources           0
 Number of dependent sources         0
 Number of diodes                    0
@@ -264,7 +268,7 @@ Number of JFET                      0
 Number of MOS                       45
 Number of SWITCHES                  0
 Number of transmission lines        0
-Total number of elements            52
+Total number of elements            54
 
 
 Warning: A transition time < HMIN (1.000000e-12Sec) found on VFORCE__B
@@ -286,13 +290,13 @@ hmin value is 2.500000e-04Nanos
 
 Eldo VERSION : ELDO 2010.1 Thu Jul  1 14:15:09 GMT 2010
 
-*** DATE: 25-Oct-2018 14:08:15
+*** DATE: 27-Oct-2018 16:13:59
 
 *** TITLE: * Component: /home/ece_lab/mentor/ECE4500/Project1/one_bit_alu/one_bit_alu  Viewpoint: eldonet
 
 TEMPERATURE : 27.000000 degrees C
 
-1***************25-Oct-2018 ***********************  ELDO 2010.1  (v7.3_1.1)  ***********************14:08:15*****************
+1***************27-Oct-2018 ***********************  ELDO 2010.1  (v7.3_1.1)  ***********************16:13:59*****************
 
 0* Component: /home/ece_lab/mentor/ECE450
 0****                 MODELS PARAMETERS                                    TEMPERATURE =   27.000 DEG C
@@ -401,7 +405,7 @@ hmin value is 2.500000e-04Nanos
 
 
 
-1***************25-Oct-2018 ***********************  ELDO 2010.1  (v7.3_1.1)  ***********************14:08:15*****************
+1***************27-Oct-2018 ***********************  ELDO 2010.1  (v7.3_1.1)  ***********************16:13:59*****************
 
 0* Component: /home/ece_lab/mentor/ECE4500/Project1/one_bit_alu/one_bit_alu  Viewpoint: eldonet
 0****                 OPTION SUMMARY                                        TEMPERATURE =   27.000 DEG C
@@ -473,12 +477,12 @@ ULOGIC         = 0
 
 ***> DC CPU TIME 0s 010ms <***
 
-DC:13 iterations FOR DC analysis
+DC:16 iterations FOR DC analysis
 
 
 
 
-1***************25-Oct-2018 ***********************  ELDO 2010.1  (v7.3_1.1)  ***********************14:08:15*****************
+1***************27-Oct-2018 ***********************  ELDO 2010.1  (v7.3_1.1)  ***********************16:13:59*****************
 
 0* Component: /home/ece_lab/mentor/ECE4500/Project1/one_bit_alu/one_bit_alu  Viewpoint: eldonet
 0****                 INITIAL TRANSIENT SOLUTION                           TEMPERATURE =   27.000 DEG C
@@ -492,22 +496,24 @@ DC:13 iterations FOR DC analysis
  A_AND_B       33.9632P   
  A_NOT       2.5000     
  A_OR_B       36.4763M   
- A_XOR_B       45.4921N   
+ A_XOR_B       45.6280N   
  B       0.0000     
  BIN_CIN       0.0000     
- BOUT_COUT       47.9213N   
+ BOUT_COUT       48.2376N   
  CC0       0.0000     
+ CC1       0.0000     
+ CC1_NOT       2.5000     
  CC3       0.0000     
  N$10       2.5000     
- N$17       31.1301N   
+ N$109       31.2660N   
  N$22       2.5000     
  N$38       2.5000     
  N$40       2.5000     
  SUM_DIFF       45.6620N   
  VDD       2.5000     
- X_FULL_ADD_SUB1.N$11       101.8925P  
+ X_FULL_ADD_SUB1.N$11       31.3679N   
  X_FULL_ADD_SUB1.N$39       31.3339N   
- X_FULL_ADD_SUB1.N$9       48.1698N   
+ X_FULL_ADD_SUB1.N$9       48.1701N   
  X_TWO_INPUT_OR1.N$11       18.1339M   
 
 
@@ -516,12 +522,14 @@ DC:13 iterations FOR DC analysis
 
 NAME      CURRENT      VOLTAGE      POWER        
 V1        -13.2668U     2.5000      -33.1671U    
-VFORCE__A   8.9176P      0.0000       0.0000      
 VFORCE__ADD  -4.7528P      2.5000      -11.8821P    
-VFORCE__B   19.3318F     0.0000       0.0000      
-VFORCE__BIN_CIN   9.6660F      0.0000       0.0000      
-VFORCE__BIN_CIN_1   0.0000       0.0000       0.0000      
-VFORCE__BIN_CIN_2   0.0000       0.0000       0.0000      
+VFORCE__B   0.0000       0.0000       0.0000      
+VFORCE__BIN_CIN   8.9176P      0.0000       0.0000      
+VFORCE__BIN_CIN_1   19.3318F     0.0000       0.0000      
+VFORCE__BIN_CIN_2   9.6660F      0.0000       0.0000      
+VFORCE__A_1   0.0000       0.0000       0.0000      
+VFORCE__BIN_CIN_3   0.0000       0.0000       0.0000      
+VFORCE__BIN_CIN_4   0.0000       2.5000       0.0000      
 
    TOTAL POWER DISSIPATION:  33.1671U    WATTS
 
@@ -532,39 +540,39 @@ VFORCE__BIN_CIN_2   0.0000       0.0000       0.0000
 Eldo NEWTON: VNTOL=1.000000e-06 RELTOL=7.500000e-04
 
 ................................................
-Simulation progress           : 10% (t = 324.1657 N)
-Elapsed CPU time              :  0h  0mn  0s  30    ( 0h  0mn  0s  30)
+Simulation progress           : 10% (t = 332.7685 N)
+Elapsed CPU time              :  0h  0mn  0s  20    ( 0h  0mn  0s  20)
 ................................................
-Simulation progress           : 20% (t = 666.6975 N)
-Elapsed CPU time              :  0h  0mn  0s  40    ( 0h  0mn  0s  70)
+Simulation progress           : 20% (t = 662.1150 N)
+Elapsed CPU time              :  0h  0mn  0s  20    ( 0h  0mn  0s  40)
 ................................................
-Simulation progress           : 30% (t = 997.3125 N)
-Elapsed CPU time              :  0h  0mn  0s  40    ( 0h  0mn  0s 110)
+Simulation progress           : 30% (t = 971.0540 N)
+Elapsed CPU time              :  0h  0mn  0s  20    ( 0h  0mn  0s  60)
 ................................................
-Simulation progress           : 40% (t = 1.3000 U)
-Elapsed CPU time              :  0h  0mn  0s  30    ( 0h  0mn  0s 140)
+Simulation progress           : 40% (t = 1.2840 U)
+Elapsed CPU time              :  0h  0mn  0s  30    ( 0h  0mn  0s  90)
 ................................................
 Simulation progress           : 50% (t = 1.6000 U)
-Elapsed CPU time              :  0h  0mn  0s  30    ( 0h  0mn  0s 170)
+Elapsed CPU time              :  0h  0mn  0s  20    ( 0h  0mn  0s 110)
 ................................................
-Simulation progress           : 60% (t = 1.9248 U)
-Elapsed CPU time              :  0h  0mn  0s  30    ( 0h  0mn  0s 200)
+Simulation progress           : 60% (t = 1.9254 U)
+Elapsed CPU time              :  0h  0mn  0s  20    ( 0h  0mn  0s 130)
 ................................................
-Simulation progress           : 70% (t = 2.2472 U)
-Elapsed CPU time              :  0h  0mn  0s  20    ( 0h  0mn  0s 220)
+Simulation progress           : 70% (t = 2.2676 U)
+Elapsed CPU time              :  0h  0mn  0s  30    ( 0h  0mn  0s 160)
 ................................................
-Simulation progress           : 80% (t = 2.5981 U)
-Elapsed CPU time              :  0h  0mn  0s  30    ( 0h  0mn  0s 250)
+Simulation progress           : 80% (t = 2.5804 U)
+Elapsed CPU time              :  0h  0mn  0s  20    ( 0h  0mn  0s 180)
 ................................................
 Simulation progress           : 90% (t = 2.9000 U)
-Elapsed CPU time              :  0h  0mn  0s  20    ( 0h  0mn  0s 270)
+Elapsed CPU time              :  0h  0mn  0s  30    ( 0h  0mn  0s 210)
 ................................................
 Simulation progress           : 100% (t = 3.2000 U)
-Elapsed CPU time              :  0h  0mn  0s  20    ( 0h  0mn  0s 290)
+Elapsed CPU time              :  0h  0mn  0s  20    ( 0h  0mn  0s 230)
 
 
 
-1***************25-Oct-2018 ***********************  ELDO 2010.1  (v7.3_1.1)  ***********************14:08:15*****************
+1***************27-Oct-2018 ***********************  ELDO 2010.1  (v7.3_1.1)  ***********************16:13:59*****************
 
 0* Component: /home/ece_lab/mentor/ECE4500/Project1/one_bit_alu/one_bit_alu  Viewpoint: eldonet
 0****                 ACCOUNTING INFORMATION                                TEMPERATURE =   27.000 DEG C
@@ -575,14 +583,14 @@ Elapsed CPU time              :  0h  0mn  0s  20    ( 0h  0mn  0s 290)
 
 
 
-Number of nodes                     88
+Number of nodes                     90
 Number of intrinsic nodes           66
-Number of input signals             7
+Number of input signals             9
 Number of resistors                 0
 Number of floating capacitors       0
 Number of grounded capacitors       0
 Number of inductors                 0
-Number of voltage sources           7
+Number of voltage sources           9
 Number of current sources           0
 Number of dependent sources         0
 Number of diodes                    0
@@ -591,31 +599,31 @@ Number of JFET                      0
 Number of MOS                       45
 Number of SWITCHES                  0
 Number of transmission lines        0
-Total number of elements            52
+Total number of elements            54
 Number of equations                 81
-Number of non-zero terms            411
-Percent Zeros                       9.374e+01
-Number of Newton iterations            4411
-Average number of Newton iterations per accepted time steps             3.716e+00
-Number of accepted time steps       1187
+Number of non-zero terms            409
+Percent Zeros                       9.377e+01
+Number of Newton iterations            3741
+Average number of Newton iterations per accepted time steps             3.276e+00
+Number of accepted time steps       1142
 Number of rejected time steps       26
-      due to LTE                    3
-      due to Newton                 23
-Evaluation of active devices        309943
+      due to LTE                    7
+      due to Newton                 19
+Evaluation of active devices        264989
 Memory size                         58720256
 
-***>CPU TIME 0s 290ms <***
+***>CPU TIME 0s 230ms <***
 
 ***>MESSAGE SUMMARY: 2 warnings
 
-***>GLOBAL CPU TIME 0s 320ms <***
+***>GLOBAL CPU TIME 0s 260ms <***
 
 
-***>GLOBAL ELAPSED TIME 2s <***
+***>GLOBAL ELAPSED TIME 1s <***
 
 
-  Job started at 25-Oct-2018 14:08:14
-  Job end at     25-Oct-2018 14:08:16
+  Job started at 27-Oct-2018 16:13:58
+  Job end at     27-Oct-2018 16:13:59
 
   Run on linux-B210 (Linux 2.6.16.60-0.21-bigsmp)
 

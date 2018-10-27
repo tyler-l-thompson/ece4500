@@ -1,0 +1,32 @@
+* Component: /home/ece_lab/mentor/4500/Project_1/Shifts  Viewpoint: eldonet
+.INCLUDE /home/ece_lab/mentor/4500/Project_1/Shifts/eldonet/Shifts_eldonet.spi
+.INCLUDE /home/ece_lab/mentor/mgc/mit_0.25.lib
+.OPTION NOASCII
+.OPTION MODWL
+.OPTION ENGNOT
+.OPTION AEX
+
+* --- Singles
+
+* - Analysis Setup - Trans
+.TRAN 0 400N 0N 100N
+
+* --- Waveform Outputs
+.PROBE TRAN V(A0) V(A1) V(A2) V(A3) V(CC0) V(CC0_NOT) V(CC1) V(CC1_NOT) V(F0)
++ V(F1) V(F2) V(F3) V(OVF)
+
+* --- Params
+.TEMP 27
+
+* --- Forces
+VFORCE__A0 A0 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 1 R
+VFORCE__A1 A1 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 0 R
+VFORCE__A2 A2 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 0 R
+VFORCE__A3 A3 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 1 R
+VFORCE__CC0 CC0 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 0101 R
+VFORCE__CC0_NOT CC0_NOT VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 1010 R
+VFORCE__CC1 CC1 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 0011 R
+VFORCE__CC1_1 CC1_NOT VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 1100 R
+
+* --- Libsetup
+

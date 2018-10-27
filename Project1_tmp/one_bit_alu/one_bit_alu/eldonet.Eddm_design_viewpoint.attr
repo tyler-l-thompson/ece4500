@@ -1,0 +1,85 @@
+A 5 u Eddm_design_viewpoint 5bd1fcce82cd.03.7f.00.00.02.00.5f.7e 4 2 63 0
+V v 2 4 5bd204c07ac4.03.7f.00.00.02.00.5f.7e
+F f 2 "eldonet.dvpt_2"
+F o 0 ""
+F o 0 ""
+F o 0 ""
+V v 3 4 5bd206702e9a.03.7f.00.00.02.00.5f.7e
+F f 3 "eldonet.dvpt_3"
+F o 0 ""
+F o 0 ""
+F o 0 ""
+V v 4 4 5bd20a79dd75.03.7f.00.00.02.00.5f.7e
+F f 4 "eldonet.dvpt_4"
+F o 0 ""
+F o 0 ""
+F o 0 ""
+O 4
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Project1/one_bit_alu/one_bit_alu/part" 1 Eddm_part 5bca51799ba5.03.7f.00.00.02.01.05.c7 5bca51799ba5.03.7f.00.00.02.00.05.c7
+R cspuv 1 "/home/ece_lab/mentor/ECE4500/Project1/one_bit_alu/one_bit_alu/schematic" 5 mgc_schematic 5bd2051eee21.03.7f.00.00.02.00.5f.7e 5bca4cfe712c.03.7f.00.00.02.00.05.c7
+R cspuv 2 "/home/ece_lab/mentor/ECE4500/Project1/one_bit_alu/one_bit_alu/eldonet" 1 Eddm_ba_mgr 5bd1fcce83cc.03.7f.00.00.02.01.5f.7e 5bd1fcce83cc.03.7f.00.00.02.00.5f.7e
+R cspuv 3 "$MGC_DESIGN_KIT/symbols/dc_v_source/part" 1 Eddm_part 3890a89d50f5.03.86.56.31.70.00.34.2e 399db67c7221.03.93.22.22.3e.04.28.aa
+R cspuv 4 "/home/ece_lab/mentor/ECE4500/Project1/full_add_sub/full_add_sub/part" 2 Eddm_part 5bca418269ba.03.7f.00.00.02.00.65.be 5bc99781be28.03.7f.00.00.02.00.50.ed
+R cspuv 5 "/home/ece_lab/mentor/ECE4500/Project1/two_input_xor/two_input_xor/part" 2 Eddm_part 5bca400ce482.03.7f.00.00.02.00.65.be 5bca3f15478f.03.7f.00.00.02.00.65.be
+R cspuv 6 "/home/ece_lab/mentor/ECE4500/Project1/two_input_mux/two_input_mux/part" 2 Eddm_part 5bc9954257d6.03.7f.00.00.02.00.4e.ff 5bc98fcb7391.03.7f.00.00.02.00.49.a6
+R cspuv 7 "/home/ece_lab/mentor/ECE4500/Project1/one_input_inverter/one_input_inverter/part" 3 Eddm_part 5bd1f6c463a7.03.7f.00.00.02.00.58.e3 5bca4ad92e94.03.7f.00.00.02.00.7d.bc
+R cspuv 8 "/home/ece_lab/mentor/ECE4500/Project1/two_input_or/two_input_or/part" 3 Eddm_part 5bd1fa382da2.03.7f.00.00.02.00.58.e3 5bca44dc93b9.03.7f.00.00.02.00.6f.5d
+R cspuv 9 "/home/ece_lab/mentor/ECE4500/Project1/two_input_and_2/two_input_and/part" 2 Eddm_part 5bd1f4eda876.03.7f.00.00.02.00.58.e3 5bd1f471c270.03.7f.00.00.02.00.58.e3
+R cspuv 10 "/home/ece_lab/mentor/ECE4500/Project1/two_input_xor/two_input_xor/schematic" 3 mgc_schematic 5bca3fb8d4e4.03.7f.00.00.02.00.65.be 5bca3df382ec.03.7f.00.00.02.00.65.be
+R cspuv 11 "/home/ece_lab/mentor/ECE4500/Project1/two_input_xor/two_input_xor/two_input_xor" 1 mgc_symbol 5bca3fd3d331.03.7f.00.00.02.00.65.be 5bca3fd3d330.03.7f.00.00.02.00.65.be
+R cspuv 12 "/home/ece_lab/mentor/ECE4500/Project1/full_add_sub/full_add_sub/schematic" 11 mgc_schematic 5bca411366a9.03.7f.00.00.02.00.65.be 5bc9959fcaf1.03.7f.00.00.02.00.50.ed
+R cspuv 13 "/home/ece_lab/mentor/ECE4500/Project1/full_add_sub/full_add_sub/full_add_sub" 1 mgc_symbol 5bca415b09f0.03.7f.00.00.02.01.65.be 5bca415b09f0.03.7f.00.00.02.00.65.be
+R cspuv 14 "/home/ece_lab/mentor/ECE4500/Project1/two_input_and_2/two_input_and/schematic" 2 mgc_schematic 5bd1f471c416.03.7f.00.00.02.00.58.e3 5bd1f4683e52.03.7f.00.00.02.00.58.e3
+R cspuv 16 "/home/ece_lab/mentor/ECE4500/Project1/one_input_inverter/one_input_inverter/schematic" 3 mgc_schematic 5bca4b5453cb.03.7f.00.00.02.00.7d.bc 5bca4a40ca34.03.7f.00.00.02.00.7d.bc
+R cspuv 18 "/home/ece_lab/mentor/ECE4500/Project1/two_input_mux/two_input_mux/schematic" 3 mgc_schematic 5bc99083da48.03.7f.00.00.02.00.49.a6 5bc98e690ca6.03.7f.00.00.02.00.49.a6
+R cspuv 19 "/home/ece_lab/mentor/ECE4500/Project1/two_input_mux/two_input_mux/two_input_mux" 1 mgc_symbol 5bc994f772d0.03.7f.00.00.02.01.4e.ff 5bc994f772d0.03.7f.00.00.02.00.4e.ff
+R cspuv 21 "/home/ece_lab/mentor/ECE4500/Project1/two_input_or/two_input_or/schematic" 15 mgc_schematic 5bd206832885.03.7f.00.00.02.00.5f.7e 5bca4438cf24.03.7f.00.00.02.00.6f.5d
+R cspuv 31 "$MGC_DESIGN_KIT/symbols/pmos/part" 6 Eddm_part 39dcb70a738a.03.93.22.22.3e.00.2e.08 399d7e54bb91.03.93.22.22.3e.00.4c.5c
+R cspuv 32 "$MGC_DESIGN_KIT/symbols/nmos/part" 7 Eddm_part 39dcb6d2c6cf.03.93.22.22.3e.00.2e.08 399d7e4745c6.03.93.22.22.3e.00.4c.5c
+O 3
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Project1/one_bit_alu/one_bit_alu/part" 1 Eddm_part 5bca51799ba5.03.7f.00.00.02.01.05.c7 5bca51799ba5.03.7f.00.00.02.00.05.c7
+R cspuv 1 "/home/ece_lab/mentor/ECE4500/Project1/one_bit_alu/one_bit_alu/schematic" 5 mgc_schematic 5bd2051eee21.03.7f.00.00.02.00.5f.7e 5bca4cfe712c.03.7f.00.00.02.00.05.c7
+R cspuv 2 "/home/ece_lab/mentor/ECE4500/Project1/one_bit_alu/one_bit_alu/eldonet" 1 Eddm_ba_mgr 5bd1fcce83cc.03.7f.00.00.02.01.5f.7e 5bd1fcce83cc.03.7f.00.00.02.00.5f.7e
+R cspuv 3 "$MGC_DESIGN_KIT/symbols/dc_v_source/part" 1 Eddm_part 3890a89d50f5.03.86.56.31.70.00.34.2e 399db67c7221.03.93.22.22.3e.04.28.aa
+R cspuv 4 "/home/ece_lab/mentor/ECE4500/Project1/full_add_sub/full_add_sub/part" 2 Eddm_part 5bca418269ba.03.7f.00.00.02.00.65.be 5bc99781be28.03.7f.00.00.02.00.50.ed
+R cspuv 5 "/home/ece_lab/mentor/ECE4500/Project1/two_input_xor/two_input_xor/part" 2 Eddm_part 5bca400ce482.03.7f.00.00.02.00.65.be 5bca3f15478f.03.7f.00.00.02.00.65.be
+R cspuv 6 "/home/ece_lab/mentor/ECE4500/Project1/two_input_mux/two_input_mux/part" 2 Eddm_part 5bc9954257d6.03.7f.00.00.02.00.4e.ff 5bc98fcb7391.03.7f.00.00.02.00.49.a6
+R cspuv 7 "/home/ece_lab/mentor/ECE4500/Project1/one_input_inverter/one_input_inverter/part" 3 Eddm_part 5bd1f6c463a7.03.7f.00.00.02.00.58.e3 5bca4ad92e94.03.7f.00.00.02.00.7d.bc
+R cspuv 8 "/home/ece_lab/mentor/ECE4500/Project1/two_input_or/two_input_or/part" 3 Eddm_part 5bd1fa382da2.03.7f.00.00.02.00.58.e3 5bca44dc93b9.03.7f.00.00.02.00.6f.5d
+R cspuv 9 "/home/ece_lab/mentor/ECE4500/Project1/two_input_and_2/two_input_and/part" 2 Eddm_part 5bd1f4eda876.03.7f.00.00.02.00.58.e3 5bd1f471c270.03.7f.00.00.02.00.58.e3
+R cspuv 10 "/home/ece_lab/mentor/ECE4500/Project1/two_input_xor/two_input_xor/schematic" 3 mgc_schematic 5bca3fb8d4e4.03.7f.00.00.02.00.65.be 5bca3df382ec.03.7f.00.00.02.00.65.be
+R cspuv 11 "/home/ece_lab/mentor/ECE4500/Project1/two_input_xor/two_input_xor/two_input_xor" 1 mgc_symbol 5bca3fd3d331.03.7f.00.00.02.00.65.be 5bca3fd3d330.03.7f.00.00.02.00.65.be
+R cspuv 12 "/home/ece_lab/mentor/ECE4500/Project1/full_add_sub/full_add_sub/schematic" 11 mgc_schematic 5bca411366a9.03.7f.00.00.02.00.65.be 5bc9959fcaf1.03.7f.00.00.02.00.50.ed
+R cspuv 13 "/home/ece_lab/mentor/ECE4500/Project1/full_add_sub/full_add_sub/full_add_sub" 1 mgc_symbol 5bca415b09f0.03.7f.00.00.02.01.65.be 5bca415b09f0.03.7f.00.00.02.00.65.be
+R cspuv 14 "/home/ece_lab/mentor/ECE4500/Project1/two_input_and_2/two_input_and/schematic" 2 mgc_schematic 5bd1f471c416.03.7f.00.00.02.00.58.e3 5bd1f4683e52.03.7f.00.00.02.00.58.e3
+R cspuv 16 "/home/ece_lab/mentor/ECE4500/Project1/one_input_inverter/one_input_inverter/schematic" 3 mgc_schematic 5bca4b5453cb.03.7f.00.00.02.00.7d.bc 5bca4a40ca34.03.7f.00.00.02.00.7d.bc
+R cspuv 18 "/home/ece_lab/mentor/ECE4500/Project1/two_input_mux/two_input_mux/schematic" 3 mgc_schematic 5bc99083da48.03.7f.00.00.02.00.49.a6 5bc98e690ca6.03.7f.00.00.02.00.49.a6
+R cspuv 19 "/home/ece_lab/mentor/ECE4500/Project1/two_input_mux/two_input_mux/two_input_mux" 1 mgc_symbol 5bc994f772d0.03.7f.00.00.02.01.4e.ff 5bc994f772d0.03.7f.00.00.02.00.4e.ff
+R cspuv 21 "/home/ece_lab/mentor/ECE4500/Project1/two_input_or/two_input_or/schematic" 14 mgc_schematic 5bd1fbc8e20d.03.7f.00.00.02.00.5f.7e 5bca4438cf24.03.7f.00.00.02.00.6f.5d
+R cspuv 31 "$MGC_DESIGN_KIT/symbols/pmos/part" 6 Eddm_part 39dcb70a738a.03.93.22.22.3e.00.2e.08 399d7e54bb91.03.93.22.22.3e.00.4c.5c
+R cspuv 32 "$MGC_DESIGN_KIT/symbols/nmos/part" 7 Eddm_part 39dcb6d2c6cf.03.93.22.22.3e.00.2e.08 399d7e4745c6.03.93.22.22.3e.00.4c.5c
+O 2
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Project1/one_bit_alu/one_bit_alu/part" 1 Eddm_part 5bca51799ba5.03.7f.00.00.02.01.05.c7 5bca51799ba5.03.7f.00.00.02.00.05.c7
+R cspuv 1 "/home/ece_lab/mentor/ECE4500/Project1/one_bit_alu/one_bit_alu/schematic" 4 mgc_schematic 5bd1fcce79ab.03.7f.00.00.02.00.5f.7e 5bca4cfe712c.03.7f.00.00.02.00.05.c7
+R cspuv 2 "/home/ece_lab/mentor/ECE4500/Project1/one_bit_alu/one_bit_alu/eldonet" 1 Eddm_ba_mgr 5bd1fcce83cc.03.7f.00.00.02.01.5f.7e 5bd1fcce83cc.03.7f.00.00.02.00.5f.7e
+R cspuv 3 "$MGC_DESIGN_KIT/symbols/dc_v_source/part" 1 Eddm_part 3890a89d50f5.03.86.56.31.70.00.34.2e 399db67c7221.03.93.22.22.3e.04.28.aa
+R cspuv 4 "/home/ece_lab/mentor/ECE4500/Project1/full_add_sub/full_add_sub/part" 2 Eddm_part 5bca418269ba.03.7f.00.00.02.00.65.be 5bc99781be28.03.7f.00.00.02.00.50.ed
+R cspuv 5 "/home/ece_lab/mentor/ECE4500/Project1/two_input_xor/two_input_xor/part" 2 Eddm_part 5bca400ce482.03.7f.00.00.02.00.65.be 5bca3f15478f.03.7f.00.00.02.00.65.be
+R cspuv 6 "/home/ece_lab/mentor/ECE4500/Project1/two_input_mux/two_input_mux/part" 2 Eddm_part 5bc9954257d6.03.7f.00.00.02.00.4e.ff 5bc98fcb7391.03.7f.00.00.02.00.49.a6
+R cspuv 7 "/home/ece_lab/mentor/ECE4500/Project1/one_input_inverter/one_input_inverter/part" 3 Eddm_part 5bd1f6c463a7.03.7f.00.00.02.00.58.e3 5bca4ad92e94.03.7f.00.00.02.00.7d.bc
+R cspuv 8 "/home/ece_lab/mentor/ECE4500/Project1/two_input_or/two_input_or/part" 3 Eddm_part 5bd1fa382da2.03.7f.00.00.02.00.58.e3 5bca44dc93b9.03.7f.00.00.02.00.6f.5d
+R cspuv 9 "/home/ece_lab/mentor/ECE4500/Project1/two_input_and_2/two_input_and/part" 2 Eddm_part 5bd1f4eda876.03.7f.00.00.02.00.58.e3 5bd1f471c270.03.7f.00.00.02.00.58.e3
+R cspuv 10 "/home/ece_lab/mentor/ECE4500/Project1/two_input_xor/two_input_xor/schematic" 3 mgc_schematic 5bca3fb8d4e4.03.7f.00.00.02.00.65.be 5bca3df382ec.03.7f.00.00.02.00.65.be
+R cspuv 11 "/home/ece_lab/mentor/ECE4500/Project1/two_input_xor/two_input_xor/two_input_xor" 1 mgc_symbol 5bca3fd3d331.03.7f.00.00.02.00.65.be 5bca3fd3d330.03.7f.00.00.02.00.65.be
+R cspuv 12 "/home/ece_lab/mentor/ECE4500/Project1/full_add_sub/full_add_sub/schematic" 11 mgc_schematic 5bca411366a9.03.7f.00.00.02.00.65.be 5bc9959fcaf1.03.7f.00.00.02.00.50.ed
+R cspuv 13 "/home/ece_lab/mentor/ECE4500/Project1/full_add_sub/full_add_sub/full_add_sub" 1 mgc_symbol 5bca415b09f0.03.7f.00.00.02.01.65.be 5bca415b09f0.03.7f.00.00.02.00.65.be
+R cspuv 14 "/home/ece_lab/mentor/ECE4500/Project1/two_input_and_2/two_input_and/schematic" 2 mgc_schematic 5bd1f471c416.03.7f.00.00.02.00.58.e3 5bd1f4683e52.03.7f.00.00.02.00.58.e3
+R cspuv 16 "/home/ece_lab/mentor/ECE4500/Project1/one_input_inverter/one_input_inverter/schematic" 3 mgc_schematic 5bca4b5453cb.03.7f.00.00.02.00.7d.bc 5bca4a40ca34.03.7f.00.00.02.00.7d.bc
+R cspuv 18 "/home/ece_lab/mentor/ECE4500/Project1/two_input_mux/two_input_mux/schematic" 3 mgc_schematic 5bc99083da48.03.7f.00.00.02.00.49.a6 5bc98e690ca6.03.7f.00.00.02.00.49.a6
+R cspuv 19 "/home/ece_lab/mentor/ECE4500/Project1/two_input_mux/two_input_mux/two_input_mux" 1 mgc_symbol 5bc994f772d0.03.7f.00.00.02.01.4e.ff 5bc994f772d0.03.7f.00.00.02.00.4e.ff
+R cspuv 21 "/home/ece_lab/mentor/ECE4500/Project1/two_input_or/two_input_or/schematic" 14 mgc_schematic 5bd1fbc8e20d.03.7f.00.00.02.00.5f.7e 5bca4438cf24.03.7f.00.00.02.00.6f.5d
+R cspuv 31 "$MGC_DESIGN_KIT/symbols/pmos/part" 6 Eddm_part 39dcb70a738a.03.93.22.22.3e.00.2e.08 399d7e54bb91.03.93.22.22.3e.00.4c.5c
+R cspuv 32 "$MGC_DESIGN_KIT/symbols/nmos/part" 7 Eddm_part 39dcb6d2c6cf.03.93.22.22.3e.00.2e.08 399d7e4745c6.03.93.22.22.3e.00.4c.5c

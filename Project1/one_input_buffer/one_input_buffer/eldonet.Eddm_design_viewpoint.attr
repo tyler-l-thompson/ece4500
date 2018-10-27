@@ -1,0 +1,27 @@
+A 5 u Eddm_design_viewpoint 5bd4acc340ee.03.7f.00.00.02.00.71.9f 2 2 20 0
+V v 1 4 5bd4acc340ee.03.7f.00.00.02.01.71.9f
+F f 1 "eldonet.dvpt_1"
+F o 0 
+F o 0 
+F o 0 
+V v 2 4 5bd4ad0ae29b.03.7f.00.00.02.00.71.9f
+F f 2 "eldonet.dvpt_2"
+F o 0 
+F o 0 
+F o 0 
+O 2
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Project1/one_input_buffer/one_input_buffer/part" 1 Eddm_part 5bd4acb48163.03.7f.00.00.02.01.71.9f 5bd4acb48163.03.7f.00.00.02.00.71.9f
+R cspuv 1 "/home/ece_lab/mentor/ECE4500/Project1/one_input_buffer/one_input_buffer/schematic" 2 mgc_schematic 5bd4acb4826e.03.7f.00.00.02.00.71.9f 5bd4ac60b422.03.7f.00.00.02.00.71.9f
+R cspuv 2 "/home/ece_lab/mentor/ECE4500/Project1/one_input_buffer/one_input_buffer/eldonet" 1 Eddm_ba_mgr 5bd4acc341d9.03.7f.00.00.02.01.71.9f 5bd4acc341d9.03.7f.00.00.02.00.71.9f
+R cspuv 3 "/home/ece_lab/mentor/ECE4500/Project1/one_input_inverter/one_input_inverter/part" 3 Eddm_part 5bd1f6c463a7.03.7f.00.00.02.00.58.e3 5bca4ad92e94.03.7f.00.00.02.00.7d.bc
+R cspuv 4 "$MGC_DESIGN_KIT/symbols/dc_v_source/part" 1 Eddm_part 3890a89d50f5.03.86.56.31.70.00.34.2e 399db67c7221.03.93.22.22.3e.04.28.aa
+R cspuv 6 "/home/ece_lab/mentor/ECE4500/Project1/one_input_inverter/one_input_inverter/schematic" 3 mgc_schematic 5bca4b5453cb.03.7f.00.00.02.00.7d.bc 5bca4a40ca34.03.7f.00.00.02.00.7d.bc
+R cspuv 16 "$MGC_DESIGN_KIT/symbols/pmos/part" 6 Eddm_part 39dcb70a738a.03.93.22.22.3e.00.2e.08 399d7e54bb91.03.93.22.22.3e.00.4c.5c
+R cspuv 17 "$MGC_DESIGN_KIT/symbols/nmos/part" 7 Eddm_part 39dcb6d2c6cf.03.93.22.22.3e.00.2e.08 399d7e4745c6.03.93.22.22.3e.00.4c.5c
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Project1/one_input_buffer/one_input_buffer/part" 1 Eddm_part 5bd4acb48163.03.7f.00.00.02.01.71.9f 5bd4acb48163.03.7f.00.00.02.00.71.9f
+R cspuv 1 "/home/ece_lab/mentor/ECE4500/Project1/one_input_buffer/one_input_buffer/schematic" 1 mgc_schematic 5bd4ac60b422.03.7f.00.00.02.01.71.9f 5bd4ac60b422.03.7f.00.00.02.00.71.9f
+P "eddm__refer_state" "eddm__refer_floating"
+R cspuv 2 "/home/ece_lab/mentor/ECE4500/Project1/one_input_buffer/one_input_buffer/eldonet" 1 Eddm_ba_mgr 5bd4acc341d9.03.7f.00.00.02.01.71.9f 5bd4acc341d9.03.7f.00.00.02.00.71.9f

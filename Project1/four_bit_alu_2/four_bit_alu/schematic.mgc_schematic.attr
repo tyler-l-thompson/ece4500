@@ -1,0 +1,10 @@
+A 5 u mgc_schematic 5bd4b1ec3b5d.03.7f.00.00.02.00.7a.8a 2 2 1 0
+V v 1 1 5bd4b1ec3b5e.03.7f.00.00.02.00.7a.8a
+F o 0 ""
+V v 2 1 5bd4b3d4136f.03.7f.00.00.02.00.7a.8a
+F o 0 ""
+O 2
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Project1/four_bit_alu_2/four_bit_alu/schematic/sheet1" 1 mgc_sheet 5bd4b1ec3c3b.03.7f.00.00.02.00.7a.8a 5bd4b1ec3c3a.03.7f.00.00.02.00.7a.8a
+O 1
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Project1/four_bit_alu_2/four_bit_alu/schematic/sheet1" 1 mgc_sheet 5bd4b1ec3c3b.03.7f.00.00.02.00.7a.8a 5bd4b1ec3c3a.03.7f.00.00.02.00.7a.8a
+P "eddm__refer_state" "eddm__refer_floating"

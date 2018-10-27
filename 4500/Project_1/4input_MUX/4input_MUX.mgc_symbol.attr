@@ -1,0 +1,16 @@
+A 5 u mgc_symbol 5bd3485a45de.03.7f.00.00.02.00.16.51 4 2 1 0
+V v 2 2 5bd3497bad7e.03.7f.00.00.02.00.16.51
+F f 2 "4input_MUX.smbl_2"
+F o 0 ""
+V v 3 2 5bd488db290e.03.7f.00.00.02.00.2a.82
+F f 3 "4input_MUX.smbl_3"
+F o 0 ""
+V v 4 2 5bd489412875.03.7f.00.00.02.00.2a.82
+F f 4 "4input_MUX.smbl_4"
+F o 0 ""
+O 4
+R csduv 0 "/home/ece_lab/mentor/4500/Project_1/4input_MUX/part" 4 Eddm_part 5bd48a3c8f25.03.7f.00.00.02.00.2a.82 5bd347a101ba.03.7f.00.00.02.00.16.51
+O 3
+R csduv 0 "/home/ece_lab/mentor/4500/Project_1/4input_MUX/part" 3 Eddm_part 5bd48908cfb8.03.7f.00.00.02.00.2a.82 5bd347a101ba.03.7f.00.00.02.00.16.51
+O 2
+R csduv 0 "/home/ece_lab/mentor/4500/Project_1/4input_MUX/part" 2 Eddm_part 5bd3492039f3.03.7f.00.00.02.00.16.51 5bd347a101ba.03.7f.00.00.02.00.16.51

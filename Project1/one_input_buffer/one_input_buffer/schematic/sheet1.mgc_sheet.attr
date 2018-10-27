@@ -1,0 +1,37 @@
+A 5 u mgc_sheet 5bd4ac60b4bd.03.7f.00.00.02.00.71.9f 2 2 13 0
+V v 1 3 5bd4ac60b4bd.03.7f.00.00.02.01.71.9f
+F f 1 "sheet1.ssht_1"
+F f 1 "sheet1.sgfx_1"
+F o 0 ""
+V v 2 3 5bd4ad1036b1.03.7f.00.00.02.00.71.9f
+F f 2 "sheet1.ssht_2"
+F f 2 "sheet1.sgfx_2"
+F o 0 ""
+O 2
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "/home/ece_lab/mentor/ECE4500/Project1/one_input_buffer/one_input_buffer/schematic" 1 mgc_schematic 5bd4ac60b422.03.7f.00.00.02.01.71.9f 5bd4ac60b422.03.7f.00.00.02.00.71.9f
+R csduv 1 "/home/ece_lab/mentor/ECE4500/Project1/one_input_inverter/one_input_inverter/part" 3 Eddm_part 5bd1f6c463a7.03.7f.00.00.02.00.58.e3 5bca4ad92e94.03.7f.00.00.02.00.7d.bc
+R csduv 2 "/home/ece_lab/mentor/ECE4500/Project1/one_input_inverter/one_input_inverter/one_input_inverter" 2 mgc_symbol 5bd1f6c46399.03.7f.00.00.02.00.58.e3 5bca4b726965.03.7f.00.00.02.00.7d.bc
+R csduv 5 "$MGC_DESIGN_KIT/symbols/portin/part" 1 Eddm_part 35773eaadc18.03.86.56.31.87.00.0e.9f 3994813f8cc6.03.93.22.22.3e.00.28.aa
+R csduv 6 "$MGC_DESIGN_KIT/symbols/portin/portin" 1 mgc_symbol 35773d18855d.03.86.56.31.87.00.0e.9f 3994813f8cc5.03.93.22.22.3e.01.28.aa
+R csduv 7 "$MGC_DESIGN_KIT/symbols/portout/part" 1 Eddm_part 35785fdc394b.03.86.56.31.87.00.12.30 39948143d242.03.93.22.22.3e.02.28.aa
+R csduv 8 "$MGC_DESIGN_KIT/symbols/portout/portout" 1 mgc_symbol 357ed6243e32.03.86.56.31.87.00.28.94 39948143d242.03.93.22.22.3e.01.28.aa
+R csduv 9 "$MGC_DESIGN_KIT/symbols/vss/part" 1 Eddm_part 3597fafab24d.03.86.56.31.87.00.1a.94 399d7a63280e.03.93.22.22.3e.01.28.aa
+R csduv 10 "$MGC_DESIGN_KIT/symbols/vss/vss" 1 mgc_symbol 359806396644.03.86.56.31.87.00.1b.10 399d7a63280e.03.93.22.22.3e.00.28.aa
+R csduv 11 "$MGC_DESIGN_KIT/symbols/vdd/part" 1 Eddm_part 3597fa6cdda4.03.86.56.31.87.00.1a.94 399d7a63280d.03.93.22.22.3e.03.28.aa
+R csduv 12 "$MGC_DESIGN_KIT/symbols/vdd/vdd" 1 mgc_symbol 3598062d64ad.03.86.56.31.87.00.1b.10 399d7a63280d.03.93.22.22.3e.02.28.aa
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "/home/ece_lab/mentor/ECE4500/Project1/one_input_buffer/one_input_buffer/schematic" 1 mgc_schematic 5bd4ac60b422.03.7f.00.00.02.01.71.9f 5bd4ac60b422.03.7f.00.00.02.00.71.9f
+R csduv 1 "/home/ece_lab/mentor/ECE4500/Project1/one_input_inverter/one_input_inverter/part" 3 Eddm_part 5bd1f6c463a7.03.7f.00.00.02.00.58.e3 5bca4ad92e94.03.7f.00.00.02.00.7d.bc
+R csduv 2 "/home/ece_lab/mentor/ECE4500/Project1/one_input_inverter/one_input_inverter/one_input_inverter" 2 mgc_symbol 5bd1f6c46399.03.7f.00.00.02.00.58.e3 5bca4b726965.03.7f.00.00.02.00.7d.bc
+R csduv 3 "$MGC_DESIGN_KIT/symbols/dc_v_source/part" 1 Eddm_part 3890a89d50f5.03.86.56.31.70.00.34.2e 399db67c7221.03.93.22.22.3e.04.28.aa
+R csduv 4 "$MGC_DESIGN_KIT/symbols/dc_v_source/dc_v_source" 1 mgc_symbol 3890a89d50ce.03.86.56.31.70.00.34.2e 399db67c7221.03.93.22.22.3e.05.28.aa
+R csduv 5 "$MGC_DESIGN_KIT/symbols/portin/part" 1 Eddm_part 35773eaadc18.03.86.56.31.87.00.0e.9f 3994813f8cc6.03.93.22.22.3e.00.28.aa
+R csduv 6 "$MGC_DESIGN_KIT/symbols/portin/portin" 1 mgc_symbol 35773d18855d.03.86.56.31.87.00.0e.9f 3994813f8cc5.03.93.22.22.3e.01.28.aa
+R csduv 7 "$MGC_DESIGN_KIT/symbols/portout/part" 1 Eddm_part 35785fdc394b.03.86.56.31.87.00.12.30 39948143d242.03.93.22.22.3e.02.28.aa
+R csduv 8 "$MGC_DESIGN_KIT/symbols/portout/portout" 1 mgc_symbol 357ed6243e32.03.86.56.31.87.00.28.94 39948143d242.03.93.22.22.3e.01.28.aa
+R csduv 9 "$MGC_DESIGN_KIT/symbols/vss/part" 1 Eddm_part 3597fafab24d.03.86.56.31.87.00.1a.94 399d7a63280e.03.93.22.22.3e.01.28.aa
+R csduv 10 "$MGC_DESIGN_KIT/symbols/vss/vss" 1 mgc_symbol 359806396644.03.86.56.31.87.00.1b.10 399d7a63280e.03.93.22.22.3e.00.28.aa
+R csduv 11 "$MGC_DESIGN_KIT/symbols/vdd/part" 1 Eddm_part 3597fa6cdda4.03.86.56.31.87.00.1a.94 399d7a63280d.03.93.22.22.3e.03.28.aa
+R csduv 12 "$MGC_DESIGN_KIT/symbols/vdd/vdd" 1 mgc_symbol 3598062d64ad.03.86.56.31.87.00.1b.10 399d7a63280d.03.93.22.22.3e.02.28.aa

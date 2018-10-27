@@ -1,8 +1,4 @@
-A 5 u mgc_sheet 5bc9959fcb90.03.7f.00.00.02.00.50.ed 12 2 19 0
-V v 10 3 5bca41136683.03.7f.00.00.02.00.65.be
-F f 10 "sheet1.ssht_10"
-F f 10 "sheet1.sgfx_10"
-F o 0 ""
+A 5 u mgc_sheet 5bc9959fcb90.03.7f.00.00.02.00.50.ed 13 2 19 0
 V v 11 3 5bd20b297f02.03.7f.00.00.02.00.5f.7e
 F f 11 "sheet1.ssht_11"
 F f 11 "sheet1.sgfx_11"
@@ -11,6 +7,25 @@ V v 12 3 5bd21a39cbc2.03.7f.00.00.02.00.5f.7e
 F f 12 "sheet1.ssht_12"
 F f 12 "sheet1.sgfx_12"
 F o 0 ""
+V v 13 3 5bd4b2c64083.03.7f.00.00.02.00.7a.8a
+F f 13 "sheet1.ssht_13"
+F f 13 "sheet1.sgfx_13"
+F o 0 ""
+O 13
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "/home/ece_lab/mentor/ECE4500/Project1/full_add_sub/full_add_sub/schematic" 1 mgc_schematic 5bc9959fcaf1.03.7f.00.00.02.01.50.ed 5bc9959fcaf1.03.7f.00.00.02.00.50.ed
+R csduv 1 "/home/ece_lab/mentor/ECE4500/Project1/two_input_mux/two_input_mux/part" 2 Eddm_part 5bc9954257d6.03.7f.00.00.02.00.4e.ff 5bc98fcb7391.03.7f.00.00.02.00.49.a6
+R csduv 2 "/home/ece_lab/mentor/ECE4500/Project1/two_input_mux/two_input_mux/two_input_mux" 1 mgc_symbol 5bc994f772d0.03.7f.00.00.02.01.4e.ff 5bc994f772d0.03.7f.00.00.02.00.4e.ff
+R csduv 3 "$MGC_DESIGN_KIT/symbols/vdd/part" 1 Eddm_part 3597fa6cdda4.03.86.56.31.87.00.1a.94 399d7a63280d.03.93.22.22.3e.03.28.aa
+R csduv 4 "$MGC_DESIGN_KIT/symbols/vdd/vdd" 1 mgc_symbol 3598062d64ad.03.86.56.31.87.00.1b.10 399d7a63280d.03.93.22.22.3e.02.28.aa
+R csduv 5 "$MGC_DESIGN_KIT/symbols/vss/part" 1 Eddm_part 3597fafab24d.03.86.56.31.87.00.1a.94 399d7a63280e.03.93.22.22.3e.01.28.aa
+R csduv 6 "$MGC_DESIGN_KIT/symbols/vss/vss" 1 mgc_symbol 359806396644.03.86.56.31.87.00.1b.10 399d7a63280e.03.93.22.22.3e.00.28.aa
+R csduv 7 "$MGC_DESIGN_KIT/symbols/portin/part" 1 Eddm_part 35773eaadc18.03.86.56.31.87.00.0e.9f 3994813f8cc6.03.93.22.22.3e.00.28.aa
+R csduv 8 "$MGC_DESIGN_KIT/symbols/portin/portin" 1 mgc_symbol 35773d18855d.03.86.56.31.87.00.0e.9f 3994813f8cc5.03.93.22.22.3e.01.28.aa
+R csduv 9 "$MGC_DESIGN_KIT/symbols/portout/part" 1 Eddm_part 35785fdc394b.03.86.56.31.87.00.12.30 39948143d242.03.93.22.22.3e.02.28.aa
+R csduv 10 "$MGC_DESIGN_KIT/symbols/portout/portout" 1 mgc_symbol 357ed6243e32.03.86.56.31.87.00.28.94 39948143d242.03.93.22.22.3e.01.28.aa
+R csduv 13 "/home/ece_lab/mentor/ECE4500/Project1/two_input_xor/two_input_xor/part" 2 Eddm_part 5bca400ce482.03.7f.00.00.02.00.65.be 5bca3f15478f.03.7f.00.00.02.00.65.be
+R csduv 14 "/home/ece_lab/mentor/ECE4500/Project1/two_input_xor/two_input_xor/two_input_xor" 1 mgc_symbol 5bca3fd3d331.03.7f.00.00.02.00.65.be 5bca3fd3d330.03.7f.00.00.02.00.65.be
 O 12
 P "eddm__stream_to_use" "eddm__propl_dstream"
 R csduv 0 "/home/ece_lab/mentor/ECE4500/Project1/full_add_sub/full_add_sub/schematic" 1 mgc_schematic 5bc9959fcaf1.03.7f.00.00.02.01.50.ed 5bc9959fcaf1.03.7f.00.00.02.00.50.ed
@@ -43,18 +58,3 @@ R csduv 13 "/home/ece_lab/mentor/ECE4500/Project1/two_input_xor/two_input_xor/pa
 R csduv 14 "/home/ece_lab/mentor/ECE4500/Project1/two_input_xor/two_input_xor/two_input_xor" 1 mgc_symbol 5bca3fd3d331.03.7f.00.00.02.00.65.be 5bca3fd3d330.03.7f.00.00.02.00.65.be
 R csduv 17 "$MGC_DESIGN_KIT/symbols/dc_v_source/part" 1 Eddm_part 3890a89d50f5.03.86.56.31.70.00.34.2e 399db67c7221.03.93.22.22.3e.04.28.aa
 R csduv 18 "$MGC_DESIGN_KIT/symbols/dc_v_source/dc_v_source" 1 mgc_symbol 3890a89d50ce.03.86.56.31.70.00.34.2e 399db67c7221.03.93.22.22.3e.05.28.aa
-O 10
-P "eddm__stream_to_use" "eddm__propl_dstream"
-R csduv 0 "/home/ece_lab/mentor/ECE4500/Project1/full_add_sub/full_add_sub/schematic" 1 mgc_schematic 5bc9959fcaf1.03.7f.00.00.02.01.50.ed 5bc9959fcaf1.03.7f.00.00.02.00.50.ed
-R csduv 1 "/home/ece_lab/mentor/ECE4500/Project1/two_input_mux/two_input_mux/part" 2 Eddm_part 5bc9954257d6.03.7f.00.00.02.00.4e.ff 5bc98fcb7391.03.7f.00.00.02.00.49.a6
-R csduv 2 "/home/ece_lab/mentor/ECE4500/Project1/two_input_mux/two_input_mux/two_input_mux" 1 mgc_symbol 5bc994f772d0.03.7f.00.00.02.01.4e.ff 5bc994f772d0.03.7f.00.00.02.00.4e.ff
-R csduv 3 "$MGC_DESIGN_KIT/symbols/vdd/part" 1 Eddm_part 3597fa6cdda4.03.86.56.31.87.00.1a.94 399d7a63280d.03.93.22.22.3e.03.28.aa
-R csduv 4 "$MGC_DESIGN_KIT/symbols/vdd/vdd" 1 mgc_symbol 3598062d64ad.03.86.56.31.87.00.1b.10 399d7a63280d.03.93.22.22.3e.02.28.aa
-R csduv 5 "$MGC_DESIGN_KIT/symbols/vss/part" 1 Eddm_part 3597fafab24d.03.86.56.31.87.00.1a.94 399d7a63280e.03.93.22.22.3e.01.28.aa
-R csduv 6 "$MGC_DESIGN_KIT/symbols/vss/vss" 1 mgc_symbol 359806396644.03.86.56.31.87.00.1b.10 399d7a63280e.03.93.22.22.3e.00.28.aa
-R csduv 7 "$MGC_DESIGN_KIT/symbols/portin/part" 1 Eddm_part 35773eaadc18.03.86.56.31.87.00.0e.9f 3994813f8cc6.03.93.22.22.3e.00.28.aa
-R csduv 8 "$MGC_DESIGN_KIT/symbols/portin/portin" 1 mgc_symbol 35773d18855d.03.86.56.31.87.00.0e.9f 3994813f8cc5.03.93.22.22.3e.01.28.aa
-R csduv 9 "$MGC_DESIGN_KIT/symbols/portout/part" 1 Eddm_part 35785fdc394b.03.86.56.31.87.00.12.30 39948143d242.03.93.22.22.3e.02.28.aa
-R csduv 10 "$MGC_DESIGN_KIT/symbols/portout/portout" 1 mgc_symbol 357ed6243e32.03.86.56.31.87.00.28.94 39948143d242.03.93.22.22.3e.01.28.aa
-R csduv 13 "/home/ece_lab/mentor/ECE4500/Project1/two_input_xor/two_input_xor/part" 2 Eddm_part 5bca400ce482.03.7f.00.00.02.00.65.be 5bca3f15478f.03.7f.00.00.02.00.65.be
-R csduv 14 "/home/ece_lab/mentor/ECE4500/Project1/two_input_xor/two_input_xor/two_input_xor" 1 mgc_symbol 5bca3fd3d331.03.7f.00.00.02.00.65.be 5bca3fd3d330.03.7f.00.00.02.00.65.be

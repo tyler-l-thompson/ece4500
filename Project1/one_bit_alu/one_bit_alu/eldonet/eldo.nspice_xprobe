@@ -21,36 +21,20 @@ Cell PMOS
    Pin B B
 End Cell
 
-Cell TWO_INPUT_OR
+Cell TWO_INPUT_XOR
    Pin F F
+   Pin A A
    Pin A_not A_NOT
-   Pin B_not B_NOT
+   Pin B B
    Pin VDD VDD
-   Pin VSS VSS
-   Net N$11 N$11
    Net F F
-   Net B_not B_NOT
+   Net B B
    Net A_not A_NOT
+   Net A A
    Net VDD_esc1 VDD_ESC1
-   Net VSS_esc2 VSS_ESC2
-   Global VSS VSS
    Global VDD VDD
-   Inst M3 M3 NMOS
-   Inst M2 M2 NMOS
-   Inst M1 M1 PMOS
-End Cell
-
-Cell ONE_INPUT_INVERTER
-   Pin OUT OUT
-   Pin IN IN
-   Pin VDD VDD
-   Pin VSS VSS
-   Net IN IN
-   Net OUT OUT
-   Net VDD_esc1 VDD_ESC1
-   Net VSS_esc2 VSS_ESC2
-   Global VSS VSS
-   Global VDD VDD
+   Inst M4 M4 NMOS
+   Inst M3 M3 PMOS
    Inst M2 M2 NMOS
    Inst M1 M1 PMOS
 End Cell
@@ -73,24 +57,6 @@ Cell TWO_INPUT_MUX
    Inst M3 M3 NMOS
    Inst M2 M2 PMOS
    Inst M1 M1 NMOS
-End Cell
-
-Cell TWO_INPUT_XOR
-   Pin F F
-   Pin A A
-   Pin A_not A_NOT
-   Pin B B
-   Pin VDD VDD
-   Net F F
-   Net B B
-   Net A_not A_NOT
-   Net A A
-   Net VDD_esc1 VDD_ESC1
-   Global VDD VDD
-   Inst M4 M4 NMOS
-   Inst M3 M3 PMOS
-   Inst M2 M2 NMOS
-   Inst M1 M1 PMOS
 End Cell
 
 Cell FULL_ADD_SUB
@@ -137,6 +103,40 @@ Cell DC_V_SOURCE
    Pin NEG NEG
 End Cell
 
+Cell ONE_INPUT_INVERTER
+   Pin OUT OUT
+   Pin IN IN
+   Pin VDD VDD
+   Pin VSS VSS
+   Net IN IN
+   Net OUT OUT
+   Net VDD_esc1 VDD_ESC1
+   Net VSS_esc2 VSS_ESC2
+   Global VSS VSS
+   Global VDD VDD
+   Inst M2 M2 NMOS
+   Inst M1 M1 PMOS
+End Cell
+
+Cell TWO_INPUT_OR
+   Pin F F
+   Pin A_not A_NOT
+   Pin B_not B_NOT
+   Pin VDD VDD
+   Pin VSS VSS
+   Net N$11 N$11
+   Net F F
+   Net B_not B_NOT
+   Net A_not A_NOT
+   Net VDD_esc1 VDD_ESC1
+   Net VSS_esc2 VSS_ESC2
+   Global VSS VSS
+   Global VDD VDD
+   Inst M3 M3 NMOS
+   Inst M2 M2 NMOS
+   Inst M1 M1 PMOS
+End Cell
+
 Cell TWO_INPUT_AND
    Pin F F
    Pin A A
@@ -168,35 +168,41 @@ Cell #top#
    Pin Bin_Cin BIN_CIN
    Pin CC0 CC0
    Pin CC3 CC3
-   Net N$10 N$10
-   Net N$22 N$22
-   Net N$38 N$38
+   Pin VDD VDD
+   Pin VSS VSS
+   Net CC1 CC1
+   Net N$109 N$109
    Net N$40 N$40
-   Net N$17 N$17
-   Net Bout_Cout BOUT_COUT
-   Net CC0 CC0
-   Net CC3 CC3
-   Net Bin_Cin BIN_CIN
-   Net Add ADD
+   Net N$38 N$38
+   Net CC1_not CC1_NOT
+   Net N$22 N$22
+   Net N$10 N$10
    Net Sum_Diff SUM_DIFF
-   Net A_xor_B A_XOR_B
-   Net A_not A_NOT
-   Net A_or_B A_OR_B
-   Net A_and_B A_AND_B
+   Net CC3 CC3
+   Net CC0 CC0
+   Net Bout_Cout BOUT_COUT
+   Net Bin_Cin BIN_CIN
    Net B B
+   Net Add ADD
+   Net A_xor_B A_XOR_B
+   Net A_or_B A_OR_B
+   Net A_not A_NOT
+   Net A_and_B A_AND_B
    Net A A
+   Net VDD_esc1 VDD_ESC1
+   Net VSS_esc2 VSS_ESC2
    Global VSS VSS
    Global VDD VDD
-   Inst TWO_INPUT_OR1 X_TWO_INPUT_OR1 TWO_INPUT_OR
-   Inst ONE_INPUT_INVERTER5 X_ONE_INPUT_INVERTER5 ONE_INPUT_INVERTER
-   Inst ONE_INPUT_INVERTER4 X_ONE_INPUT_INVERTER4 ONE_INPUT_INVERTER
-   Inst ONE_INPUT_INVERTER3 X_ONE_INPUT_INVERTER3 ONE_INPUT_INVERTER
-   Inst ONE_INPUT_INVERTER2 X_ONE_INPUT_INVERTER2 ONE_INPUT_INVERTER
-   Inst ONE_INPUT_INVERTER1 X_ONE_INPUT_INVERTER1 ONE_INPUT_INVERTER
-   Inst TWO_INPUT_MUX1 X_TWO_INPUT_MUX1 TWO_INPUT_MUX
-   Inst TWO_INPUT_XOR1 X_TWO_INPUT_XOR1 TWO_INPUT_XOR
    Inst FULL_ADD_SUB1 X_FULL_ADD_SUB1 FULL_ADD_SUB
    Inst V1 V1 DC_V_SOURCE
+   Inst ONE_INPUT_INVERTER2 X_ONE_INPUT_INVERTER2 ONE_INPUT_INVERTER
+   Inst TWO_INPUT_OR1 X_TWO_INPUT_OR1 TWO_INPUT_OR
+   Inst TWO_INPUT_MUX1 X_TWO_INPUT_MUX1 TWO_INPUT_MUX
+   Inst ONE_INPUT_INVERTER3 X_ONE_INPUT_INVERTER3 ONE_INPUT_INVERTER
+   Inst ONE_INPUT_INVERTER4 X_ONE_INPUT_INVERTER4 ONE_INPUT_INVERTER
+   Inst ONE_INPUT_INVERTER5 X_ONE_INPUT_INVERTER5 ONE_INPUT_INVERTER
    Inst TWO_INPUT_AND1 X_TWO_INPUT_AND1 TWO_INPUT_AND
+   Inst ONE_INPUT_INVERTER1 X_ONE_INPUT_INVERTER1 ONE_INPUT_INVERTER
+   Inst TWO_INPUT_XOR1 X_TWO_INPUT_XOR1 TWO_INPUT_XOR
 End Cell
 

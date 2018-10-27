@@ -1,0 +1,11 @@
+A 5 u mgc_symbol 5bd3548abb8e.03.7f.00.00.02.00.16.51 2 2 1 0
+V v 1 2 5bd3548abb8e.03.7f.00.00.02.01.16.51
+F f 1 "Project_1_MUX.smbl_1"
+F o 0 ""
+V v 2 2 5bd48c69a4e9.03.7f.00.00.02.00.18.1f
+F f 2 "Project_1_MUX.smbl_2"
+F o 0 ""
+O 2
+R csduv 0 "/home/ece_lab/mentor/4500/Project_1/Project_1_MUX/part" 3 Eddm_part 5bd48e719011.03.7f.00.00.02.00.18.1f 5bd3549165e9.03.7f.00.00.02.00.16.51
+O 1
+R csduv 0 "/home/ece_lab/mentor/4500/Project_1/Project_1_MUX/part" 1 Eddm_part 5bd3549165e9.03.7f.00.00.02.01.16.51 5bd3549165e9.03.7f.00.00.02.00.16.51

@@ -1,0 +1,29 @@
+* Component: /home/ece_lab/mentor/ECE4500/Project1/four_input_and/four_input_and  Viewpoint: eldonet
+.INCLUDE /home/ece_lab/mentor/ECE4500/Project1/four_input_and/four_input_and/eldonet/four_input_and_eldonet.spi
+.INCLUDE /home/ece_lab/mentor/mgc/mit_0.25.lib
+.OPTION NOASCII
+.OPTION MODWL
+.OPTION ENGNOT
+.OPTION AEX
+
+* --- Singles
+
+* - Analysis Setup - Trans
+.TRAN 0 1600N 0 100N
+
+* --- Waveform Outputs
+.PROBE TRAN V(A) V(B) V(B_NOT) V(C) V(D) V(D_NOT) V(F)
+
+* --- Params
+.TEMP 27
+
+* --- Forces
+VFORCE__A A VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 0000000011111111 R
+VFORCE__B B VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 0000111100001111 R
+VFORCE__B_not B_NOT VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 1111000011110000 R
+VFORCE__C C VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 0011001100110011 R
+VFORCE__D D VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 0101010101010101 R
+VFORCE__D_not D_NOT VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 1010101010101010 R
+
+* --- Libsetup
+

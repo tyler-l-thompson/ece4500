@@ -1,0 +1,14 @@
+A 5 u mgc_schematic 5bd48cdc059a.03.7f.00.00.02.00.71.9f 3 2 1 0
+V v 1 1 5bd48cdc059a.03.7f.00.00.02.01.71.9f
+F o 0 ""
+V v 2 1 5bd48db75db3.03.7f.00.00.02.00.71.9f
+F o 0 ""
+V v 3 1 5bd48e9d93dd.03.7f.00.00.02.00.71.9f
+F o 0 ""
+O 3
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Project1/three_input_and/three_input_and/schematic/sheet1" 2 mgc_sheet 5bd48e9d93ca.03.7f.00.00.02.00.71.9f 5bd48cdc0615.03.7f.00.00.02.00.71.9f
+O 2
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Project1/three_input_and/three_input_and/schematic/sheet1" 1 mgc_sheet 5bd48cdc0615.03.7f.00.00.02.01.71.9f 5bd48cdc0615.03.7f.00.00.02.00.71.9f
+O 1
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Project1/three_input_and/three_input_and/schematic/sheet1" 1 mgc_sheet 5bd48cdc0615.03.7f.00.00.02.01.71.9f 5bd48cdc0615.03.7f.00.00.02.00.71.9f
+P "eddm__refer_state" "eddm__refer_floating"

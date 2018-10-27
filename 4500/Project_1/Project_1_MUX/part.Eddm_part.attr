@@ -1,0 +1,18 @@
+A 5 u Eddm_part 5bd3549165e9.03.7f.00.00.02.00.16.51 3 2 2 0
+V v 1 1 5bd3549165e9.03.7f.00.00.02.01.16.51
+F f 1 "part.part_1"
+V v 2 1 5bd354958548.03.7f.00.00.02.00.16.51
+F f 2 "part.part_2"
+V v 3 1 5bd48e719011.03.7f.00.00.02.00.18.1f
+F f 3 "part.part_3"
+O 3
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "/home/ece_lab/mentor/4500/Project_1/Project_1_MUX/Project_1_MUX" 2 mgc_symbol 5bd48c69a4e9.03.7f.00.00.02.00.18.1f 5bd3548abb8e.03.7f.00.00.02.00.16.51
+R csduv 1 "/home/ece_lab/mentor/4500/Project_1/Project_1_MUX/schematic" 1 mgc_schematic 5bd3498f84db.03.7f.00.00.02.01.16.51 5bd3498f84db.03.7f.00.00.02.00.16.51
+O 2
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "/home/ece_lab/mentor/4500/Project_1/Project_1_MUX/Project_1_MUX" 1 mgc_symbol 5bd3548abb8e.03.7f.00.00.02.01.16.51 5bd3548abb8e.03.7f.00.00.02.00.16.51
+R csduv 1 "/home/ece_lab/mentor/4500/Project_1/Project_1_MUX/schematic" 1 mgc_schematic 5bd3498f84db.03.7f.00.00.02.01.16.51 5bd3498f84db.03.7f.00.00.02.00.16.51
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "/home/ece_lab/mentor/4500/Project_1/Project_1_MUX/Project_1_MUX" 1 mgc_symbol 5bd3548abb8e.03.7f.00.00.02.01.16.51 5bd3548abb8e.03.7f.00.00.02.00.16.51

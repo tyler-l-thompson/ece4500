@@ -1,0 +1,11 @@
+A 5 u mgc_symbol 5bd210817e94.03.7f.00.00.02.00.5f.7e 2 2 1 0
+V v 1 2 5bd210817e95.03.7f.00.00.02.00.5f.7e
+F f 1 "one_bit_alu.smbl_1"
+F o 0 ""
+V v 2 2 5bd212f3289c.03.7f.00.00.02.00.5f.7e
+F f 2 "one_bit_alu.smbl_2"
+F o 0 ""
+O 2
+R csduv 0 "/home/ece_lab/mentor/ECE4500/Project1/one_bit_alu/one_bit_alu/part" 3 Eddm_part 5bd212f328ad.03.7f.00.00.02.00.5f.7e 5bca51799ba5.03.7f.00.00.02.00.05.c7
+O 1
+R csduv 0 "/home/ece_lab/mentor/ECE4500/Project1/one_bit_alu/one_bit_alu/part" 2 Eddm_part 5bd210de19e2.03.7f.00.00.02.00.5f.7e 5bca51799ba5.03.7f.00.00.02.00.05.c7

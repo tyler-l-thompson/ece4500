@@ -1,0 +1,38 @@
+* Component: /home/ece_lab/mentor/ECE4500/Project1/four_bit_alu/four_bit_alu  Viewpoint: eldonet
+.INCLUDE /home/ece_lab/mentor/ECE4500/Project1/four_bit_alu/four_bit_alu/eldonet/four_bit_alu_eldonet.spi
+.INCLUDE /home/ece_lab/mentor/mgc/mit_0.25.lib
+.OPTION NOASCII
+.OPTION MODWL
+.OPTION ENGNOT
+.OPTION AEX
+
+* --- Singles
+
+* - Analysis Setup - Trans
+.TRAN 0 1000N 0 100N
+
+* --- Waveform Outputs
+.PROBE TRAN V(A0) V(A1) V(A2) V(A3) V(B0) V(B1) V(B2) V(B3) V(BIN_CIN)
++ V(BOUT_COUT) V(CC0) V(CC1) V(CC2) V(CC3) V(F0) V(F1) V(F2) V(F3) V(OVF) V(S)
++ V(Z)
+
+* --- Params
+.TEMP 27
+
+* --- Forces
+VFORCE__A0 A0 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 0000111101 R
+VFORCE__A0_1 A1 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 1111100010 R
+VFORCE__A0_2 A2 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 0000010111 R
+VFORCE__A0_3 A3 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 1111111111 R
+VFORCE__A0_4 B0 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 1111110101 R
+VFORCE__A0_5 B1 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 1111111111 R
+VFORCE__A0_6 B2 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 0000000010 R
+VFORCE__A0_7 B3 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 1111111111 R
+VFORCE__A0_8 BIN_CIN VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 0000000000 R
+VFORCE__A0_9 CC0 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 0101011001 R
+VFORCE__A0_10 CC1 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 0011000111 R
+VFORCE__A0_11 CC2 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 0000111111 R
+VFORCE__A0_12 CC3 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 0000000000 R
+
+* --- Libsetup
+

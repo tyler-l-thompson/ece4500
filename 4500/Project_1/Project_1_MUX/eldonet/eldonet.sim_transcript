@@ -1,0 +1,312 @@
+
+Running eldo on linux-B210
+with Eldo libraries :
+/mgc/ams/ixl/lib/libeldoudm.so
+/mgc/ams/ixl/lib/libeldomos1.so
+/mgc/ams/ixl/lib/libeldoekv.so
+/mgc/ams/ixl/lib/libeldomosp9.so
+/mgc/ams/ixl/lib/libeldocsem.so
+/mgc/ams/ixl/lib/libeldomos2.so
+/mgc/ams/ixl/lib/libeldomos3.so
+/mgc/ams/ixl/lib/libeldobip.so
+/mgc/ams/ixl/lib/libeldodio.so
+/mgc/ams/ixl/lib/libeldojfet.so
+/mgc/ams/ixl/lib/libeldosoi.so
+/mgc/ams/ixl/lib/libeldomos4.so
+/mgc/ams/ixl/lib/libeldoasitft.so
+/mgc/ams/ixl/lib/libeldohisim.so
+/mgc/ams/ixl/lib/libeldospmod.so
+/mgc/ams/ixl/lib/libeldopsp.so
+/mgc/ams/ixl/lib/libeldomosvar.so
+/mgc/ams/ixl/lib/libeldomoto.so
+/mgc/ams/ixl/lib/libeldost.so
+/mgc/ams/ixl/lib/libeldobnr.so
+/mgc/ams/ixl/lib/libeldorockw.so
+/mgc/ams/ixl/lib/libeldopubhicum.so
+/mgc/ams/ixl/lib/libeldotftsh.so
+/mgc/ams/ixl/lib/libeldobta.so
+/mgc/ams/ixl/lib/libeldofas.so
+/mgc/ams/ixl/lib/libeldofascm.so
+/mgc/ams/ixl/lib/libeldosdsim.so
+/mgc/ams/ixl/lib/libeldowire.so
+/mgc/ams/ixl/lib/libogr.so loaded.
+
+
+
+              Software under License 
+       Copyright Mentor Graphics Corporation
+
+
+
+
+***** PRE-PROCESSING ...
+
+
+
+***** ANALYSIS ....
+
+Warning 316: In file "./mgc/mit_0.25.lib" line 62:
++   COMMAND .ENDS: The name does not match the .SUBCKT name.
+
+***** 0  error(s). 
+***** 1  warning(s). 
+
+
+
+***** GENERATION ...
+
+Warning 1615: In file "./4500/Project_1/Project_1_MUX/eldonet/Project_1_MUX_eldonet.cir" line 12:
++   COMMAND ".TRAN": Tstep can not be <= 0.0.
++   It is set to Tmax/20.0 = 8.000e-08 s.
+
+***** 0  error(s). 
+***** 2  warning(s). 
+
+
+INFORMATION ABOUT COMPILATION...
+
+
+Memory space allocated (bytes): 58048512
+310 elements
+133 nodes
+70 input signals
+Warning 108:  NODE "CC0": This node is a floating gate.
++   List of MOS devices connected to that node follows:
++   --> X_4INPUT_MUX7.M16
++   --> X_4INPUT_MUX7.M13
++   --> X_4INPUT_MUX7.M12
++   --> X_4INPUT_MUX7.M9
++   --> X_4INPUT_MUX7.M8
++   --> X_4INPUT_MUX7.M5
++   --> X_4INPUT_MUX7.M4
++   --> X_4INPUT_MUX7.M1
++   --> X_4INPUT_MUX6.M16
++   --> X_4INPUT_MUX6.M13
++   --> X_4INPUT_MUX6.M12
++   --> X_4INPUT_MUX6.M9
++   --> X_4INPUT_MUX6.M8
++   --> X_4INPUT_MUX6.M5
++   --> X_4INPUT_MUX6.M4
++   --> X_4INPUT_MUX6.M1
++   --> X_4INPUT_MUX8.M16
++   --> X_4INPUT_MUX8.M13
++   --> X_4INPUT_MUX8.M12
++   --> X_4INPUT_MUX8.M9
++   --> X_4INPUT_MUX8.M8
++   --> X_4INPUT_MUX8.M5
++   --> X_4INPUT_MUX8.M4
++   --> X_4INPUT_MUX8.M1
++   --> X_4INPUT_MUX5.M16
++   --> X_4INPUT_MUX5.M13
++   --> X_4INPUT_MUX5.M12
++   --> X_4INPUT_MUX5.M9
++   --> X_4INPUT_MUX5.M8
++   --> X_4INPUT_MUX5.M5
++   --> X_4INPUT_MUX5.M4
++   --> X_4INPUT_MUX5.M1
++   --> X_4INPUT_MUX4.M16
++   --> X_4INPUT_MUX4.M13
++   --> X_4INPUT_MUX4.M12
++   --> X_4INPUT_MUX4.M9
++   --> X_4INPUT_MUX4.M8
++   --> X_4INPUT_MUX4.M5
++   --> X_4INPUT_MUX4.M4
++   --> X_4INPUT_MUX4.M1
++   --> X_4INPUT_MUX3.M16
++   --> X_4INPUT_MUX3.M13
++   --> X_4INPUT_MUX3.M12
++   --> X_4INPUT_MUX3.M9
++   --> X_4INPUT_MUX3.M8
++   --> X_4INPUT_MUX3.M5
++   --> X_4INPUT_MUX3.M4
++   --> X_4INPUT_MUX3.M1
++   --> X_4INPUT_MUX2.M16
++   --> X_4INPUT_MUX2.M13
++   --> X_4INPUT_MUX2.M12
++   --> X_4INPUT_MUX2.M9
++   --> X_4INPUT_MUX2.M8
++   --> X_4INPUT_MUX2.M5
++   --> X_4INPUT_MUX2.M4
++   --> X_4INPUT_MUX2.M1
++   --> X_4INPUT_MUX1.M16
++   --> X_4INPUT_MUX1.M13
++   --> X_4INPUT_MUX1.M12
++   --> X_4INPUT_MUX1.M9
++   --> X_4INPUT_MUX1.M8
++   --> X_4INPUT_MUX1.M5
++   --> X_4INPUT_MUX1.M4
++   --> X_4INPUT_MUX1.M1
+
+
+
+Warning: A transition time < HMIN (1.000000e-12Sec) found on VFORCE__A_MINUS_B_WITH_BORROW2_47
+HMIN assumed.. Set Eldo option 'HMIN' to a lower value if needed.
+
+
+Warning: A transition time < HMIN (1.000000e-12Sec) found on VFORCE__A_MINUS_B_WITH_BORROW2_51
+HMIN assumed.. Set Eldo option 'HMIN' to a lower value if needed.
+
+
+Warning: A transition time < HMIN (1.000000e-12Sec) found on VFORCE__A_MINUS_B_WITH_BORROW2_53
+HMIN assumed.. Set Eldo option 'HMIN' to a lower value if needed.
+
+
+Warning: A transition time < HMIN (1.000000e-12Sec) found on VFORCE__A_MINUS_B_WITH_BORROW2_54
+HMIN assumed.. Set Eldo option 'HMIN' to a lower value if needed.
+
+
+Warning: A transition time < HMIN (1.000000e-12Sec) found on VFORCE__A_MINUS_B_WITH_BORROW2_55
+HMIN assumed.. Set Eldo option 'HMIN' to a lower value if needed.
+
+
+Warning: A transition time < HMIN (1.000000e-12Sec) found on VFORCE__A_MINUS_B_WITH_BORROW2_56
+HMIN assumed.. Set Eldo option 'HMIN' to a lower value if needed.
+
+
+Warning: A transition time < HMIN (1.000000e-12Sec) found on VFORCE__A_MINUS_B_WITH_BORROW2_57
+HMIN assumed.. Set Eldo option 'HMIN' to a lower value if needed.
+ Reset internal minimun time step.
+hmin value is 2.500000e-04Nanos
+
+Eldo VERSION : ELDO 2010.1 Thu Jul  1 14:15:09 GMT 2010
+
+*** DATE: 27-Oct-2018 11:22:29
+
+*** TITLE: * Component: /home/ece_lab/mentor/4500/Project_1/Project_1_MUX  Viewpoint: eldonet
+
+TEMPERATURE : 27.000000 degrees C
+
+ Reset internal minimun time step.
+hmin value is 2.500000e-04Nanos
+
+Performing DC analysis...
+
+--> Partitioning circuit...
+--> DC Iteration number 0
+ -->Solving block number 1
+ -->Solving block number 2
+ -->Solving block number 3
+ -->Solving block number 4
+--> DC Iteration number 1
+ -->Solving block number 1
+ -->Solving block number 2
+ -->Solving block number 3
+ -->Solving block number 4
+
+***> DC CPU TIME 0s 020ms <***
+
+DC:2 iterations FOR DC analysis
+
+   TOTAL POWER DISSIPATION:  206.8456P   WATTS
+
+
+Eldo NEWTON: VNTOL=1.000000e-06 RELTOL=7.500000e-04
+
+Connecting to JWDB server, please wait...
+connected to wdb server : -jwdbhost linux-B210 -jwdbport 47291
+
+Compute from 0.000000 Nano to 1.600000E+03 Nano
+................................................
+Simulation progress           : 10% (t = 171.0922 N)
+Elapsed CPU time              :  0h  0mn  0s 110    ( 0h  0mn  0s 110)
+................................................
+Simulation progress           : 20% (t = 336.0406 N)
+Elapsed CPU time              :  0h  0mn  0s 390    ( 0h  0mn  0s 500)
+................................................
+Simulation progress           : 30% (t = 499.9995 N)
+Elapsed CPU time              :  0h  0mn  0s 150    ( 0h  0mn  0s 650)
+ Newton: No convergence at time :600.000472Nano ; try to pass over...
+  pb on or around node X_4INPUT_MUX2.M7_S
+
+May be setting EPS to a lower value, for instance setting
+.OPTION EPS = 1u
+would help solving this problem..
+TIME 6.000005e-07: end of non-convergence points
+................................................
+Simulation progress           : 40% (t = 656.7327 N)
+Elapsed CPU time              :  0h  0mn  0s 170    ( 0h  0mn  0s 820)
+................................................
+Simulation progress           : 50% (t = 800.0001 N)
+Elapsed CPU time              :  0h  0mn  0s  50    ( 0h  0mn  0s 870)
+ Newton: No convergence at time :800.000504Nano ; try to pass over...
+  pb on or around node X_4INPUT_MUX13.M7_S
+
+May be setting EPS to a lower value, for instance setting
+.OPTION EPS = 1u
+would help solving this problem..
+TIME 8.000005e-07: end of non-convergence points
+................................................
+Simulation progress           : 60% (t = 962.3464 N)
+Elapsed CPU time              :  0h  0mn  0s 310    ( 0h  0mn  1s 180)
+ Newton: No convergence at time :1.000000E+03Nano ; try to pass over...
+  pb on or around node X_4INPUT_MUX2.M7_S
+
+May be setting EPS to a lower value, for instance setting
+.OPTION EPS = 1u
+would help solving this problem..
+TIME 1.000000e-06: end of non-convergence points
+................................................
+Simulation progress           : 70% (t = 1.1358 U)
+Elapsed CPU time              :  0h  0mn  0s 310    ( 0h  0mn  1s 490)
+ Newton: No convergence at time :1.200000E+03Nano ; try to pass over...
+  pb on or around node N$109
+
+May be setting EPS to a lower value, for instance setting
+.OPTION EPS = 1u
+would help solving this problem..
+TIME 1.200000e-06: end of non-convergence points
+ Newton: No convergence at time :1.200000E+03Nano ; try to pass over...
+  pb on or around node X_4INPUT_MUX7.M3_D
+
+May be setting EPS to a lower value, for instance setting
+.OPTION EPS = 1u
+would help solving this problem..
+ Newton: No convergence at time :1.200000E+03Nano ; try to pass over...
+  pb on or around node X_4INPUT_MUX7.M15_S
+
+May be setting EPS to a lower value, for instance setting
+.OPTION EPS = 1u
+would help solving this problem..
+TIME 1.200001e-06: end of non-convergence points
+................................................
+Simulation progress           : 80% (t = 1.3000 U)
+Elapsed CPU time              :  0h  0mn  0s 550    ( 0h  0mn  2s  40)
+ Newton: No convergence at time :1.400000E+03Nano ; try to pass over...
+  pb on or around node X_4INPUT_MUX8.M3_D
+
+May be setting EPS to a lower value, for instance setting
+.OPTION EPS = 1u
+would help solving this problem..
+TIME 1.400000e-06: end of non-convergence points
+................................................
+Simulation progress           : 90% (t = 1.4485 U)
+Elapsed CPU time              :  0h  0mn  0s 420    ( 0h  0mn  2s 460)
+................................................
+Simulation progress           : 100% (t = 1.6000 U)
+Elapsed CPU time              :  0h  0mn  0s 190    ( 0h  0mn  2s 650)
+
+
+***>Current simulation completed
+
+
+
+
+SIMULATION INFORMATION 
+memory size allocated in bytes 59297792
+Latency: 0.000000%
+average number of newton iterations: 4.604087
+nb of components: 670
+nb of nodes: 493
+nb of MOS or BIP calls: 1603313
+Number of steps computed: 725
+
+***>CPU TIME 2s 650ms <***
+
+***>MESSAGE SUMMARY: 3 warnings
+
+***>GLOBAL CPU TIME 2s 730ms <***
+
+
+***>GLOBAL ELAPSED TIME 5s <***
+
+

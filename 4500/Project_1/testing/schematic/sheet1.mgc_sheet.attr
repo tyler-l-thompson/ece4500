@@ -1,0 +1,23 @@
+A 5 u mgc_sheet 5bd499c696f0.03.7f.00.00.02.00.31.92 2 2 5 0
+V v 1 3 5bd499c696f1.03.7f.00.00.02.00.31.92
+F f 1 "sheet1.ssht_1"
+F f 1 "sheet1.sgfx_1"
+F o 0 
+V v 2 3 5bd49b9cc270.03.7f.00.00.02.00.31.92
+F f 2 "sheet1.ssht_2"
+F f 2 "sheet1.sgfx_2"
+F o 0 
+O 2
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "/home/ece_lab/mentor/4500/Project_1/testing/schematic" 1 mgc_schematic 5bd499c69634.03.7f.00.00.02.00.31.92 5bd499c69633.03.7f.00.00.02.00.31.92
+R csduv 1 "/home/ece_lab/mentor/4500/Project_1/Project_1_MUX/part" 3 Eddm_part 5bd48e719011.03.7f.00.00.02.00.18.1f 5bd3549165e9.03.7f.00.00.02.00.16.51
+R csduv 2 "/home/ece_lab/mentor/4500/Project_1/Project_1_MUX/Project_1_MUX" 2 mgc_symbol 5bd48c69a4e9.03.7f.00.00.02.00.18.1f 5bd3548abb8e.03.7f.00.00.02.00.16.51
+R csduv 3 "/home/ece_lab/mentor/4500/Project_1/Shifts/part" 2 Eddm_part 5bd4960f267d.03.7f.00.00.02.00.20.8d 5bd47fbf91aa.03.7f.00.00.02.00.20.8d
+R csduv 4 "/home/ece_lab/mentor/4500/Project_1/Shifts/Shifts" 1 mgc_symbol 5bd4954e3d0a.03.7f.00.00.02.01.20.8d 5bd4954e3d0a.03.7f.00.00.02.00.20.8d
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "/home/ece_lab/mentor/4500/Project_1/testing/schematic" 1 mgc_schematic 5bd499c69634.03.7f.00.00.02.00.31.92 5bd499c69633.03.7f.00.00.02.00.31.92
+R csduv 1 "/home/ece_lab/mentor/4500/Project_1/Project_1_MUX/part" 3 Eddm_part 5bd48e719011.03.7f.00.00.02.00.18.1f 5bd3549165e9.03.7f.00.00.02.00.16.51
+R csduv 2 "/home/ece_lab/mentor/4500/Project_1/Project_1_MUX/Project_1_MUX" 2 mgc_symbol 5bd48c69a4e9.03.7f.00.00.02.00.18.1f 5bd3548abb8e.03.7f.00.00.02.00.16.51
+R csduv 3 "/home/ece_lab/mentor/4500/Project_1/Shifts/part" 2 Eddm_part 5bd4960f267d.03.7f.00.00.02.00.20.8d 5bd47fbf91aa.03.7f.00.00.02.00.20.8d
+R csduv 4 "/home/ece_lab/mentor/4500/Project_1/Shifts/Shifts" 1 mgc_symbol 5bd4954e3d0a.03.7f.00.00.02.01.20.8d 5bd4954e3d0a.03.7f.00.00.02.00.20.8d

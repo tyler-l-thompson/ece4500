@@ -1,0 +1,305 @@
+# This file provides name mapping information for all objects
+# on the schematic design.  It provides a mapping for each
+# object between its name on the schematic and its name in the netlist.
+version 1.0
+
+Globals
+   VDD VDD
+   VSS VSS
+End Globals
+
+Cell NMOS
+   Pin D D
+   Pin G G
+   Pin S S
+End Cell
+
+Cell PMOS
+   Pin D D
+   Pin G G
+   Pin S S
+   Pin B B
+End Cell
+
+Cell 4INPUT_MUX
+   Pin F0 F0
+   Pin F1 F1
+   Pin F2 F2
+   Pin F3 F3
+   Pin A0 A0
+   Pin A1 A1
+   Pin A2 A2
+   Pin A3 A3
+   Pin B0 B0
+   Pin B1 B1
+   Pin B2 B2
+   Pin B3 B3
+   Pin Sel SEL
+   Pin Sel_NOT SEL_NOT
+   Net A0 A0
+   Net F3 F3
+   Net F2 F2
+   Net F1 F1
+   Net F0 F0
+   Net B3 B3
+   Net A3 A3
+   Net B2 B2
+   Net A2 A2
+   Net B1 B1
+   Net A1 A1
+   Net B0 B0
+   Net Sel_NOT SEL_NOT
+   Net Sel SEL
+   Global VDD VDD
+   Inst M16 M16 NMOS
+   Inst M15 M15 PMOS
+   Inst M14 M14 NMOS
+   Inst M13 M13 PMOS
+   Inst M12 M12 NMOS
+   Inst M11 M11 PMOS
+   Inst M10 M10 NMOS
+   Inst M9 M9 PMOS
+   Inst M8 M8 NMOS
+   Inst M7 M7 PMOS
+   Inst M6 M6 NMOS
+   Inst M5 M5 PMOS
+   Inst M4 M4 NMOS
+   Inst M3 M3 PMOS
+   Inst M2 M2 NMOS
+   Inst M1 M1 PMOS
+End Cell
+
+Cell DC_V_SOURCE
+   Pin POS POS
+   Pin NEG NEG
+End Cell
+
+Cell #top#
+   Pin F0 F0
+   Pin F1 F1
+   Pin F2 F2
+   Pin F3 F3
+   Pin A0 A0
+   Pin A0_NOT A0_NOT
+   Pin A1 A1
+   Pin A1_NOT A1_NOT
+   Pin A2 A2
+   Pin A2_NOT A2_NOT
+   Pin A3 A3
+   Pin A3_NOT A3_NOT
+   Pin A_AND_B0 A_AND_B0
+   Pin A_AND_B1 A_AND_B1
+   Pin A_AND_B2 A_AND_B2
+   Pin A_AND_B3 A_AND_B3
+   Pin A_MINUS_B0 A_MINUS_B0
+   Pin A_MINUS_B1 A_MINUS_B1
+   Pin A_MINUS_B2 A_MINUS_B2
+   Pin A_MINUS_B3 A_MINUS_B3
+   Pin A_MINUS_B_WITH_BORROW0 A_MINUS_B_WITH_BORROW0
+   Pin A_MINUS_B_WITH_BORROW1 A_MINUS_B_WITH_BORROW1
+   Pin A_MINUS_B_WITH_BORROW2 A_MINUS_B_WITH_BORROW2
+   Pin A_MINUS_B_WITH_BORROW3 A_MINUS_B_WITH_BORROW3
+   Pin A_OR_B0 A_OR_B0
+   Pin A_OR_B1 A_OR_B1
+   Pin A_OR_B2 A_OR_B2
+   Pin A_OR_B3 A_OR_B3
+   Pin A_PLUS_B0 A_PLUS_B0
+   Pin A_PLUS_B1 A_PLUS_B1
+   Pin A_PLUS_B2 A_PLUS_B2
+   Pin A_PLUS_B3 A_PLUS_B3
+   Pin A_PLUS_B_WITH_CARRY0 A_PLUS_B_WITH_CARRY0
+   Pin A_PLUS_B_WITH_CARRY1 A_PLUS_B_WITH_CARRY1
+   Pin A_PLUS_B_WITH_CARRY2 A_PLUS_B_WITH_CARRY2
+   Pin A_PLUS_B_WITH_CARRY3 A_PLUS_B_WITH_CARRY3
+   Pin A_XOR_B0 A_XOR_B0
+   Pin A_XOR_B1 A_XOR_B1
+   Pin A_XOR_B2 A_XOR_B2
+   Pin A_XOR_B3 A_XOR_B3
+   Pin ASLA0 ASLA0
+   Pin ASLA1 ASLA1
+   Pin ASLA2 ASLA2
+   Pin ASLA3 ASLA3
+   Pin ASRA0 ASRA0
+   Pin ASRA1 ASRA1
+   Pin ASRA2 ASRA2
+   Pin ASRA3 ASRA3
+   Pin B0 B0
+   Pin B1 B1
+   Pin B2 B2
+   Pin B3 B3
+   Pin B_PLUS_ONE0 B_PLUS_ONE0
+   Pin B_PLUS_ONE1 B_PLUS_ONE1
+   Pin B_PLUS_ONE2 B_PLUS_ONE2
+   Pin B_PLUS_ONE3 B_PLUS_ONE3
+   Pin CC0 CC0
+   Pin CC0_NOT CC0_NOT
+   Pin CC1 CC1
+   Pin CC1_NOT CC1_NOT
+   Pin CC2 CC2
+   Pin CC2_NOT CC2_NOT
+   Pin CC3 CC3
+   Pin CC3_NOT CC3_NOT
+   Pin LSLA0 LSLA0
+   Pin LSLA1 LSLA1
+   Pin LSLA2 LSLA2
+   Pin LSLA3 LSLA3
+   Pin LSRA0 LSRA0
+   Pin LSRA1 LSRA1
+   Pin LSRA2 LSRA2
+   Pin LSRA3 LSRA3
+   Pin ZERO0 ZERO0
+   Pin ZERO1 ZERO1
+   Pin ZERO2 ZERO2
+   Pin ZERO3 ZERO3
+   Net N$291 N$291
+   Net N$290 N$290
+   Net N$289 N$289
+   Net N$288 N$288
+   Net N$109 N$109
+   Net N$101 N$101
+   Net N$103 N$103
+   Net N$105 N$105
+   Net N$12 N$12
+   Net N$9 N$9
+   Net N$83 N$83
+   Net N$81 N$81
+   Net N$79 N$79
+   Net N$77 N$77
+   Net N$75 N$75
+   Net N$73 N$73
+   Net N$71 N$71
+   Net N$69 N$69
+   Net N$99 N$99
+   Net N$97 N$97
+   Net N$95 N$95
+   Net N$93 N$93
+   Net N$91 N$91
+   Net N$89 N$89
+   Net N$87 N$87
+   Net N$85 N$85
+   Net N$67 N$67
+   Net N$65 N$65
+   Net N$63 N$63
+   Net N$61 N$61
+   Net N$59 N$59
+   Net N$57 N$57
+   Net N$55 N$55
+   Net N$53 N$53
+   Net N$51 N$51
+   Net N$49 N$49
+   Net N$47 N$47
+   Net N$45 N$45
+   Net N$41 N$41
+   Net N$39 N$39
+   Net N$38 N$38
+   Net N$36 N$36
+   Net N$33 N$33
+   Net N$31 N$31
+   Net N$29 N$29
+   Net N$27 N$27
+   Net N$25 N$25
+   Net N$24 N$24
+   Net N$22 N$22
+   Net N$20 N$20
+   Net N$18 N$18
+   Net N$16 N$16
+   Net N$14 N$14
+   Net N$8 N$8
+   Net N$4 N$4
+   Net N$2 N$2
+   Net A_AND_B3 A_AND_B3
+   Net A_AND_B2 A_AND_B2
+   Net A_AND_B1 A_AND_B1
+   Net A_AND_B0 A_AND_B0
+   Net A3_NOT A3_NOT
+   Net A2_NOT A2_NOT
+   Net A1_NOT A1_NOT
+   Net A0_NOT A0_NOT
+   Net A3 A3
+   Net A2 A2
+   Net A1 A1
+   Net A0 A0
+   Net ASRA0 ASRA0
+   Net ASLA3 ASLA3
+   Net ASLA2 ASLA2
+   Net ASLA1 ASLA1
+   Net ASLA0 ASLA0
+   Net LSRA3 LSRA3
+   Net LSRA2 LSRA2
+   Net LSRA1 LSRA1
+   Net LSRA0 LSRA0
+   Net LSLA3 LSLA3
+   Net LSLA2 LSLA2
+   Net LSLA1 LSLA1
+   Net LSLA0 LSLA0
+   Net B3 B3
+   Net B2 B2
+   Net B1 B1
+   Net B0 B0
+   Net A_MINUS_B3 A_MINUS_B3
+   Net A_MINUS_B2 A_MINUS_B2
+   Net A_MINUS_B1 A_MINUS_B1
+   Net A_MINUS_B0 A_MINUS_B0
+   Net A_PLUS_B3 A_PLUS_B3
+   Net A_PLUS_B2 A_PLUS_B2
+   Net A_PLUS_B1 A_PLUS_B1
+   Net A_PLUS_B0 A_PLUS_B0
+   Net A_XOR_B3 A_XOR_B3
+   Net A_XOR_B2 A_XOR_B2
+   Net A_XOR_B1 A_XOR_B1
+   Net A_XOR_B0 A_XOR_B0
+   Net A_OR_B3 A_OR_B3
+   Net A_OR_B2 A_OR_B2
+   Net A_OR_B1 A_OR_B1
+   Net F3 F3
+   Net F2 F2
+   Net F1 F1
+   Net F0 F0
+   Net CC2_NOT CC2_NOT
+   Net CC2 CC2
+   Net CC1_NOT CC1_NOT
+   Net CC1 CC1
+   Net CC3 CC3
+   Net CC3_NOT CC3_NOT
+   Net CC0_NOT CC0_NOT
+   Net CC0 CC0
+   Net A_OR_B0 A_OR_B0
+   Net B_PLUS_ONE3 B_PLUS_ONE3
+   Net B_PLUS_ONE2 B_PLUS_ONE2
+   Net B_PLUS_ONE1 B_PLUS_ONE1
+   Net B_PLUS_ONE0 B_PLUS_ONE0
+   Net A_MINUS_B_WITH_BORROW3 A_MINUS_B_WITH_BORROW3
+   Net A_MINUS_B_WITH_BORROW2 A_MINUS_B_WITH_BORROW2
+   Net A_MINUS_B_WITH_BORROW1 A_MINUS_B_WITH_BORROW1
+   Net A_MINUS_B_WITH_BORROW0 A_MINUS_B_WITH_BORROW0
+   Net A_PLUS_B_WITH_CARRY3 A_PLUS_B_WITH_CARRY3
+   Net A_PLUS_B_WITH_CARRY2 A_PLUS_B_WITH_CARRY2
+   Net A_PLUS_B_WITH_CARRY1 A_PLUS_B_WITH_CARRY1
+   Net A_PLUS_B_WITH_CARRY0 A_PLUS_B_WITH_CARRY0
+   Net ZERO3 ZERO3
+   Net ZERO2 ZERO2
+   Net ZERO1 ZERO1
+   Net ZERO0 ZERO0
+   Net ASRA3 ASRA3
+   Net ASRA2 ASRA2
+   Net ASRA1 ASRA1
+   Global VDD VDD
+   Global VSS VSS
+   Inst 4INPUT_MUX7 X_4INPUT_MUX7 4INPUT_MUX
+   Inst 4INPUT_MUX6 X_4INPUT_MUX6 4INPUT_MUX
+   Inst V1 V1 DC_V_SOURCE
+   Inst 4INPUT_MUX15 X_4INPUT_MUX15 4INPUT_MUX
+   Inst 4INPUT_MUX14 X_4INPUT_MUX14 4INPUT_MUX
+   Inst 4INPUT_MUX13 X_4INPUT_MUX13 4INPUT_MUX
+   Inst 4INPUT_MUX12 X_4INPUT_MUX12 4INPUT_MUX
+   Inst 4INPUT_MUX11 X_4INPUT_MUX11 4INPUT_MUX
+   Inst 4INPUT_MUX10 X_4INPUT_MUX10 4INPUT_MUX
+   Inst 4INPUT_MUX9 X_4INPUT_MUX9 4INPUT_MUX
+   Inst 4INPUT_MUX8 X_4INPUT_MUX8 4INPUT_MUX
+   Inst 4INPUT_MUX5 X_4INPUT_MUX5 4INPUT_MUX
+   Inst 4INPUT_MUX4 X_4INPUT_MUX4 4INPUT_MUX
+   Inst 4INPUT_MUX3 X_4INPUT_MUX3 4INPUT_MUX
+   Inst 4INPUT_MUX2 X_4INPUT_MUX2 4INPUT_MUX
+   Inst 4INPUT_MUX1 X_4INPUT_MUX1 4INPUT_MUX
+End Cell
+

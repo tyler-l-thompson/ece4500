@@ -1,0 +1,46 @@
+*
+* .CONNECT statements
+*
+.CONNECT VSS 0
+
+
+* ELDO netlist generated with ICnet by 'ece_lab' on Sat Oct 27 2018 at 12:40:16
+
+*
+* Globals.
+*
+.global VSS VDD
+
+*
+* Component pathname : /home/ece_lab/mentor/ECE4500/Project1/one_input_inverter/one_input_inverter
+*
+.subckt ONE_INPUT_INVERTER  OUT IN VDD_ESC1 VSS_ESC2
+
+        .CONNECT VSS VSS_ESC2
+        .CONNECT VDD VDD_ESC1
+        M2 OUT IN VSS VSS NMOS L=1.2u W=2.25u M=1
+        M1 OUT IN VDD VDD PMOS L=1.2u W=6.75u M=1
+.ends ONE_INPUT_INVERTER
+
+*
+* Component pathname : /home/ece_lab/mentor/ECE4500/Project1/two_input_and_2/two_input_and
+*
+.subckt TWO_INPUT_AND  F A B B_NOT VDD_ESC1
+
+        .CONNECT VDD VDD_ESC1
+        M5 A B F VSS NMOS L=1.2u W=2.4u M=1
+        M4 F B_NOT B VSS NMOS L=1.2u W=2.4u M=1
+        M3 A B F VSS NMOS L=1.2u W=2.4u M=1
+        M2 A B_NOT F VDD PMOS L=1.2u W=2.4u M=1
+.ends TWO_INPUT_AND
+
+*
+* MAIN CELL: Component pathname : /home/ece_lab/mentor/ECE4500/Project1/four_input_and/four_input_and
+*
+        V1 VDD VSS DC 2.5V
+        X_ONE_INPUT_INVERTER1 N$4 N$5 VDD VSS ONE_INPUT_INVERTER
+        X_TWO_INPUT_AND3 F N$7 N$5 N$4 VDD TWO_INPUT_AND
+        X_TWO_INPUT_AND2 N$5 C D D_NOT VDD TWO_INPUT_AND
+        X_TWO_INPUT_AND1 N$7 A B B_NOT VDD TWO_INPUT_AND
+*
+.end

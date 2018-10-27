@@ -1,0 +1,12 @@
+A 5 u Eddm_part 5bd47fbf91aa.03.7f.00.00.02.00.20.8d 2 2 2 0
+V v 1 1 5bd47fbf91aa.03.7f.00.00.02.01.20.8d
+F f 1 "part.part_1"
+V v 2 1 5bd4960f267d.03.7f.00.00.02.00.20.8d
+F f 2 "part.part_2"
+O 2
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "/home/ece_lab/mentor/4500/Project_1/Shifts/schematic" 1 mgc_schematic 5bd47a560f51.03.7f.00.00.02.01.20.8d 5bd47a560f51.03.7f.00.00.02.00.20.8d
+R csduv 1 "/home/ece_lab/mentor/4500/Project_1/Shifts/Shifts" 1 mgc_symbol 5bd4954e3d0a.03.7f.00.00.02.01.20.8d 5bd4954e3d0a.03.7f.00.00.02.00.20.8d
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "/home/ece_lab/mentor/4500/Project_1/Shifts/schematic" 1 mgc_schematic 5bd47a560f51.03.7f.00.00.02.01.20.8d 5bd47a560f51.03.7f.00.00.02.00.20.8d

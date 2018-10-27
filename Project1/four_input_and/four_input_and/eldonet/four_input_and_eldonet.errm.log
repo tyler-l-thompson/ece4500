@@ -1,0 +1,4 @@
+START report: Sat Oct 27 12:40:17 2018 
+** Warning: (eldo - 1615)  In file "./ECE4500/Project1/four_input_and/four_input_and/eldonet/four_input_and_eldonet.cir" line 12:
++   COMMAND ".TRAN": Tstep can not be <= 0.0.
++   It is set to Tmax/20.0 = 8.000e-08 s.

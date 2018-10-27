@@ -1,0 +1,88 @@
+# This file provides name mapping information for all objects
+# on the schematic design.  It provides a mapping for each
+# object between its name on the schematic and its name in the netlist.
+version 1.0
+
+Globals
+   VSS VSS
+   VDD VDD
+End Globals
+
+Cell DC_V_SOURCE
+   Pin POS POS
+   Pin NEG NEG
+End Cell
+
+Cell NMOS
+   Pin D D
+   Pin G G
+   Pin S S
+End Cell
+
+Cell PMOS
+   Pin D D
+   Pin G G
+   Pin S S
+   Pin B B
+End Cell
+
+Cell ONE_INPUT_INVERTER
+   Pin OUT OUT
+   Pin IN IN
+   Pin VDD VDD
+   Pin VSS VSS
+   Net IN IN
+   Net OUT OUT
+   Net VDD_esc1 VDD_ESC1
+   Net VSS_esc2 VSS_ESC2
+   Global VSS VSS
+   Global VDD VDD
+   Inst M2 M2 NMOS
+   Inst M1 M1 PMOS
+End Cell
+
+Cell TWO_INPUT_AND
+   Pin F F
+   Pin A A
+   Pin B B
+   Pin B_not B_NOT
+   Pin VDD VDD
+   Net F F
+   Net B_not B_NOT
+   Net B B
+   Net A A
+   Net VDD_esc1 VDD_ESC1
+   Global VDD VDD
+   Inst M5 M5 NMOS
+   Inst M4 M4 NMOS
+   Inst M3 M3 NMOS
+   Inst M2 M2 PMOS
+End Cell
+
+Cell #top#
+   Pin F F
+   Pin A A
+   Pin B B
+   Pin B_not B_NOT
+   Pin C C
+   Pin D D
+   Pin D_not D_NOT
+   Net N$4 N$4
+   Net N$5 N$5
+   Net N$7 N$7
+   Net F F
+   Net A A
+   Net B B
+   Net B_not B_NOT
+   Net C C
+   Net D D
+   Net D_not D_NOT
+   Global VSS VSS
+   Global VDD VDD
+   Inst V1 V1 DC_V_SOURCE
+   Inst ONE_INPUT_INVERTER1 X_ONE_INPUT_INVERTER1 ONE_INPUT_INVERTER
+   Inst TWO_INPUT_AND3 X_TWO_INPUT_AND3 TWO_INPUT_AND
+   Inst TWO_INPUT_AND2 X_TWO_INPUT_AND2 TWO_INPUT_AND
+   Inst TWO_INPUT_AND1 X_TWO_INPUT_AND1 TWO_INPUT_AND
+End Cell
+

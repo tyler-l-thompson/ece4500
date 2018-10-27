@@ -1,0 +1,6 @@
+A 5 u Eddm_ba_mgr 5bd4947d33d2.03.7f.00.00.02.00.71.9f 1 2 1 0
+V v 1 1 5bd4947d33d2.03.7f.00.00.02.01.71.9f
+F f 1 "eldonet.ba_1"
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Project1/four_input_and/four_input_and/eldonet" 1 Eddm_design_viewpoint 5bd4947d3321.03.7f.00.00.02.01.71.9f 5bd4947d3321.03.7f.00.00.02.00.71.9f

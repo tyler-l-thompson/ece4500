@@ -1,0 +1,6 @@
+A 5 u mgc_symbol 5bd487f74f41.03.7f.00.00.02.00.28.90 1 2 1 0
+V v 1 2 5bd487f74f41.03.7f.00.00.02.01.28.90
+F f 1 "2_1_MUX.smbl_1"
+F o 0 
+O 1
+R csduv 0 "/home/ece_lab/mentor/4500/Project_1/test/part" 1 Eddm_part 5bd4882650c2.03.7f.00.00.02.01.28.90 5bd4882650c2.03.7f.00.00.02.00.28.90

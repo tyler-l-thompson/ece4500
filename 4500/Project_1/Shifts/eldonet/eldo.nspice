@@ -1,0 +1,37 @@
+* ELDO netlist generated with ICnet by 'ece_lab' on Sat Oct 27 2018 at 12:40:41
+
+*
+* Globals.
+*
+.global VDD VSS
+
+*
+* MAIN CELL: Component pathname : /home/ece_lab/mentor/4500/Project_1/Shifts
+*
+        M24 VSS CC0 OVF VSS NMOS L=1.2u W=2u M=1
+        M23 VSS CC0_NOT OVF VDD PMOS L=1.2u W=7.5u M=1
+        M22 N$30 CC0_NOT OVF VSS NMOS L=1.2u W=2u M=1
+        M6 A2 CC0_NOT F3 VSS NMOS L=1.2u W=2u M=1
+        M21 N$30 CC0 OVF VDD PMOS L=1.2u W=7.5u M=1
+        M19 A1 CC0_NOT F0 VDD PMOS L=1.2u W=7.5u M=1
+        M18 VSS CC0_NOT F0 VSS NMOS L=1.2u W=2u M=1
+        M17 VSS CC0 F0 VDD PMOS L=1.2u W=7.5u M=1
+        M16 A2 CC0 F1 VSS NMOS L=1.2u W=2u M=1
+        M15 A2 CC0_NOT F1 VDD PMOS L=1.2u W=7.5u M=1
+        M14 A0 CC0_NOT F1 VSS NMOS L=1.2u W=2u M=1
+        M13 A0 CC0 F1 VDD PMOS L=1.2u W=7.5u M=1
+        M12 A3 CC0 F2 VSS NMOS L=1.2u W=2u M=1
+        M11 A3 CC0_NOT F2 VDD PMOS L=1.2u W=7.5u M=1
+        M10 A1 CC0_NOT F2 VSS NMOS L=1.2u W=2u M=1
+        M9 A1 CC0 F2 VDD PMOS L=1.2u W=7.5u M=1
+        M8 N$30 CC0 F3 VSS NMOS L=1.2u W=2u M=1
+        M7 N$30 CC0_NOT F3 VDD PMOS L=1.2u W=7.5u M=1
+        M5 A2 CC0 F3 VDD PMOS L=1.2u W=7.5u M=1
+        M3 A3 CC1_NOT N$30 VDD PMOS L=1.2u W=7.5u M=1
+        M4 A3 CC1 N$30 VSS NMOS L=1.2u W=2u M=1
+        M1 VSS CC1 N$30 VDD PMOS L=1.2u W=7.5u M=1
+        M2 VSS CC1_NOT N$30 VSS NMOS L=1.2u W=2u M=1
+        M20 A1 CC0 F0 VSS NMOS L=1.2u W=2u M=1
+        V1 VDD VSS DC 2.5V
+*
+.end

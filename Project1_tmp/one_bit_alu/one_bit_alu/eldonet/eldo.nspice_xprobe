@@ -1,0 +1,202 @@
+# This file provides name mapping information for all objects
+# on the schematic design.  It provides a mapping for each
+# object between its name on the schematic and its name in the netlist.
+version 1.0
+
+Globals
+   VSS VSS
+   VDD VDD
+End Globals
+
+Cell NMOS
+   Pin D D
+   Pin G G
+   Pin S S
+End Cell
+
+Cell PMOS
+   Pin D D
+   Pin G G
+   Pin S S
+   Pin B B
+End Cell
+
+Cell TWO_INPUT_OR
+   Pin F F
+   Pin A_not A_NOT
+   Pin B_not B_NOT
+   Pin VDD VDD
+   Pin VSS VSS
+   Net N$11 N$11
+   Net F F
+   Net B_not B_NOT
+   Net A_not A_NOT
+   Net VDD_esc1 VDD_ESC1
+   Net VSS_esc2 VSS_ESC2
+   Global VSS VSS
+   Global VDD VDD
+   Inst M3 M3 NMOS
+   Inst M2 M2 NMOS
+   Inst M1 M1 PMOS
+End Cell
+
+Cell ONE_INPUT_INVERTER
+   Pin OUT OUT
+   Pin IN IN
+   Pin VDD VDD
+   Pin VSS VSS
+   Net IN IN
+   Net OUT OUT
+   Net VDD_esc1 VDD_ESC1
+   Net VSS_esc2 VSS_ESC2
+   Global VSS VSS
+   Global VDD VDD
+   Inst M2 M2 NMOS
+   Inst M1 M1 PMOS
+End Cell
+
+Cell TWO_INPUT_MUX
+   Pin F F
+   Pin A A
+   Pin B B
+   Pin Select SELECT
+   Pin Select_not SELECT_NOT
+   Pin VDD VDD
+   Net Select_not SELECT_NOT
+   Net Select SELECT
+   Net F F
+   Net B B
+   Net A A
+   Net VDD_esc1 VDD_ESC1
+   Global VDD VDD
+   Inst M4 M4 PMOS
+   Inst M3 M3 NMOS
+   Inst M2 M2 PMOS
+   Inst M1 M1 NMOS
+End Cell
+
+Cell TWO_INPUT_XOR
+   Pin F F
+   Pin A A
+   Pin A_not A_NOT
+   Pin B B
+   Pin VDD VDD
+   Net F F
+   Net B B
+   Net A_not A_NOT
+   Net A A
+   Net VDD_esc1 VDD_ESC1
+   Global VDD VDD
+   Inst M4 M4 NMOS
+   Inst M3 M3 PMOS
+   Inst M2 M2 NMOS
+   Inst M1 M1 PMOS
+End Cell
+
+Cell FULL_ADD_SUB
+   Pin Bout_Cout BOUT_COUT
+   Pin Sum_Diff SUM_DIFF
+   Pin A A
+   Pin A_not A_NOT
+   Pin A_xor_B A_XOR_B
+   Pin A_xor_B_not A_XOR_B_NOT
+   Pin Bin_Cin BIN_CIN
+   Pin CC0 CC0
+   Pin CC0_not CC0_NOT
+   Pin CC3 CC3
+   Pin CC3_not CC3_NOT
+   Pin VDD VDD
+   Pin VSS VSS
+   Net N$39 N$39
+   Net N$9 N$9
+   Net N$11 N$11
+   Net Sum_Diff SUM_DIFF
+   Net CC3_not CC3_NOT
+   Net CC3 CC3
+   Net CC0_not CC0_NOT
+   Net CC0 CC0
+   Net Bout_Cout BOUT_COUT
+   Net Bin_Cin BIN_CIN
+   Net A_xor_B_not A_XOR_B_NOT
+   Net A_xor_B A_XOR_B
+   Net A_not A_NOT
+   Net A A
+   Net VDD_esc1 VDD_ESC1
+   Net VSS_esc2 VSS_ESC2
+   Global VSS VSS
+   Global VDD VDD
+   Inst TWO_INPUT_XOR1 X_TWO_INPUT_XOR1 TWO_INPUT_XOR
+   Inst TWO_INPUT_MUX4 X_TWO_INPUT_MUX4 TWO_INPUT_MUX
+   Inst TWO_INPUT_MUX3 X_TWO_INPUT_MUX3 TWO_INPUT_MUX
+   Inst TWO_INPUT_MUX2 X_TWO_INPUT_MUX2 TWO_INPUT_MUX
+   Inst TWO_INPUT_MUX1 X_TWO_INPUT_MUX1 TWO_INPUT_MUX
+End Cell
+
+Cell DC_V_SOURCE
+   Pin POS POS
+   Pin NEG NEG
+End Cell
+
+Cell TWO_INPUT_AND
+   Pin F F
+   Pin A A
+   Pin B B
+   Pin B_not B_NOT
+   Pin VDD VDD
+   Net F F
+   Net B_not B_NOT
+   Net B B
+   Net A A
+   Net VDD_esc1 VDD_ESC1
+   Global VDD VDD
+   Inst M5 M5 NMOS
+   Inst M4 M4 NMOS
+   Inst M3 M3 NMOS
+   Inst M2 M2 PMOS
+End Cell
+
+Cell #top#
+   Pin A_and_B A_AND_B
+   Pin A_not A_NOT
+   Pin A_or_B A_OR_B
+   Pin A_xor_B A_XOR_B
+   Pin Bout_Cout BOUT_COUT
+   Pin Sum_Diff SUM_DIFF
+   Pin A A
+   Pin Add ADD
+   Pin B B
+   Pin Bin_Cin BIN_CIN
+   Pin CC0 CC0
+   Pin CC3 CC3
+   Net N$10 N$10
+   Net N$22 N$22
+   Net N$38 N$38
+   Net N$40 N$40
+   Net N$17 N$17
+   Net Bout_Cout BOUT_COUT
+   Net CC0 CC0
+   Net CC3 CC3
+   Net Bin_Cin BIN_CIN
+   Net Add ADD
+   Net Sum_Diff SUM_DIFF
+   Net A_xor_B A_XOR_B
+   Net A_not A_NOT
+   Net A_or_B A_OR_B
+   Net A_and_B A_AND_B
+   Net B B
+   Net A A
+   Global VSS VSS
+   Global VDD VDD
+   Inst TWO_INPUT_OR1 X_TWO_INPUT_OR1 TWO_INPUT_OR
+   Inst ONE_INPUT_INVERTER5 X_ONE_INPUT_INVERTER5 ONE_INPUT_INVERTER
+   Inst ONE_INPUT_INVERTER4 X_ONE_INPUT_INVERTER4 ONE_INPUT_INVERTER
+   Inst ONE_INPUT_INVERTER3 X_ONE_INPUT_INVERTER3 ONE_INPUT_INVERTER
+   Inst ONE_INPUT_INVERTER2 X_ONE_INPUT_INVERTER2 ONE_INPUT_INVERTER
+   Inst ONE_INPUT_INVERTER1 X_ONE_INPUT_INVERTER1 ONE_INPUT_INVERTER
+   Inst TWO_INPUT_MUX1 X_TWO_INPUT_MUX1 TWO_INPUT_MUX
+   Inst TWO_INPUT_XOR1 X_TWO_INPUT_XOR1 TWO_INPUT_XOR
+   Inst FULL_ADD_SUB1 X_FULL_ADD_SUB1 FULL_ADD_SUB
+   Inst V1 V1 DC_V_SOURCE
+   Inst TWO_INPUT_AND1 X_TWO_INPUT_AND1 TWO_INPUT_AND
+End Cell
+

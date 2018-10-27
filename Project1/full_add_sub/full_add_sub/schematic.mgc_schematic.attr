@@ -1,13 +1,13 @@
-A 5 u mgc_schematic 5bc9959fcaf1.03.7f.00.00.02.00.50.ed 13 2 1 0
-V v 11 1 5bca411366a9.03.7f.00.00.02.00.65.be
-F o 0 ""
+A 5 u mgc_schematic 5bc9959fcaf1.03.7f.00.00.02.00.50.ed 14 2 1 0
 V v 12 1 5bd20b297f35.03.7f.00.00.02.00.5f.7e
 F o 0 ""
 V v 13 1 5bd21a39cbe0.03.7f.00.00.02.00.5f.7e
 F o 0 ""
+V v 14 1 5bd4b2c640a3.03.7f.00.00.02.00.7a.8a
+F o 0 ""
+O 14
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Project1/full_add_sub/full_add_sub/schematic/sheet1" 13 mgc_sheet 5bd4b2c64083.03.7f.00.00.02.00.7a.8a 5bc9959fcb90.03.7f.00.00.02.00.50.ed
 O 13
 R cspuv 0 "/home/ece_lab/mentor/ECE4500/Project1/full_add_sub/full_add_sub/schematic/sheet1" 12 mgc_sheet 5bd21a39cbc2.03.7f.00.00.02.00.5f.7e 5bc9959fcb90.03.7f.00.00.02.00.50.ed
 O 12
 R cspuv 0 "/home/ece_lab/mentor/ECE4500/Project1/full_add_sub/full_add_sub/schematic/sheet1" 11 mgc_sheet 5bd20b297f02.03.7f.00.00.02.00.5f.7e 5bc9959fcb90.03.7f.00.00.02.00.50.ed
-O 11
-R cspuv 0 "/home/ece_lab/mentor/ECE4500/Project1/full_add_sub/full_add_sub/schematic/sheet1" 10 mgc_sheet 5bca41136683.03.7f.00.00.02.00.65.be 5bc9959fcb90.03.7f.00.00.02.00.50.ed

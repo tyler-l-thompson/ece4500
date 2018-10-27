@@ -1,0 +1,54 @@
+A 5 u mgc_sheet 5bd3498f853d.03.7f.00.00.02.00.16.51 8 2 13 0
+V v 6 3 5bd4b2e13e70.03.7f.00.00.02.00.7a.8a
+F f 6 "sheet1.ssht_6"
+F f 6 "sheet1.sgfx_6"
+F o 0 ""
+V v 7 3 5bd4b6c73bc0.03.7f.00.00.02.00.7a.8a
+F f 7 "sheet1.ssht_7"
+F f 7 "sheet1.sgfx_7"
+F o 0 ""
+V v 8 3 5bd4b9f0c3bc.03.7f.00.00.02.00.7a.8a
+F f 8 "sheet1.ssht_8"
+F f 8 "sheet1.sgfx_8"
+F o 0 ""
+O 8
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "/home/ece_lab/mentor/4500/Project_1/Project_1_MUX/schematic" 1 mgc_schematic 5bd3498f84db.03.7f.00.00.02.01.16.51 5bd3498f84db.03.7f.00.00.02.00.16.51
+R csduv 1 "/home/ece_lab/mentor/4500/Project_1/4input_MUX/part" 4 Eddm_part 5bd48a3c8f25.03.7f.00.00.02.00.2a.82 5bd347a101ba.03.7f.00.00.02.00.16.51
+R csduv 2 "/home/ece_lab/mentor/4500/Project_1/4input_MUX/4input_MUX" 4 mgc_symbol 5bd489412875.03.7f.00.00.02.00.2a.82 5bd3485a45de.03.7f.00.00.02.00.16.51
+R csduv 3 "$MGC_DESIGN_KIT/symbols/portin/part" 1 Eddm_part 35773eaadc18.03.86.56.31.87.00.0e.9f 3994813f8cc6.03.93.22.22.3e.00.28.aa
+R csduv 4 "$MGC_DESIGN_KIT/symbols/portin/portin" 1 mgc_symbol 35773d18855d.03.86.56.31.87.00.0e.9f 3994813f8cc5.03.93.22.22.3e.01.28.aa
+R csduv 5 "$MGC_DESIGN_KIT/symbols/portout/part" 1 Eddm_part 35785fdc394b.03.86.56.31.87.00.12.30 39948143d242.03.93.22.22.3e.02.28.aa
+R csduv 6 "$MGC_DESIGN_KIT/symbols/portout/portout" 1 mgc_symbol 357ed6243e32.03.86.56.31.87.00.28.94 39948143d242.03.93.22.22.3e.01.28.aa
+R csduv 9 "$MGC_DESIGN_KIT/symbols/vdd/part" 1 Eddm_part 3597fa6cdda4.03.86.56.31.87.00.1a.94 399d7a63280d.03.93.22.22.3e.03.28.aa
+R csduv 10 "$MGC_DESIGN_KIT/symbols/vdd/vdd" 1 mgc_symbol 3598062d64ad.03.86.56.31.87.00.1b.10 399d7a63280d.03.93.22.22.3e.02.28.aa
+O 7
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "/home/ece_lab/mentor/4500/Project_1/Project_1_MUX/schematic" 1 mgc_schematic 5bd3498f84db.03.7f.00.00.02.01.16.51 5bd3498f84db.03.7f.00.00.02.00.16.51
+R csduv 1 "/home/ece_lab/mentor/4500/Project_1/4input_MUX/part" 4 Eddm_part 5bd48a3c8f25.03.7f.00.00.02.00.2a.82 5bd347a101ba.03.7f.00.00.02.00.16.51
+R csduv 2 "/home/ece_lab/mentor/4500/Project_1/4input_MUX/4input_MUX" 4 mgc_symbol 5bd489412875.03.7f.00.00.02.00.2a.82 5bd3485a45de.03.7f.00.00.02.00.16.51
+R csduv 3 "$MGC_DESIGN_KIT/symbols/portin/part" 1 Eddm_part 35773eaadc18.03.86.56.31.87.00.0e.9f 3994813f8cc6.03.93.22.22.3e.00.28.aa
+R csduv 4 "$MGC_DESIGN_KIT/symbols/portin/portin" 1 mgc_symbol 35773d18855d.03.86.56.31.87.00.0e.9f 3994813f8cc5.03.93.22.22.3e.01.28.aa
+R csduv 5 "$MGC_DESIGN_KIT/symbols/portout/part" 1 Eddm_part 35785fdc394b.03.86.56.31.87.00.12.30 39948143d242.03.93.22.22.3e.02.28.aa
+R csduv 6 "$MGC_DESIGN_KIT/symbols/portout/portout" 1 mgc_symbol 357ed6243e32.03.86.56.31.87.00.28.94 39948143d242.03.93.22.22.3e.01.28.aa
+R csduv 7 "$MGC_DESIGN_KIT/symbols/dc_v_source/part" 1 Eddm_part 3890a89d50f5.03.86.56.31.70.00.34.2e 399db67c7221.03.93.22.22.3e.04.28.aa
+R csduv 8 "$MGC_DESIGN_KIT/symbols/dc_v_source/dc_v_source" 1 mgc_symbol 3890a89d50ce.03.86.56.31.70.00.34.2e 399db67c7221.03.93.22.22.3e.05.28.aa
+R csduv 9 "$MGC_DESIGN_KIT/symbols/vdd/part" 1 Eddm_part 3597fa6cdda4.03.86.56.31.87.00.1a.94 399d7a63280d.03.93.22.22.3e.03.28.aa
+R csduv 10 "$MGC_DESIGN_KIT/symbols/vdd/vdd" 1 mgc_symbol 3598062d64ad.03.86.56.31.87.00.1b.10 399d7a63280d.03.93.22.22.3e.02.28.aa
+R csduv 11 "$MGC_DESIGN_KIT/symbols/vss/part" 1 Eddm_part 3597fafab24d.03.86.56.31.87.00.1a.94 399d7a63280e.03.93.22.22.3e.01.28.aa
+R csduv 12 "$MGC_DESIGN_KIT/symbols/vss/vss" 1 mgc_symbol 359806396644.03.86.56.31.87.00.1b.10 399d7a63280e.03.93.22.22.3e.00.28.aa
+O 6
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "/home/ece_lab/mentor/4500/Project_1/Project_1_MUX/schematic" 1 mgc_schematic 5bd3498f84db.03.7f.00.00.02.01.16.51 5bd3498f84db.03.7f.00.00.02.00.16.51
+R csduv 1 "/home/ece_lab/mentor/4500/Project_1/4input_MUX/part" 4 Eddm_part 5bd48a3c8f25.03.7f.00.00.02.00.2a.82 5bd347a101ba.03.7f.00.00.02.00.16.51
+R csduv 2 "/home/ece_lab/mentor/4500/Project_1/4input_MUX/4input_MUX" 4 mgc_symbol 5bd489412875.03.7f.00.00.02.00.2a.82 5bd3485a45de.03.7f.00.00.02.00.16.51
+R csduv 3 "$MGC_DESIGN_KIT/symbols/portin/part" 1 Eddm_part 35773eaadc18.03.86.56.31.87.00.0e.9f 3994813f8cc6.03.93.22.22.3e.00.28.aa
+R csduv 4 "$MGC_DESIGN_KIT/symbols/portin/portin" 1 mgc_symbol 35773d18855d.03.86.56.31.87.00.0e.9f 3994813f8cc5.03.93.22.22.3e.01.28.aa
+R csduv 5 "$MGC_DESIGN_KIT/symbols/portout/part" 1 Eddm_part 35785fdc394b.03.86.56.31.87.00.12.30 39948143d242.03.93.22.22.3e.02.28.aa
+R csduv 6 "$MGC_DESIGN_KIT/symbols/portout/portout" 1 mgc_symbol 357ed6243e32.03.86.56.31.87.00.28.94 39948143d242.03.93.22.22.3e.01.28.aa
+R csduv 7 "$MGC_DESIGN_KIT/symbols/dc_v_source/part" 1 Eddm_part 3890a89d50f5.03.86.56.31.70.00.34.2e 399db67c7221.03.93.22.22.3e.04.28.aa
+R csduv 8 "$MGC_DESIGN_KIT/symbols/dc_v_source/dc_v_source" 1 mgc_symbol 3890a89d50ce.03.86.56.31.70.00.34.2e 399db67c7221.03.93.22.22.3e.05.28.aa
+R csduv 9 "$MGC_DESIGN_KIT/symbols/vdd/part" 1 Eddm_part 3597fa6cdda4.03.86.56.31.87.00.1a.94 399d7a63280d.03.93.22.22.3e.03.28.aa
+R csduv 10 "$MGC_DESIGN_KIT/symbols/vdd/vdd" 1 mgc_symbol 3598062d64ad.03.86.56.31.87.00.1b.10 399d7a63280d.03.93.22.22.3e.02.28.aa
+R csduv 11 "$MGC_DESIGN_KIT/symbols/vss/part" 1 Eddm_part 3597fafab24d.03.86.56.31.87.00.1a.94 399d7a63280e.03.93.22.22.3e.01.28.aa
+R csduv 12 "$MGC_DESIGN_KIT/symbols/vss/vss" 1 mgc_symbol 359806396644.03.86.56.31.87.00.1b.10 399d7a63280e.03.93.22.22.3e.00.28.aa

@@ -1,0 +1,14 @@
+A 5 u mgc_schematic 5bd499c69633.03.7f.00.00.02.00.31.92 3 2 1 0
+V v 1 1 5bd499c69634.03.7f.00.00.02.00.31.92
+F o 0 ""
+V v 2 1 5bd49b7a456e.03.7f.00.00.02.00.31.92
+F o 0 ""
+V v 3 1 5bd49b9cc287.03.7f.00.00.02.00.31.92
+F o 0 ""
+O 3
+R cspuv 0 "/home/ece_lab/mentor/4500/Project_1/testing/schematic/sheet1" 2 mgc_sheet 5bd49b9cc270.03.7f.00.00.02.00.31.92 5bd499c696f0.03.7f.00.00.02.00.31.92
+O 2
+R cspuv 0 "/home/ece_lab/mentor/4500/Project_1/testing/schematic/sheet1" 1 mgc_sheet 5bd499c696f1.03.7f.00.00.02.00.31.92 5bd499c696f0.03.7f.00.00.02.00.31.92
+O 1
+R cspuv 0 "/home/ece_lab/mentor/4500/Project_1/testing/schematic/sheet1" 1 mgc_sheet 5bd499c696f1.03.7f.00.00.02.00.31.92 5bd499c696f0.03.7f.00.00.02.00.31.92
+P "eddm__refer_state" "eddm__refer_floating"

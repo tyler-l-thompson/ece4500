@@ -1,0 +1,4 @@
+START report: Sat Oct 27 11:22:28 2018 
+** Warning: (eldo - 1615)  In file "./4500/Project_1/Project_1_MUX/eldonet/Project_1_MUX_eldonet.cir" line 12:
++   COMMAND ".TRAN": Tstep can not be <= 0.0.
++   It is set to Tmax/20.0 = 8.000e-08 s.
