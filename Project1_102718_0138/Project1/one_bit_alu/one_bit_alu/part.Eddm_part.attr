@@ -1,0 +1,21 @@
+A 5 u Eddm_part 5bca51799ba5.03.7f.00.00.02.00.05.c7 3 2 2 0
+V v 1 1 5bca51799ba5.03.7f.00.00.02.01.05.c7
+F f 1 "part.part_1"
+V v 2 1 5bd210de19e2.03.7f.00.00.02.00.5f.7e
+F f 2 "part.part_2"
+V v 3 1 5bd212f328ad.03.7f.00.00.02.00.5f.7e
+F f 3 "part.part_3"
+O 3
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "/home/ece_lab/mentor/ECE4500/Project1/one_bit_alu/one_bit_alu/schematic" 1 mgc_schematic 5bca4cfe712d.03.7f.00.00.02.00.05.c7 5bca4cfe712c.03.7f.00.00.02.00.05.c7
+P "eddm__refer_state" "eddm__refer_floating"
+R csduv 1 "/home/ece_lab/mentor/ECE4500/Project1/one_bit_alu/one_bit_alu/one_bit_alu" 2 mgc_symbol 5bd212f3289c.03.7f.00.00.02.00.5f.7e 5bd210817e94.03.7f.00.00.02.00.5f.7e
+O 2
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "/home/ece_lab/mentor/ECE4500/Project1/one_bit_alu/one_bit_alu/schematic" 1 mgc_schematic 5bca4cfe712d.03.7f.00.00.02.00.05.c7 5bca4cfe712c.03.7f.00.00.02.00.05.c7
+P "eddm__refer_state" "eddm__refer_floating"
+R csduv 1 "/home/ece_lab/mentor/ECE4500/Project1/one_bit_alu/one_bit_alu/one_bit_alu" 1 mgc_symbol 5bd210817e95.03.7f.00.00.02.00.5f.7e 5bd210817e94.03.7f.00.00.02.00.5f.7e
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "/home/ece_lab/mentor/ECE4500/Project1/one_bit_alu/one_bit_alu/schematic" 1 mgc_schematic 5bca4cfe712d.03.7f.00.00.02.00.05.c7 5bca4cfe712c.03.7f.00.00.02.00.05.c7
+P "eddm__refer_state" "eddm__refer_floating"
