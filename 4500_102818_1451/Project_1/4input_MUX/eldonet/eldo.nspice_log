@@ -1,0 +1,62 @@
+//  IC Station Netlister  v9.0_5.0 (v9.0d)  Mon Oct 11 09:34:32 PDT 2010
+//
+//             Copyright Mentor Graphics Corporation 1982
+//
+//                      All Rights Reserved.
+//
+//    THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+//      WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR
+//           ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+//
+//  Mentor Graphics software executing under x86 Linux.
+//
+
+
+//  Invocation args:  -force /home/ece_lab/mentor/4500/Project_1/4input_MUX/eldonet
+
+// **** Reading </home/ece_lab/mentor/4500/Project_1/4input_MUX/eldonet> for ELDO netlist ****
+
+// Checking 1 sheet(s) for out of date references to symbols and interfaces...
+// Done.
+// Parsing file '/mgc/v9.0d_rhelx86linux/icstation_home/mgc_icstd_lib/mit0.25/symbols/pmos/@ncf.dir/pmos.ncf' succeeded.
+// Parsing file '/mgc/v9.0d_rhelx86linux/icstation_home/mgc_icstd_lib/global.ncf' succeeded.
+// Parsing file '/mgc/v9.0d_rhelx86linux/icstation_home/mgc_icstd_lib/mit0.25/symbols/nmos/@ncf.dir/nmos.ncf' succeeded.
+Processing [/home/ece_lab/mentor/4500/Project_1/4input_MUX] [4input_MUX/4input_MUX] [schematic] (NCF entry line: 17 file: $NCF_GLOBAL)
+ COMPONENT [/home/ece_lab/mentor/4500/Project_1/4input_MUX] CELL [/home/ece_lab/mentor/4500/Project_1/4input_MUX]
+ *** warning *** : The net 'VDD' has a name that conflicts with a global net.  It is being renamed to 'VDD_esc1'.
+Primitive [$MGC_DESIGN_KIT/symbols/nmos] [nmos/nmos] [SPICE=X] (NCF entry line: 8 file: $MGC_DESIGN_KIT/symbols/nmos/@ncf.dir/nmos.ncf)
+Primitive [$MGC_DESIGN_KIT/symbols/pmos] [pmos/pmos] [SPICE=X] (NCF entry line: 8 file: $MGC_DESIGN_KIT/symbols/pmos/@ncf.dir/pmos.ncf)
+
+**** Writing </home/ece_lab/mentor/4500/Project_1/4input_MUX/eldonet> netlist for ELDO ****
+ COMPONENT [$MGC_DESIGN_KIT/symbols/nmos] CELL [$MGC_DESIGN_KIT/symbols/nmos] INSTANCE [M16] "/M16" 
+ *** warning *** : The NCF entry specifies an additional pin that connects to net 'VSS'.
+     A global net or a net in the parent instance with this name cannot be found.
+ COMPONENT [$MGC_DESIGN_KIT/symbols/nmos] CELL [$MGC_DESIGN_KIT/symbols/nmos] INSTANCE [M14] "/M14" 
+ *** warning *** : The NCF entry specifies an additional pin that connects to net 'VSS'.
+     A global net or a net in the parent instance with this name cannot be found.
+ COMPONENT [$MGC_DESIGN_KIT/symbols/nmos] CELL [$MGC_DESIGN_KIT/symbols/nmos] INSTANCE [M12] "/M12" 
+ *** warning *** : The NCF entry specifies an additional pin that connects to net 'VSS'.
+     A global net or a net in the parent instance with this name cannot be found.
+ COMPONENT [$MGC_DESIGN_KIT/symbols/nmos] CELL [$MGC_DESIGN_KIT/symbols/nmos] INSTANCE [M10] "/M10" 
+ *** warning *** : The NCF entry specifies an additional pin that connects to net 'VSS'.
+     A global net or a net in the parent instance with this name cannot be found.
+ COMPONENT [$MGC_DESIGN_KIT/symbols/nmos] CELL [$MGC_DESIGN_KIT/symbols/nmos] INSTANCE [M8] "/M8" 
+ *** warning *** : The NCF entry specifies an additional pin that connects to net 'VSS'.
+     A global net or a net in the parent instance with this name cannot be found.
+ COMPONENT [$MGC_DESIGN_KIT/symbols/nmos] CELL [$MGC_DESIGN_KIT/symbols/nmos] INSTANCE [M6] "/M6" 
+ *** warning *** : The NCF entry specifies an additional pin that connects to net 'VSS'.
+     A global net or a net in the parent instance with this name cannot be found.
+ COMPONENT [$MGC_DESIGN_KIT/symbols/nmos] CELL [$MGC_DESIGN_KIT/symbols/nmos] INSTANCE [M4] "/M4" 
+ *** warning *** : The NCF entry specifies an additional pin that connects to net 'VSS'.
+     A global net or a net in the parent instance with this name cannot be found.
+ COMPONENT [$MGC_DESIGN_KIT/symbols/nmos] CELL [$MGC_DESIGN_KIT/symbols/nmos] INSTANCE [M2] "/M2" 
+ *** warning *** : The NCF entry specifies an additional pin that connects to net 'VSS'.
+     A global net or a net in the parent instance with this name cannot be found.
+
+Number of cells: 3
+Number of primitive instances: 16
+
+Done...
+// Registration file '/mgc/v9.0d_rhelx86linux/icstation_home/mgc_icstd_lib/mit0.25/symbols/pmos/@ncf.dir/pmos.ncf' closed.
+// Registration file '/mgc/v9.0d_rhelx86linux/icstation_home/mgc_icstd_lib/global.ncf' closed.
+// Registration file '/mgc/v9.0d_rhelx86linux/icstation_home/mgc_icstd_lib/mit0.25/symbols/nmos/@ncf.dir/nmos.ncf' closed.

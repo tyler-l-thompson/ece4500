@@ -1,0 +1,41 @@
+A 5 u Ic_cell_template 5bd60fa731f3.03.7f.00.00.02.00.01.e1 3 4 27 0
+V v 1 2 5bd5759c80d6.03.7f.00.00.02.00.65.fd
+F f 1 "one_bit_alu.iccel_1"
+F o 0 ""
+V v 2 2 5bd576c6a760.03.7f.00.00.02.00.65.fd
+F f 2 "one_bit_alu.iccel_2"
+F o 0 ""
+V v 3 2 5bd61ca081c6.03.7f.00.00.02.00.07.21
+F f 3 "one_bit_alu.iccel_3"
+F o 0 ""
+O 3
+R csduv 1 "/home/ece_lab/mentor/mgc/mit_25" 8 Ic_persist_process 4d337a69d114.03.7f.00.00.01.00.3d.8c 3ae460ae24b4.03.93.22.22.3e.00.42.a5
+R csdni 17 "/home/ece_lab/mentor/mgc/mit_25.rules" 1 Mgc_file
+R csduv 20 "/home/ece_lab/mentor/ECE4500/Project1/one_input_inverter/one_input_inverter" 9 Ic_cell_template 5bd61ca08138.03.7f.00.00.02.00.07.21 5bca55d63124.03.7f.00.00.02.00.06.a7
+R csduv 21 "/home/ece_lab/mentor/ECE4500/Project1/four_bit_alu/full_add_sub" 6 Ic_cell_template 5bd61ca08090.03.7f.00.00.02.00.07.21 5bd60f5b12ad.03.7f.00.00.02.00.01.e1
+R csduv 22 "/home/ece_lab/mentor/ECE4500/Project1/two_input_and_2/two_input_and" 5 Ic_cell_template 5bd61ca07ff3.03.7f.00.00.02.00.07.21 5bd3e5efc0da.03.7f.00.00.02.00.76.4e
+R csduv 23 "/home/ece_lab/mentor/ECE4500/Project1/four_bit_alu/two_input_xor" 1 Ic_cell_template 5bd61ca07f01.03.7f.00.00.02.00.07.21 5bd61b6a924d.03.7f.00.00.02.00.07.21
+R csduv 24 "/home/ece_lab/mentor/ECE4500/Project1/four_bit_alu/two_input_mux" 1 Ic_cell_template 5bd61ca07e99.03.7f.00.00.02.00.07.21 5bd61b6a5b15.03.7f.00.00.02.00.07.21
+R csduv 25 "/home/ece_lab/mentor/ECE4500/Project1/two_input_or/two_input_or" 3 Ic_cell_template 5bd61ca07f65.03.7f.00.00.02.00.07.21 5bca5da2ec14.03.7f.00.00.02.00.09.15
+R csduv 26 "/home/ece_lab/mentor/ECE4500/Project1/four_bit_alu/one_bit_alu" 1 Eddm_design_viewpoint 5bd61b6a54a4.03.7f.00.00.02.01.07.21 5bd61b6a54a4.03.7f.00.00.02.00.07.21
+O 2
+R csduv 1 "/home/ece_lab/mentor/mgc/mit_25" 8 Ic_persist_process 4d337a69d114.03.7f.00.00.01.00.3d.8c 3ae460ae24b4.03.93.22.22.3e.00.42.a5
+R csduv 2 "/home/ece_lab/mentor/ECE4500/Project1/one_bit_alu/one_bit_alu/eldonet" 18 Eddm_design_viewpoint 5bd547d9311b.03.7f.00.00.02.00.42.f7 5bd1fcce82cd.03.7f.00.00.02.00.5f.7e
+R csduv 10 "/home/ece_lab/mentor/ECE4500/Project1/one_input_inverter/one_input_inverter" 8 Ic_cell_template 5bd3e477b467.03.7f.00.00.02.00.71.38 5bca55d63124.03.7f.00.00.02.00.06.a7
+R csduv 11 "/home/ece_lab/mentor/ECE4500/Project1/one_bit_alu/two_input_mux" 3 Ic_cell_template 5bd3a69a1121.03.7f.00.00.02.00.6d.9c 5bd56859849a.03.7f.00.00.02.00.65.fd
+R csduv 12 "/home/ece_lab/mentor/ECE4500/Project1/two_input_and_2/two_input_and" 4 Ic_cell_template 5bd3ea1d89f0.03.7f.00.00.02.00.76.4e 5bd3e5efc0da.03.7f.00.00.02.00.76.4e
+R csduv 13 "/home/ece_lab/mentor/ECE4500/Project1/two_input_or/two_input_or" 2 Ic_cell_template 5bd3e4e94f02.03.7f.00.00.02.00.71.38 5bca5da2ec14.03.7f.00.00.02.00.09.15
+R csduv 14 "/home/ece_lab/mentor/ECE4500/Project1/one_bit_alu/two_input_xor" 2 Ic_cell_template 5bd3a806be7a.03.7f.00.00.02.00.6d.9c 5bd5684a329a.03.7f.00.00.02.00.65.fd
+R csduv 16 "$MGC_DESIGN_KIT/process/M1M2" 1 Ic_cell_template 39ca3bbe3747.03.89.ca.b5.8b.00.3d.46 39de40031d9c.03.93.22.22.3e.00.0a.d0
+R csdni 17 "/home/ece_lab/mentor/mgc/mit_25.rules" 1 Mgc_file
+O 1
+R csduv 1 "/home/ece_lab/mentor/mgc/mit_25" 8 Ic_persist_process 4d337a69d114.03.7f.00.00.01.00.3d.8c 3ae460ae24b4.03.93.22.22.3e.00.42.a5
+R csduv 2 "/home/ece_lab/mentor/ECE4500/Project1/one_bit_alu/one_bit_alu/eldonet" 18 Eddm_design_viewpoint 5bd547d9311b.03.7f.00.00.02.00.42.f7 5bd1fcce82cd.03.7f.00.00.02.00.5f.7e
+R csduv 9 "/home/ece_lab/mentor/ECE4500/Project1/full_add_sub/full_add_sub" 5 Ic_cell_template 5bd3f6e40321.03.7f.00.00.02.00.7a.e7 5bd3a947a458.03.7f.00.00.02.00.6d.f5
+R csduv 10 "/home/ece_lab/mentor/ECE4500/Project1/one_input_inverter/one_input_inverter" 8 Ic_cell_template 5bd3e477b467.03.7f.00.00.02.00.71.38 5bca55d63124.03.7f.00.00.02.00.06.a7
+R csduv 11 "/home/ece_lab/mentor/ECE4500/Project1/one_bit_alu/two_input_mux" 3 Ic_cell_template 5bd3a69a1121.03.7f.00.00.02.00.6d.9c 5bd56859849a.03.7f.00.00.02.00.65.fd
+R csduv 12 "/home/ece_lab/mentor/ECE4500/Project1/two_input_and_2/two_input_and" 4 Ic_cell_template 5bd3ea1d89f0.03.7f.00.00.02.00.76.4e 5bd3e5efc0da.03.7f.00.00.02.00.76.4e
+R csduv 13 "/home/ece_lab/mentor/ECE4500/Project1/two_input_or/two_input_or" 2 Ic_cell_template 5bd3e4e94f02.03.7f.00.00.02.00.71.38 5bca5da2ec14.03.7f.00.00.02.00.09.15
+R csduv 14 "/home/ece_lab/mentor/ECE4500/Project1/one_bit_alu/two_input_xor" 2 Ic_cell_template 5bd3a806be7a.03.7f.00.00.02.00.6d.9c 5bd5684a329a.03.7f.00.00.02.00.65.fd
+R csduv 16 "$MGC_DESIGN_KIT/process/M1M2" 1 Ic_cell_template 39ca3bbe3747.03.89.ca.b5.8b.00.3d.46 39de40031d9c.03.93.22.22.3e.00.0a.d0
+R csdni 17 "/home/ece_lab/mentor/mgc/mit_25.rules" 1 Mgc_file

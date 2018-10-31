@@ -1,0 +1,21 @@
+ Logic loading report
+ ====================
+
+ Top level Layout cell : 4input_MUX
+ Eddm Logic source : /home/ece_lab/mentor/4500/Project_1/4input_MUX/eldonet
+
+
+*** Existing cell /home/ece_lab/mentor/4500/Project_1/4input_MUX/4input_MUX
+
+
+IGNORED CELLS
+=============
+Following primitive cells are ignored since they are not found
+in library(working directory) and @nocreate_prim option is used.
+Resync of library may be required.
+
+
+       Schematic instance name                   Physical cell name
+       -------------------------                 --------------------
+      /M2                                        mn
+      /M1                                        mp

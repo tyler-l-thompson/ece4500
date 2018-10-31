@@ -1,0 +1,15 @@
+* Component: /home/ece_lab/mentor/4500/Project_1/4input_MUX  Viewpoint: eldonet
+.INCLUDE /home/ece_lab/mentor/4500/Project_1/4input_MUX/eldonet/4input_MUX_eldonet.spi
+.INCLUDE /home/ece_lab/mentor/mgc/mit_0.25.lib
+.OPTION NOASCII
+.OPTION MODWL
+.OPTION ENGNOT
+.OPTION AEX
+
+* --- Singles
+
+* --- Params
+.TEMP 27
+
+* --- Libsetup
+

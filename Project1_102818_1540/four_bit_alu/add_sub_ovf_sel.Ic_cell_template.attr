@@ -1,0 +1,47 @@
+A 5 u Ic_cell_template 5bd60f0c1c3a.03.7f.00.00.02.00.01.e1 15 4 11 0
+V v 11 2 5bd5e68f46c2.03.7f.00.00.02.00.70.59
+F f 11 "add_sub_ovf_sel.iccel_11"
+F o 0 ""
+V v 12 2 5bd5e6a39ace.03.7f.00.00.02.00.70.59
+F f 12 "add_sub_ovf_sel.iccel_12"
+F o 0 ""
+V v 13 2 5bd5e7759725.03.7f.00.00.02.00.70.59
+F f 13 "add_sub_ovf_sel.iccel_13"
+F o 0 ""
+V v 14 2 5bd5e7e1dfa6.03.7f.00.00.02.00.70.59
+F f 14 "add_sub_ovf_sel.iccel_14"
+F o 0 ""
+V v 15 2 5bd5e812c841.03.7f.00.00.02.00.70.59
+F f 15 "add_sub_ovf_sel.iccel_15"
+F o 0 ""
+O 15
+R csduv 1 "/home/ece_lab/mentor/mgc/mit_25" 8 Ic_persist_process 4d337a69d114.03.7f.00.00.01.00.3d.8c 3ae460ae24b4.03.93.22.22.3e.00.42.a5
+R csduv 2 "/home/ece_lab/mentor/ECE4500/Project1/add_sub_ovf_sel/add_sub_ovf_sel/eldonet" 9 Eddm_design_viewpoint 5bd516890193.03.7f.00.00.02.00.03.21 5bd50ffdcfe8.03.7f.00.00.02.00.03.21
+R csdni 6 "/home/ece_lab/mentor/mgc/mit_25.rules" 1 Mgc_file
+R cmduv 8 "49052f642000.0d.00.01.a5.b0.00.00.00" 1 Ic_device_template 49fba4394000.0d.00.01.a5.b0.00.00.00 49052f642000.0d.00.01.a5.b0.00.00.00
+R csduv 9 "$MGC_DESIGN_KIT/process/MPOLY" 1 Ic_cell_template 39ca3bb71aba.03.89.ca.b5.8b.00.3d.46 39de40031d9d.03.93.22.22.3e.03.0a.d0
+R csduv 10 "$MGC_DESIGN_KIT/process/M1M2" 1 Ic_cell_template 39ca3bbe3747.03.89.ca.b5.8b.00.3d.46 39de40031d9c.03.93.22.22.3e.00.0a.d0
+O 14
+R csduv 1 "/home/ece_lab/mentor/mgc/mit_25" 8 Ic_persist_process 4d337a69d114.03.7f.00.00.01.00.3d.8c 3ae460ae24b4.03.93.22.22.3e.00.42.a5
+R csduv 2 "/home/ece_lab/mentor/ECE4500/Project1/add_sub_ovf_sel/add_sub_ovf_sel/eldonet" 9 Eddm_design_viewpoint 5bd516890193.03.7f.00.00.02.00.03.21 5bd50ffdcfe8.03.7f.00.00.02.00.03.21
+R csdni 6 "/home/ece_lab/mentor/mgc/mit_25.rules" 1 Mgc_file
+R cmduv 8 "49052f642000.0d.00.01.a5.b0.00.00.00" 1 Ic_device_template 49fba4394000.0d.00.01.a5.b0.00.00.00 49052f642000.0d.00.01.a5.b0.00.00.00
+R csduv 9 "$MGC_DESIGN_KIT/process/MPOLY" 1 Ic_cell_template 39ca3bb71aba.03.89.ca.b5.8b.00.3d.46 39de40031d9d.03.93.22.22.3e.03.0a.d0
+R csduv 10 "$MGC_DESIGN_KIT/process/M1M2" 1 Ic_cell_template 39ca3bbe3747.03.89.ca.b5.8b.00.3d.46 39de40031d9c.03.93.22.22.3e.00.0a.d0
+O 13
+R csduv 1 "/home/ece_lab/mentor/mgc/mit_25" 8 Ic_persist_process 4d337a69d114.03.7f.00.00.01.00.3d.8c 3ae460ae24b4.03.93.22.22.3e.00.42.a5
+R csduv 2 "/home/ece_lab/mentor/ECE4500/Project1/add_sub_ovf_sel/add_sub_ovf_sel/eldonet" 9 Eddm_design_viewpoint 5bd516890193.03.7f.00.00.02.00.03.21 5bd50ffdcfe8.03.7f.00.00.02.00.03.21
+R csdni 6 "/home/ece_lab/mentor/mgc/mit_25.rules" 1 Mgc_file
+R cmduv 8 "49052f642000.0d.00.01.a5.b0.00.00.00" 1 Ic_device_template 49fba4394000.0d.00.01.a5.b0.00.00.00 49052f642000.0d.00.01.a5.b0.00.00.00
+R csduv 9 "$MGC_DESIGN_KIT/process/MPOLY" 1 Ic_cell_template 39ca3bb71aba.03.89.ca.b5.8b.00.3d.46 39de40031d9d.03.93.22.22.3e.03.0a.d0
+R csduv 10 "$MGC_DESIGN_KIT/process/M1M2" 1 Ic_cell_template 39ca3bbe3747.03.89.ca.b5.8b.00.3d.46 39de40031d9c.03.93.22.22.3e.00.0a.d0
+O 12
+R csduv 1 "/home/ece_lab/mentor/mgc/mit_25" 8 Ic_persist_process 4d337a69d114.03.7f.00.00.01.00.3d.8c 3ae460ae24b4.03.93.22.22.3e.00.42.a5
+R csduv 2 "/home/ece_lab/mentor/ECE4500/Project1/add_sub_ovf_sel/add_sub_ovf_sel/eldonet" 9 Eddm_design_viewpoint 5bd516890193.03.7f.00.00.02.00.03.21 5bd50ffdcfe8.03.7f.00.00.02.00.03.21
+R csdni 6 "/home/ece_lab/mentor/mgc/mit_25.rules" 1 Mgc_file
+R cmduv 8 "49052f642000.0d.00.01.a5.b0.00.00.00" 1 Ic_device_template 49fba4394000.0d.00.01.a5.b0.00.00.00 49052f642000.0d.00.01.a5.b0.00.00.00
+O 11
+R csduv 1 "/home/ece_lab/mentor/mgc/mit_25" 8 Ic_persist_process 4d337a69d114.03.7f.00.00.01.00.3d.8c 3ae460ae24b4.03.93.22.22.3e.00.42.a5
+R csduv 2 "/home/ece_lab/mentor/ECE4500/Project1/add_sub_ovf_sel/add_sub_ovf_sel/eldonet" 9 Eddm_design_viewpoint 5bd516890193.03.7f.00.00.02.00.03.21 5bd50ffdcfe8.03.7f.00.00.02.00.03.21
+R csdni 6 "/home/ece_lab/mentor/mgc/mit_25.rules" 1 Mgc_file
+R cmduv 8 "49052f642000.0d.00.01.a5.b0.00.00.00" 1 Ic_device_template 49fba4394000.0d.00.01.a5.b0.00.00.00 49052f642000.0d.00.01.a5.b0.00.00.00

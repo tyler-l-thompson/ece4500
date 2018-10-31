@@ -1,0 +1,214 @@
+
+
+
+
+
+                  ##################################################
+                  ##                                              ##
+                  ##         C A L I B R E    S Y S T E M         ##
+                  ##                                              ##
+                  ##             L V S   R E P O R T              ##
+                  ##                                              ##
+                  ##################################################
+
+
+
+REPORT FILE NAME:         /home/ece_lab/mentor/lvs.rep
+LAYOUT NAME:              /home/ece_lab/mentor/ECE4500/Project1/four_bit_alu/four_bit_alu
+SOURCE NAME:              /home/ece_lab/mentor/ECE4500/Project1/four_bit_alu/four_bit_alu/eldonet
+RULE FILE:                /home/ece_lab/mentor/mgc/mit_25.rules
+LVS MODE:                 Mask
+RULE FILE NAME:           /home/ece_lab/mentor/mgc/mit_25.rules
+CREATION TIME:            Sun Oct 28 19:58:29 2018
+CURRENT DIRECTORY:        /home/ece_lab/mentor
+USER NAME:                ece_lab
+
+
+**************************************************************************************************************
+                               OVERALL COMPARISON RESULTS
+**************************************************************************************************************
+
+
+                         #       ###################       _   _   
+                        #        #                 #       *   *   
+                   #   #         #     CORRECT     #         |     
+                    # #          #                 #       \___/  
+                     #           ###################               
+
+
+
+--------------------------------------------------------------------------------------------------------------
+
+INITIAL NUMBERS OF OBJECTS
+--------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:             23        23
+
+ Nets:             197       196    *
+
+ Instances:        310       310         mn (3 pins)
+                   280       280         mp (4 pins)
+                ------    ------
+ Total Inst:       590       590
+
+
+NUMBERS OF OBJECTS AFTER TRANSFORMATION
+---------------------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:             23        23
+
+ Nets:             184       184
+
+ Instances:        232       232         mn (3 pins)
+                   223       223         mp (4 pins)
+                    48        48         INV (2 pins)
+                     4         4         SDW2 (3 pins)
+                     3         3         SUP3 (4 pins)
+                     1         1         SPDW_3_3_3 (10 pins)
+                ------    ------
+ Total Inst:       511       511
+
+
+       * = Number of objects in layout different from number in source.
+
+
+
+**************************************************************************************************************
+                                      LVS PARAMETERS
+**************************************************************************************************************
+
+
+o LVS Setup:
+
+   LVS COMPONENT TYPE PROPERTY            phy_comp
+   LVS COMPONENT SUBTYPE PROPERTY         subtype
+   LVS PIN NAME PROPERTY                  phy_pin
+   LVS POWER NAME                         "VDD" "vdd"
+   LVS GROUND NAME                        "VSS" "vss"
+   LVS CELL SUPPLY                        NO
+   LVS RECOGNIZE GATES                    ALL
+   LVS IGNORE PORTS                       NO
+   LVS CHECK PORT NAMES                   NO
+   LVS IGNORE TRIVIAL NAMED PORTS         NO
+   LVS BUILTIN DEVICE PIN SWAP            YES
+   LVS ALL CAPACITOR PINS SWAPPABLE       YES
+   LVS DISCARD PINS BY DEVICE             NO
+   LVS SOFT SUBSTRATE PINS                NO
+   LVS INJECT LOGIC                       YES
+   LVS EXPAND UNBALANCED CELLS            YES
+   LVS EXPAND SEED PROMOTIONS             NO
+   LVS PRESERVE PARAMETERIZED CELLS       NO
+   LVS GLOBALS ARE PORTS                  YES
+   LVS REVERSE WL                         NO
+   LVS SPICE PREFER PINS                  NO
+   LVS SPICE SLASH IS SPACE               YES
+   LVS SPICE ALLOW FLOATING PINS          YES
+   // LVS SPICE ALLOW INLINE PARAMETERS     
+   LVS SPICE ALLOW UNQUOTED STRINGS       NO
+   LVS SPICE CONDITIONAL LDD              NO
+   LVS SPICE CULL PRIMITIVE SUBCIRCUITS   NO
+   LVS SPICE IMPLIED MOS AREA             NO
+   // LVS SPICE MULTIPLIER NAME
+   LVS SPICE OVERRIDE GLOBALS             NO
+   LVS SPICE REDEFINE PARAM               NO
+   LVS SPICE REPLICATE DEVICES            NO
+   LVS SPICE SCALE X PARAMETERS           NO
+   LVS SPICE STRICT WL                    NO
+   // LVS SPICE OPTION
+   LVS EDDM PROCESS M                     NO
+   LVS STRICT SUBTYPES                    NO
+   LVS EXACT SUBTYPES                     NO
+   LAYOUT CASE                            NO
+   SOURCE CASE                            NO
+   LVS COMPARE CASE                       NO
+   LVS DOWNCASE DEVICE                    NO
+   LVS REPORT MAXIMUM                     50
+   LVS PROPERTY RESOLUTION MAXIMUM        200
+   // LVS SIGNATURE MAXIMUM
+   // LVS FILTER UNUSED OPTION
+   // LVS REPORT OPTION
+   LVS REPORT UNITS                       YES
+   // LVS NON USER NAME PORT
+   // LVS NON USER NAME NET
+   // LVS NON USER NAME INSTANCE
+
+   // Reduction
+
+   LVS REDUCE SERIES MOS                  NO
+   LVS REDUCE PARALLEL MOS                YES
+   LVS REDUCE SEMI SERIES MOS             NO
+   LVS REDUCE SPLIT GATES                 YES
+   LVS REDUCE PARALLEL BIPOLAR            YES
+   LVS REDUCE SERIES CAPACITORS           YES
+   LVS REDUCE PARALLEL CAPACITORS         YES
+   LVS REDUCE SERIES RESISTORS            YES
+   LVS REDUCE PARALLEL RESISTORS          YES
+   LVS REDUCE PARALLEL DIODES             YES
+   LVS REDUCTION PRIORITY                 PARALLEL
+
+   // Trace Property
+
+   TRACE PROPERTY  mp  w w w 5
+   TRACE PROPERTY  mp  l l l 5
+   TRACE PROPERTY  mn  w w w 5
+   TRACE PROPERTY  mn  l l l 5
+   TRACE PROPERTY  r  r r r 10
+   TRACE PROPERTY  c  c c c 10
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+                  Matched    Matched    Unmatched    Unmatched    Component
+                   Layout     Source       Layout       Source    Type
+                  -------    -------    ---------    ---------    ---------
+   Ports:              23         23            0            0
+
+   Nets:              184        184            0            0
+
+   Instances:         232        232            0            0    mn(nmos)
+                      223        223            0            0    mp(pmos)
+                       48         48            0            0    INV
+                        4          4            0            0    SDW2
+                        3          3            0            0    SUP3
+                        1          1            0            0    SPDW_3_3_3
+                  -------    -------    ---------    ---------
+   Total Inst:        511        511            0            0
+
+
+o Statistics:
+
+   1 isolated layout net was deleted.
+
+   26 layout mos transistors were reduced to 13.
+     13 mos transistors were deleted by parallel reduction.
+   26 source mos transistors were reduced to 13.
+     13 mos transistors were deleted by parallel reduction.
+
+
+o Isolated Layout Nets:
+
+      (Layout nets which are not connected to any instances or ports).
+
+   197(175.700,-273.700)
+
+
+o Initial Correspondence Points:
+
+   Ports:        VDD VSS S B1 A1 B3 A3 CC2 CC3 Bin_Cin B0 A0 F0 F1 F2 F3 Z OVF Bout_Cout CC1 CC0
+                 B2 A2
+
+
+**************************************************************************************************************
+                                         SUMMARY
+**************************************************************************************************************
+
+Total CPU Time:      0 sec
+Total Elapsed Time:  0 sec

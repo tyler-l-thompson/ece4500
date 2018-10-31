@@ -1,0 +1,316 @@
+* ELDO netlist generated with ICnet by 'ece_lab' on Sun Oct 28 2018 at 14:24:53
+
+*
+* Globals.
+*
+.global vdd vss
+
+*
+* Component pathname : /home/ece_lab/mentor/ECE4500/Project1/two_input_mux/two_input_mux
+*
+.subckt two_input_mux  f a b select select_not vdd_esc1
+
+        .connect vdd vdd_esc1
+        m4 f select b vdd PMOS L=1.2u W=2.4u M=1
+        m3 f select_not b vss NMOS L=1.2u W=2.4u M=1
+        m2 f select_not a vdd PMOS L=1.2u W=2.4u M=1
+        m1 f select a vss NMOS L=1.2u W=2.4u M=1
+.ends two_input_mux
+
+*
+* Component pathname : /home/ece_lab/mentor/4500/Project_1/4input_MUX
+*
+.subckt 4input_mux  f0 f1 f2 f3 a0 a1 a2 a3 b0 b1 b2 b3 sel sel_not vdd_esc1
+
+        .connect vdd vdd_esc1
+        m16 b3 sel f3 vss NMOS L=1.2u W=2u M=1
+        m15 b3 sel_not f3 vdd PMOS L=1.2u W=7.5u M=1
+        m14 a3 sel_not f3 vss NMOS L=1.2u W=2u M=1
+        m13 a3 sel f3 vdd PMOS L=1.2u W=7.5u M=1
+        m12 b2 sel f2 vss NMOS L=1.2u W=2u M=1
+        m11 b2 sel_not f2 vdd PMOS L=1.2u W=7.5u M=1
+        m10 a2 sel_not f2 vss NMOS L=1.2u W=2u M=1
+        m9 a2 sel f2 vdd PMOS L=1.2u W=7.5u M=1
+        m8 b1 sel f1 vss NMOS L=1.2u W=2u M=1
+        m7 b1 sel_not f1 vdd PMOS L=1.2u W=7.5u M=1
+        m6 a1 sel_not f1 vss NMOS L=1.2u W=2u M=1
+        m5 a1 sel f1 vdd PMOS L=1.2u W=7.5u M=1
+        m4 b0 sel f0 vss NMOS L=1.2u W=2u M=1
+        m3 b0 sel_not f0 vdd PMOS L=1.2u W=7.5u M=1
+        m2 a0 sel_not f0 vss NMOS L=1.2u W=2u M=1
+        m1 a0 sel f0 vdd PMOS L=1.2u W=7.5u M=1
+.ends 4input_mux
+
+*
+* Component pathname : /home/ece_lab/mentor/4500/Project_1/Project_1_MUX
+*
+.subckt project_1_mux  f0 f1 f2 f3 a0 a0_not a1 a1_not a2 a2_not a3 a3_not
++ a_and_b0 a_and_b1 a_and_b2 a_and_b3 a_minus_b0 a_minus_b1 a_minus_b2 a_minus_b3
++ a_minus_b_with_borrow0 a_minus_b_with_borrow1 a_minus_b_with_borrow2 a_minus_b_with_borrow3
++ a_or_b0 a_or_b1 a_or_b2 a_or_b3 a_plus_b0 a_plus_b1 a_plus_b2 a_plus_b3
++ a_plus_b_with_carry0 a_plus_b_with_carry1 a_plus_b_with_carry2 a_plus_b_with_carry3
++ a_xor_b0 a_xor_b1 a_xor_b2 a_xor_b3 asla0 asla1 asla2 asla3 asra0 asra1
++ asra2 asra3 b0 b1 b2 b3 b_plus_one0 b_plus_one1 b_plus_one2 b_plus_one3
++ cc0 cc0_not cc1 cc1_not cc2 cc2_not cc3 cc3_not lsla0 lsla1 lsla2 lsla3
++ lsra0 lsra1 lsra2 lsra3 vdd_esc1 zero0 zero1 zero2 zero3
+
+        .connect vdd vdd_esc1
+        x_4input_mux6 n$45 n$47 n$49 n$51 asla0 asla1 asla2 asla3 asra0
++ asra1 asra2 asra3 cc0 cc0_not vdd 4input_mux
+        x_4input_mux5 n$36 n$38 n$39 n$41 lsla0 lsla1 lsla2 lsla3 lsra0
++ lsra1 lsra2 lsra3 cc0 cc0_not vdd 4input_mux
+        x_4input_mux4 n$27 n$29 n$31 n$33 a_minus_b0 a_minus_b1 a_minus_b2
++ a_minus_b3 b0 b1 b2 b3 cc0 cc0_not vdd 4input_mux
+        x_4input_mux3 n$20 n$22 n$24 n$25 a_xor_b0 a_xor_b1 a_xor_b2 a_xor_b3
++ a_plus_b0 a_plus_b1 a_plus_b2 a_plus_b3 cc0 cc0_not vdd 4input_mux
+        x_4input_mux2 n$12 n$14 n$16 n$18 a_and_b0 a_and_b1 a_and_b2 a_and_b3
++ a_or_b0 a_or_b1 a_or_b2 a_or_b3 cc0 cc0_not vdd 4input_mux
+        x_4input_mux1 n$2 n$4 n$9 n$8 a0 a1 a2 a3 a0_not a1_not a2_not a3_not
++ cc0 cc0_not vdd 4input_mux
+        x_4input_mux13 n$101 n$103 n$105 n$109 n$85 n$87 n$89 n$91 n$93
++ n$95 n$97 n$99 cc2 cc2_not vdd 4input_mux
+        x_4input_mux12 n$85 n$87 n$89 n$91 n$2 n$4 n$9 n$8 n$12 n$14 n$16
++ n$18 cc1 cc1_not vdd 4input_mux
+        x_4input_mux11 n$93 n$95 n$97 n$99 n$20 n$22 n$24 n$25 n$27 n$29
++ n$31 n$33 cc1 cc1_not vdd 4input_mux
+        x_4input_mux10 n$69 n$71 n$73 n$75 n$36 n$38 n$39 n$41 n$45 n$47
++ n$49 n$51 cc1 cc1_not vdd 4input_mux
+        x_4input_mux9 n$77 n$79 n$81 n$83 n$53 n$55 n$57 n$59 n$61 n$63
++ n$65 n$67 cc1 cc1_not vdd 4input_mux
+        x_4input_mux8 n$61 n$63 n$65 n$67 a_minus_b_with_borrow0 a_minus_b_with_borrow1
++ a_minus_b_with_borrow2 a_minus_b_with_borrow3 b_plus_one0 b_plus_one1
++ b_plus_one2 b_plus_one3 cc0 cc0_not vdd 4input_mux
+        x_4input_mux7 n$53 n$55 n$57 n$59 zero0 zero1 zero2 zero3 a_plus_b_with_carry0
++ a_plus_b_with_carry1 a_plus_b_with_carry2 a_plus_b_with_carry3 cc0 cc0_not
++ vdd 4input_mux
+        x_4input_mux14 n$288 n$289 n$290 n$291 n$69 n$71 n$73 n$75 n$77
++ n$79 n$81 n$83 cc2 cc2_not vdd 4input_mux
+        x_4input_mux15 f0 f1 f2 f3 n$101 n$103 n$105 n$109 n$288 n$289 n$290
++ n$291 cc3 cc3_not vdd 4input_mux
+.ends project_1_mux
+
+*
+* Component pathname : /home/ece_lab/mentor/ECE4500/Project1/one_input_inverter/one_input_inverter
+*
+.subckt one_input_inverter  out in vdd_esc1 vss_esc2
+
+        .connect vss vss_esc2
+        .connect vdd vdd_esc1
+        m2 out in vss vss NMOS L=1.2u W=2.25u M=1
+        m1 out in vdd vdd PMOS L=1.2u W=6.75u M=1
+.ends one_input_inverter
+
+*
+* Component pathname : /home/ece_lab/mentor/ECE4500/Project1/add_sub_ovf_sel/add_sub_ovf_sel
+*
+.subckt add_sub_ovf_sel  f cc0 cc0_not cc1 cc1_not cc2_not cc3_not vdd_esc1
++ vss_esc2
+
+        .connect vdd vdd_esc1
+        .connect vss vss_esc2
+        m8 n$28 cc0 n$24 vdd PMOS L=1.2u W=5.0u M=1
+        m18 n$50 cc1_not vss vss NMOS L=1.2u W=2.4u M=1
+        m17 n$50 cc2_not vss vss NMOS L=1.2u W=2.4u M=1
+        m16 n$50 cc0 vss vss NMOS L=1.2u W=2.4u M=1
+        m15 n$41 cc3_not n$50 vss NMOS L=1.2u W=2.4u M=1
+        m14 n$41 cc2_not n$50 vss NMOS L=1.2u W=2.4u M=1
+        m13 n$41 cc0_not n$50 vss NMOS L=1.2u W=2.4u M=1
+        m12 f cc1 n$41 vss NMOS L=1.2u W=2.4u M=1
+        m11 f cc2_not n$41 vss NMOS L=1.2u W=2.4u M=1
+        m10 f cc0_not n$41 vss NMOS L=1.2u W=2.4u M=1
+        m9 f cc1_not n$28 vdd PMOS L=1.2u W=5.0u M=1
+        m7 n$24 cc2_not vdd vdd PMOS L=1.2u W=5.0u M=1
+        m6 f cc0_not n$18 vdd PMOS L=1.2u W=5.0u M=1
+        m5 n$18 cc3_not n$14 vdd PMOS L=1.2u W=5.0u M=1
+        m4 n$14 cc2_not vdd vdd PMOS L=1.2u W=5.0u M=1
+        m3 f cc2_not n$12 vdd PMOS L=1.2u W=5.0u M=1
+        m2 n$12 cc1 n$8 vdd PMOS L=1.2u W=5.0u M=1
+        m1 n$8 cc0_not vdd vdd PMOS L=1.2u W=5.0u M=1
+.ends add_sub_ovf_sel
+
+*
+* Component pathname : /home/ece_lab/mentor/ECE4500/Project1/one_input_buffer/one_input_buffer
+*
+.subckt one_input_buffer  out in vdd_esc1 vss_esc2
+
+        .connect vss vss_esc2
+        .connect vdd vdd_esc1
+        x_one_input_inverter2 out n$3 vdd vss one_input_inverter
+        x_one_input_inverter1 n$3 in vdd vss one_input_inverter
+.ends one_input_buffer
+
+*
+* Component pathname : /home/ece_lab/mentor/ECE4500/Project1/two_input_or/two_input_or
+*
+.subckt two_input_or  f a_not b_not vdd_esc1 vss_esc2
+
+        .connect vss vss_esc2
+        .connect vdd vdd_esc1
+        m3 n$11 b_not vss vss NMOS L=1.2u W=6.4u M=1
+        m2 f a_not n$11 vss NMOS L=1.2u W=6.4u M=1
+        m1 f vss vdd vdd PMOS L=4.8u W=2.4u M=1
+.ends two_input_or
+
+*
+* Component pathname : /home/ece_lab/mentor/ECE4500/Project1/two_input_and_2/two_input_and
+*
+.subckt two_input_and  f a b b_not vdd_esc1
+
+        .connect vdd vdd_esc1
+        m5 a b f vss NMOS L=1.2u W=2.4u M=1
+        m4 f b_not b vss NMOS L=1.2u W=2.4u M=1
+        m3 a b f vss NMOS L=1.2u W=2.4u M=1
+        m2 a b_not f vdd PMOS L=1.2u W=2.4u M=1
+.ends two_input_and
+
+*
+* Component pathname : /home/ece_lab/mentor/ECE4500/Project1/two_input_xor/two_input_xor
+*
+.subckt two_input_xor  f a a_not b vdd_esc1
+
+        .connect vdd vdd_esc1
+        m4 f a_not b vss NMOS L=1.2u W=2.4u M=1
+        m3 f a b vdd PMOS L=1.2u W=2.4u M=1
+        m2 f b a_not vss NMOS L=1.2u W=2.4u M=1
+        m1 f b a vdd PMOS L=1.2u W=2.4u M=1
+.ends two_input_xor
+
+*
+* Component pathname : /home/ece_lab/mentor/ECE4500/Project1/full_add_sub/full_add_sub
+*
+.subckt full_add_sub  bout_cout sum_diff a a_not a_xor_b a_xor_b_not bin_cin
++ cc0 cc0_not cc3 cc3_not vdd_esc1 vss_esc2
+
+        .connect vss vss_esc2
+        .connect vdd vdd_esc1
+        x_two_input_xor1 sum_diff a_xor_b a_xor_b_not n$39 vdd two_input_xor
+        x_two_input_mux4 n$39 bin_cin vss cc3 cc3_not vdd two_input_mux
+        x_two_input_mux3 bout_cout n$11 n$9 cc0 cc0_not vdd two_input_mux
+        x_two_input_mux2 n$9 a_not n$39 a_xor_b a_xor_b_not vdd two_input_mux
+        x_two_input_mux1 n$11 n$39 a a_xor_b a_xor_b_not vdd two_input_mux
+.ends full_add_sub
+
+*
+* Component pathname : /home/ece_lab/mentor/ECE4500/Project1/one_bit_alu/one_bit_alu
+*
+.subckt one_bit_alu  a_and_b a_not a_or_b a_xor_b bout_cout sum_diff a add
++ b bin_cin cc0 cc0_not cc1 cc1_not cc3 cc3_not vdd_esc1 vss_esc2
+
+        .connect vss vss_esc2
+        .connect vdd vdd_esc1
+        x_two_input_mux2 n$129 n$130 a cc0 cc0_not vdd two_input_mux
+        x_two_input_or1 a_or_b a_not n$10 vdd vss two_input_or
+        x_two_input_mux1 n$130 add a n$142 n$143 vdd two_input_mux
+        x_one_input_inverter3 n$10 b vdd vss one_input_inverter
+        x_one_input_inverter2 a_not a vdd vss one_input_inverter
+        x_two_input_and1 a_and_b a b n$10 vdd two_input_and
+        x_one_input_inverter1 n$22 a_xor_b vdd vss one_input_inverter
+        x_two_input_xor1 a_xor_b b n$10 n$129 vdd two_input_xor
+        x_one_input_inverter5 n$143 n$142 vdd vss one_input_inverter
+        x_two_input_and2 n$142 cc0 cc1 cc1_not vdd two_input_and
+        x_full_add_sub1 bout_cout sum_diff n$130 n$122 a_xor_b n$22 bin_cin
++ cc0 cc0_not cc3 cc3_not vdd vss full_add_sub
+        x_one_input_inverter4 n$122 n$129 vdd vss one_input_inverter
+.ends one_bit_alu
+
+*
+* Component pathname : /home/ece_lab/mentor/4500/Project_1/Shifts
+*
+.subckt shifts  f0 f1 f2 f3 ovf a0 a1 a2 a3 c_out cc0 cc0_not cc1 cc1_not
++ vdd_esc1 vss_esc2
+
+        .connect vdd vdd_esc1
+        .connect vss vss_esc2
+        m6 a2 cc0_not f3 vss NMOS L=1.2u W=2u M=1
+        m17 vss cc0 f0 vdd PMOS L=1.2u W=7.5u M=1
+        m16 a2 cc0 f1 vss NMOS L=1.2u W=2u M=1
+        m15 a2 cc0_not f1 vdd PMOS L=1.2u W=7.5u M=1
+        m14 a0 cc0_not f1 vss NMOS L=1.2u W=2u M=1
+        m13 a0 cc0 f1 vdd PMOS L=1.2u W=7.5u M=1
+        m12 a3 cc0 f2 vss NMOS L=1.2u W=2u M=1
+        m11 a3 cc0_not f2 vdd PMOS L=1.2u W=7.5u M=1
+        m10 a1 cc0_not f2 vss NMOS L=1.2u W=2u M=1
+        m9 a1 cc0 f2 vdd PMOS L=1.2u W=7.5u M=1
+        m8 n$30 cc0 f3 vss NMOS L=1.2u W=2u M=1
+        m7 n$30 cc0_not f3 vdd PMOS L=1.2u W=7.5u M=1
+        m28 a0 cc0 c_out vss NMOS L=1.2u W=2u M=1
+        m27 a0 cc0_not c_out vdd PMOS L=1.2u W=7.5u M=1
+        m26 a3 cc0_not c_out vss NMOS L=1.2u W=2u M=1
+        m25 a3 cc0 c_out vdd PMOS L=1.2u W=7.5u M=1
+        m5 a2 cc0 f3 vdd PMOS L=1.2u W=7.5u M=1
+        m3 a3 cc1_not n$30 vdd PMOS L=1.2u W=7.5u M=1
+        m4 a3 cc1 n$30 vss NMOS L=1.2u W=2u M=1
+        m1 vss cc1 n$30 vdd PMOS L=1.2u W=7.5u M=1
+        m2 vss cc1_not n$30 vss NMOS L=1.2u W=2u M=1
+        m20 a1 cc0 f0 vss NMOS L=1.2u W=2u M=1
+        m18 vss cc0_not f0 vss NMOS L=1.2u W=2u M=1
+        m19 a1 cc0_not f0 vdd PMOS L=1.2u W=7.5u M=1
+        m21 n$30 cc0 ovf vdd PMOS L=1.2u W=7.5u M=1
+        m24 vss cc0 ovf vss NMOS L=1.2u W=2u M=1
+        m23 vss cc0_not ovf vdd PMOS L=1.2u W=7.5u M=1
+        m22 n$30 cc0_not ovf vss NMOS L=1.2u W=2u M=1
+.ends shifts
+
+*
+* Component pathname : /home/ece_lab/mentor/ECE4500/Project1/four_input_and/four_input_and
+*
+.subckt four_input_and  f a b b_not c d d_not vdd_esc1 vss_esc2
+
+        .connect vss vss_esc2
+        .connect vdd vdd_esc1
+        x_one_input_inverter1 n$4 n$5 vdd vss one_input_inverter
+        x_two_input_and3 f n$7 n$5 n$4 vdd two_input_and
+        x_two_input_and2 n$5 c d d_not vdd two_input_and
+        x_two_input_and1 n$7 a b b_not vdd two_input_and
+.ends four_input_and
+
+*
+* MAIN CELL: Component pathname : /home/ece_lab/mentor/ECE4500/Project1/four_bit_alu/four_bit_alu
+*
+        x_two_input_mux1 n$475 n$276 n$480 n$498 n$492 vdd two_input_mux
+        x_project_1_mux1 n$110 n$103 n$118 n$282 a0 n$41 a1 n$31 a2 n$66
++ a3 n$20 n$40 n$30 n$65 n$19 n$575 n$36 n$70 n$26 n$575 n$36 n$70 n$26
++ n$42 n$32 n$67 n$21 n$575 n$36 n$70 n$26 n$575 n$36 n$70 n$26 n$586 n$33
++ n$68 n$626 n$287 n$288 n$289 n$159 n$287 n$288 n$289 n$159 b0 b1 b2 b3
++ n$575 n$36 n$70 n$26 cc0 n$583 cc1 n$629 cc2 n$555 cc3 n$553 n$287 n$288
++ n$289 n$159 n$287 n$288 n$289 n$159 vdd vss vss vss vss project_1_mux
+        x_one_input_inverter8 n$583 cc0 vdd vss one_input_inverter
+        x_one_input_inverter2 n$555 cc2 vdd vss one_input_inverter
+        x_add_sub_ovf_sel1 n$656 cc0 n$583 cc1 n$629 n$555 n$553 vdd vss add_sub_ovf_sel
+        x_one_input_buffer9 ovf n$475 vdd vss one_input_buffer
+        x_one_input_inverter9 n$367 n$636 vdd vss one_input_inverter
+        x_one_input_inverter1 n$553 cc3 vdd vss one_input_inverter
+        x_i$4 n$40 n$41 n$42 n$586 n$10 n$575 a0 n$356 b0 bin_cin cc0 n$583
++ cc1 n$629 cc3 n$553 vdd vss one_bit_alu
+        x_one_input_inverter4 n$111 n$110 vdd vss one_input_inverter
+        x_one_input_buffer10 bout_cout n$632 vdd vss one_input_buffer
+        x_one_input_buffer4 f0 n$110 vdd vss one_input_buffer
+        x_two_input_mux3 n$632 n$630 n$636 n$498 n$492 vdd two_input_mux
+        x_shifts1 n$287 n$288 n$289 n$159 n$276 a0 a1 a2 a3 n$630 cc0 n$583
++ cc1 n$629 vdd vss shifts
+        v1 vdd vss DC 2.5V
+        x_two_input_mux2 n$480 n$657 vss n$656 n$561 vdd two_input_mux
+        x_one_input_inverter11 n$492 n$498 vdd vss one_input_inverter
+        x_one_input_inverter5 n$115 n$103 vdd vss one_input_inverter
+        x_one_input_inverter6 n$119 n$118 vdd vss one_input_inverter
+        x_one_input_buffer7 f3 n$282 vdd vss one_input_buffer
+        x_one_input_buffer6 f2 n$118 vdd vss one_input_buffer
+        x_one_input_buffer5 f1 n$103 vdd vss one_input_buffer
+        x_i$1 n$65 n$66 n$67 n$68 n$625 n$70 a2 vss b2 n$571 cc0 n$583 cc1
++ n$629 vdd vss vdd vss one_bit_alu
+        x_two_input_and1 n$498 cc3 n$555 cc2 vdd two_input_and
+        x_one_input_buffer8 z n$615 vdd vss one_input_buffer
+        x_two_input_xor1 n$657 n$636 n$367 n$625 vdd two_input_xor
+        x_i$3 n$30 n$31 n$32 n$33 n$571 n$36 a1 vss b1 n$10 cc0 n$583 cc1
++ n$629 vdd vss vdd vss one_bit_alu
+        x_i$2 n$19 n$20 n$21 n$626 n$636 n$26 a3 vss b3 n$625 cc0 n$583
++ cc1 n$629 vdd vss vdd vss one_bit_alu
+        x_one_input_inverter7 n$123 n$282 vdd vss one_input_inverter
+        x_one_input_buffer1 s n$282 vdd vss one_input_buffer
+        x_one_input_inverter3 n$629 cc1 vdd vss one_input_inverter
+        x_one_input_inverter10 n$561 n$656 vdd vss one_input_inverter
+        x_two_input_and2 n$356 vdd cc0 n$583 vdd two_input_and
+        x_four_input_and1 n$615 n$111 n$115 n$103 n$119 n$123 n$282 vdd
++ vss four_input_and
+*
+.end

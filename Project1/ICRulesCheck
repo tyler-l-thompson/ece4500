@@ -1,0 +1,93 @@
+==================================================================================
+=== ICVERIFY::ICRULES DRC SUMMARY REPORT
+===
+Execution Date/Time:       Sun Oct 28 19:22:55 2018
+Rule File Pathname:        /home/ece_lab/mentor/mgc/mit_25.rules
+Rule File Title:           
+Layout Cell Pathname:      /home/ece_lab/mentor/ECE4500/Project1/four_bit_alu/four_bit_alu
+Current Directory:         /home/ece_lab/mentor
+User Name:                 ece_lab
+Maximum Results/RuleCheck: 1000
+Hierarchical Mode:         FLAT  VIAFLAT = NO  DEVICEFLAT = NO
+Area:                      
+Summary Report File:       /home/ece_lab/mentor/drc_sum.rep (REPLACE)
+Geometry Flagging:         ACUTE = YES  SKEW = YES  ANGLED = NO  OFFGRID = YES
+Excluded Cells:           
+CheckText Mapping:         COMMENT TEXT + RULE FILE INFORMATION
+Layers:                    MEMORY-BASED
+Other Check Parameters:    NOAPPEND KEEPEMPTY ALLMESSAGES NOVERBOSE NOWRITEDATABASE
+----------------------------------------------------------------------------------
+--- RUNTIME WARNINGS
+---
+----------------------------------------------------------------------------------
+--- ORIGINAL LAYER STATISTICS
+---
+LAYER NWELL ....... TOTAL Original Geometry Count = 154
+LAYER NPLUS ....... TOTAL Original Geometry Count = 103
+LAYER RESISTOR .... TOTAL Original Geometry Count = 0
+LAYER PPLUS ....... TOTAL Original Geometry Count = 52
+LAYER POLY ........ TOTAL Original Geometry Count = 1029
+LAYER CAP ......... TOTAL Original Geometry Count = 0
+LAYER ACTIVE ...... TOTAL Original Geometry Count = 155
+LAYER NBIMP ....... TOTAL Original Geometry Count = 0
+LAYER PBIMP ....... TOTAL Original Geometry Count = 0
+LAYER CONTACT ..... TOTAL Original Geometry Count = 1005
+LAYER MET1 ........ TOTAL Original Geometry Count = 3547
+LAYER CUTV1 ....... TOTAL Original Geometry Count = 919
+LAYER MET2 ........ TOTAL Original Geometry Count = 1486
+LAYER CUTV2 ....... TOTAL Original Geometry Count = 0
+LAYER MET3 ........ TOTAL Original Geometry Count = 0
+LAYER OVERGLASS ... TOTAL Original Geometry Count = 0
+----------------------------------------------------------------------------------
+--- RULECHECK RESULTS STATISTICS
+---
+RULECHECK R1.2 .... TOTAL Result Count = 0
+RULECHECK R1.3 .... TOTAL Result Count = 0
+RULECHECK R1.4 .... TOTAL Result Count = 0
+RULECHECK R1.5 .... TOTAL Result Count = 0
+RULECHECK R2.1 .... TOTAL Result Count = 0
+RULECHECK R2.2 .... TOTAL Result Count = 0
+RULECHECK R2.3 .... TOTAL Result Count = 0
+RULECHECK R3.1 .... TOTAL Result Count = 0
+RULECHECK R3.2 .... TOTAL Result Count = 0
+RULECHECK R3.3 .... TOTAL Result Count = 0
+RULECHECK R4.1 .... TOTAL Result Count = 0
+RULECHECK R4.2 .... TOTAL Result Count = 0
+RULECHECK R4.3 .... TOTAL Result Count = 0
+RULECHECK R4.4 .... TOTAL Result Count = 0
+RULECHECK R4.5 .... TOTAL Result Count = 0
+RULECHECK R5.1 .... TOTAL Result Count = 0
+RULECHECK R5.2 .... TOTAL Result Count = 0
+RULECHECK R5.3 .... TOTAL Result Count = 0
+RULECHECK R6.1 .... TOTAL Result Count = 0
+RULECHECK R6.2 .... TOTAL Result Count = 0
+RULECHECK R7.1 .... TOTAL Result Count = 0
+RULECHECK R7.2 .... TOTAL Result Count = 0
+RULECHECK R7.3 .... TOTAL Result Count = 0
+RULECHECK R7.4 .... TOTAL Result Count = 0
+RULECHECK R7.5 .... TOTAL Result Count = 0
+RULECHECK R7.6 .... TOTAL Result Count = 0
+RULECHECK R7.7 .... TOTAL Result Count = 0
+RULECHECK R8.1 .... TOTAL Result Count = 0
+RULECHECK R8.2 .... TOTAL Result Count = 0
+RULECHECK R9.1 .... TOTAL Result Count = 0
+RULECHECK R9.2 .... TOTAL Result Count = 0
+RULECHECK R9.3 .... TOTAL Result Count = 0
+RULECHECK R10.1 ... TOTAL Result Count = 0
+RULECHECK R10.2 ... TOTAL Result Count = 0
+RULECHECK R10.3 ... TOTAL Result Count = 0
+RULECHECK R11.1 ... TOTAL Result Count = 0
+RULECHECK R11.2 ... TOTAL Result Count = 0
+RULECHECK R11.3 ... TOTAL Result Count = 0
+RULECHECK R12.1 ... TOTAL Result Count = 0
+RULECHECK R12.2 ... TOTAL Result Count = 0
+RULECHECK R12.3 ... TOTAL Result Count = 0
+RULECHECK R13.1 ... TOTAL Result Count = 0
+----------------------------------------------------------------------------------
+--- SUMMARY
+---
+TOTAL CPU Time:                  0.11
+TOTAL REAL Time:                 0.119641
+TOTAL Original Layer Geometries: 8450
+TOTAL DRC RuleChecks Executed:   42
+TOTAL DRC Results Generated:     0

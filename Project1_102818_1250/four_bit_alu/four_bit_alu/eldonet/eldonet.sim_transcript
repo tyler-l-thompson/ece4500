@@ -1,0 +1,198 @@
+
+Running eldo on linux-B210
+with Eldo libraries :
+/mgc/ams/ixl/lib/libeldoudm.so
+/mgc/ams/ixl/lib/libeldomos1.so
+/mgc/ams/ixl/lib/libeldoekv.so
+/mgc/ams/ixl/lib/libeldomosp9.so
+/mgc/ams/ixl/lib/libeldocsem.so
+/mgc/ams/ixl/lib/libeldomos2.so
+/mgc/ams/ixl/lib/libeldomos3.so
+/mgc/ams/ixl/lib/libeldobip.so
+/mgc/ams/ixl/lib/libeldodio.so
+/mgc/ams/ixl/lib/libeldojfet.so
+/mgc/ams/ixl/lib/libeldosoi.so
+/mgc/ams/ixl/lib/libeldomos4.so
+/mgc/ams/ixl/lib/libeldoasitft.so
+/mgc/ams/ixl/lib/libeldohisim.so
+/mgc/ams/ixl/lib/libeldospmod.so
+/mgc/ams/ixl/lib/libeldopsp.so
+/mgc/ams/ixl/lib/libeldomosvar.so
+/mgc/ams/ixl/lib/libeldomoto.so
+/mgc/ams/ixl/lib/libeldost.so
+/mgc/ams/ixl/lib/libeldobnr.so
+/mgc/ams/ixl/lib/libeldorockw.so
+/mgc/ams/ixl/lib/libeldopubhicum.so
+/mgc/ams/ixl/lib/libeldotftsh.so
+/mgc/ams/ixl/lib/libeldobta.so
+/mgc/ams/ixl/lib/libeldofas.so
+/mgc/ams/ixl/lib/libeldofascm.so
+/mgc/ams/ixl/lib/libeldosdsim.so
+/mgc/ams/ixl/lib/libeldowire.so
+/mgc/ams/ixl/lib/libogr.so loaded.
+
+
+
+              Software under License 
+       Copyright Mentor Graphics Corporation
+
+
+
+
+***** PRE-PROCESSING ...
+
+
+
+***** ANALYSIS ....
+
+Warning 316: In file "./mgc/mit_0.25.lib" line 62:
++   COMMAND .ENDS: The name does not match the .SUBCKT name.
+
+***** 0  error(s). 
+***** 1  warning(s). 
+
+
+
+***** GENERATION ...
+
+Warning 1615: In file "./ECE4500/Project1/four_bit_alu/four_bit_alu/eldonet/four_bit_alu_eldonet.cir" line 12:
++   COMMAND ".TRAN": Tstep can not be <= 0.0.
++   It is set to Tmax/20.0 = 5.000e-08 s.
+
+***** 0  error(s). 
+***** 2  warning(s). 
+
+
+INFORMATION ABOUT COMPILATION...
+
+
+Memory space allocated (bytes): 58126336
+604 elements
+197 nodes
+14 input signals
+
+
+Warning: A transition time < HMIN (1.000000e-12Sec) found on VFORCE__A0
+HMIN assumed.. Set Eldo option 'HMIN' to a lower value if needed.
+
+
+Warning: A transition time < HMIN (1.000000e-12Sec) found on VFORCE__A0_1
+HMIN assumed.. Set Eldo option 'HMIN' to a lower value if needed.
+
+
+Warning: A transition time < HMIN (1.000000e-12Sec) found on VFORCE__A0_2
+HMIN assumed.. Set Eldo option 'HMIN' to a lower value if needed.
+
+
+Warning: A transition time < HMIN (1.000000e-12Sec) found on VFORCE__A0_4
+HMIN assumed.. Set Eldo option 'HMIN' to a lower value if needed.
+
+
+Warning: A transition time < HMIN (1.000000e-12Sec) found on VFORCE__A0_6
+HMIN assumed.. Set Eldo option 'HMIN' to a lower value if needed.
+
+
+Warning: A transition time < HMIN (1.000000e-12Sec) found on VFORCE__A0_9
+HMIN assumed.. Set Eldo option 'HMIN' to a lower value if needed.
+
+
+Warning: A transition time < HMIN (1.000000e-12Sec) found on VFORCE__A0_10
+HMIN assumed.. Set Eldo option 'HMIN' to a lower value if needed.
+
+
+Warning: A transition time < HMIN (1.000000e-12Sec) found on VFORCE__A0_11
+HMIN assumed.. Set Eldo option 'HMIN' to a lower value if needed.
+ Reset internal minimun time step.
+hmin value is 2.500000e-04Nanos
+
+Eldo VERSION : ELDO 2010.1 Thu Jul  1 14:15:09 GMT 2010
+
+*** DATE: 28-Oct-2018 06:46:55
+
+*** TITLE: * Component: /home/ece_lab/mentor/ECE4500/Project1/four_bit_alu/four_bit_alu  Viewpoint: eldonet
+
+TEMPERATURE : 27.000000 degrees C
+
+ Reset internal minimun time step.
+hmin value is 2.500000e-04Nanos
+
+Performing DC analysis...
+
+--> Partitioning circuit...
+
+***> DC CPU TIME 0s 070ms <***
+
+DC:22 iterations FOR DC analysis
+
+   TOTAL POWER DISSIPATION:  33.1682U    WATTS
+
+
+Eldo NEWTON: VNTOL=1.000000e-06 RELTOL=7.500000e-04
+
+Connecting to JWDB server, please wait...
+connected to wdb server : -jwdbhost linux-B210 -jwdbport 56266
+
+Compute from 0.000000 Nano to 1.000000E+03 Nano
+................................................
+Simulation progress           : 10% (t = 100.0002 N)
+Elapsed CPU time              :  0h  0mn  0s  40    ( 0h  0mn  0s  40)
+................................................
+Simulation progress           : 20% (t = 200.0000 N)
+Elapsed CPU time              :  0h  0mn  0s 400    ( 0h  0mn  0s 440)
+................................................
+Simulation progress           : 30% (t = 300.0001 N)
+Elapsed CPU time              :  0h  0mn  0s 350    ( 0h  0mn  0s 790)
+ Newton: No convergence at time :300.000531Nano ; try to pass over...
+  pb on or around node X_I$4.X_FULL_ADD_SUB1.X_TWO_INPUT_MUX3.M4_D
+
+May be setting EPS to a lower value, for instance setting
+.OPTION EPS = 1u
+would help solving this problem..
+TIME 3.000005e-07: end of non-convergence points
+................................................
+Simulation progress           : 40% (t = 400.0000 N)
+Elapsed CPU time              :  0h  0mn  0s 290    ( 0h  0mn  1s  80)
+................................................
+Simulation progress           : 50% (t = 500.0000 N)
+Elapsed CPU time              :  0h  0mn  0s 320    ( 0h  0mn  1s 400)
+................................................
+Simulation progress           : 60% (t = 600.0002 N)
+Elapsed CPU time              :  0h  0mn  0s 300    ( 0h  0mn  1s 700)
+................................................
+Simulation progress           : 70% (t = 700.0000 N)
+Elapsed CPU time              :  0h  0mn  0s 190    ( 0h  0mn  1s 890)
+................................................
+Simulation progress           : 80% (t = 800.0001 N)
+Elapsed CPU time              :  0h  0mn  0s 290    ( 0h  0mn  2s 180)
+................................................
+Simulation progress           : 90% (t = 900.0000 N)
+Elapsed CPU time              :  0h  0mn  0s 190    ( 0h  0mn  2s 370)
+................................................
+Simulation progress           : 100% (t = 1.0000 U)
+Elapsed CPU time              :  0h  0mn  0s 300    ( 0h  0mn  2s 670)
+
+
+***>Current simulation completed
+
+
+
+
+SIMULATION INFORMATION 
+memory size allocated in bytes 60043264
+Latency: 0.000000%
+average number of newton iterations: 4.168990
+nb of components: 1474
+nb of nodes: 1067
+nb of MOS or BIP calls: 3259854
+Number of steps computed: 1052
+
+***>CPU TIME 2s 670ms <***
+
+***>MESSAGE SUMMARY: 2 warnings
+
+***>GLOBAL CPU TIME 2s 800ms <***
+
+
+***>GLOBAL ELAPSED TIME 5s <***
+
+

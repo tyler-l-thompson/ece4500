@@ -1,0 +1,44 @@
+A 5 u Ic_cell_template 5bd564bcde6f.03.7f.00.00.02.00.65.ae 9 4 9 0
+V v 5 2 5bca5866c5c5.03.7f.00.00.02.00.06.a7
+F f 5 "one_input_inverter.iccel_5"
+F o 0 ""
+V v 6 2 5bca59161467.03.7f.00.00.02.00.06.a7
+F f 6 "one_input_inverter.iccel_6"
+F o 0 ""
+V v 7 2 5bca5936dd9b.03.7f.00.00.02.00.06.a7
+F f 7 "one_input_inverter.iccel_7"
+F o 0 ""
+V v 8 2 5bd3e477b467.03.7f.00.00.02.00.71.38
+F f 8 "one_input_inverter.iccel_8"
+F o 0 ""
+V v 9 2 5bd56792a207.03.7f.00.00.02.00.65.ae
+F f 9 "one_input_inverter.iccel_9"
+F o 0 ""
+O 9
+R csduv 1 "/home/ece_lab/mentor/mgc/mit_25" 8 Ic_persist_process 4d337a69d114.03.7f.00.00.01.00.3d.8c 3ae460ae24b4.03.93.22.22.3e.00.42.a5
+R csdni 5 "/home/ece_lab/mentor/mgc/mit_25.rules" 1 Mgc_file
+R csduv 8 "/home/ece_lab/mentor/ECE4500/Project1/four_input_and/one_input_inverter" 1 Eddm_design_viewpoint 5bd564f52d69.03.7f.00.00.02.01.65.ae 5bd564f52d69.03.7f.00.00.02.00.65.ae
+O 8
+R csduv 1 "/home/ece_lab/mentor/mgc/mit_25" 8 Ic_persist_process 4d337a69d114.03.7f.00.00.01.00.3d.8c 3ae460ae24b4.03.93.22.22.3e.00.42.a5
+R csduv 2 "/home/ece_lab/mentor/ECE4500/Project1/one_input_inverter/one_input_inverter/eldonet" 2 Eddm_design_viewpoint 5bca4b4ef194.03.7f.00.00.02.00.7d.bc 5bca4ad93925.03.7f.00.00.02.00.7d.bc
+R cmduv 3 "49052f642000.0d.00.01.a5.b0.00.00.00" 1 Ic_device_template 49fba4394000.0d.00.01.a5.b0.00.00.00 49052f642000.0d.00.01.a5.b0.00.00.00
+R csdni 5 "/home/ece_lab/mentor/mgc/mit_25.rules" 1 Mgc_file
+R csduv 7 "$MGC_DESIGN_KIT/process/MPOLY" 1 Ic_cell_template 39ca3bb71aba.03.89.ca.b5.8b.00.3d.46 39de40031d9d.03.93.22.22.3e.03.0a.d0
+O 7
+R csduv 1 "/home/ece_lab/mentor/mgc/mit_25" 8 Ic_persist_process 4d337a69d114.03.7f.00.00.01.00.3d.8c 3ae460ae24b4.03.93.22.22.3e.00.42.a5
+R csduv 2 "/home/ece_lab/mentor/ECE4500/Project1/one_input_inverter/one_input_inverter/eldonet" 2 Eddm_design_viewpoint 5bca4b4ef194.03.7f.00.00.02.00.7d.bc 5bca4ad93925.03.7f.00.00.02.00.7d.bc
+R cmduv 3 "49052f642000.0d.00.01.a5.b0.00.00.00" 1 Ic_device_template 49fba4394000.0d.00.01.a5.b0.00.00.00 49052f642000.0d.00.01.a5.b0.00.00.00
+R csdni 5 "/home/ece_lab/mentor/mgc/mit_25.rules" 1 Mgc_file
+R csduv 7 "$MGC_DESIGN_KIT/process/MPOLY" 1 Ic_cell_template 39ca3bb71aba.03.89.ca.b5.8b.00.3d.46 39de40031d9d.03.93.22.22.3e.03.0a.d0
+O 6
+R csduv 1 "/home/ece_lab/mentor/mgc/mit_25" 8 Ic_persist_process 4d337a69d114.03.7f.00.00.01.00.3d.8c 3ae460ae24b4.03.93.22.22.3e.00.42.a5
+R csduv 2 "/home/ece_lab/mentor/ECE4500/Project1/one_input_inverter/one_input_inverter/eldonet" 2 Eddm_design_viewpoint 5bca4b4ef194.03.7f.00.00.02.00.7d.bc 5bca4ad93925.03.7f.00.00.02.00.7d.bc
+R cmduv 3 "49052f642000.0d.00.01.a5.b0.00.00.00" 1 Ic_device_template 49fba4394000.0d.00.01.a5.b0.00.00.00 49052f642000.0d.00.01.a5.b0.00.00.00
+R csdni 5 "/home/ece_lab/mentor/mgc/mit_25.rules" 1 Mgc_file
+R csduv 7 "$MGC_DESIGN_KIT/process/MPOLY" 1 Ic_cell_template 39ca3bb71aba.03.89.ca.b5.8b.00.3d.46 39de40031d9d.03.93.22.22.3e.03.0a.d0
+O 5
+R csduv 1 "/home/ece_lab/mentor/mgc/mit_25" 8 Ic_persist_process 4d337a69d114.03.7f.00.00.01.00.3d.8c 3ae460ae24b4.03.93.22.22.3e.00.42.a5
+R csduv 2 "/home/ece_lab/mentor/ECE4500/Project1/one_input_inverter/one_input_inverter/eldonet" 2 Eddm_design_viewpoint 5bca4b4ef194.03.7f.00.00.02.00.7d.bc 5bca4ad93925.03.7f.00.00.02.00.7d.bc
+R cmduv 3 "49052f642000.0d.00.01.a5.b0.00.00.00" 1 Ic_device_template 49fba4394000.0d.00.01.a5.b0.00.00.00 49052f642000.0d.00.01.a5.b0.00.00.00
+R csdni 5 "/home/ece_lab/mentor/mgc/mit_25.rules" 1 Mgc_file
+R csduv 6 "$MGC_DESIGN_KIT/process/MPOLY" 1 Ic_cell_template 39ca3bb71aba.03.89.ca.b5.8b.00.3d.46 39de40031d9d.03.93.22.22.3e.03.0a.d0

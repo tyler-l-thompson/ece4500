@@ -1,0 +1,18 @@
+A 5 u Eddm_design_viewpoint 5bd61b6e5beb.03.7f.00.00.02.00.07.21 1 2 10 0
+V v 1 4 5bd61b6e5beb.03.7f.00.00.02.01.07.21
+F f 1 "Project_1_MUX.dvpt_1"
+F o 0 
+F o 0 
+F o 0 
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "/home/ece_lab/mentor/4500/Project_1/Project_1_MUX/schematic" 9 mgc_schematic 5bd4b9f0c3dc.03.7f.00.00.02.00.7a.8a 5bd3498f84db.03.7f.00.00.02.00.16.51
+R cspuv 1 "/home/ece_lab/mentor/4500/Project_1/Project_1_MUX/part" 3 Eddm_part 5bd48e719011.03.7f.00.00.02.00.18.1f 5bd3549165e9.03.7f.00.00.02.00.16.51
+R cspuv 2 "/home/ece_lab/mentor/4500/Project_1/Project_1_MUX/Project_1_MUX" 2 mgc_symbol 5bd48c69a4e9.03.7f.00.00.02.00.18.1f 5bd3548abb8e.03.7f.00.00.02.00.16.51
+R cspuv 3 "/home/ece_lab/mentor/4500/Project_1/4input_MUX/part" 4 Eddm_part 5bd48a3c8f25.03.7f.00.00.02.00.2a.82 5bd347a101ba.03.7f.00.00.02.00.16.51
+R cspuv 4 "/home/ece_lab/mentor/4500/Project_1/4input_MUX/schematic" 6 mgc_schematic 5bd47b4585a1.03.7f.00.00.02.00.18.1f 5bd341bd10ec.03.7f.00.00.02.00.16.51
+R cspuv 5 "/home/ece_lab/mentor/4500/Project_1/4input_MUX/4input_MUX" 4 mgc_symbol 5bd489412875.03.7f.00.00.02.00.2a.82 5bd3485a45de.03.7f.00.00.02.00.16.51
+R cspuv 6 "$MGC_DESIGN_KIT/symbols/pmos/part" 6 Eddm_part 39dcb70a738a.03.93.22.22.3e.00.2e.08 399d7e54bb91.03.93.22.22.3e.00.4c.5c
+R cspuv 7 "$MGC_DESIGN_KIT/symbols/nmos/part" 7 Eddm_part 39dcb6d2c6cf.03.93.22.22.3e.00.2e.08 399d7e4745c6.03.93.22.22.3e.00.4c.5c
+R cspuv 8 "$MGC_DESIGN_KIT/symbols/pmos/pmos" 6 mgc_symbol 39dcb70a734b.03.93.22.22.3e.00.2e.08 399d7e54d47a.03.93.22.22.3e.00.4c.5c
+R cspuv 9 "$MGC_DESIGN_KIT/symbols/nmos/nmos" 7 mgc_symbol 39dcb6d2c689.03.93.22.22.3e.00.2e.08 399d7e475de3.03.93.22.22.3e.00.4c.5c

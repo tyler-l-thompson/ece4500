@@ -1,0 +1,21 @@
+A 5 u Eddm_design_viewpoint 5bd610ed8293.03.7f.00.00.02.00.01.e1 1 2 13 0
+V v 1 4 5bd610ed8294.03.7f.00.00.02.00.01.e1
+F f 1 "full_add_sub.dvpt_1"
+F o 0 
+F o 0 
+F o 0 
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Project1/full_add_sub/full_add_sub/schematic" 15 mgc_schematic 5bd5253aba90.03.7f.00.00.02.00.03.21 5bc9959fcaf1.03.7f.00.00.02.00.50.ed
+R cspuv 1 "/home/ece_lab/mentor/ECE4500/Project1/full_add_sub/full_add_sub/part" 2 Eddm_part 5bca418269ba.03.7f.00.00.02.00.65.be 5bc99781be28.03.7f.00.00.02.00.50.ed
+R cspuv 2 "/home/ece_lab/mentor/ECE4500/Project1/full_add_sub/full_add_sub/full_add_sub" 1 mgc_symbol 5bca415b09f0.03.7f.00.00.02.01.65.be 5bca415b09f0.03.7f.00.00.02.00.65.be
+R cspuv 3 "/home/ece_lab/mentor/ECE4500/Project1/two_input_mux/two_input_mux/part" 2 Eddm_part 5bc9954257d6.03.7f.00.00.02.00.4e.ff 5bc98fcb7391.03.7f.00.00.02.00.49.a6
+R cspuv 4 "/home/ece_lab/mentor/ECE4500/Project1/two_input_xor/two_input_xor/part" 2 Eddm_part 5bca400ce482.03.7f.00.00.02.00.65.be 5bca3f15478f.03.7f.00.00.02.00.65.be
+R cspuv 5 "/home/ece_lab/mentor/ECE4500/Project1/two_input_xor/two_input_xor/schematic" 3 mgc_schematic 5bca3fb8d4e4.03.7f.00.00.02.00.65.be 5bca3df382ec.03.7f.00.00.02.00.65.be
+R cspuv 6 "/home/ece_lab/mentor/ECE4500/Project1/two_input_xor/two_input_xor/two_input_xor" 1 mgc_symbol 5bca3fd3d331.03.7f.00.00.02.00.65.be 5bca3fd3d330.03.7f.00.00.02.00.65.be
+R cspuv 7 "/home/ece_lab/mentor/ECE4500/Project1/two_input_mux/two_input_mux/schematic" 3 mgc_schematic 5bc99083da48.03.7f.00.00.02.00.49.a6 5bc98e690ca6.03.7f.00.00.02.00.49.a6
+R cspuv 8 "/home/ece_lab/mentor/ECE4500/Project1/two_input_mux/two_input_mux/two_input_mux" 1 mgc_symbol 5bc994f772d0.03.7f.00.00.02.01.4e.ff 5bc994f772d0.03.7f.00.00.02.00.4e.ff
+R cspuv 9 "$MGC_DESIGN_KIT/symbols/nmos/part" 7 Eddm_part 39dcb6d2c6cf.03.93.22.22.3e.00.2e.08 399d7e4745c6.03.93.22.22.3e.00.4c.5c
+R cspuv 10 "$MGC_DESIGN_KIT/symbols/pmos/part" 6 Eddm_part 39dcb70a738a.03.93.22.22.3e.00.2e.08 399d7e54bb91.03.93.22.22.3e.00.4c.5c
+R cspuv 11 "$MGC_DESIGN_KIT/symbols/pmos/pmos" 6 mgc_symbol 39dcb70a734b.03.93.22.22.3e.00.2e.08 399d7e54d47a.03.93.22.22.3e.00.4c.5c
+R cspuv 12 "$MGC_DESIGN_KIT/symbols/nmos/nmos" 7 mgc_symbol 39dcb6d2c689.03.93.22.22.3e.00.2e.08 399d7e475de3.03.93.22.22.3e.00.4c.5c

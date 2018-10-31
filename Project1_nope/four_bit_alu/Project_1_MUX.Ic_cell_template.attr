@@ -1,0 +1,27 @@
+A 5 u Ic_cell_template 5bd60ed3e559.03.7f.00.00.02.00.01.e1 3 4 9 0
+V v 1 2 5bd58f3a8d1a.03.7f.00.00.02.00.68.4e
+F f 1 "Project_1_MUX.iccel_1"
+F o 0 ""
+V v 2 2 5bd590c82ffd.03.7f.00.00.02.00.68.4e
+F f 2 "Project_1_MUX.iccel_2"
+F o 0 ""
+V v 3 2 5bd61ab4751b.03.7f.00.00.02.00.01.e1
+F f 3 "Project_1_MUX.iccel_3"
+F o 0 ""
+O 3
+R csduv 1 "/home/ece_lab/mentor/mgc/mit_25" 8 Ic_persist_process 4d337a69d114.03.7f.00.00.01.00.3d.8c 3ae460ae24b4.03.93.22.22.3e.00.42.a5
+R csdni 6 "/home/ece_lab/mentor/mgc/mit_25.rules" 1 Mgc_file
+R csduv 7 "/home/ece_lab/mentor/4500/Project_1/4input_MUX/4input_MUX" 2 Ic_cell_template 5bd61ab46add.03.7f.00.00.02.00.01.e1 5bd577fa47ac.03.7f.00.00.02.00.66.f2
+R csduv 8 "/home/ece_lab/mentor/ECE4500/Project1/four_bit_alu/Project_1_MUX" 1 Eddm_design_viewpoint 5bd610ef66d6.03.7f.00.00.02.01.01.e1 5bd610ef66d6.03.7f.00.00.02.00.01.e1
+O 2
+R csduv 1 "/home/ece_lab/mentor/mgc/mit_25" 8 Ic_persist_process 4d337a69d114.03.7f.00.00.01.00.3d.8c 3ae460ae24b4.03.93.22.22.3e.00.42.a5
+R csduv 2 "/home/ece_lab/mentor/4500/Project_1/Project_1_MUX/eldonet" 6 Eddm_design_viewpoint 5bd482f905dc.03.7f.00.00.02.00.18.1f 5bd471b02c30.03.7f.00.00.02.00.18.1f
+R csduv 4 "/home/ece_lab/mentor/4500/Project_1/4input_MUX/4input_MUX" 1 Ic_cell_template 5bd57f6cf1f4.03.7f.00.00.02.00.66.f2 5bd577fa47ac.03.7f.00.00.02.00.66.f2
+R csduv 5 "$MGC_DESIGN_KIT/process/M1M2" 1 Ic_cell_template 39ca3bbe3747.03.89.ca.b5.8b.00.3d.46 39de40031d9c.03.93.22.22.3e.00.0a.d0
+R csdni 6 "/home/ece_lab/mentor/mgc/mit_25.rules" 1 Mgc_file
+O 1
+R csduv 1 "/home/ece_lab/mentor/mgc/mit_25" 8 Ic_persist_process 4d337a69d114.03.7f.00.00.01.00.3d.8c 3ae460ae24b4.03.93.22.22.3e.00.42.a5
+R csduv 2 "/home/ece_lab/mentor/4500/Project_1/Project_1_MUX/eldonet" 6 Eddm_design_viewpoint 5bd482f905dc.03.7f.00.00.02.00.18.1f 5bd471b02c30.03.7f.00.00.02.00.18.1f
+R csduv 4 "/home/ece_lab/mentor/4500/Project_1/4input_MUX/4input_MUX" 1 Ic_cell_template 5bd57f6cf1f4.03.7f.00.00.02.00.66.f2 5bd577fa47ac.03.7f.00.00.02.00.66.f2
+R csduv 5 "$MGC_DESIGN_KIT/process/M1M2" 1 Ic_cell_template 39ca3bbe3747.03.89.ca.b5.8b.00.3d.46 39de40031d9c.03.93.22.22.3e.00.0a.d0
+R csdni 6 "/home/ece_lab/mentor/mgc/mit_25.rules" 1 Mgc_file

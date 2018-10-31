@@ -1,0 +1,13 @@
+A 5 u mgc_schematic 5bd21115a2ff.03.7f.00.00.02.00.5f.7e 58 2 1 0
+V v 56 1 5bd5ee8a58b5.03.7f.00.00.02.00.72.47
+F o 0 ""
+V v 57 1 5bd5f0dd490e.03.7f.00.00.02.00.72.47
+F o 0 ""
+V v 58 1 5bd5fd6d620a.03.7f.00.00.02.00.72.47
+F o 0 ""
+O 58
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Project1/four_bit_alu/four_bit_alu/schematic/sheet1" 57 mgc_sheet 5bd5fd6d61ee.03.7f.00.00.02.00.72.47 5bd21115a376.03.7f.00.00.02.00.5f.7e
+O 57
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Project1/four_bit_alu/four_bit_alu/schematic/sheet1" 56 mgc_sheet 5bd5f0dd48f1.03.7f.00.00.02.00.72.47 5bd21115a376.03.7f.00.00.02.00.5f.7e
+O 56
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Project1/four_bit_alu/four_bit_alu/schematic/sheet1" 55 mgc_sheet 5bd5ee8a5899.03.7f.00.00.02.00.72.47 5bd21115a376.03.7f.00.00.02.00.5f.7e

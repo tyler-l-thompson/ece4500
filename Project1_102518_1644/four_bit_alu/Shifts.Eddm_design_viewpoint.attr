@@ -1,0 +1,15 @@
+A 5 u Eddm_design_viewpoint 5bd61b6b183f.03.7f.00.00.02.00.07.21 1 2 7 0
+V v 1 4 5bd61b6b1840.03.7f.00.00.02.00.07.21
+F f 1 "Shifts.dvpt_1"
+F o 0 
+F o 0 
+F o 0 
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "/home/ece_lab/mentor/4500/Project_1/Shifts/schematic" 11 mgc_schematic 5bd5f0d518d8.03.7f.00.00.02.00.72.47 5bd47a560f51.03.7f.00.00.02.00.20.8d
+R cspuv 1 "/home/ece_lab/mentor/4500/Project_1/Shifts/part" 3 Eddm_part 5bd552ca5caf.03.7f.00.00.02.00.42.f7 5bd47fbf91aa.03.7f.00.00.02.00.20.8d
+R cspuv 2 "/home/ece_lab/mentor/4500/Project_1/Shifts/Shifts" 2 mgc_symbol 5bd552ca5c4e.03.7f.00.00.02.00.42.f7 5bd4954e3d0a.03.7f.00.00.02.00.20.8d
+R cspuv 3 "$MGC_DESIGN_KIT/symbols/nmos/part" 7 Eddm_part 39dcb6d2c6cf.03.93.22.22.3e.00.2e.08 399d7e4745c6.03.93.22.22.3e.00.4c.5c
+R cspuv 4 "$MGC_DESIGN_KIT/symbols/pmos/part" 6 Eddm_part 39dcb70a738a.03.93.22.22.3e.00.2e.08 399d7e54bb91.03.93.22.22.3e.00.4c.5c
+R cspuv 5 "$MGC_DESIGN_KIT/symbols/pmos/pmos" 6 mgc_symbol 39dcb70a734b.03.93.22.22.3e.00.2e.08 399d7e54d47a.03.93.22.22.3e.00.4c.5c
+R cspuv 6 "$MGC_DESIGN_KIT/symbols/nmos/nmos" 7 mgc_symbol 39dcb6d2c689.03.93.22.22.3e.00.2e.08 399d7e475de3.03.93.22.22.3e.00.4c.5c

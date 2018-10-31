@@ -1,0 +1,32 @@
+* Component: /home/ece_lab/mentor/ECE4500/Project1/add_sub_ovf_sel/add_sub_ovf_sel  Viewpoint: eldonet
+.INCLUDE /home/ece_lab/mentor/ECE4500/Project1/add_sub_ovf_sel/add_sub_ovf_sel/eldonet/add_sub_ovf_sel_eldonet.spi
+.INCLUDE /home/ece_lab/mentor/mgc/mit_0.25.lib
+.OPTION NOASCII
+.OPTION MODWL
+.OPTION ENGNOT
+.OPTION AEX
+
+* --- Singles
+
+* - Analysis Setup - Trans
+.TRAN 0 1600N 0 100N
+
+* --- Waveform Outputs
+.PROBE TRAN V(CC0) V(CC0_NOT) V(CC1) V(CC1_NOT) V(CC2) V(CC2_NOT) V(CC3)
++ V(CC3_NOT) V(F)
+
+* --- Params
+.TEMP 27
+
+* --- Forces
+VFORCE__CC0 CC0 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 0000000011111111 R
+VFORCE__CC0_not CC0_NOT VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 1111111100000000 R
+VFORCE__CC1 CC1 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 0000111100001111 R
+VFORCE__CC1_not CC1_NOT VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 1111000011110000 R
+VFORCE__CC2 CC2 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 0011001100110011 R
+VFORCE__CC2_not CC2_NOT VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 1100110011001100 R
+VFORCE__CC3 CC3 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 0101010101010101 R
+VFORCE__CC3_not CC3_NOT VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 1010101010101010 R
+
+* --- Libsetup
+

@@ -1,0 +1,800 @@
+# This file provides name mapping information for all objects
+# on the schematic design.  It provides a mapping for each
+# object between its name on the schematic and its name in the netlist.
+version 1.0
+
+Globals
+   VDD VDD
+   VSS VSS
+End Globals
+
+Cell DC_V_SOURCE
+   Pin POS POS
+   Pin NEG NEG
+End Cell
+
+Cell NMOS
+   Pin D D
+   Pin G G
+   Pin S S
+End Cell
+
+Cell PMOS
+   Pin D D
+   Pin G G
+   Pin S S
+   Pin B B
+End Cell
+
+Cell ONE_INPUT_INVERTER
+   Pin OUT OUT
+   Pin IN IN
+   Pin VDD VDD
+   Pin VSS VSS
+   Net IN IN
+   Net OUT OUT
+   Net VDD_esc1 VDD_ESC1
+   Net VSS_esc2 VSS_ESC2
+   Global VSS VSS
+   Global VDD VDD
+   Inst M2 M2 NMOS
+   Inst M1 M1 PMOS
+End Cell
+
+Cell TWO_INPUT_AND
+   Pin F F
+   Pin A A
+   Pin B B
+   Pin B_not B_NOT
+   Pin VDD VDD
+   Net F F
+   Net B_not B_NOT
+   Net B B
+   Net A A
+   Net VDD_esc1 VDD_ESC1
+   Global VDD VDD
+   Inst M5 M5 NMOS
+   Inst M4 M4 NMOS
+   Inst M3 M3 NMOS
+   Inst M2 M2 PMOS
+End Cell
+
+Cell ADD_SUB_OVF_SEL
+   Pin F F
+   Pin CC0 CC0
+   Pin CC0_not CC0_NOT
+   Pin CC1 CC1
+   Pin CC1_not CC1_NOT
+   Pin CC2_not CC2_NOT
+   Pin CC3_not CC3_NOT
+   Pin VDD VDD
+   Pin VSS VSS
+   Net N$28 N$28
+   Net N$24 N$24
+   Net N$50 N$50
+   Net N$41 N$41
+   Net N$18 N$18
+   Net N$14 N$14
+   Net N$12 N$12
+   Net N$8 N$8
+   Net F F
+   Net CC3_not CC3_NOT
+   Net CC2_not CC2_NOT
+   Net CC1_not CC1_NOT
+   Net CC1 CC1
+   Net CC0_not CC0_NOT
+   Net CC0 CC0
+   Net VDD_esc1 VDD_ESC1
+   Net VSS_esc2 VSS_ESC2
+   Global VDD VDD
+   Global VSS VSS
+   Inst M8 M8 PMOS
+   Inst M18 M18 NMOS
+   Inst M17 M17 NMOS
+   Inst M16 M16 NMOS
+   Inst M15 M15 NMOS
+   Inst M14 M14 NMOS
+   Inst M13 M13 NMOS
+   Inst M12 M12 NMOS
+   Inst M11 M11 NMOS
+   Inst M10 M10 NMOS
+   Inst M9 M9 PMOS
+   Inst M7 M7 PMOS
+   Inst M6 M6 PMOS
+   Inst M5 M5 PMOS
+   Inst M4 M4 PMOS
+   Inst M3 M3 PMOS
+   Inst M2 M2 PMOS
+   Inst M1 M1 PMOS
+End Cell
+
+Cell ONE_INPUT_BUFFER
+   Pin OUT OUT
+   Pin IN IN
+   Pin VDD VDD
+   Pin VSS VSS
+   Net N$3 N$3
+   Net OUT OUT
+   Net IN IN
+   Net VDD_esc1 VDD_ESC1
+   Net VSS_esc2 VSS_ESC2
+   Global VSS VSS
+   Global VDD VDD
+   Inst ONE_INPUT_INVERTER2 X_ONE_INPUT_INVERTER2 ONE_INPUT_INVERTER
+   Inst ONE_INPUT_INVERTER1 X_ONE_INPUT_INVERTER1 ONE_INPUT_INVERTER
+End Cell
+
+Cell TWO_INPUT_XOR
+   Pin F F
+   Pin A A
+   Pin A_not A_NOT
+   Pin B B
+   Pin VDD VDD
+   Net F F
+   Net B B
+   Net A_not A_NOT
+   Net A A
+   Net VDD_esc1 VDD_ESC1
+   Global VDD VDD
+   Inst M4 M4 NMOS
+   Inst M3 M3 PMOS
+   Inst M2 M2 NMOS
+   Inst M1 M1 PMOS
+End Cell
+
+Cell TWO_INPUT_MUX
+   Pin F F
+   Pin A A
+   Pin B B
+   Pin Select SELECT
+   Pin Select_not SELECT_NOT
+   Pin VDD VDD
+   Net Select_not SELECT_NOT
+   Net Select SELECT
+   Net F F
+   Net B B
+   Net A A
+   Net VDD_esc1 VDD_ESC1
+   Global VDD VDD
+   Inst M4 M4 PMOS
+   Inst M3 M3 NMOS
+   Inst M2 M2 PMOS
+   Inst M1 M1 NMOS
+End Cell
+
+Cell TWO_INPUT_OR
+   Pin F F
+   Pin A_not A_NOT
+   Pin B_not B_NOT
+   Pin VDD VDD
+   Pin VSS VSS
+   Net N$11 N$11
+   Net F F
+   Net B_not B_NOT
+   Net A_not A_NOT
+   Net VDD_esc1 VDD_ESC1
+   Net VSS_esc2 VSS_ESC2
+   Global VSS VSS
+   Global VDD VDD
+   Inst M3 M3 NMOS
+   Inst M2 M2 NMOS
+   Inst M1 M1 PMOS
+End Cell
+
+Cell FULL_ADD_SUB
+   Pin Bout_Cout BOUT_COUT
+   Pin Sum_Diff SUM_DIFF
+   Pin A A
+   Pin A_not A_NOT
+   Pin A_xor_B A_XOR_B
+   Pin A_xor_B_not A_XOR_B_NOT
+   Pin Bin_Cin BIN_CIN
+   Pin CC0 CC0
+   Pin CC0_not CC0_NOT
+   Pin CC3 CC3
+   Pin CC3_not CC3_NOT
+   Pin VDD VDD
+   Pin VSS VSS
+   Net N$39 N$39
+   Net N$9 N$9
+   Net N$11 N$11
+   Net Sum_Diff SUM_DIFF
+   Net CC3_not CC3_NOT
+   Net CC3 CC3
+   Net CC0_not CC0_NOT
+   Net CC0 CC0
+   Net Bout_Cout BOUT_COUT
+   Net Bin_Cin BIN_CIN
+   Net A_xor_B_not A_XOR_B_NOT
+   Net A_xor_B A_XOR_B
+   Net A_not A_NOT
+   Net A A
+   Net VDD_esc1 VDD_ESC1
+   Net VSS_esc2 VSS_ESC2
+   Global VSS VSS
+   Global VDD VDD
+   Inst TWO_INPUT_XOR1 X_TWO_INPUT_XOR1 TWO_INPUT_XOR
+   Inst TWO_INPUT_MUX4 X_TWO_INPUT_MUX4 TWO_INPUT_MUX
+   Inst TWO_INPUT_MUX3 X_TWO_INPUT_MUX3 TWO_INPUT_MUX
+   Inst TWO_INPUT_MUX2 X_TWO_INPUT_MUX2 TWO_INPUT_MUX
+   Inst TWO_INPUT_MUX1 X_TWO_INPUT_MUX1 TWO_INPUT_MUX
+End Cell
+
+Cell ONE_BIT_ALU
+   Pin A_and_B A_AND_B
+   Pin A_not A_NOT
+   Pin A_or_B A_OR_B
+   Pin A_xor_B A_XOR_B
+   Pin Bout_Cout BOUT_COUT
+   Pin Sum_Diff SUM_DIFF
+   Pin A A
+   Pin Add ADD
+   Pin B B
+   Pin Bin_Cin BIN_CIN
+   Pin CC0 CC0
+   Pin CC0_not CC0_NOT
+   Pin CC1 CC1
+   Pin CC1_not CC1_NOT
+   Pin CC3 CC3
+   Pin CC3_not CC3_NOT
+   Pin VDD VDD
+   Pin VSS VSS
+   Net N$143 N$143
+   Net N$142 N$142
+   Net N$130 N$130
+   Net N$129 N$129
+   Net N$122 N$122
+   Net N$22 N$22
+   Net N$10 N$10
+   Net Sum_Diff SUM_DIFF
+   Net CC3 CC3
+   Net CC0 CC0
+   Net Bout_Cout BOUT_COUT
+   Net Bin_Cin BIN_CIN
+   Net B B
+   Net Add ADD
+   Net A_xor_B A_XOR_B
+   Net A_or_B A_OR_B
+   Net A_not A_NOT
+   Net A_and_B A_AND_B
+   Net A A
+   Net VDD_esc1 VDD_ESC1
+   Net VSS_esc2 VSS_ESC2
+   Net CC0_not CC0_NOT
+   Net CC3_not CC3_NOT
+   Net CC1 CC1
+   Net CC1_not CC1_NOT
+   Global VSS VSS
+   Global VDD VDD
+   Inst TWO_INPUT_MUX2 X_TWO_INPUT_MUX2 TWO_INPUT_MUX
+   Inst TWO_INPUT_OR1 X_TWO_INPUT_OR1 TWO_INPUT_OR
+   Inst TWO_INPUT_MUX1 X_TWO_INPUT_MUX1 TWO_INPUT_MUX
+   Inst ONE_INPUT_INVERTER3 X_ONE_INPUT_INVERTER3 ONE_INPUT_INVERTER
+   Inst ONE_INPUT_INVERTER2 X_ONE_INPUT_INVERTER2 ONE_INPUT_INVERTER
+   Inst TWO_INPUT_AND1 X_TWO_INPUT_AND1 TWO_INPUT_AND
+   Inst ONE_INPUT_INVERTER1 X_ONE_INPUT_INVERTER1 ONE_INPUT_INVERTER
+   Inst TWO_INPUT_XOR1 X_TWO_INPUT_XOR1 TWO_INPUT_XOR
+   Inst ONE_INPUT_INVERTER5 X_ONE_INPUT_INVERTER5 ONE_INPUT_INVERTER
+   Inst TWO_INPUT_AND2 X_TWO_INPUT_AND2 TWO_INPUT_AND
+   Inst FULL_ADD_SUB1 X_FULL_ADD_SUB1 FULL_ADD_SUB
+   Inst ONE_INPUT_INVERTER4 X_ONE_INPUT_INVERTER4 ONE_INPUT_INVERTER
+End Cell
+
+Cell FOUR_INPUT_AND
+   Pin F F
+   Pin A A
+   Pin B B
+   Pin B_not B_NOT
+   Pin C C
+   Pin D D
+   Pin D_not D_NOT
+   Pin VDD VDD
+   Pin VSS VSS
+   Net N$4 N$4
+   Net N$5 N$5
+   Net N$7 N$7
+   Net F F
+   Net D_not D_NOT
+   Net D D
+   Net C C
+   Net B_not B_NOT
+   Net B B
+   Net A A
+   Net VDD_esc1 VDD_ESC1
+   Net VSS_esc2 VSS_ESC2
+   Global VSS VSS
+   Global VDD VDD
+   Inst ONE_INPUT_INVERTER1 X_ONE_INPUT_INVERTER1 ONE_INPUT_INVERTER
+   Inst TWO_INPUT_AND3 X_TWO_INPUT_AND3 TWO_INPUT_AND
+   Inst TWO_INPUT_AND2 X_TWO_INPUT_AND2 TWO_INPUT_AND
+   Inst TWO_INPUT_AND1 X_TWO_INPUT_AND1 TWO_INPUT_AND
+End Cell
+
+Cell 4INPUT_MUX
+   Pin F0 F0
+   Pin F1 F1
+   Pin F2 F2
+   Pin F3 F3
+   Pin A0 A0
+   Pin A1 A1
+   Pin A2 A2
+   Pin A3 A3
+   Pin B0 B0
+   Pin B1 B1
+   Pin B2 B2
+   Pin B3 B3
+   Pin Sel SEL
+   Pin Sel_NOT SEL_NOT
+   Pin VDD VDD
+   Net A0 A0
+   Net F3 F3
+   Net F2 F2
+   Net F1 F1
+   Net F0 F0
+   Net B3 B3
+   Net A3 A3
+   Net B2 B2
+   Net A2 A2
+   Net B1 B1
+   Net A1 A1
+   Net B0 B0
+   Net Sel_NOT SEL_NOT
+   Net Sel SEL
+   Net VDD_esc1 VDD_ESC1
+   Global VDD VDD
+   Inst M16 M16 NMOS
+   Inst M15 M15 PMOS
+   Inst M14 M14 NMOS
+   Inst M13 M13 PMOS
+   Inst M12 M12 NMOS
+   Inst M11 M11 PMOS
+   Inst M10 M10 NMOS
+   Inst M9 M9 PMOS
+   Inst M8 M8 NMOS
+   Inst M7 M7 PMOS
+   Inst M6 M6 NMOS
+   Inst M5 M5 PMOS
+   Inst M4 M4 NMOS
+   Inst M3 M3 PMOS
+   Inst M2 M2 NMOS
+   Inst M1 M1 PMOS
+End Cell
+
+Cell PROJECT_1_MUX
+   Pin F0 F0
+   Pin F1 F1
+   Pin F2 F2
+   Pin F3 F3
+   Pin A0 A0
+   Pin A0_NOT A0_NOT
+   Pin A1 A1
+   Pin A1_NOT A1_NOT
+   Pin A2 A2
+   Pin A2_NOT A2_NOT
+   Pin A3 A3
+   Pin A3_NOT A3_NOT
+   Pin A_AND_B0 A_AND_B0
+   Pin A_AND_B1 A_AND_B1
+   Pin A_AND_B2 A_AND_B2
+   Pin A_AND_B3 A_AND_B3
+   Pin A_MINUS_B0 A_MINUS_B0
+   Pin A_MINUS_B1 A_MINUS_B1
+   Pin A_MINUS_B2 A_MINUS_B2
+   Pin A_MINUS_B3 A_MINUS_B3
+   Pin A_MINUS_B_WITH_BORROW0 A_MINUS_B_WITH_BORROW0
+   Pin A_MINUS_B_WITH_BORROW1 A_MINUS_B_WITH_BORROW1
+   Pin A_MINUS_B_WITH_BORROW2 A_MINUS_B_WITH_BORROW2
+   Pin A_MINUS_B_WITH_BORROW3 A_MINUS_B_WITH_BORROW3
+   Pin A_OR_B0 A_OR_B0
+   Pin A_OR_B1 A_OR_B1
+   Pin A_OR_B2 A_OR_B2
+   Pin A_OR_B3 A_OR_B3
+   Pin A_PLUS_B0 A_PLUS_B0
+   Pin A_PLUS_B1 A_PLUS_B1
+   Pin A_PLUS_B2 A_PLUS_B2
+   Pin A_PLUS_B3 A_PLUS_B3
+   Pin A_PLUS_B_WITH_CARRY0 A_PLUS_B_WITH_CARRY0
+   Pin A_PLUS_B_WITH_CARRY1 A_PLUS_B_WITH_CARRY1
+   Pin A_PLUS_B_WITH_CARRY2 A_PLUS_B_WITH_CARRY2
+   Pin A_PLUS_B_WITH_CARRY3 A_PLUS_B_WITH_CARRY3
+   Pin A_XOR_B0 A_XOR_B0
+   Pin A_XOR_B1 A_XOR_B1
+   Pin A_XOR_B2 A_XOR_B2
+   Pin A_XOR_B3 A_XOR_B3
+   Pin ASLA0 ASLA0
+   Pin ASLA1 ASLA1
+   Pin ASLA2 ASLA2
+   Pin ASLA3 ASLA3
+   Pin ASRA0 ASRA0
+   Pin ASRA1 ASRA1
+   Pin ASRA2 ASRA2
+   Pin ASRA3 ASRA3
+   Pin B0 B0
+   Pin B1 B1
+   Pin B2 B2
+   Pin B3 B3
+   Pin B_PLUS_ONE0 B_PLUS_ONE0
+   Pin B_PLUS_ONE1 B_PLUS_ONE1
+   Pin B_PLUS_ONE2 B_PLUS_ONE2
+   Pin B_PLUS_ONE3 B_PLUS_ONE3
+   Pin CC0 CC0
+   Pin CC0_NOT CC0_NOT
+   Pin CC1 CC1
+   Pin CC1_NOT CC1_NOT
+   Pin CC2 CC2
+   Pin CC2_NOT CC2_NOT
+   Pin CC3 CC3
+   Pin CC3_NOT CC3_NOT
+   Pin LSLA0 LSLA0
+   Pin LSLA1 LSLA1
+   Pin LSLA2 LSLA2
+   Pin LSLA3 LSLA3
+   Pin LSRA0 LSRA0
+   Pin LSRA1 LSRA1
+   Pin LSRA2 LSRA2
+   Pin LSRA3 LSRA3
+   Pin VDD VDD
+   Pin ZERO0 ZERO0
+   Pin ZERO1 ZERO1
+   Pin ZERO2 ZERO2
+   Pin ZERO3 ZERO3
+   Net N$291 N$291
+   Net N$290 N$290
+   Net N$289 N$289
+   Net N$288 N$288
+   Net N$109 N$109
+   Net N$101 N$101
+   Net N$103 N$103
+   Net N$105 N$105
+   Net N$12 N$12
+   Net N$9 N$9
+   Net N$83 N$83
+   Net N$81 N$81
+   Net N$79 N$79
+   Net N$77 N$77
+   Net N$75 N$75
+   Net N$73 N$73
+   Net N$71 N$71
+   Net N$69 N$69
+   Net N$99 N$99
+   Net N$97 N$97
+   Net N$95 N$95
+   Net N$93 N$93
+   Net N$91 N$91
+   Net N$89 N$89
+   Net N$87 N$87
+   Net N$85 N$85
+   Net N$67 N$67
+   Net N$65 N$65
+   Net N$63 N$63
+   Net N$61 N$61
+   Net N$59 N$59
+   Net N$57 N$57
+   Net N$55 N$55
+   Net N$53 N$53
+   Net N$51 N$51
+   Net N$49 N$49
+   Net N$47 N$47
+   Net N$45 N$45
+   Net N$41 N$41
+   Net N$39 N$39
+   Net N$38 N$38
+   Net N$36 N$36
+   Net N$33 N$33
+   Net N$31 N$31
+   Net N$29 N$29
+   Net N$27 N$27
+   Net N$25 N$25
+   Net N$24 N$24
+   Net N$22 N$22
+   Net N$20 N$20
+   Net N$18 N$18
+   Net N$16 N$16
+   Net N$14 N$14
+   Net N$8 N$8
+   Net N$4 N$4
+   Net N$2 N$2
+   Net A_AND_B3 A_AND_B3
+   Net A_AND_B2 A_AND_B2
+   Net A_AND_B1 A_AND_B1
+   Net A_AND_B0 A_AND_B0
+   Net A3_NOT A3_NOT
+   Net A2_NOT A2_NOT
+   Net A1_NOT A1_NOT
+   Net A0_NOT A0_NOT
+   Net A3 A3
+   Net A2 A2
+   Net A1 A1
+   Net A0 A0
+   Net ASRA0 ASRA0
+   Net ASLA3 ASLA3
+   Net ASLA2 ASLA2
+   Net ASLA1 ASLA1
+   Net ASLA0 ASLA0
+   Net LSRA3 LSRA3
+   Net LSRA2 LSRA2
+   Net LSRA1 LSRA1
+   Net LSRA0 LSRA0
+   Net LSLA3 LSLA3
+   Net LSLA2 LSLA2
+   Net LSLA1 LSLA1
+   Net LSLA0 LSLA0
+   Net B3 B3
+   Net B2 B2
+   Net B1 B1
+   Net B0 B0
+   Net A_MINUS_B3 A_MINUS_B3
+   Net A_MINUS_B2 A_MINUS_B2
+   Net A_MINUS_B1 A_MINUS_B1
+   Net A_MINUS_B0 A_MINUS_B0
+   Net A_PLUS_B3 A_PLUS_B3
+   Net A_PLUS_B2 A_PLUS_B2
+   Net A_PLUS_B1 A_PLUS_B1
+   Net A_PLUS_B0 A_PLUS_B0
+   Net A_XOR_B3 A_XOR_B3
+   Net A_XOR_B2 A_XOR_B2
+   Net A_XOR_B1 A_XOR_B1
+   Net A_XOR_B0 A_XOR_B0
+   Net A_OR_B3 A_OR_B3
+   Net A_OR_B2 A_OR_B2
+   Net A_OR_B1 A_OR_B1
+   Net F3 F3
+   Net F2 F2
+   Net F1 F1
+   Net F0 F0
+   Net CC2_NOT CC2_NOT
+   Net CC2 CC2
+   Net CC1_NOT CC1_NOT
+   Net CC1 CC1
+   Net CC3 CC3
+   Net CC3_NOT CC3_NOT
+   Net CC0_NOT CC0_NOT
+   Net CC0 CC0
+   Net A_OR_B0 A_OR_B0
+   Net B_PLUS_ONE3 B_PLUS_ONE3
+   Net B_PLUS_ONE2 B_PLUS_ONE2
+   Net B_PLUS_ONE1 B_PLUS_ONE1
+   Net B_PLUS_ONE0 B_PLUS_ONE0
+   Net A_MINUS_B_WITH_BORROW3 A_MINUS_B_WITH_BORROW3
+   Net A_MINUS_B_WITH_BORROW2 A_MINUS_B_WITH_BORROW2
+   Net A_MINUS_B_WITH_BORROW1 A_MINUS_B_WITH_BORROW1
+   Net A_MINUS_B_WITH_BORROW0 A_MINUS_B_WITH_BORROW0
+   Net A_PLUS_B_WITH_CARRY3 A_PLUS_B_WITH_CARRY3
+   Net A_PLUS_B_WITH_CARRY2 A_PLUS_B_WITH_CARRY2
+   Net A_PLUS_B_WITH_CARRY1 A_PLUS_B_WITH_CARRY1
+   Net A_PLUS_B_WITH_CARRY0 A_PLUS_B_WITH_CARRY0
+   Net ZERO3 ZERO3
+   Net ZERO2 ZERO2
+   Net ZERO1 ZERO1
+   Net ZERO0 ZERO0
+   Net ASRA3 ASRA3
+   Net ASRA2 ASRA2
+   Net ASRA1 ASRA1
+   Net VDD_esc1 VDD_ESC1
+   Global VDD VDD
+   Inst 4INPUT_MUX6 X_4INPUT_MUX6 4INPUT_MUX
+   Inst 4INPUT_MUX5 X_4INPUT_MUX5 4INPUT_MUX
+   Inst 4INPUT_MUX4 X_4INPUT_MUX4 4INPUT_MUX
+   Inst 4INPUT_MUX3 X_4INPUT_MUX3 4INPUT_MUX
+   Inst 4INPUT_MUX2 X_4INPUT_MUX2 4INPUT_MUX
+   Inst 4INPUT_MUX1 X_4INPUT_MUX1 4INPUT_MUX
+   Inst 4INPUT_MUX13 X_4INPUT_MUX13 4INPUT_MUX
+   Inst 4INPUT_MUX12 X_4INPUT_MUX12 4INPUT_MUX
+   Inst 4INPUT_MUX11 X_4INPUT_MUX11 4INPUT_MUX
+   Inst 4INPUT_MUX10 X_4INPUT_MUX10 4INPUT_MUX
+   Inst 4INPUT_MUX9 X_4INPUT_MUX9 4INPUT_MUX
+   Inst 4INPUT_MUX8 X_4INPUT_MUX8 4INPUT_MUX
+   Inst 4INPUT_MUX7 X_4INPUT_MUX7 4INPUT_MUX
+   Inst 4INPUT_MUX14 X_4INPUT_MUX14 4INPUT_MUX
+   Inst 4INPUT_MUX15 X_4INPUT_MUX15 4INPUT_MUX
+End Cell
+
+Cell SHIFTS
+   Pin F0 F0
+   Pin F1 F1
+   Pin F2 F2
+   Pin F3 F3
+   Pin OVF OVF
+   Pin A0 A0
+   Pin A1 A1
+   Pin A2 A2
+   Pin A3 A3
+   Pin C_out C_OUT
+   Pin CC0 CC0
+   Pin CC0_NOT CC0_NOT
+   Pin CC1 CC1
+   Pin CC1_NOT CC1_NOT
+   Pin VDD VDD
+   Pin VSS VSS
+   Net OVF OVF
+   Net F0 F0
+   Net F1 F1
+   Net F2 F2
+   Net F3 F3
+   Net CC0_NOT CC0_NOT
+   Net CC0 CC0
+   Net CC1_NOT CC1_NOT
+   Net CC1 CC1
+   Net A0 A0
+   Net A1 A1
+   Net A2 A2
+   Net A3 A3
+   Net VSS_esc2 VSS_ESC2
+   Net VDD_esc1 VDD_ESC1
+   Net C_out C_OUT
+   Global VSS VSS
+   Global VDD VDD
+   Inst M5 M5 PMOS
+   Inst M3 M3 PMOS
+   Inst M4 M4 NMOS
+   Inst M1 M1 PMOS
+   Inst M2 M2 NMOS
+   Inst M20 M20 NMOS
+   Inst M18 M18 NMOS
+   Inst M19 M19 PMOS
+   Inst M21 M21 PMOS
+   Inst M24 M24 NMOS
+   Inst M23 M23 PMOS
+   Inst M22 M22 NMOS
+   Inst M6 M6 NMOS
+   Inst M17 M17 PMOS
+   Inst M16 M16 NMOS
+   Inst M15 M15 PMOS
+   Inst M14 M14 NMOS
+   Inst M13 M13 PMOS
+   Inst M12 M12 NMOS
+   Inst M11 M11 PMOS
+   Inst M10 M10 NMOS
+   Inst M9 M9 PMOS
+   Inst M8 M8 NMOS
+   Inst M7 M7 PMOS
+End Cell
+
+Cell #top#
+   Pin A_xor_B_0 A_XOR_B_0
+   Pin A_xor_B_2 A_XOR_B_2
+   Pin Add ADD
+   Pin ADD_OVF ADD_OVF
+   Pin Bout_Cout BOUT_COUT
+   Pin Cout_0 COUT_0
+   Pin Cout_1 COUT_1
+   Pin Cout_2 COUT_2
+   Pin F0 F0
+   Pin F1 F1
+   Pin F2 F2
+   Pin F3 F3
+   Pin OVF OVF
+   Pin OVF_sel0 OVF_SEL0
+   Pin OVF_sel1 OVF_SEL1
+   Pin Pre_F_0 PRE_F_0
+   Pin S S
+   Pin Shift_C_out SHIFT_C_OUT
+   Pin Shift_OVF SHIFT_OVF
+   Pin Z Z
+   Pin A0 A0
+   Pin A1 A1
+   Pin A2 A2
+   Pin A3 A3
+   Pin B0 B0
+   Pin B1 B1
+   Pin B2 B2
+   Pin B3 B3
+   Pin Bin_Cin BIN_CIN
+   Pin CC0 CC0
+   Pin CC1 CC1
+   Pin CC2 CC2
+   Pin CC3 CC3
+   Net N$629 N$629
+   Net N$369 N$369
+   Net N$615 N$615
+   Net N$583 N$583
+   Net N$40 N$40
+   Net N$41 N$41
+   Net N$42 N$42
+   Net N$553 N$553
+   Net N$577 N$577
+   Net N$568 N$568
+   Net N$561 N$561
+   Net N$555 N$555
+   Net N$492 N$492
+   Net N$480 N$480
+   Net N$367 N$367
+   Net N$21 N$21
+   Net N$36 N$36
+   Net N$70 N$70
+   Net N$26 N$26
+   Net N$282 N$282
+   Net N$475 N$475
+   Net N$159 N$159
+   Net N$289 N$289
+   Net N$288 N$288
+   Net N$287 N$287
+   Net N$110 N$110
+   Net N$123 N$123
+   Net N$119 N$119
+   Net N$118 N$118
+   Net N$115 N$115
+   Net N$111 N$111
+   Net N$103 N$103
+   Net N$33 N$33
+   Net N$32 N$32
+   Net N$31 N$31
+   Net N$30 N$30
+   Net N$20 N$20
+   Net N$19 N$19
+   Net N$68 N$68
+   Net N$67 N$67
+   Net N$66 N$66
+   Net N$65 N$65
+   Net S S
+   Net B1 B1
+   Net A1 A1
+   Net A2 A2
+   Net B2 B2
+   Net B3 B3
+   Net A3 A3
+   Net CC1 CC1
+   Net Shift_OVF SHIFT_OVF
+   Net ADD_OVF ADD_OVF
+   Net OVF_sel1 OVF_SEL1
+   Net OVF_sel0 OVF_SEL0
+   Net CC2 CC2
+   Net Cout_1 COUT_1
+   Net Pre_F_0 PRE_F_0
+   Net CC3 CC3
+   Net CC0 CC0
+   Net Cout_0 COUT_0
+   Net Bin_Cin BIN_CIN
+   Net B0 B0
+   Net Add ADD
+   Net A0 A0
+   Net A_xor_B_0 A_XOR_B_0
+   Net F0 F0
+   Net F1 F1
+   Net F2 F2
+   Net F3 F3
+   Net Z Z
+   Net OVF OVF
+   Net Bout_Cout BOUT_COUT
+   Net Cout_2 COUT_2
+   Net A_xor_B_2 A_XOR_B_2
+   Net Shift_C_out SHIFT_C_OUT
+   Global VDD VDD
+   Global VSS VSS
+   Inst V1 V1 DC_V_SOURCE
+   Inst ONE_INPUT_INVERTER11 X_ONE_INPUT_INVERTER11 ONE_INPUT_INVERTER
+   Inst ONE_INPUT_INVERTER5 X_ONE_INPUT_INVERTER5 ONE_INPUT_INVERTER
+   Inst ONE_INPUT_INVERTER6 X_ONE_INPUT_INVERTER6 ONE_INPUT_INVERTER
+   Inst ONE_INPUT_INVERTER7 X_ONE_INPUT_INVERTER7 ONE_INPUT_INVERTER
+   Inst TWO_INPUT_AND1 X_TWO_INPUT_AND1 TWO_INPUT_AND
+   Inst ONE_INPUT_INVERTER2 X_ONE_INPUT_INVERTER2 ONE_INPUT_INVERTER
+   Inst ADD_SUB_OVF_SEL1 X_ADD_SUB_OVF_SEL1 ADD_SUB_OVF_SEL
+   Inst ONE_INPUT_BUFFER9 X_ONE_INPUT_BUFFER9 ONE_INPUT_BUFFER
+   Inst ONE_INPUT_BUFFER8 X_ONE_INPUT_BUFFER8 ONE_INPUT_BUFFER
+   Inst TWO_INPUT_XOR1 X_TWO_INPUT_XOR1 TWO_INPUT_XOR
+   Inst I$3 X_I$3 ONE_BIT_ALU
+   Inst I$2 X_I$2 ONE_BIT_ALU
+   Inst I$1 X_I$1 ONE_BIT_ALU
+   Inst ONE_INPUT_BUFFER1 X_ONE_INPUT_BUFFER1 ONE_INPUT_BUFFER
+   Inst ONE_INPUT_INVERTER10 X_ONE_INPUT_INVERTER10 ONE_INPUT_INVERTER
+   Inst ONE_INPUT_BUFFER3 X_ONE_INPUT_BUFFER3 ONE_INPUT_BUFFER
+   Inst FOUR_INPUT_AND1 X_FOUR_INPUT_AND1 FOUR_INPUT_AND
+   Inst ONE_INPUT_BUFFER7 X_ONE_INPUT_BUFFER7 ONE_INPUT_BUFFER
+   Inst ONE_INPUT_BUFFER6 X_ONE_INPUT_BUFFER6 ONE_INPUT_BUFFER
+   Inst ONE_INPUT_BUFFER5 X_ONE_INPUT_BUFFER5 ONE_INPUT_BUFFER
+   Inst ONE_INPUT_INVERTER3 X_ONE_INPUT_INVERTER3 ONE_INPUT_INVERTER
+   Inst TWO_INPUT_MUX1 X_TWO_INPUT_MUX1 TWO_INPUT_MUX
+   Inst PROJECT_1_MUX1 X_PROJECT_1_MUX1 PROJECT_1_MUX
+   Inst ONE_INPUT_INVERTER8 X_ONE_INPUT_INVERTER8 ONE_INPUT_INVERTER
+   Inst ONE_INPUT_INVERTER1 X_ONE_INPUT_INVERTER1 ONE_INPUT_INVERTER
+   Inst I$4 X_I$4 ONE_BIT_ALU
+   Inst ONE_INPUT_INVERTER4 X_ONE_INPUT_INVERTER4 ONE_INPUT_INVERTER
+   Inst ONE_INPUT_BUFFER10 X_ONE_INPUT_BUFFER10 ONE_INPUT_BUFFER
+   Inst ONE_INPUT_BUFFER4 X_ONE_INPUT_BUFFER4 ONE_INPUT_BUFFER
+   Inst ONE_INPUT_INVERTER9 X_ONE_INPUT_INVERTER9 ONE_INPUT_INVERTER
+   Inst TWO_INPUT_MUX2 X_TWO_INPUT_MUX2 TWO_INPUT_MUX
+   Inst SHIFTS1 X_SHIFTS1 SHIFTS
+   Inst TWO_INPUT_AND2 X_TWO_INPUT_AND2 TWO_INPUT_AND
+   Inst ONE_INPUT_BUFFER2 X_ONE_INPUT_BUFFER2 ONE_INPUT_BUFFER
+End Cell
+

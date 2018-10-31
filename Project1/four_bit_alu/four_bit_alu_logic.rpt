@@ -1,0 +1,48 @@
+ Logic loading report
+ ====================
+
+ Top level Layout cell : four_bit_alu
+ Eddm Logic source : /home/ece_lab/mentor/ECE4500/Project1/four_bit_alu/four_bit_alu/eldonet
+
+
+*** Existing cell /home/ece_lab/mentor/ECE4500/Project1/two_input_and_2/two_input_and
+
+*** Existing cell /home/ece_lab/mentor/ECE4500/Project1/one_input_inverter/one_input_inverter
+
+*** Existing cell /home/ece_lab/mentor/ECE4500/Project1/four_bit_alu/four_input_and
+
+*** Existing cell /home/ece_lab/mentor/ECE4500/Project1/four_bit_alu/four_bit_alu/one_input_buffer
+
+***Created cell: /home/ece_lab/mentor/ECE4500/Project1/four_bit_alu/two_input_mux
+
+***Created cell: /home/ece_lab/mentor/ECE4500/Project1/four_bit_alu/two_input_xor
+
+*** Existing cell /home/ece_lab/mentor/ECE4500/Project1/four_bit_alu/full_add_sub
+
+*** Existing cell /home/ece_lab/mentor/ECE4500/Project1/two_input_or/two_input_or
+
+*** Existing cell /home/ece_lab/mentor/ECE4500/Project1/four_bit_alu/one_bit_alu
+
+*** Existing cell /home/ece_lab/mentor/ECE4500/Project1_nope/four_bit_alu/Shifts
+
+*** Existing cell /home/ece_lab/mentor/ECE4500/Project1/four_bit_alu/add_sub_ovf_sel
+
+*** Existing cell /home/ece_lab/mentor/4500/Project_1/4input_MUX/4input_MUX
+
+*** Existing cell /home/ece_lab/mentor/ECE4500/Project1/four_bit_alu/Project_1_MUX
+
+*** Existing cell /home/ece_lab/mentor/ECE4500/Project1/four_bit_alu/four_bit_alu
+
+
+IGNORED CELLS
+=============
+Following primitive cells are ignored since they are not found
+in library(working directory) and @nocreate_prim option is used.
+Resync of library may be required.
+
+
+       Schematic instance name                   Physical cell name
+       -------------------------                 --------------------
+      /V1                                        dc_v_source
+      /M3                                        mn
+      /M2                                        mp

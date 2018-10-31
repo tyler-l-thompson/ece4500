@@ -1,0 +1,96 @@
+//  IC Station Netlister  v9.0_5.0 (v9.0d)  Mon Oct 11 09:34:32 PDT 2010
+//
+//             Copyright Mentor Graphics Corporation 1982
+//
+//                      All Rights Reserved.
+//
+//    THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+//      WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR
+//           ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+//
+//  Mentor Graphics software executing under x86 Linux.
+//
+
+
+//  Invocation args:  -dmsfile /home/ece_lab/mentor/ECE4500/Project1/four_bit_alu/four_bit_alu/eldonet/design.dms -force /home/ece_lab/mentor/ECE4500/Project1/four_bit_alu/four_bit_alu/eldonet
+
+// **** Reading </home/ece_lab/mentor/ECE4500/Project1/four_bit_alu/four_bit_alu/eldonet> for ELDO netlist ****
+
+// Checking 14 sheet(s) for out of date references to symbols and interfaces...
+// Done.
+// Parsing file '/mgc/v9.0d_rhelx86linux/icstation_home/mgc_icstd_lib/global.ncf' succeeded.
+// Parsing file '/mgc/v9.0d_rhelx86linux/icstation_home/mgc_icstd_lib/mit0.25/symbols/pmos/@ncf.dir/pmos.ncf' succeeded.
+// Parsing file '/mgc/v9.0d_rhelx86linux/icstation_home/mgc_icstd_lib/mit0.25/symbols/nmos/@ncf.dir/nmos.ncf' succeeded.
+// Parsing file '/mgc/v9.0d_rhelx86linux/icstation_home/mgc_icstd_lib/mit0.25/symbols/dc_v_source/@ncf.dir/dc_v_source.ncf' succeeded.
+// NOTE: There is no part interface for the top level schematic.  The external nets in the schematic
+//       are being scanned to create the pin names for the top level subckt.
+Processing [/home/ece_lab/mentor/ECE4500/Project1/four_bit_alu/four_bit_alu] [four_bit_alu/four_bit_alu] [schematic] (NCF entry line: 17 file: $NCF_GLOBAL)
+Processing [/home/ece_lab/mentor/ECE4500/Project1/four_input_and/four_input_and] [four_input_and/four_input_and] [schematic] (NCF entry line: 17 file: $NCF_GLOBAL)
+Processing [/home/ece_lab/mentor/ECE4500/Project1/two_input_and_2/two_input_and] [two_input_and/two_input_and] [schematic] (NCF entry line: 17 file: $NCF_GLOBAL)
+Processing [/home/ece_lab/mentor/ECE4500/Project1/one_input_inverter/one_input_inverter] [one_input_inverter/one_input_inverter] [schematic] (NCF entry line: 17 file: $NCF_GLOBAL)
+Processing [/home/ece_lab/mentor/ECE4500/Project1/one_input_buffer/one_input_buffer] [one_input_buffer/one_input_buffer] [schematic] (NCF entry line: 17 file: $NCF_GLOBAL)
+Processing [/home/ece_lab/mentor/ECE4500/Project1/one_bit_alu/one_bit_alu] [one_bit_alu/one_bit_alu] [schematic] (NCF entry line: 17 file: $NCF_GLOBAL)
+Processing [/home/ece_lab/mentor/ECE4500/Project1/full_add_sub/full_add_sub] [full_add_sub/full_add_sub] [schematic] (NCF entry line: 17 file: $NCF_GLOBAL)
+Processing [/home/ece_lab/mentor/ECE4500/Project1/two_input_mux/two_input_mux] [two_input_mux/two_input_mux] [schematic] (NCF entry line: 17 file: $NCF_GLOBAL)
+Processing [/home/ece_lab/mentor/ECE4500/Project1/two_input_xor/two_input_xor] [two_input_xor/two_input_xor] [schematic] (NCF entry line: 17 file: $NCF_GLOBAL)
+Processing [/home/ece_lab/mentor/ECE4500/Project1/two_input_or/two_input_or] [two_input_or/two_input_or] [schematic] (NCF entry line: 17 file: $NCF_GLOBAL)
+Processing [/home/ece_lab/mentor/4500/Project_1/Shifts] [Shifts/Shifts] [schematic] (NCF entry line: 17 file: $NCF_GLOBAL)
+Processing [/home/ece_lab/mentor/ECE4500/Project1/add_sub_ovf_sel/add_sub_ovf_sel] [add_sub_ovf_sel/add_sub_ovf_sel] [schematic] (NCF entry line: 17 file: $NCF_GLOBAL)
+Processing [/home/ece_lab/mentor/4500/Project_1/Project_1_MUX] [Project_1_MUX/Project_1_MUX] [schematic] (NCF entry line: 17 file: $NCF_GLOBAL)
+Processing [/home/ece_lab/mentor/4500/Project_1/4input_MUX] [4input_MUX/4input_MUX] [schematic] (NCF entry line: 17 file: $NCF_GLOBAL)
+ COMPONENT [/home/ece_lab/mentor/4500/Project_1/4input_MUX] CELL [/home/ece_lab/mentor/4500/Project_1/4input_MUX]
+ *** warning *** : The net 'VDD' has a name that conflicts with a global net.  It is being renamed to 'VDD_esc1'.
+ COMPONENT [/home/ece_lab/mentor/4500/Project_1/Project_1_MUX] CELL [/home/ece_lab/mentor/4500/Project_1/Project_1_MUX]
+ *** warning *** : The net 'VDD' has a name that conflicts with a global net.  It is being renamed to 'VDD_esc1'.
+ COMPONENT [/home/ece_lab/mentor/ECE4500/Project1/add_sub_ovf_sel/add_sub_ovf_sel] CELL [/home/ece_lab/mentor/ECE4500/Project1/add_sub_ovf_sel/add_sub_ovf_sel]
+ *** warning *** : The net 'VDD' has a name that conflicts with a global net.  It is being renamed to 'VDD_esc1'.
+ COMPONENT [/home/ece_lab/mentor/ECE4500/Project1/add_sub_ovf_sel/add_sub_ovf_sel] CELL [/home/ece_lab/mentor/ECE4500/Project1/add_sub_ovf_sel/add_sub_ovf_sel]
+ *** warning *** : The net 'VSS' has a name that conflicts with a global net.  It is being renamed to 'VSS_esc2'.
+ COMPONENT [/home/ece_lab/mentor/4500/Project_1/Shifts] CELL [/home/ece_lab/mentor/4500/Project_1/Shifts]
+ *** warning *** : The net 'VSS' has a name that conflicts with a global net.  It is being renamed to 'VSS_esc2'.
+ COMPONENT [/home/ece_lab/mentor/4500/Project_1/Shifts] CELL [/home/ece_lab/mentor/4500/Project_1/Shifts]
+ *** warning *** : The net 'VDD' has a name that conflicts with a global net.  It is being renamed to 'VDD_esc1'.
+ COMPONENT [/home/ece_lab/mentor/ECE4500/Project1/two_input_or/two_input_or] CELL [/home/ece_lab/mentor/ECE4500/Project1/two_input_or/two_input_or]
+ *** warning *** : The net 'VDD' has a name that conflicts with a global net.  It is being renamed to 'VDD_esc1'.
+ COMPONENT [/home/ece_lab/mentor/ECE4500/Project1/two_input_or/two_input_or] CELL [/home/ece_lab/mentor/ECE4500/Project1/two_input_or/two_input_or]
+ *** warning *** : The net 'VSS' has a name that conflicts with a global net.  It is being renamed to 'VSS_esc2'.
+ COMPONENT [/home/ece_lab/mentor/ECE4500/Project1/two_input_xor/two_input_xor] CELL [/home/ece_lab/mentor/ECE4500/Project1/two_input_xor/two_input_xor]
+ *** warning *** : The net 'VDD' has a name that conflicts with a global net.  It is being renamed to 'VDD_esc1'.
+ COMPONENT [/home/ece_lab/mentor/ECE4500/Project1/two_input_mux/two_input_mux] CELL [/home/ece_lab/mentor/ECE4500/Project1/two_input_mux/two_input_mux]
+ *** warning *** : The net 'VDD' has a name that conflicts with a global net.  It is being renamed to 'VDD_esc1'.
+ COMPONENT [/home/ece_lab/mentor/ECE4500/Project1/full_add_sub/full_add_sub] CELL [/home/ece_lab/mentor/ECE4500/Project1/full_add_sub/full_add_sub]
+ *** warning *** : The net 'VDD' has a name that conflicts with a global net.  It is being renamed to 'VDD_esc1'.
+ COMPONENT [/home/ece_lab/mentor/ECE4500/Project1/full_add_sub/full_add_sub] CELL [/home/ece_lab/mentor/ECE4500/Project1/full_add_sub/full_add_sub]
+ *** warning *** : The net 'VSS' has a name that conflicts with a global net.  It is being renamed to 'VSS_esc2'.
+ COMPONENT [/home/ece_lab/mentor/ECE4500/Project1/one_bit_alu/one_bit_alu] CELL [/home/ece_lab/mentor/ECE4500/Project1/one_bit_alu/one_bit_alu]
+ *** warning *** : The net 'VDD' has a name that conflicts with a global net.  It is being renamed to 'VDD_esc1'.
+ COMPONENT [/home/ece_lab/mentor/ECE4500/Project1/one_bit_alu/one_bit_alu] CELL [/home/ece_lab/mentor/ECE4500/Project1/one_bit_alu/one_bit_alu]
+ *** warning *** : The net 'VSS' has a name that conflicts with a global net.  It is being renamed to 'VSS_esc2'.
+ COMPONENT [/home/ece_lab/mentor/ECE4500/Project1/one_input_buffer/one_input_buffer] CELL [/home/ece_lab/mentor/ECE4500/Project1/one_input_buffer/one_input_buffer]
+ *** warning *** : The net 'VDD' has a name that conflicts with a global net.  It is being renamed to 'VDD_esc1'.
+ COMPONENT [/home/ece_lab/mentor/ECE4500/Project1/one_input_buffer/one_input_buffer] CELL [/home/ece_lab/mentor/ECE4500/Project1/one_input_buffer/one_input_buffer]
+ *** warning *** : The net 'VSS' has a name that conflicts with a global net.  It is being renamed to 'VSS_esc2'.
+ COMPONENT [/home/ece_lab/mentor/ECE4500/Project1/one_input_inverter/one_input_inverter] CELL [/home/ece_lab/mentor/ECE4500/Project1/one_input_inverter/one_input_inverter]
+ *** warning *** : The net 'VDD' has a name that conflicts with a global net.  It is being renamed to 'VDD_esc1'.
+ COMPONENT [/home/ece_lab/mentor/ECE4500/Project1/one_input_inverter/one_input_inverter] CELL [/home/ece_lab/mentor/ECE4500/Project1/one_input_inverter/one_input_inverter]
+ *** warning *** : The net 'VSS' has a name that conflicts with a global net.  It is being renamed to 'VSS_esc2'.
+ COMPONENT [/home/ece_lab/mentor/ECE4500/Project1/two_input_and_2/two_input_and] CELL [/home/ece_lab/mentor/ECE4500/Project1/two_input_and_2/two_input_and]
+ *** warning *** : The net 'VDD' has a name that conflicts with a global net.  It is being renamed to 'VDD_esc1'.
+ COMPONENT [/home/ece_lab/mentor/ECE4500/Project1/four_input_and/four_input_and] CELL [/home/ece_lab/mentor/ECE4500/Project1/four_input_and/four_input_and]
+ *** warning *** : The net 'VDD' has a name that conflicts with a global net.  It is being renamed to 'VDD_esc1'.
+ COMPONENT [/home/ece_lab/mentor/ECE4500/Project1/four_input_and/four_input_and] CELL [/home/ece_lab/mentor/ECE4500/Project1/four_input_and/four_input_and]
+ *** warning *** : The net 'VSS' has a name that conflicts with a global net.  It is being renamed to 'VSS_esc2'.
+Primitive [$MGC_DESIGN_KIT/symbols/nmos] [nmos/nmos] [SPICE=X] (NCF entry line: 8 file: $MGC_DESIGN_KIT/symbols/nmos/@ncf.dir/nmos.ncf)
+Primitive [$MGC_DESIGN_KIT/symbols/pmos] [pmos/pmos] [SPICE=X] (NCF entry line: 8 file: $MGC_DESIGN_KIT/symbols/pmos/@ncf.dir/pmos.ncf)
+Primitive [$MGC_DESIGN_KIT/symbols/dc_v_source] [dc_v_source/dc_v_source] [SPICE=V] (NCF entry line: 8 file: $MGC_DESIGN_KIT/symbols/dc_v_source/@ncf.dir/dc_v_source.ncf)
+
+**** Writing </home/ece_lab/mentor/ECE4500/Project1/four_bit_alu/four_bit_alu/eldonet> netlist for ELDO ****
+
+Number of cells: 17
+Number of primitive instances: 591
+
+Done...
+// Registration file '/mgc/v9.0d_rhelx86linux/icstation_home/mgc_icstd_lib/global.ncf' closed.
+// Registration file '/mgc/v9.0d_rhelx86linux/icstation_home/mgc_icstd_lib/mit0.25/symbols/pmos/@ncf.dir/pmos.ncf' closed.
+// Registration file '/mgc/v9.0d_rhelx86linux/icstation_home/mgc_icstd_lib/mit0.25/symbols/nmos/@ncf.dir/nmos.ncf' closed.
+// Registration file '/mgc/v9.0d_rhelx86linux/icstation_home/mgc_icstd_lib/mit0.25/symbols/dc_v_source/@ncf.dir/dc_v_source.ncf' closed.

@@ -1,0 +1,21 @@
+ Logic loading report
+ ====================
+
+ Top level Layout cell : add_sub_ovf_sel
+ Eddm Logic source : /home/ece_lab/mentor/ECE4500/Project1/add_sub_ovf_sel/add_sub_ovf_sel/eldonet
+
+
+*** Existing cell /home/ece_lab/mentor/ECE4500/Project1/add_sub_ovf_sel/add_sub_ovf_sel
+
+
+IGNORED CELLS
+=============
+Following primitive cells are ignored since they are not found
+in library(working directory) and @nocreate_prim option is used.
+Resync of library may be required.
+
+
+       Schematic instance name                   Physical cell name
+       -------------------------                 --------------------
+      /M10                                       mn
+      /M1                                        mp

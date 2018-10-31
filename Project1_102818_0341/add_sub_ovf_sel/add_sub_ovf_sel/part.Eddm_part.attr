@@ -1,0 +1,12 @@
+A 5 u Eddm_part 5bd50fec09e5.03.7f.00.00.02.00.03.21 2 2 2 0
+V v 1 1 5bd50fec09e6.03.7f.00.00.02.00.03.21
+F f 1 "part.part_1"
+V v 2 1 5bd51716ac17.03.7f.00.00.02.00.03.21
+F f 2 "part.part_2"
+O 2
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "/home/ece_lab/mentor/ECE4500/Project1/add_sub_ovf_sel/add_sub_ovf_sel/schematic" 1 mgc_schematic 5bd50bd2ac17.03.7f.00.00.02.01.03.21 5bd50bd2ac17.03.7f.00.00.02.00.03.21
+R csduv 1 "/home/ece_lab/mentor/ECE4500/Project1/add_sub_ovf_sel/add_sub_ovf_sel/add_sub_ovf_sel" 1 mgc_symbol 5bd516c2dd6b.03.7f.00.00.02.00.03.21 5bd516c2dd6a.03.7f.00.00.02.00.03.21
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "/home/ece_lab/mentor/ECE4500/Project1/add_sub_ovf_sel/add_sub_ovf_sel/schematic" 1 mgc_schematic 5bd50bd2ac17.03.7f.00.00.02.01.03.21 5bd50bd2ac17.03.7f.00.00.02.00.03.21

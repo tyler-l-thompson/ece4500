@@ -1,0 +1,23 @@
+ Logic loading report
+ ====================
+
+ Top level Layout cell : one_input_buffer
+ Eddm Logic source : /home/ece_lab/mentor/ECE4500/Project1/one_input_buffer/one_input_buffer/eldonet
+
+
+*** Existing cell /home/ece_lab/mentor/ECE4500/Project1/one_input_buffer/one_input_inverter
+
+*** Existing cell /home/ece_lab/mentor/ECE4500/Project1/one_input_buffer/one_input_buffer
+
+
+IGNORED CELLS
+=============
+Following primitive cells are ignored since they are not found
+in library(working directory) and @nocreate_prim option is used.
+Resync of library may be required.
+
+
+       Schematic instance name                   Physical cell name
+       -------------------------                 --------------------
+      /M2                                        mn
+      /M1                                        mp

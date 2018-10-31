@@ -58,7 +58,7 @@ Primitive [$MGC_DESIGN_KIT/symbols/dc_v_source] [dc_v_source/dc_v_source] [SPICE
 **** Writing </home/ece_lab/mentor/ECE4500/Project1/one_bit_alu/one_bit_alu/eldonet> netlist for ELDO ****
 
 Number of cells: 10
-Number of primitive instances: 46
+Number of primitive instances: 48
 
 Done...
 // Registration file '/mgc/v9.0d_rhelx86linux/icstation_home/mgc_icstd_lib/global.ncf' closed.

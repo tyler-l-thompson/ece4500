@@ -1,0 +1,31 @@
+A 5 u Ic_cell_template 5bd60f674168.03.7f.00.00.02.00.01.e1 3 4 7 0
+V v 1 2 5bc9946d8ef1.03.7f.00.00.02.00.4d.0f
+F f 1 "two_input_mux.iccel_1"
+F o 0 ""
+V v 2 2 5bc99482b21c.03.7f.00.00.02.00.4d.0f
+F f 2 "two_input_mux.iccel_2"
+F o 0 ""
+V v 3 2 5bd3a69a1121.03.7f.00.00.02.00.6d.9c
+F f 3 "two_input_mux.iccel_3"
+F o 0 ""
+O 3
+R csduv 1 "/home/ece_lab/mentor/mgc/mit_25" 8 Ic_persist_process 4d337a69d114.03.7f.00.00.01.00.3d.8c 3ae460ae24b4.03.93.22.22.3e.00.42.a5
+R csduv 2 "/home/ece_lab/mentor/ECE4500/Project1/two_input_mux/two_input_mux/eldonet" 2 Eddm_design_viewpoint 5bc9906b82a9.03.7f.00.00.02.00.49.a6 5bc98fcb7e36.03.7f.00.00.02.00.49.a6
+R cmduv 3 "49052f642000.0d.00.01.a5.b0.00.00.00" 1 Ic_device_template 49fba4394000.0d.00.01.a5.b0.00.00.00 49052f642000.0d.00.01.a5.b0.00.00.00
+R csduv 4 "$MGC_DESIGN_KIT/process/M1M2" 1 Ic_cell_template 39ca3bbe3747.03.89.ca.b5.8b.00.3d.46 39de40031d9c.03.93.22.22.3e.00.0a.d0
+R csduv 5 "$MGC_DESIGN_KIT/process/MPOLY" 1 Ic_cell_template 39ca3bb71aba.03.89.ca.b5.8b.00.3d.46 39de40031d9d.03.93.22.22.3e.03.0a.d0
+R csdni 6 "/home/ece_lab/mentor/mgc/mit_25.rules" 1 Mgc_file
+O 2
+R csduv 1 "/home/ece_lab/mentor/mgc/mit_25" 8 Ic_persist_process 4d337a69d114.03.7f.00.00.01.00.3d.8c 3ae460ae24b4.03.93.22.22.3e.00.42.a5
+R csduv 2 "/home/ece_lab/mentor/ECE4500/Project1/two_input_mux/two_input_mux/eldonet" 2 Eddm_design_viewpoint 5bc9906b82a9.03.7f.00.00.02.00.49.a6 5bc98fcb7e36.03.7f.00.00.02.00.49.a6
+R cmduv 3 "49052f642000.0d.00.01.a5.b0.00.00.00" 1 Ic_device_template 49fba4394000.0d.00.01.a5.b0.00.00.00 49052f642000.0d.00.01.a5.b0.00.00.00
+R csduv 4 "$MGC_DESIGN_KIT/process/M1M2" 1 Ic_cell_template 39ca3bbe3747.03.89.ca.b5.8b.00.3d.46 39de40031d9c.03.93.22.22.3e.00.0a.d0
+R csduv 5 "$MGC_DESIGN_KIT/process/MPOLY" 1 Ic_cell_template 39ca3bb71aba.03.89.ca.b5.8b.00.3d.46 39de40031d9d.03.93.22.22.3e.03.0a.d0
+R csdni 6 "/home/ece_lab/mentor/mgc/mit_25.rules" 1 Mgc_file
+O 1
+R csduv 1 "/home/ece_lab/mentor/mgc/mit_25" 8 Ic_persist_process 4d337a69d114.03.7f.00.00.01.00.3d.8c 3ae460ae24b4.03.93.22.22.3e.00.42.a5
+R csduv 2 "/home/ece_lab/mentor/ECE4500/Project1/two_input_mux/two_input_mux/eldonet" 2 Eddm_design_viewpoint 5bc9906b82a9.03.7f.00.00.02.00.49.a6 5bc98fcb7e36.03.7f.00.00.02.00.49.a6
+R cmduv 3 "49052f642000.0d.00.01.a5.b0.00.00.00" 1 Ic_device_template 49fba4394000.0d.00.01.a5.b0.00.00.00 49052f642000.0d.00.01.a5.b0.00.00.00
+R csduv 4 "$MGC_DESIGN_KIT/process/M1M2" 1 Ic_cell_template 39ca3bbe3747.03.89.ca.b5.8b.00.3d.46 39de40031d9c.03.93.22.22.3e.00.0a.d0
+R csduv 5 "$MGC_DESIGN_KIT/process/MPOLY" 1 Ic_cell_template 39ca3bb71aba.03.89.ca.b5.8b.00.3d.46 39de40031d9d.03.93.22.22.3e.03.0a.d0
+R csdni 6 "/home/ece_lab/mentor/mgc/mit_25.rules" 1 Mgc_file
