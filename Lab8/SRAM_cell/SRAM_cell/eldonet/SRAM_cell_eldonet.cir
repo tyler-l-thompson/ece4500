@@ -1,0 +1,28 @@
+* Component: /home/ece_lab/mentor/ECE4500/Lab8/SRAM_cell/SRAM_cell  Viewpoint: eldonet
+.INCLUDE /home/ece_lab/mentor/ECE4500/Lab8/SRAM_cell/SRAM_cell/eldonet/SRAM_cell_eldonet.spi
+.INCLUDE /home/ece_lab/mentor/mgc/mit_0.25.lib
+.OPTION NOASCII
+.OPTION MODWL
+.OPTION ENGNOT
+.OPTION AEX
+
+* --- Singles
+
+* - Analysis Setup - Trans
+.TRAN 0 400N 0 100N
+
+* --- Waveform Outputs
+.PROBE TRAN V(CN_18) V(CN_NOT_18) V(ROWN_18)
+.PROBE TRAN V(Q)
+.PROBE TRAN V(QNOT)
+
+* --- Params
+.TEMP 27
+
+* --- Forces
+VFORCE__Cn CN_18 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 0101 R
+VFORCE__Cn_1 CN_NOT_18 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 1010 R
+VFORCE__Cn_2 ROWN_18 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 1100 R
+
+* --- Libsetup
+

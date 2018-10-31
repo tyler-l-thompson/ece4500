@@ -1,0 +1,4 @@
+START report: Tue Oct 30 11:53:39 2018 
+** Warning: (eldo - 1615)  In file "./ECE4500/Lab8/3_state_buffer/3_state_buffer/eldonet/3_state_buffer_eldonet.cir" line 12:
++   COMMAND ".TRAN": Tstep can not be <= 0.0.
++   It is set to Tmax/20.0 = 1.500e-08 s.

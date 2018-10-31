@@ -1,0 +1,13 @@
+A 5 u mgc_schematic 5bd739f51fc3.03.7f.00.00.02.00.27.93 6 2 1 0
+V v 4 1 5bd87e7f137e.03.7f.00.00.02.00.16.fe
+F o 0 ""
+V v 5 1 5bd87ebd4a04.03.7f.00.00.02.00.16.fe
+F o 0 ""
+V v 6 1 5bd885cdd945.03.7f.00.00.02.00.16.fe
+F o 0 ""
+O 6
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Lab8/3_state_buffer/3_state_buffer/schematic/sheet1" 5 mgc_sheet 5bd885cdd91b.03.7f.00.00.02.00.16.fe 5bd739f52147.03.7f.00.00.02.00.27.93
+O 5
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Lab8/3_state_buffer/3_state_buffer/schematic/sheet1" 4 mgc_sheet 5bd87ebd49e3.03.7f.00.00.02.00.16.fe 5bd739f52147.03.7f.00.00.02.00.27.93
+O 4
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Lab8/3_state_buffer/3_state_buffer/schematic/sheet1" 3 mgc_sheet 5bd87e7f1358.03.7f.00.00.02.00.16.fe 5bd739f52147.03.7f.00.00.02.00.27.93

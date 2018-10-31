@@ -1,0 +1,29 @@
+*
+* .CONNECT statements
+*
+.CONNECT VSS 0
+
+
+* ELDO netlist generated with ICnet by 'ece_lab' on Tue Oct 30 2018 at 17:28:37
+
+*
+* Globals.
+*
+.global VSS VDD
+
+*
+* MAIN CELL: Component pathname : /home/ece_lab/mentor/ECE4500/Lab8/one_bit_temp_reg/one_bit_temp_reg
+*
+        V1 VDD VSS DC 2.5V
+        M28 N$29 DIN_18 VSS VSS NMOS L=1.2u W=2.25u M=1
+        M9 N$29 DIN_18 VDD VDD PMOS L=1.2u W=6.75u M=1
+        M8 N$22 N$29 VSS VSS NMOS L=2.0u W=6.0u M=1
+        M7 DOUT_18 EN_18 N$22 VSS NMOS L=2.0u W=6.0u M=1
+        M6 N$17 DIN_18 VSS VSS NMOS L=2.0u W=6.0u M=1
+        M5 N$15 EN_18 N$17 VSS NMOS L=2.0u W=6.0u M=1
+        M4 N$15 DOUT_18 VSS VSS NMOS L=2.0u W=3.0u M=1
+        M3 N$15 DOUT_18 VDD VDD PMOS L=2.0u W=9.0u M=1
+        M1 DOUT_18 N$15 VSS VSS NMOS L=2.0u W=3.0u M=1
+        M2 DOUT_18 N$15 VDD VDD PMOS L=2.0u W=9.0u M=1
+*
+.end

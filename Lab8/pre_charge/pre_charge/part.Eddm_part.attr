@@ -1,0 +1,12 @@
+A 5 u Eddm_part 5bd7255c7bea.03.7f.00.00.02.00.27.93 2 2 2 0
+V v 1 1 5bd7255c7bea.03.7f.00.00.02.01.27.93
+F f 1 "part.part_1"
+V v 2 1 5bd8b7c06002.03.7f.00.00.02.00.16.bb
+F f 2 "part.part_2"
+O 2
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "/home/ece_lab/mentor/ECE4500/Lab8/pre_charge/pre_charge/schematic" 1 mgc_schematic 5bd723ade854.03.7f.00.00.02.01.27.93 5bd723ade854.03.7f.00.00.02.00.27.93
+R csduv 1 "/home/ece_lab/mentor/ECE4500/Lab8/pre_charge/pre_charge/pre_charge" 1 mgc_symbol 5bd8b7358007.03.7f.00.00.02.01.16.bb 5bd8b7358007.03.7f.00.00.02.00.16.bb
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "/home/ece_lab/mentor/ECE4500/Lab8/pre_charge/pre_charge/schematic" 1 mgc_schematic 5bd723ade854.03.7f.00.00.02.01.27.93 5bd723ade854.03.7f.00.00.02.00.27.93

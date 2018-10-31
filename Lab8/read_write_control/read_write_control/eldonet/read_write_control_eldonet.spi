@@ -1,0 +1,35 @@
+*
+* .CONNECT statements
+*
+.CONNECT VSS 0
+
+
+* ELDO netlist generated with ICnet by 'ece_lab' on Tue Oct 30 2018 at 12:50:52
+
+*
+* Globals.
+*
+.global VSS VDD
+
+*
+* MAIN CELL: Component pathname : /home/ece_lab/mentor/ECE4500/Lab8/read_write_control/read_write_control
+*
+        M14 N$68 N$4 VSS VSS NMOS L=1.2u W=2.25u M=1
+        M13 N$68 N$4 VDD VDD PMOS L=1.2u W=6.75u M=1
+        M12 N$4 DINN_18 VSS VSS NMOS L=1.2u W=2.25u M=1
+        M11 N$4 DINN_18 VDD VDD PMOS L=1.2u W=6.75u M=1
+        M10 N$7 W_18 VSS VSS NMOS L=1.2u W=2.25u M=1
+        M9 N$7 W_18 VDD VDD PMOS L=1.2u W=6.75u M=1
+        M8 DN_NOT_18 N$72 CN_NOT_18 VSS NMOS L=1.2u W=2.4u M=1
+        M7 DN_NOT_18 N$7 CN_NOT_18 VDD PMOS L=1.2u W=2.4u M=1
+        M6 CN_18 N$72 DN_18 VSS NMOS L=1.2u W=2.4u M=1
+        M5 CN_18 N$7 DN_18 VDD PMOS L=1.2u W=2.4u M=1
+        M4 N$68 N$7 CN_18 VSS NMOS L=1.2u W=2.4u M=1
+        M2 N$68 N$72 CN_18 VDD PMOS L=1.2u W=2.4u M=1
+        M3 N$4 N$7 CN_NOT_18 VSS NMOS L=1.2u W=2.4u M=1
+        M1 N$4 N$72 CN_NOT_18 VDD PMOS L=1.2u W=2.4u M=1
+        V1 VDD VSS DC 2.5V
+        M16 N$72 N$7 VSS VSS NMOS L=1.2u W=2.25u M=1
+        M15 N$72 N$7 VDD VDD PMOS L=1.2u W=6.75u M=1
+*
+.end

@@ -1,0 +1,27 @@
+* Component: /home/ece_lab/mentor/ECE4500/Lab8/row_decoder/row_decoder  Viewpoint: eldonet
+.INCLUDE /home/ece_lab/mentor/ECE4500/Lab8/row_decoder/row_decoder/eldonet/row_decoder_eldonet.spi
+.INCLUDE /home/ece_lab/mentor/mgc/mit_0.25.lib
+.OPTION NOASCII
+.OPTION MODWL
+.OPTION ENGNOT
+.OPTION AEX
+
+* --- Singles
+
+* - Analysis Setup - Trans
+.TRAN 0 800N 0 100N
+
+* --- Waveform Outputs
+.PROBE TRAN V(A0_18) V(A1_18) V(BX_S_NOT_18) V(ROW0_18) V(ROW1_18) V(ROW2_18)
++ V(ROW3_18)
+
+* --- Params
+.TEMP 27
+
+* --- Forces
+VFORCE__Cn A0_18 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 00110011 R
+VFORCE__Cn_1 A1_18 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 01010101 R
+VFORCE__Cn_2 BX_S_NOT_18 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 00001111 R
+
+* --- Libsetup
+

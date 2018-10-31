@@ -1,0 +1,27 @@
+* Component: /home/ece_lab/mentor/ECE4500/Lab8/read_write_control/read_write_control  Viewpoint: eldonet
+.INCLUDE /home/ece_lab/mentor/ECE4500/Lab8/read_write_control/read_write_control/eldonet/read_write_control_eldonet.spi
+.INCLUDE /home/ece_lab/mentor/mgc/mit_0.25.lib
+.OPTION NOASCII
+.OPTION MODWL
+.OPTION ENGNOT
+.OPTION AEX
+
+* --- Singles
+
+* - Analysis Setup - Trans
+.TRAN 0 400N 0 100N
+
+* --- Waveform Outputs
+.PROBE TRAN V(CN_18) V(CN_NOT_18) V(DINN_18) V(DN_18) V(DN_NOT_18) V(W_18)
+
+* --- Params
+.TEMP 27
+
+* --- Forces
+VFORCE__Cn W_18 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 0011 R
+VFORCE__Cn_1 DINN_18 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 1111 R
+VFORCE__Cn_2 CN_18 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 0100 R
+VFORCE__Cn_3 CN_NOT_18 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 1011 R
+
+* --- Libsetup
+

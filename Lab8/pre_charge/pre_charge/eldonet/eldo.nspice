@@ -1,0 +1,18 @@
+* ELDO netlist generated with ICnet by 'ece_lab' on Tue Oct 30 2018 at 15:45:23
+
+*
+* Globals.
+*
+.global vdd vss
+
+*
+* MAIN CELL: Component pathname : /home/ece_lab/mentor/ECE4500/Lab8/pre_charge/pre_charge
+*
+        v1 vdd vss DC 2.5V
+        m5 c0_not_18 pc_not_18 c0_18 vdd PMOS L=1.2u W=2.4u M=1
+        m4 c0_18 vss vdd vdd PMOS L=1.2u W=2.4u M=1
+        m3 c0_18 pc_not_18 vdd vdd PMOS L=1.2u W=2.4u M=1
+        m2 c0_not_18 pc_not_18 vdd vdd PMOS L=1.2u W=2.4u M=1
+        m1 c0_not_18 vss vdd vdd PMOS L=1.2u W=2.4u M=1
+*
+.end

@@ -1,0 +1,16 @@
+A 5 u mgc_symbol 5bd8b8981826.03.7f.00.00.02.00.16.bb 3 2 1 0
+V v 1 2 5bd8b8981826.03.7f.00.00.02.01.16.bb
+F f 1 "3_state_buffer.smbl_1"
+F o 0 ""
+V v 2 2 5bd8bcdb1334.03.7f.00.00.02.00.16.bb
+F f 2 "3_state_buffer.smbl_2"
+F o 0 ""
+V v 3 2 5bd8bd118e87.03.7f.00.00.02.00.16.bb
+F f 3 "3_state_buffer.smbl_3"
+F o 0 ""
+O 3
+R csduv 0 "/home/ece_lab/mentor/ECE4500/Lab8/3_state_buffer/3_state_buffer/part" 4 Eddm_part 5bd8bd118e91.03.7f.00.00.02.00.16.bb 5bd73b4a5d0c.03.7f.00.00.02.00.27.93
+O 2
+R csduv 0 "/home/ece_lab/mentor/ECE4500/Lab8/3_state_buffer/3_state_buffer/part" 3 Eddm_part 5bd8bcdb133e.03.7f.00.00.02.00.16.bb 5bd73b4a5d0c.03.7f.00.00.02.00.27.93
+O 1
+R csduv 0 "/home/ece_lab/mentor/ECE4500/Lab8/3_state_buffer/3_state_buffer/part" 2 Eddm_part 5bd8b8f49a80.03.7f.00.00.02.00.16.bb 5bd73b4a5d0c.03.7f.00.00.02.00.27.93

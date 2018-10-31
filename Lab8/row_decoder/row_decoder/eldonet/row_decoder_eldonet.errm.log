@@ -1,0 +1,4 @@
+START report: Tue Oct 30 14:14:15 2018 
+** Warning: (eldo - 1615)  In file "./ECE4500/Lab8/row_decoder/row_decoder/eldonet/row_decoder_eldonet.cir" line 12:
++   COMMAND ".TRAN": Tstep can not be <= 0.0.
++   It is set to Tmax/20.0 = 4.000e-08 s.

@@ -1,0 +1,47 @@
+*
+* .CONNECT statements
+*
+.CONNECT VSS 0
+
+
+* ELDO netlist generated with ICnet by 'ece_lab' on Tue Oct 30 2018 at 14:14:14
+
+*
+* Globals.
+*
+.global VDD VSS
+
+*
+* MAIN CELL: Component pathname : /home/ece_lab/mentor/ECE4500/Lab8/row_decoder/row_decoder
+*
+        M6 ROW0_18 BX_S_NOT_18 N$18 VDD PMOS L=1.2u W=7.2u M=1
+        M5 N$18 A1_18 N$14 VDD PMOS L=1.2u W=7.2u M=1
+        M4 N$14 A0_18 VDD VDD PMOS L=1.2u W=7.2u M=1
+        M3 ROW0_18 A0_18 VSS VSS NMOS L=1.2u W=2.4u M=1
+        M2 ROW0_18 A1_18 VSS VSS NMOS L=1.2u W=2.4u M=1
+        M1 ROW0_18 BX_S_NOT_18 VSS VSS NMOS L=1.2u W=2.4u M=1
+        M28 N$90 A0_18 VSS VSS NMOS L=1.2u W=2.25u M=1
+        M25 N$90 A0_18 VDD VDD PMOS L=1.2u W=6.75u M=1
+        M27 N$86 A1_18 VSS VSS NMOS L=1.2u W=2.25u M=1
+        M26 N$86 A1_18 VDD VDD PMOS L=1.2u W=6.75u M=1
+        M24 ROW3_18 BX_S_NOT_18 N$54 VDD PMOS L=1.2u W=7.2u M=1
+        M23 N$54 N$86 N$53 VDD PMOS L=1.2u W=7.2u M=1
+        M22 N$53 N$90 VDD VDD PMOS L=1.2u W=7.2u M=1
+        M21 ROW3_18 N$90 VSS VSS NMOS L=1.2u W=2.4u M=1
+        M20 ROW3_18 N$86 VSS VSS NMOS L=1.2u W=2.4u M=1
+        M19 ROW3_18 BX_S_NOT_18 VSS VSS NMOS L=1.2u W=2.4u M=1
+        M18 ROW2_18 BX_S_NOT_18 N$46 VDD PMOS L=1.2u W=7.2u M=1
+        M17 N$46 A1_18 N$45 VDD PMOS L=1.2u W=7.2u M=1
+        M16 N$45 N$90 VDD VDD PMOS L=1.2u W=7.2u M=1
+        M15 ROW2_18 N$90 VSS VSS NMOS L=1.2u W=2.4u M=1
+        M14 ROW2_18 A1_18 VSS VSS NMOS L=1.2u W=2.4u M=1
+        M13 ROW2_18 BX_S_NOT_18 VSS VSS NMOS L=1.2u W=2.4u M=1
+        M12 ROW1_18 BX_S_NOT_18 N$35 VDD PMOS L=1.2u W=7.2u M=1
+        M11 N$35 N$86 N$34 VDD PMOS L=1.2u W=7.2u M=1
+        M10 N$34 A0_18 VDD VDD PMOS L=1.2u W=7.2u M=1
+        M9 ROW1_18 A0_18 VSS VSS NMOS L=1.2u W=2.4u M=1
+        M8 ROW1_18 N$86 VSS VSS NMOS L=1.2u W=2.4u M=1
+        M7 ROW1_18 BX_S_NOT_18 VSS VSS NMOS L=1.2u W=2.4u M=1
+        V1 VDD VSS DC 2.5V
+*
+.end

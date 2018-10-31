@@ -1,0 +1,26 @@
+* Component: /home/ece_lab/mentor/ECE4500/Lab8/sense_amp/sense_amp  Viewpoint: eldonet
+.INCLUDE /home/ece_lab/mentor/ECE4500/Lab8/sense_amp/sense_amp/eldonet/sense_amp_eldonet.spi
+.INCLUDE /home/ece_lab/mentor/mgc/mit_0.25.lib
+.OPTION NOASCII
+.OPTION MODWL
+.OPTION ENGNOT
+.OPTION AEX
+
+* --- Singles
+
+* - Analysis Setup - Trans
+.TRAN 0 600N 0 100N
+
+* --- Waveform Outputs
+.PROBE TRAN V(DN_18) V(DN_NOT_18) V(DOUTN_18) V(SE_18)
+
+* --- Params
+.TEMP 27
+
+* --- Forces
+VFORCE__Cn DN_18 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 010010 R
+VFORCE__Cn_1 DN_NOT_18 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 100111 R
+VFORCE__Cn_2 SE_18 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 111110 R
+
+* --- Libsetup
+

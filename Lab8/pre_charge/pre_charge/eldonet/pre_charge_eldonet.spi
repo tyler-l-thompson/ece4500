@@ -1,0 +1,24 @@
+*
+* .CONNECT statements
+*
+.CONNECT VSS 0
+
+
+* ELDO netlist generated with ICnet by 'ece_lab' on Tue Oct 30 2018 at 13:03:24
+
+*
+* Globals.
+*
+.global VDD VSS
+
+*
+* MAIN CELL: Component pathname : /home/ece_lab/mentor/ECE4500/Lab8/pre_charge/pre_charge
+*
+        V1 VDD VSS DC 2.5V
+        M5 C0_NOT_18 PC_NOT_18 C0_18 VDD PMOS L=1.2u W=2.4u M=1
+        M4 C0_18 VSS VDD VDD PMOS L=1.2u W=2.4u M=1
+        M3 C0_18 PC_NOT_18 VDD VDD PMOS L=1.2u W=2.4u M=1
+        M2 C0_NOT_18 PC_NOT_18 VDD VDD PMOS L=1.2u W=2.4u M=1
+        M1 C0_NOT_18 VSS VDD VDD PMOS L=1.2u W=2.4u M=1
+*
+.end

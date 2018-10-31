@@ -1,0 +1,16 @@
+A 5 u mgc_symbol 5bd8b7f211eb.03.7f.00.00.02.00.16.bb 4 2 1 0
+V v 2 2 5bd8ba74b648.03.7f.00.00.02.00.16.bb
+F f 2 "sense_amp.smbl_2"
+F o 0 ""
+V v 3 2 5bd8baa5b839.03.7f.00.00.02.00.16.bb
+F f 3 "sense_amp.smbl_3"
+F o 0 ""
+V v 4 2 5bd8bac16a1d.03.7f.00.00.02.00.16.bb
+F f 4 "sense_amp.smbl_4"
+F o 0 ""
+O 4
+R csduv 0 "/home/ece_lab/mentor/ECE4500/Lab8/sense_amp/sense_amp/part" 5 Eddm_part 5bd8bac16a2c.03.7f.00.00.02.00.16.bb 5bd739b9abeb.03.7f.00.00.02.00.27.93
+O 3
+R csduv 0 "/home/ece_lab/mentor/ECE4500/Lab8/sense_amp/sense_amp/part" 4 Eddm_part 5bd8baa5b881.03.7f.00.00.02.00.16.bb 5bd739b9abeb.03.7f.00.00.02.00.27.93
+O 2
+R csduv 0 "/home/ece_lab/mentor/ECE4500/Lab8/sense_amp/sense_amp/part" 3 Eddm_part 5bd8ba74b68f.03.7f.00.00.02.00.16.bb 5bd739b9abeb.03.7f.00.00.02.00.27.93

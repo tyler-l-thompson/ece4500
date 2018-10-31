@@ -1,0 +1,14 @@
+A 5 u Eddm_part 5bd73e761206.03.7f.00.00.02.00.27.93 2 2 2 0
+V v 1 1 5bd73e761206.03.7f.00.00.02.01.27.93
+F f 1 "part.part_1"
+V v 2 1 5bd8b9adcc8e.03.7f.00.00.02.00.16.bb
+F f 2 "part.part_2"
+O 2
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "/home/ece_lab/mentor/ECE4500/Lab8/read_write_control/read_write_control/schematic" 1 mgc_schematic 5bd73b80512c.03.7f.00.00.02.01.27.93 5bd73b80512c.03.7f.00.00.02.00.27.93
+P "eddm__refer_state" "eddm__refer_floating"
+R csduv 1 "/home/ece_lab/mentor/ECE4500/Lab8/read_write_control/read_write_control/read_write_control" 1 mgc_symbol 5bd8b9244a3c.03.7f.00.00.02.01.16.bb 5bd8b9244a3c.03.7f.00.00.02.00.16.bb
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "/home/ece_lab/mentor/ECE4500/Lab8/read_write_control/read_write_control/schematic" 1 mgc_schematic 5bd73b80512c.03.7f.00.00.02.01.27.93 5bd73b80512c.03.7f.00.00.02.00.27.93
+P "eddm__refer_state" "eddm__refer_floating"

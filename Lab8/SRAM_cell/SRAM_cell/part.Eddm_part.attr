@@ -1,0 +1,6 @@
+A 5 u Eddm_part 5bd8687dec0d.03.7f.00.00.02.00.16.fe 1 2 1 0
+V v 1 1 5bd8687dec0d.03.7f.00.00.02.01.16.fe
+F f 1 "part.part_1"
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "/home/ece_lab/mentor/ECE4500/Lab8/SRAM_cell/SRAM_cell/schematic" 1 mgc_schematic 5bd86467120d.03.7f.00.00.02.01.16.fe 5bd86467120d.03.7f.00.00.02.00.16.fe

@@ -1,0 +1,6 @@
+A 5 u mgc_symbol 5bd8a0d327e3.03.7f.00.00.02.00.16.fe 1 2 1 0
+V v 1 2 5bd8a0d327e3.03.7f.00.00.02.01.16.fe
+F f 1 "row_decoder.smbl_1"
+F o 0 
+O 1
+R csduv 0 "/home/ece_lab/mentor/ECE4500/Lab8/row_decoder/row_decoder/part" 2 Eddm_part 5bd8a0fa12c1.03.7f.00.00.02.00.16.fe 5bd72561e906.03.7f.00.00.02.00.27.93

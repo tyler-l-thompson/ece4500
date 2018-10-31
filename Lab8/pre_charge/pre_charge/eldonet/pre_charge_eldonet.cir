@@ -1,0 +1,24 @@
+* Component: /home/ece_lab/mentor/ECE4500/Lab8/pre_charge/pre_charge  Viewpoint: eldonet
+.INCLUDE /home/ece_lab/mentor/ECE4500/Lab8/pre_charge/pre_charge/eldonet/pre_charge_eldonet.spi
+.INCLUDE /home/ece_lab/mentor/mgc/mit_0.25.lib
+.OPTION NOASCII
+.OPTION MODWL
+.OPTION ENGNOT
+.OPTION AEX
+
+* --- Singles
+
+* - Analysis Setup - Trans
+.TRAN 0 200N 0 100N
+
+* --- Waveform Outputs
+.PROBE TRAN V(C0_18) V(C0_NOT_18) V(PC_NOT_18)
+
+* --- Params
+.TEMP 27
+
+* --- Forces
+VFORCE__Cn_1 PC_NOT_18 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 10 R
+
+* --- Libsetup
+

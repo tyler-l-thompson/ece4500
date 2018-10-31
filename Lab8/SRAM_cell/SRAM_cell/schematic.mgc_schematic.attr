@@ -1,0 +1,13 @@
+A 5 u mgc_schematic 5bd86467120d.03.7f.00.00.02.00.16.fe 9 2 1 0
+V v 7 1 5bd876170426.03.7f.00.00.02.00.16.fe
+F o 0 ""
+V v 8 1 5bd8766ee8e8.03.7f.00.00.02.00.16.fe
+F o 0 ""
+V v 9 1 5bd878b44cac.03.7f.00.00.02.00.16.fe
+F o 0 ""
+O 9
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Lab8/SRAM_cell/SRAM_cell/schematic/sheet1" 8 mgc_sheet 5bd878b44c88.03.7f.00.00.02.00.16.fe 5bd8646712f4.03.7f.00.00.02.00.16.fe
+O 8
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Lab8/SRAM_cell/SRAM_cell/schematic/sheet1" 7 mgc_sheet 5bd8766ee8c7.03.7f.00.00.02.00.16.fe 5bd8646712f4.03.7f.00.00.02.00.16.fe
+O 7
+R cspuv 0 "/home/ece_lab/mentor/ECE4500/Lab8/SRAM_cell/SRAM_cell/schematic/sheet1" 6 mgc_sheet 5bd87617040b.03.7f.00.00.02.00.16.fe 5bd8646712f4.03.7f.00.00.02.00.16.fe

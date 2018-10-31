@@ -1,0 +1,26 @@
+* Component: /home/ece_lab/mentor/ECE4500/Lab8/3_state_buffer/3_state_buffer  Viewpoint: eldonet
+.INCLUDE /home/ece_lab/mentor/ECE4500/Lab8/3_state_buffer/3_state_buffer/eldonet/3_state_buffer_eldonet.spi
+.INCLUDE /home/ece_lab/mentor/mgc/mit_0.25.lib
+.OPTION NOASCII
+.OPTION MODWL
+.OPTION ENGNOT
+.OPTION AEX
+
+* --- Singles
+
+* - Analysis Setup - Trans
+.TRAN 0 300N 0 100N
+
+* --- Waveform Outputs
+.PROBE TRAN V(DEN_18) V(DEN_NOT_18) V(DOUT_18) V(DOUTB_18)
+
+* --- Params
+.TEMP 27
+
+* --- Forces
+VFORCE__Cn DEN_18 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 110 R
+VFORCE__Cn_1 DEN_NOT_18 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 001 R
+VFORCE__Cn_2 DOUT_18 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 011 R
+
+* --- Libsetup
+

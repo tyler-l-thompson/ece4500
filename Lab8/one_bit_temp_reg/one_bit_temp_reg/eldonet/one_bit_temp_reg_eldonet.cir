@@ -1,0 +1,25 @@
+* Component: /home/ece_lab/mentor/ECE4500/Lab8/one_bit_temp_reg/one_bit_temp_reg  Viewpoint: eldonet
+.INCLUDE /home/ece_lab/mentor/ECE4500/Lab8/one_bit_temp_reg/one_bit_temp_reg/eldonet/one_bit_temp_reg_eldonet.spi
+.INCLUDE /home/ece_lab/mentor/mgc/mit_0.25.lib
+.OPTION NOASCII
+.OPTION MODWL
+.OPTION ENGNOT
+.OPTION AEX
+
+* --- Singles
+
+* - Analysis Setup - Trans
+.TRAN 0 400N 0 100N
+
+* --- Waveform Outputs
+.PROBE TRAN V(DIN_18) V(DOUT_18) V(EN_18)
+
+* --- Params
+.TEMP 27
+
+* --- Forces
+VFORCE__Din DIN_18 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 0101 R
+VFORCE__EN EN_18 VSS pattern 2.5 0 0 1e-12 1e-12 1e-07 1100 R
+
+* --- Libsetup
+
