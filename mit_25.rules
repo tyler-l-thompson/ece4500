@@ -1,0 +1,518 @@
+//-------1---------2---------3---------4---------5---------6---------7---
+//
+// MIT/LL 0.25um Low Power SOI CMOS
+//
+// Calibre DRC rules File
+//
+// Written: Terry Meeks
+//          Mentor Graphics
+//
+// Date:    7/22/98			Version: 0.1
+//
+//-------1---------2---------3---------4---------5---------6---------7---
+//-------1---------2---------3---------4---------5---------6---------7---
+//			I/O Definition Section
+//-------1---------2---------3---------4---------5---------6---------7---
+// Commented out the following statements, they are automatically provided by the ICstation - Calibre interface
+//SOURCE SYSTEM SPICE
+//SOURCE PATH	"./sch.spice"
+//SOURCE PRIMARY	"top"
+
+//LAYOUT SYSTEM GDSII
+//LAYOUT PATH	"./lay.gds"
+//LAYOUT PRIMARY	"TOP"
+
+//DRC RESULTS DATABASE "./drc_results.asc" ASCII
+DRC SUMMARY REPORT "./drc_sum.rep" REPLACE
+
+LVS REPORT "lvs.rep"
+
+PEX BACKANNOTATION DISTRIBUTED NONE	// name ASCII MASK DIRECT // ??? options
+//PEX NETLIST DISTRIBUTED pex.dist.sp SPICE SOURCE GROUND VSS MAXLENGTH 16 MASK DIRECT
+PEX REPORT DISTRIBUTED pex.dist.rep ASCII SOURCE MASK DIRECT
+
+PEX BACKANNOTATION LUMPED NONE		// name ASCII C COUPLED
+//PEX NETLIST LUMPED pex.lump.sp SPICE SOURCE GROUND VSS MAXLENGTH 16 MASK DIRECT
+PEX REPORT LUMPED pex.lump.rep SOURCE MASK DIRECT
+
+//-------1---------2---------3---------4---------5---------6---------7---
+//			Global Option Definition Section
+//-------1---------2---------3---------4---------5---------6---------7---
+
+UNIT CAPACITANCE	FF
+UNIT LENGTH		U
+UNIT RESISTANCE		OHM
+PRECISION		1000	// Standard GDSII 1000 GDS_units / Micron
+RESOLUTION		1	// Grid resolution of 0.001 Microns
+
+DRC MAXIMUM RESULTS	1000	// default 1000
+
+FLAG ACUTE		YES
+FLAG OFFGRID		YES
+FLAG SKEW		YES
+
+TEXT DEPTH PRIMARY
+MASK RESULTS DATABASE maskdb
+//MASK SVDB DIRECTORY "svdb" XCALIBRE
+LVS ABORT ON SUPPLY ERROR				NO
+LVS ALL CAPACITOR PINS SWAPPABLE		YES
+LVS COMPARE CASE							NO
+LVS IGNORE PORTS							NO
+LVS ISOLATE SHORTS						YES
+LVS PROPERTY RESOLUTION MAXIMUM		200
+LVS RECOGNIZE GATES						ALL
+LVS REPORT MAXIMUM						50
+LVS REVERSE WL								NO
+
+LVS REDUCE PARALLEL BIPOLAR			YES
+LVS REDUCE PARALLEL CAPACITORS		YES
+LVS REDUCE SERIES CAPACITORS			YES
+LVS REDUCE PARALLEL DIODES				YES
+LVS REDUCE PARALLEL MOS					YES
+LVS REDUCE SPLIT GATES					YES
+LVS REDUCE PARALLEL RESISTORS			YES
+LVS REDUCE SERIES RESISTORS			YES
+
+LVS COMPONENT TYPE PROPERTY			phy_comp
+LVS COMPONENT SUBTYPE PROPERTY		subtype
+LVS PIN NAME PROPERTY					phy_pin
+
+LVS GROUND NAME 							"VSS" "vss"
+LVS POWER NAME 							"VDD" "vdd"
+
+PEX DELAY NONE		// PENFIELD or ELMORE
+// ??? PEX EXCLUDE LUMPED "VDD" "vdd" "VSS" "vss"		// excluding known powers and grounds
+PEX EXCLUDE DISTRIBUTED "VDD" "vdd" "VSS" "vss"	// excluding known powers and grounds
+// ??? PEX FDB GLOBAL 5000 EXCLUDE SOURCE "VDD" "vdd" "VSS" "vss" // For XCALIBRE operation
+// ??? PEX LAYER // For XCALIBRE operation
+// ??? PEX REDUCE DISTRIBUTED // For XCALIBRE operation
+// ??? PEX REDUCE LUMPED C < 10000 MASK DIRECT // ??? Set this to a real value
+// ??? PEX THRESHOLD C < 10000 MASK DIRECT // ??? Set this to a real value
+// ??? PEX THRESHOLD R < 10000 MASK DIRECT // ??? Set this to a real value
+
+
+//-------1---------2---------3---------4---------5---------6---------7---
+//			Input Layer Definitions
+//-------1---------2---------3---------4---------5---------6---------7---
+LAYER NWELL    2
+LAYER ACTIVE		6	// DIFF
+LAYER NBIMP		10	// CBN
+LAYER PBIMP		11	// CBP
+LAYER POLY		18	// CPG
+LAYER NPLUS		4	// CNS
+LAYER PPLUS		5	// CPS
+LAYER CONTACT		20	// CCA
+LAYER MET1		22	// CM1
+LAYER CUTV1		23	// CV1
+LAYER MET2		24	// CM2
+LAYER CUTV2		25	// CV2
+LAYER MET3		26	// CM3
+LAYER OVERGLASS		37	// COG
+LAYER RESISTOR  	57	// Resistor Marker Layer
+LAYER CAP		58	// Capacitor Marker Layer
+
+//-------1---------2---------3---------4---------5---------6---------7---
+//			Layer Derrivation Section
+//-------1---------2---------3---------4---------5---------6---------7---
+
+top_ext = EXTENT
+sub_ext = SIZE top_ext BY 1
+substrate = sub_ext NOT NWELL
+
+npolyres = RESISTOR AND NPLUS
+ppolyres = RESISTOR AND PPLUS
+npoly_res = POLY AND npolyres
+ppoly_res = POLY AND ppolyres
+
+poly_nres = POLY NOT RESISTOR
+poly_int = copy poly_nres
+poly_cap = poly_nres AND CAP
+poly_dev = poly_nres NOT CAP
+act_cap = ACTIVE AND CAP 
+act_ncap = POLY AND CAP
+
+ndiff = ACTIVE AND NPLUS
+nact = ndiff INTERACT POLY
+nWellTap = ndiff NOT INTERACT POLY
+ngate = nact AND poly_dev
+nsd = nact NOT POLY
+ngate_edge = nact COINCIDENT EDGE ngate
+
+pdiff = ACTIVE AND PPLUS
+pact = pdiff INTERACT POLY
+subTap = pdiff NOT INTERACT POLY
+pgate = pact AND poly_dev
+psd = pact NOT POLY
+pgate_edge = pact COINCIDENT EDGE pgate
+
+//-------1---------2---------3---------4---------5---------6---------7---
+//			Connectivity Definitions
+//-------1---------2---------3---------4---------5---------6---------7---
+TEXT LAYER 110			// Read TEXT elements for labling
+TEXT LAYER 111			// Read TEXT elements for labling
+TEXT LAYER 112
+TEXT LAYER 113
+
+ATTACH 110 poly_int 			// Attach TEXT labels to polygons
+ATTACH 111 MET1		// Attach TEXT labels to polygons
+ATTACH 112 MET2
+ATTACH 113 MET3
+
+LABEL ORDER poly_int MET1 MET2 MET3 MASK
+//CONNECT MET1 POLY	BY CONTACT DIRECT
+//CONNECT MET1 POLY	BY CONTACT DIRECT MASK
+CONNECT MET1 poly_int nsd psd nWellTap subTap act_ncap BY CONTACT DIRECT MASK
+CONNECT MET2 MET1			BY CUTV1 DIRECT MASK
+CONNECT MET3 MET2			BY CUTV2 DIRECT MASK
+pgate_S = STAMP pgate BY poly_int
+ngate_S = STAMP ngate BY poly_int
+
+// Note:
+// This section is a work-around not having digitized Well regions
+//
+CONNECT NWELL nWellTap
+CONNECT substrate subTap
+
+
+//-------1---------2---------3---------4---------5---------6---------7---------8
+//	Capacitance Definition Section
+//-------1---------2---------3---------4---------5---------6---------7---------8
+
+CAPACITANCE ORDER MET1 MET2 MET3
+
+// ??? These are my interpretations from the documents for typical.
+// ??? Please review and revise as you require.
+CAPACITANCE INTRINSIC MET1 [0.020 0]
+CAPACITANCE CROSSOVER MET2 MET1 [0.033 0 0]
+CAPACITANCE CROSSOVER MET3 MET1 [0.011 0 0]
+
+CAPACITANCE INTRINSIC MET2 [1 0]
+CAPACITANCE CROSSOVER MET3 MET2 [1 0 0]
+
+CAPACITANCE INTRINSIC MET3 [1 0]
+
+// ??? These are my interpretations from the documents for typical.
+// ??? Please review and revise as you require.
+RESISTANCE SHEET MET1 [0.060 0]
+RESISTANCE SHEET MET2 [0.060 0]
+RESISTANCE SHEET MET3 [0.060 0]
+RESISTANCE CONNECTION MET2 MET1 [1.0 0]
+RESISTANCE CONNECTION MET3 MET2 [1.0 0]
+
+//-------1---------2---------3---------4---------5---------6---------7---
+//			Device Definitions
+//-------1---------2---------3---------4---------5---------6---------7---
+// ??? DEVICE MP (pmos) pgate poly_int psd psd [0]
+DEVICE MP (pmos) pgate poly_int psd psd NWELL [0]
+TRACE PROPERTY MP w w 5
+TRACE PROPERTY MP l l 5
+
+// ??? DEVICE MN (nmos) ngate poly_int nsd nsd [0]
+DEVICE MN (nmos) ngate poly_int nsd nsd [0]
+TRACE PROPERTY MN w w 5
+TRACE PROPERTY MN l l 5
+
+//DEVICE R (nplus) poly_res poly_int poly_int [20.68]
+DEVICE R (nplus) npoly_res poly_int poly_int [20.68]
+
+DEVICE R (pplus) ppoly_res poly_int poly_int [20.68]
+TRACE PROPERTY R R R 10
+
+//DEVICE R (pplus) poly_res_pplus poly_int poly_int [20.68]
+
+DEVICE C (ncap) act_ncap poly_int (POS) nsd (NEG) (POS NEG) [0.9 0.02]
+TRACE PROPERTY C "c" C 10
+
+//-------1---------2---------3---------4---------5---------6---------7---
+//			Start Design Rule Check Section
+//-------1---------2---------3---------4---------5---------6---------7---
+//	1.0 Active Area (CAA) Check Section
+//-------1---------2---------3---------4---------5---------6---------7---
+// +++ Commented because this rule is checked by rules 7.1 and 7.3
+// +++ R1.1 {
+// +++   @ Minimum Active Area (Contacted) width < 1.0um
+// +++   INTERNAL ACTIVE < 1.0 ABUT>0<90
+// +++ }
+
+R1.2 {
+  @ Minimum Active Area width < 0.50um
+  INTERNAL ACTIVE < 0.50 ABUT>0<90 SINGULAR
+}
+
+R1.3 {
+  @ Minimum Active Area spacing < 0.60um
+  EXTERNAL ACTIVE < 0.60 ABUT<90 SINGULAR
+}
+
+R1.4 {
+  @ Minimum Active Area (Gate edge to opposite polarity Active) spacing < 1.20um
+  EXTERNAL ngate_edge pact < 1.20 ABUT>0<90
+  EXTERNAL pgate_edge nact < 1.20 ABUT>0<90
+}
+
+R1.5 {
+  @ Minimum extention of Active beyond Poly < 0.50um
+  ENCLOSURE POLY ACTIVE < 0.50 ABUT>0<90 SINGULAR
+}
+
+GROUP ActiveArea_Checks R1.?
+
+//-------1---------2---------3---------4---------5---------6---------7---
+//	2.0 n-Channel Body Implant (CBN) Check Section
+//-------1---------2---------3---------4---------5---------6---------7---
+R2.1 {
+  @ Minimum N-Ch Body Implant extention beyond Active Area (Gate edge) < 0.90um
+  ENCLOSURE ngate_edge NBIMP < 0.90 ABUT>0<90
+}
+
+R2.2 {
+  @ Minimum N-Ch Body Implant extention beyond Active Area < 0.30um
+  ENCLOSURE ACTIVE NBIMP < 0.30 ABUT>0<90 SINGULAR
+}
+
+R2.3 {
+  @ Minimum N-Ch Body Implant spacing < 0.30um
+  EXTERNAL NBIMP < 0.30 ABUT<90 SINGULAR
+}
+
+GROUP NBodyImplant_checks R2.?
+
+//-------1---------2---------3---------4---------5---------6---------7---
+//	3.0 p-Channel Body Implant (CBP) Check Section
+//-------1---------2---------3---------4---------5---------6---------7---
+R3.1 {
+  @ Minimum P-Ch Body Implant extention beyond Active Area (Gate edge) < 0.90um
+  ENCLOSURE pgate_edge PBIMP < 0.90 ABUT>0<90
+}
+
+R3.2 {
+  @ Minimum P-Ch Body Implant extention beyond Active Area < 0.30um
+  ENCLOSURE ACTIVE PBIMP < 0.30 ABUT>0<90 SINGULAR
+}
+
+R3.3 {
+  @ Minimum P-Ch Body Implant spacing < 0.30um
+  EXTERNAL PBIMP < 0.30 ABUT<90 SINGULAR
+}
+
+GROUP PBodyImplant_checks R3.?
+
+//-------1---------2---------3---------4---------5---------6---------7---
+//	4.0 Polysilicon (CPG) Check Section
+//-------1---------2---------3---------4---------5---------6---------7---
+R4.1 {
+  @ Minimum Poly width < 0.25um
+  INTERNAL POLY < 0.25 ABUT>0<90 SINGULAR
+}
+
+R4.2 {
+  @ Minimum Poly spacing < 0.35um
+  EXTERNAL POLY < 0.35 ABUT<90 SINGULAR
+}
+
+R4.3 {
+  @ Minimum Poly (over Active) spacing < 0.30um
+  EXTERNAL pgate < 0.30 ABUT<90 SINGULAR
+  EXTERNAL ngate < 0.30 ABUT<90 SINGULAR
+}
+
+R4.4 {
+  @ Minimum Poly spacing < 0.35um
+  EXTERNAL POLY ACTIVE < 0.35 ABUT<90 SINGULAR
+}
+
+R4.5 {
+  @ Minimum Poly extention beyond Active Area < 0.50um
+  ENCLOSURE ACTIVE POLY < 0.50 ABUT<90 SINGULAR
+}
+
+GROUP Poly_checks R4.?
+
+//-------1---------2---------3---------4---------5---------6---------7---
+//	5.0 N+ Implant (CSN) Check Section
+//-------1---------2---------3---------4---------5---------6---------7---
+R5.1 {
+  @ Minimum N+ Implant extention beyond Active Area < 0.30um
+  ENCLOSURE ACTIVE NPLUS < 0.30 ABUT<90 SINGULAR
+}
+
+R5.2 {
+  @ Minimum N+ Implant spacing < 0.30um
+  EXTERNAL NPLUS < 0.30 ABUT>0<90 SINGULAR
+}
+
+// ??? HERE ???
+R5.3 {
+// This rule covers rule 6.3 also
+  @ Minimum spacing from p-channel island in common gate < 0.90um
+// ??? I need to determine how to do this one
+  EXTERNAL pgate_S ngate_S < 0.90 ABUT<90 SINGULAR CONNECTED
+}
+
+GROUP NImplant_checks R5.?
+
+//-------1---------2---------3---------4---------5---------6---------7---
+//	6.0 P+ Implant (CSP) Check Section
+//-------1---------2---------3---------4---------5---------6---------7---
+R6.1 {
+  @ Minimum P+ Implant extention beyond Active Area < 0.30um
+  ENCLOSURE ACTIVE PPLUS < 0.30 ABUT<90 SINGULAR
+}
+
+R6.2 {
+  @ Minimum P+ Implant spacing < 0.30um
+  EXTERNAL PPLUS < 0.30 ABUT>0<90 SINGULAR
+}
+
+GROUP PImplant_checks R6.?
+
+//-------1---------2---------3---------4---------5---------6---------7---
+//	7.0 Contact Cut (CCA & CCP) Check Section
+//-------1---------2---------3---------4---------5---------6---------7---
+R7.1 {
+  @ Contact not 0.50um sq.
+  NOT RECTANGLE CONTACT == 0.50 BY == 0.50
+}
+
+R7.2 {
+  @ Minimum Contact spacing < 0.50um
+  EXTERNAL CONTACT < 0.50 ABUT<90 SINGULAR
+}
+
+R7.3 {
+  @ Minimum Active Area surround Contact < 0.25um
+  ENCLOSURE CONTACT ACTIVE < 0.25 ABUT<90 SINGULAR
+}
+
+R7.4 {
+  @ Minimum Poly surround Contact < 0.30um
+  ENCLOSURE CONTACT POLY < 0.30 ABUT<90 SINGULAR
+}
+
+R7.5 {
+  @ Minimum Metal 1 surround Contact < 0.30um
+  ENCLOSURE CONTACT MET1 < 0.30 ABUT<90 SINGULAR OUTSIDE ALSO
+}
+
+R7.6 {
+  @ Minimum Contact to Gate spacing < 0.50um
+  EXTERNAL CONTACT pgate < 0.50 ABUT<90 SINGULAR
+  EXTERNAL CONTACT ngate < 0.50 ABUT<90 SINGULAR
+}
+
+R7.7 {
+  @ Minimum Poly Contact to Active Area spacing < 0.65um
+  EXTERNAL CONTACT ACTIVE < 0.65 ABUT<90 SINGULAR
+}
+
+GROUP Contact_Checks R7.?
+
+//-------1---------2---------3---------4---------5---------6---------7---
+//	8.0 Metal 1 (CM1) Check Section
+//-------1---------2---------3---------4---------5---------6---------7---
+R8.1 {
+  @ Minimum Metal 1 width < 0.60um
+  INTERNAL MET1 < 0.60 ABUT>0<90 SINGULAR
+}
+
+R8.2 {
+  @ Minimum Metal 1 spacing < 0.60um
+  EXTERNAL MET1 < 0.60 ABUT>0<90 SINGULAR
+}
+
+GROUP Metal1_Checks R8.?
+
+//-------1---------2---------3---------4---------5---------6---------7---
+//	9.0 Via 1 (CV1) Check Section
+//-------1---------2---------3---------4---------5---------6---------7---
+R9.1 {
+  @ Via 1 not 0.60um sq.
+  NOT RECTANGLE CUTV1 == 0.60 BY == 0.60
+}
+
+R9.2 {
+  @ Minimum Via 1 spacing < 0.60um
+  EXTERNAL CUTV1 < 0.60 ABUT<90 SINGULAR
+}
+
+R9.3 {
+  @ Minimum Metal 1 surround Via 1 < 0.30um
+  ENCLOSURE CUTV1 MET1 < 0.30 ABUT<90 SINGULAR OUTSIDE ALSO
+}
+
+GROUP Via1_Checks R9.?
+
+//-------1---------2---------3---------4---------5---------6---------7---
+//	10.0 Metal 2 (CM2) Check Section
+//-------1---------2---------3---------4---------5---------6---------7---
+R10.1 {
+  @ Minimum Metal 2 width < 0.75um
+  INTERNAL MET2 < 0.75 ABUT>0<90 SINGULAR
+}
+
+R10.2 {
+  @ Minimum Metal 2 spacing < 0.75um
+  EXTERNAL MET2 < 0.75 ABUT>0<90 SINGULAR
+}
+
+R10.3 {
+  @ Minimum Metal 2 surround Via 1 < 0.30um
+  ENCLOSURE CUTV1 MET2 < 0.30 ABUT<90 SINGULAR OUTSIDE ALSO
+}
+
+GROUP Metal2_Checks R10.?
+
+//-------1---------2---------3---------4---------5---------6---------7---
+//	11.0 Via 2 (CV2) Check Section
+//-------1---------2---------3---------4---------5---------6---------7---
+R11.1 {
+  @ Via 2 not 0.75um sq.
+  NOT RECTANGLE CUTV2 == 0.75 BY == 0.75
+}
+
+R11.2 {
+  @ Minimum Via 2 spacing < 0.75um
+  EXTERNAL CUTV2 < 0.75 ABUT<90 SINGULAR
+}
+
+R11.3 {
+  @ Minimum Metal 2 surround Via 2 < 0.30um
+  ENCLOSURE CUTV2 MET2 < 0.30 ABUT<90 SINGULAR OUTSIDE ALSO
+}
+
+GROUP Via2_Checks R11.?
+
+//-------1---------2---------3---------4---------5---------6---------7---
+//	12.0 Metal 3 (CM3) Check Section
+//-------1---------2---------3---------4---------5---------6---------7---
+R12.1 {
+  @ Minimum Metal 3 width < 1.00um
+  INTERNAL MET3 < 1.00 ABUT>0<90 SINGULAR
+}
+
+R12.2 {
+  @ Minimum Metal 3 spacing < 1.00um
+  EXTERNAL MET3 < 1.00 ABUT>0<90 SINGULAR
+}
+
+R12.3 {
+  @ Minimum Metal 3 surround Via 2 < 0.30um
+  ENCLOSURE CUTV2 MET3 < 0.30 ABUT<90 SINGULAR OUTSIDE ALSO
+}
+
+GROUP Metal3_Checks R12.?
+
+//-------1---------2---------3---------4---------5---------6---------7---
+//	13.0 Overglass Pad Cut (COG) Check Section
+//-------1---------2---------3---------4---------5---------6---------7---
+R13.1 {
+  @ Metal 3 surrond Overglass < 3.00um
+  ENCLOSURE OVERGLASS MET3 < 3.00 ABUT<90 SINGULAR OUTSIDE ALSO
+}
+
+GROUP Pad_Checks R13.?
+
+GROUP continuous_drc
+	R4.2
+	R8.2
+	R10.2
